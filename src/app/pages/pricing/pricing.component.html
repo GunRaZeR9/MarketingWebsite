@@ -1,0 +1,38 @@
+<main>
+  <section class="panel">
+    <p class="eyebrow">{{ content().ui.pricingEyebrow }}</p>
+    <h1>{{ content().pricingTitle }}</h1>
+    <p>{{ content().pricingSubtitle }}</p>
+  </section>
+
+  <section class="plan-grid">
+    <article *ngFor="let plan of content().pricingPlans" class="plan" [class.featured]="plan.featured">
+      <h2>{{ plan.name }}</h2>
+      <p class="price">{{ plan.price }}</p>
+      <p>{{ plan.description }}</p>
+      <a class="button" routerLink="/contact">{{ plan.ctaLabel }}</a>
+    </article>
+  </section>
+
+  <section class="panel">
+    <h2>{{ content().ui.pricingFeatureComparison }}</h2>
+    <div class="table-wrap" role="region" [attr.aria-label]="content().ui.pricingTableAriaLabel" tabindex="0">
+      <table>
+        <thead>
+          <tr>
+            <th>{{ content().ui.pricingFeatureHeader }}</th>
+            <th>{{ content().ui.pricingStandardHeader }}</th>
+            <th>{{ content().ui.pricingPremiumHeader }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let feature of content().pricingFeatures">
+            <td>{{ feature.label }}</td>
+            <td>{{ feature.standard ? content().ui.pricingIncluded : content().ui.pricingOptional }}</td>
+            <td>{{ feature.premium ? content().ui.pricingIncluded : content().ui.pricingOptional }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>

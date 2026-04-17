@@ -1,0 +1,12 @@
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.advantage {
+  border: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
+  border-radius: 14px;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--surface-elevated) 86%, transparent);
+}

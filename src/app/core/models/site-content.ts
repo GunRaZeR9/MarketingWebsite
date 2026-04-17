@@ -1,0 +1,130 @@
+export interface ServiceItem {
+  title: string;
+  description: string;
+}
+
+export type LanguageCode = 'en' | 'ro' | 'hu';
+
+export interface AdvantageItem {
+  title: string;
+  description: string;
+}
+
+export interface PricingFeature {
+  label: string;
+  standard: boolean;
+  premium: boolean;
+}
+
+export interface PricingPlan {
+  name: string;
+  price: string;
+  description: string;
+  ctaLabel: string;
+  featured?: boolean;
+}
+
+export interface ContactInfo {
+  person: string;
+  role: string;
+  email: string;
+}
+
+export interface BudgetOption {
+  value: string;
+  label: string;
+}
+
+export interface ContactFormText {
+  fullNameLabel: string;
+  fullNamePlaceholder: string;
+  fullNameValidation: string;
+  emailLabel: string;
+  emailPlaceholder: string;
+  emailValidation: string;
+  companyLabel: string;
+  companyPlaceholder: string;
+  companyValidation: string;
+  budgetLabel: string;
+  budgetPlaceholder: string;
+  budgetValidation: string;
+  budgetOptions: BudgetOption[];
+  goalsLabel: string;
+  goalsPlaceholder: string;
+  goalsValidation: string;
+  submitLabel: string;
+}
+
+export interface SiteUiText {
+  nav: {
+    home: string;
+    about: string;
+    services: string;
+    pricing: string;
+    contact: string;
+  };
+  languageLabel: string;
+  homeExploreServices: string;
+  headerCta: string;
+  footerTagline: string;
+  footerContactLabel: string;
+  footerCopyrightPrefix: string;
+  aboutEyebrow: string;
+  aboutTitle: string;
+  aboutLead: string;
+  servicesEyebrow: string;
+  servicesLead: string;
+  pricingEyebrow: string;
+  pricingFeatureComparison: string;
+  pricingTableAriaLabel: string;
+  pricingFeatureHeader: string;
+  pricingStandardHeader: string;
+  pricingPremiumHeader: string;
+  pricingIncluded: string;
+  pricingOptional: string;
+  contactEyebrow: string;
+  contactShareGoals: string;
+  contactForm: ContactFormText;
+  leadSavedMessage: string;
+}
+
+export interface PageSeo {
+  title: string;
+  description: string;
+  keywords: string[];
+}
+
+export interface SiteSeo {
+  home: PageSeo;
+  about: PageSeo;
+  services: PageSeo;
+  pricing: PageSeo;
+  contact: PageSeo;
+}
+
+export interface SiteContent {
+  language: LanguageCode;
+  brandName: string;
+  heroTitle: string;
+  heroSubtitle: string;
+  introTitle: string;
+  introBody: string[];
+  problemTitle: string;
+  problemPoints: string[];
+  solutionsTitle: string;
+  solutions: ServiceItem[];
+  servicesTitle: string;
+  services: ServiceItem[];
+  advantagesTitle: string;
+  advantages: AdvantageItem[];
+  pricingTitle: string;
+  pricingSubtitle: string;
+  pricingPlans: PricingPlan[];
+  pricingFeatures: PricingFeature[];
+  contactTitle: string;
+  contactSubtitle: string;
+  primaryCta: string;
+  contact: ContactInfo;
+  ui: SiteUiText;
+  seo: SiteSeo;
+}

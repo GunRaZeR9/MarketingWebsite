@@ -1,0 +1,39 @@
+.form-panel {
+  max-width: 760px;
+}
+
+form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+label {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--surface-elevated) 84%, transparent);
+  color: var(--text);
+  padding: 0.7rem;
+  font: inherit;
+}
+
+small {
+  color: #f6b298;
+}
+
+.success {
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 10px;
+  border: 1px solid color-mix(in srgb, #67d8b0 40%, transparent);
+  background: color-mix(in srgb, #67d8b0 20%, transparent);
+}

@@ -1,0 +1,41 @@
+.hero {
+  background:
+    linear-gradient(110deg, rgb(12 16 20 / 68%) 0%, rgb(12 16 20 / 82%) 55%, rgb(12 16 20 / 98%) 100%),
+    url('/images/background/bg1.png') center/cover no-repeat;
+}
+
+.hero h1 {
+  max-width: 14ch;
+}
+
+.lead {
+  max-width: 64ch;
+  color: var(--text-dim);
+}
+
+.hero-actions {
+  margin-top: 1.2rem;
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.split {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.grid-3 {
+  margin-top: 0.9rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  background: color-mix(in srgb, var(--surface-elevated) 84%, transparent);
+}

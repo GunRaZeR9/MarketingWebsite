@@ -1,0 +1,26 @@
+<main>
+  <section class="panel">
+    <p class="eyebrow">{{ content().ui.servicesEyebrow }}</p>
+    <h1>{{ content().servicesTitle }}</h1>
+    <p>
+      {{ content().ui.servicesLead }}
+    </p>
+  </section>
+
+  <section class="panel grid-2">
+    <article *ngFor="let service of content().services" class="card">
+      <h2>{{ service.title }}</h2>
+      <p>{{ service.description }}</p>
+    </article>
+  </section>
+
+  <section class="panel">
+    <h2>{{ content().solutionsTitle }}</h2>
+    <div class="grid-3">
+      <article *ngFor="let solution of content().solutions" class="card">
+        <h3>{{ solution.title }}</h3>
+        <p>{{ solution.description }}</p>
+      </article>
+    </div>
+  </section>
+</main>
