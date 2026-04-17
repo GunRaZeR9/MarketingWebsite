@@ -68,7 +68,7 @@ npm run build:ghpages
 npm run deploy:ghpages
 ```
 
-The `build:ghpages` script contains placeholders. Replace `<username>` and `<repo-name>` in `package.json` before first deployment.
+The `build:ghpages` script uses the repository name `MarketingWebsite`. Replace only `<username>` in `package.json` before first deployment.
 
 ## Git Setup
 
