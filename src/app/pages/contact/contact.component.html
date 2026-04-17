@@ -1,5 +1,5 @@
 <main>
-  <section class="panel">
+  <section class="panel reveal">
     <p class="eyebrow">{{ content().ui.contactEyebrow }}</p>
     <h1>{{ content().contactTitle }}</h1>
     <p>{{ content().contactSubtitle }}</p>
@@ -7,9 +7,12 @@
       <strong>{{ content().contact.person }}</strong> · {{ content().contact.role }} ·
       <a [href]="'mailto:' + content().contact.email">{{ content().contact.email }}</a>
     </p>
+    <div class="image-shell contact-visual">
+      <img src="images/placeholders/analytics-wave.svg" width="1200" height="800" alt="Contact placeholder visual" />
+    </div>
   </section>
 
-  <section class="panel form-panel">
+  <section class="panel form-panel reveal">
     <h2>{{ content().ui.contactShareGoals }}</h2>
 
     <form [formGroup]="leadForm" (ngSubmit)="submit()" novalidate>

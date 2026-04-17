@@ -1,5 +1,5 @@
 <main>
-  <section class="hero panel">
+  <section class="hero panel reveal" [style.background]="heroBackgroundStyle">
     <p class="eyebrow">{{ content().brandName }}</p>
     <h1>{{ content().heroTitle }}</h1>
     <p class="lead">{{ content().heroSubtitle }}</p>
@@ -9,7 +9,7 @@
     </div>
   </section>
 
-  <section class="panel split">
+  <section class="panel split reveal">
     <article>
       <h2>{{ content().introTitle }}</h2>
       <p *ngFor="let paragraph of content().introBody">{{ paragraph }}</p>
@@ -20,9 +20,14 @@
         <li *ngFor="let point of content().problemPoints">{{ point }}</li>
       </ul>
     </article>
+    <article class="visual-frame">
+      <div class="image-shell">
+        <img src="images/placeholders/studio-grid.svg" width="1600" height="900" alt="Marketing studio placeholder preview" />
+      </div>
+    </article>
   </section>
 
-  <section class="panel cards">
+  <section class="panel cards reveal">
     <h2>{{ content().solutionsTitle }}</h2>
     <div class="grid-3">
       <article *ngFor="let solution of content().solutions" class="card">

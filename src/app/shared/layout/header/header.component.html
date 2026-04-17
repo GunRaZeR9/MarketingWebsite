@@ -1,10 +1,25 @@
 <header class="site-header">
-  <div class="brand">
-    <img ngSrc="/images/logos/yellow_dot.png" alt="oOumm logo" width="28" height="28" />
-    <span>{{ content().brandName }}</span>
+  <div class="top-row">
+    <div class="brand">
+      <img src="images/logos/yellow_dot.png" alt="oOumm logo" width="28" height="28" />
+      <span>{{ content().brandName }}</span>
+    </div>
+
+    <button
+      class="menu-toggle"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      aria-controls="mobile-menu"
+      [attr.aria-label]="menuOpen() ? 'Close menu' : 'Open menu'"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
   </div>
 
-  <nav aria-label="Main navigation">
+  <nav class="desktop-nav" aria-label="Main navigation">
     <a
       *ngFor="let item of navItems"
       [routerLink]="item.route"
@@ -15,7 +30,7 @@
     </a>
   </nav>
 
-  <div class="actions">
+  <div class="actions desktop-actions">
     <label class="language-picker">
       <span>{{ content().ui.languageLabel }}</span>
       <select [value]="currentLanguage()" (change)="setLanguage($any($event.target).value)">
@@ -24,5 +39,30 @@
     </label>
 
     <a class="cta" routerLink="/contact">{{ content().ui.headerCta }}</a>
+  </div>
+
+  <div id="mobile-menu" class="mobile-menu" [class.open]="menuOpen()">
+    <nav aria-label="Mobile navigation">
+      <a
+        *ngFor="let item of navItems"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        (click)="closeMobileMenu()"
+      >
+        {{ content().ui.nav[item.key] }}
+      </a>
+    </nav>
+
+    <div class="actions">
+      <label class="language-picker">
+        <span>{{ content().ui.languageLabel }}</span>
+        <select [value]="currentLanguage()" (change)="setLanguage($any($event.target).value)">
+          <option *ngFor="let language of languages" [value]="language.code">{{ language.label }}</option>
+        </select>
+      </label>
+
+      <a class="cta" routerLink="/contact" (click)="closeMobileMenu()">{{ content().ui.headerCta }}</a>
+    </div>
   </div>
 </header>

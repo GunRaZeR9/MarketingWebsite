@@ -11,7 +11,7 @@ export class SeoService {
   update(config: { title: string; description: string; keywords: string[]; image?: string }): void {
     const pageTitle = `${config.title} | oOumm Growth Marketing`;
     const pageUrl = this.document.location.href;
-    const image = config.image ?? '/images/background/bg1.png';
+    const image = new URL(config.image ?? 'images/background/bg1.png', this.document.baseURI).toString();
 
     this.title.setTitle(pageTitle);
 

@@ -1,5 +1,5 @@
 <main>
-  <section class="panel">
+  <section class="panel reveal">
     <p class="eyebrow">{{ content().ui.servicesEyebrow }}</p>
     <h1>{{ content().servicesTitle }}</h1>
     <p>
@@ -7,14 +7,17 @@
     </p>
   </section>
 
-  <section class="panel grid-2">
+  <section class="panel grid-2 reveal">
     <article *ngFor="let service of content().services" class="card">
       <h2>{{ service.title }}</h2>
       <p>{{ service.description }}</p>
     </article>
   </section>
 
-  <section class="panel">
+  <section class="panel reveal">
+    <div class="image-shell services-visual">
+      <img src="images/placeholders/analytics-wave.svg" width="1200" height="800" alt="Analytics placeholder wave visual" />
+    </div>
     <h2>{{ content().solutionsTitle }}</h2>
     <div class="grid-3">
       <article *ngFor="let solution of content().solutions" class="card">

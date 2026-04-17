@@ -4,9 +4,19 @@
   gap: 1rem;
 }
 
+.about-visual {
+  margin-top: 0.9rem;
+}
+
 .advantage {
   border: 1px solid color-mix(in srgb, var(--line) 72%, transparent);
   border-radius: 14px;
   padding: 1rem;
   background: color-mix(in srgb, var(--surface-elevated) 86%, transparent);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.advantage:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--line));
 }

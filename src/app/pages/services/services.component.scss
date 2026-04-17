@@ -4,6 +4,10 @@
   gap: 1rem;
 }
 
+.services-visual {
+  margin-bottom: 1rem;
+}
+
 .grid-2 {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
@@ -17,4 +21,10 @@
   border-radius: 14px;
   padding: 1rem;
   background: color-mix(in srgb, var(--surface-elevated) 86%, transparent);
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--accent) 30%, var(--line));
 }

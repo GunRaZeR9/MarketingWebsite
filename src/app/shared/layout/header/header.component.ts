@@ -1,6 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
+import { Component, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { LanguageService } from '../../../core/services/language.service';
@@ -8,7 +7,7 @@ import { LanguageCode } from '../../../core/models/site-content';
 
 @Component({
   selector: 'app-header',
-  imports: [CommonModule, RouterLink, RouterLinkActive, NgOptimizedImage],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -17,6 +16,7 @@ export class HeaderComponent {
   readonly content = this.languageService.content;
   readonly currentLanguage = this.languageService.language;
   readonly languages = this.languageService.availableLanguages;
+  readonly menuOpen = signal(false);
 
   readonly navItems = [
     { key: 'home', route: '/home' },
@@ -30,5 +30,13 @@ export class HeaderComponent {
     if (language === 'en' || language === 'ro' || language === 'hu') {
       this.languageService.setLanguage(language as LanguageCode);
     }
+  }
+
+  toggleMenu(): void {
+    this.menuOpen.update((value) => !value);
+  }
+
+  closeMobileMenu(): void {
+    this.menuOpen.set(false);
   }
 }

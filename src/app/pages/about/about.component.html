@@ -1,13 +1,16 @@
 <main>
-  <section class="panel">
+  <section class="panel reveal">
     <p class="eyebrow">{{ content().ui.aboutEyebrow }}</p>
     <h1>{{ content().ui.aboutTitle }}</h1>
     <p>
       {{ content().ui.aboutLead }}
     </p>
+    <div class="image-shell about-visual">
+      <img src="images/placeholders/luxury-frame.svg" width="1200" height="800" alt="Luxury campaign placeholder composition" />
+    </div>
   </section>
 
-  <section class="panel">
+  <section class="panel reveal">
     <h2>{{ content().advantagesTitle }}</h2>
     <div class="grid-2">
       <article *ngFor="let advantage of content().advantages" class="advantage">

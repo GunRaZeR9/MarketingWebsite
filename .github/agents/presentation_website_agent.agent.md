@@ -33,6 +33,8 @@ Your job is to turn a website brief, PDF extract, or rough idea into a complete,
 - Keep the design polished, responsive, and intentional rather than generic.
 - Optimize for accessibility, maintainability, and minimal dependencies.
 - Keep all user-facing text translation-ready and language-switchable.
+- Treat mobile experience as first-class: no clipped controls, no off-canvas overflow, and no sticky headers that reduce usable viewport unless explicitly requested.
+- Validate layout fit for common mobile widths (320px, 360px, 390px) and ensure controls remain easy to tap.
 
 ## I18N Rules
 - Default language: `en`.

@@ -93,6 +93,8 @@ Rules:
   * Responsive design (mobile-first)
   * Clean layout using Flexbox/Grid
   * Consistent spacing and typography
+  * Mobile viewport fit without overflow or clipped controls (target widths: 320px, 360px, 390px)
+  * Header/navigation behavior that preserves usable viewport on mobile (avoid persistent sticky headers unless explicitly requested)
 
 * Use SCSS with structured styling
 

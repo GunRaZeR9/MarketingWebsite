@@ -1,11 +1,11 @@
 <main>
-  <section class="panel">
+  <section class="panel reveal">
     <p class="eyebrow">{{ content().ui.pricingEyebrow }}</p>
     <h1>{{ content().pricingTitle }}</h1>
     <p>{{ content().pricingSubtitle }}</p>
   </section>
 
-  <section class="plan-grid">
+  <section class="plan-grid reveal">
     <article *ngFor="let plan of content().pricingPlans" class="plan" [class.featured]="plan.featured">
       <h2>{{ plan.name }}</h2>
       <p class="price">{{ plan.price }}</p>
@@ -14,7 +14,10 @@
     </article>
   </section>
 
-  <section class="panel">
+  <section class="panel reveal">
+    <div class="image-shell pricing-visual">
+      <img src="images/placeholders/studio-grid.svg" width="1600" height="900" alt="Pricing placeholder visual composition" />
+    </div>
     <h2>{{ content().ui.pricingFeatureComparison }}</h2>
     <div class="table-wrap" role="region" [attr.aria-label]="content().ui.pricingTableAriaLabel" tabindex="0">
       <table>

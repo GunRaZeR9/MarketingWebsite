@@ -12,6 +12,10 @@
   backdrop-filter: blur(10px);
 }
 
+.top-row {
+  display: contents;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -25,6 +29,10 @@ nav {
   justify-content: center;
   gap: 0.85rem;
   flex-wrap: wrap;
+}
+
+.menu-toggle {
+  display: none;
 }
 
 nav a {
@@ -59,6 +67,10 @@ nav a.active {
   gap: 0.7rem;
 }
 
+.mobile-menu {
+  display: none;
+}
+
 .language-picker {
   display: inline-flex;
   align-items: center;
@@ -78,7 +90,113 @@ nav a.active {
 
 @media (max-width: 980px) {
   .site-header {
-    grid-template-columns: 1fr;
-    justify-items: center;
+    position: static;
+    display: block;
+    gap: 0.8rem;
+    padding: 0.85rem 0.9rem;
+  }
+
+  .top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.65rem;
+  }
+
+  .brand {
+    min-width: 0;
+    font-size: 1rem;
+  }
+
+  .brand span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.24rem;
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: color-mix(in srgb, var(--surface-elevated) 85%, transparent);
+  }
+
+  .menu-toggle span {
+    display: block;
+    width: 18px;
+    height: 2px;
+    margin-inline: auto;
+    background: var(--text);
+    border-radius: 99px;
+  }
+
+  .menu-toggle[aria-expanded='true'] span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded='true'] span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle[aria-expanded='true'] span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  .menu-toggle span {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  .desktop-nav,
+  .desktop-actions {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+    margin-top: 0.7rem;
+    padding-top: 0.7rem;
+    border-top: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  }
+
+  .mobile-menu.open {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .mobile-menu nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem;
+  }
+
+  .mobile-menu nav a {
+    text-align: center;
+    padding: 0.6rem 0.5rem;
+    font-size: 0.98rem;
+  }
+
+  .mobile-menu .actions {
+    display: grid;
+    grid-template-columns: minmax(0, 120px) minmax(0, 1fr);
+    align-items: center;
+    gap: 0.65rem;
+  }
+
+  .language-picker {
+    justify-content: flex-start;
+  }
+
+  .language-picker span {
+    display: none;
+  }
+
+  .mobile-menu .language-picker select,
+  .cta {
+    width: 100%;
   }
 }
