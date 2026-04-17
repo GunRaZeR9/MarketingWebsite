@@ -68,7 +68,7 @@ npm run build:ghpages
 npm run deploy:ghpages
 ```
 
-The `build:ghpages` script uses the repository name `MarketingWebsite`. Replace only `<username>` in `package.json` before first deployment.
+The `build:ghpages` script uses `https://GunRaZeR9.github.io/MarketingWebsite/` as base href. Do not wrap usernames in angle brackets in URLs.
 
 ## Git Setup
 
