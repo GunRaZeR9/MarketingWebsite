@@ -3,12 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "build:ghpages": "ng build --base-href=\"https://GunRaZeR9.github.io/MarketingWebsite/\"",
+    "start": "nx serve",
+    "build": "nx build",
+    "build:ghpages": "nx build --base-href=\"https://GunRaZeR9.github.io/MarketingWebsite/\"",
     "deploy:ghpages": "npx angular-cli-ghpages --dir=dist/marketing-website/browser",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "watch": "nx build --watch --configuration development",
+    "test": "nx test"
   },
   "private": true,
   "packageManager": "npm@10.9.2",
@@ -23,11 +23,17 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@angular-devkit/core": "^21.2.7",
+    "@angular-devkit/schematics": "^21.2.7",
     "@angular/build": "^21.2.7",
     "@angular/cli": "^21.2.7",
     "@angular/compiler-cli": "^21.2.0",
+    "@nx/angular": "22.6.5",
+    "@nx/workspace": "22.6.5",
+    "@schematics/angular": "^21.2.7",
     "angular-cli-ghpages": "^2.0.3",
     "jsdom": "^28.0.0",
+    "nx": "22.6.5",
     "prettier": "^3.8.1",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
