@@ -1,10 +1,30 @@
 <footer class="site-footer">
-  <div>
-    <strong>{{ content().brandName }}</strong>
-    <p>{{ content().ui.footerTagline }}</p>
+  <div class="footer-brand">
+    <div class="footer-logo">
+      <img src="images/logos/yellow_dot.png" alt="oOumm" width="26" height="26" />
+      <strong>{{ content().brandName }}</strong>
+    </div>
+    <p class="footer-tagline">{{ content().ui.footerTagline }}</p>
   </div>
-  <div>
-    <p>{{ content().ui.footerContactLabel }}: {{ content().contact.email }}</p>
-    <p>{{ content().ui.footerCopyrightPrefix }} {{ year }} {{ content().brandName }}</p>
+
+  <div class="footer-contact">
+    <p class="footer-label">Contact</p>
+    <a [href]="'mailto:' + content().contact.email" class="footer-email">{{ content().contact.email }}</a>
+    <p class="footer-person">{{ content().contact.person }} · {{ content().contact.role }}</p>
+  </div>
+
+  <div class="footer-links">
+    <p class="footer-label">Navigate</p>
+    <nav>
+      <a routerLink="/home">Home</a>
+      <a routerLink="/about">About</a>
+      <a routerLink="/services">Services</a>
+      <a routerLink="/pricing">Pricing</a>
+      <a routerLink="/contact">Contact</a>
+    </nav>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© {{ year }} {{ content().brandName }}. All rights reserved.</p>
   </div>
 </footer>

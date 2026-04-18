@@ -1,9 +1,9 @@
-<header class="site-header">
+<header class="site-header" [class.scrolled]="scrolled()">
   <div class="top-row">
-    <div class="brand">
+    <a class="brand" routerLink="/home">
       <img src="images/logos/yellow_dot.png" alt="oOumm logo" width="28" height="28" />
-      <span>{{ content().brandName }}</span>
-    </div>
+      <span class="brand-name">{{ content().brandName }}</span>
+    </a>
 
     <button
       class="menu-toggle"
@@ -25,9 +25,7 @@
       [routerLink]="item.route"
       routerLinkActive="active"
       [routerLinkActiveOptions]="{ exact: true }"
-    >
-      {{ content().ui.nav[item.key] }}
-    </a>
+    >{{ content().ui.nav[item.key] }}</a>
   </nav>
 
   <div class="actions desktop-actions">
@@ -37,7 +35,6 @@
         <option *ngFor="let language of languages" [value]="language.code">{{ language.label }}</option>
       </select>
     </label>
-
     <a class="cta" routerLink="/contact">{{ content().ui.headerCta }}</a>
   </div>
 
@@ -49,11 +46,8 @@
         routerLinkActive="active"
         [routerLinkActiveOptions]="{ exact: true }"
         (click)="closeMobileMenu()"
-      >
-        {{ content().ui.nav[item.key] }}
-      </a>
+      >{{ content().ui.nav[item.key] }}</a>
     </nav>
-
     <div class="actions">
       <label class="language-picker">
         <span>{{ content().ui.languageLabel }}</span>
@@ -61,7 +55,6 @@
           <option *ngFor="let language of languages" [value]="language.code">{{ language.label }}</option>
         </select>
       </label>
-
       <a class="cta" routerLink="/contact" (click)="closeMobileMenu()">{{ content().ui.headerCta }}</a>
     </div>
   </div>

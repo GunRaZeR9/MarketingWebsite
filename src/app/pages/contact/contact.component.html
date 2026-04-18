@@ -1,63 +1,105 @@
-<main>
-  <section class="panel reveal">
+<main class="contact-page">
+
+  <!-- ── HERO ── -->
+  <section class="page-hero" scrollReveal>
     <p class="eyebrow">{{ content().ui.contactEyebrow }}</p>
     <h1>{{ content().contactTitle }}</h1>
-    <p>{{ content().contactSubtitle }}</p>
-    <p>
-      <strong>{{ content().contact.person }}</strong> · {{ content().contact.role }} ·
-      <a [href]="'mailto:' + content().contact.email">{{ content().contact.email }}</a>
-    </p>
-    <div class="image-shell contact-visual">
-      <img src="images/placeholders/analytics-wave.svg" width="1200" height="800" alt="Contact placeholder visual" />
+    <div class="section-divider"></div>
+    <p class="hero-lead">{{ content().contactSubtitle }}</p>
+    <div class="contact-info">
+      <a [href]="'mailto:' + content().contact.email" class="contact-email">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        {{ content().contact.email }}
+      </a>
+      <span class="contact-sep">·</span>
+      <span class="contact-person">{{ content().contact.person }} — {{ content().contact.role }}</span>
     </div>
   </section>
 
-  <section class="panel form-panel reveal">
-    <h2>{{ content().ui.contactShareGoals }}</h2>
+  <!-- ── CONTACT GRID ── -->
+  <div class="contact-layout">
 
-    <form [formGroup]="leadForm" (ngSubmit)="submit()" novalidate>
-      <label>
-        {{ content().ui.contactForm.fullNameLabel }}
-        <input type="text" formControlName="name" [placeholder]="content().ui.contactForm.fullNamePlaceholder" />
-      </label>
-      <small *ngIf="leadForm.controls.name.touched && leadForm.controls.name.invalid">{{ content().ui.contactForm.fullNameValidation }}</small>
+    <!-- Form -->
+    <section class="panel form-panel" scrollReveal [delay]="80">
+      <h2>{{ content().ui.contactShareGoals }}</h2>
+      <div class="section-divider"></div>
 
-      <label>
-        {{ content().ui.contactForm.emailLabel }}
-        <input type="email" formControlName="email" [placeholder]="content().ui.contactForm.emailPlaceholder" />
-      </label>
-      <small *ngIf="leadForm.controls.email.touched && leadForm.controls.email.invalid">{{ content().ui.contactForm.emailValidation }}</small>
+      <form [formGroup]="leadForm" (ngSubmit)="submit()" novalidate>
+        <div class="field">
+          <label>{{ content().ui.contactForm.fullNameLabel }}</label>
+          <input type="text" formControlName="name" [placeholder]="content().ui.contactForm.fullNamePlaceholder" />
+          <small *ngIf="leadForm.controls.name.touched && leadForm.controls.name.invalid">
+            {{ content().ui.contactForm.fullNameValidation }}
+          </small>
+        </div>
 
-      <label>
-        {{ content().ui.contactForm.companyLabel }}
-        <input type="text" formControlName="company" [placeholder]="content().ui.contactForm.companyPlaceholder" />
-      </label>
-      <small *ngIf="leadForm.controls.company.touched && leadForm.controls.company.invalid">{{ content().ui.contactForm.companyValidation }}</small>
+        <div class="field">
+          <label>{{ content().ui.contactForm.emailLabel }}</label>
+          <input type="email" formControlName="email" [placeholder]="content().ui.contactForm.emailPlaceholder" />
+          <small *ngIf="leadForm.controls.email.touched && leadForm.controls.email.invalid">
+            {{ content().ui.contactForm.emailValidation }}
+          </small>
+        </div>
 
-      <label>
-        {{ content().ui.contactForm.budgetLabel }}
-        <select formControlName="budget">
-          <option value="" disabled>{{ content().ui.contactForm.budgetPlaceholder }}</option>
-          <option *ngFor="let budgetOption of content().ui.contactForm.budgetOptions" [value]="budgetOption.value">
-            {{ budgetOption.label }}
-          </option>
-        </select>
-      </label>
-      <small *ngIf="leadForm.controls.budget.touched && leadForm.controls.budget.invalid">{{ content().ui.contactForm.budgetValidation }}</small>
+        <div class="field">
+          <label>{{ content().ui.contactForm.companyLabel }}</label>
+          <input type="text" formControlName="company" [placeholder]="content().ui.contactForm.companyPlaceholder" />
+          <small *ngIf="leadForm.controls.company.touched && leadForm.controls.company.invalid">
+            {{ content().ui.contactForm.companyValidation }}
+          </small>
+        </div>
 
-      <label>
-        {{ content().ui.contactForm.goalsLabel }}
-        <textarea formControlName="message" rows="5" [placeholder]="content().ui.contactForm.goalsPlaceholder"></textarea>
-      </label>
-      <small *ngIf="leadForm.controls.message.touched && leadForm.controls.message.invalid">
-        {{ content().ui.contactForm.goalsValidation }}
-      </small>
+        <div class="field">
+          <label>{{ content().ui.contactForm.budgetLabel }}</label>
+          <select formControlName="budget">
+            <option value="" disabled>{{ content().ui.contactForm.budgetPlaceholder }}</option>
+            <option *ngFor="let budgetOption of content().ui.contactForm.budgetOptions" [value]="budgetOption.value">
+              {{ budgetOption.label }}
+            </option>
+          </select>
+          <small *ngIf="leadForm.controls.budget.touched && leadForm.controls.budget.invalid">
+            {{ content().ui.contactForm.budgetValidation }}
+          </small>
+        </div>
 
-      <button class="button button--accent" type="submit">{{ content().ui.contactForm.submitLabel }}</button>
-    </form>
+        <div class="field">
+          <label>{{ content().ui.contactForm.goalsLabel }}</label>
+          <textarea formControlName="message" rows="5" [placeholder]="content().ui.contactForm.goalsPlaceholder"></textarea>
+          <small *ngIf="leadForm.controls.message.touched && leadForm.controls.message.invalid">
+            {{ content().ui.contactForm.goalsValidation }}
+          </small>
+        </div>
 
-    <p *ngIf="submitted" class="success">
-      {{ content().ui.leadSavedMessage }}
-    </p>
-  </section>
+        <button class="button button--accent submit-btn" type="submit">
+          {{ content().ui.contactForm.submitLabel }} <span class="arrow">→</span>
+        </button>
+      </form>
+
+      <div *ngIf="submitted" class="success-msg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+        {{ content().ui.leadSavedMessage }}
+      </div>
+    </section>
+
+    <!-- Side info -->
+    <aside class="side-info" scrollReveal [delay]="200">
+      <div class="info-card panel">
+        <div class="image-shell contact-visual">
+          <img
+            src="images/placeholders/analytics-wave.svg"
+            width="1200"
+            height="800"
+            alt="Analytics visual"
+          />
+        </div>
+        <div class="info-text">
+          <p class="eyebrow">Response Time</p>
+          <p>We typically respond within <strong>24 hours</strong> on business days.</p>
+          <p class="eyebrow" style="margin-top: 1.25rem">Direct Contact</p>
+          <a [href]="'mailto:' + content().contact.email">{{ content().contact.email }}</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
 </main>

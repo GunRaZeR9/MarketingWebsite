@@ -1,29 +1,65 @@
-<main>
-  <section class="panel reveal">
+<main class="services-page">
+
+  <!-- ── HERO ── -->
+  <section class="page-hero" scrollReveal>
     <p class="eyebrow">{{ content().ui.servicesEyebrow }}</p>
     <h1>{{ content().servicesTitle }}</h1>
-    <p>
-      {{ content().ui.servicesLead }}
-    </p>
+    <div class="section-divider"></div>
+    <p class="hero-lead">{{ content().ui.servicesLead }}</p>
   </section>
 
-  <section class="panel grid-2 reveal">
-    <article *ngFor="let service of content().services" class="card">
+  <!-- ── MAIN SERVICES ── -->
+  <section class="main-services">
+    <article
+      *ngFor="let service of content().services; let i = index"
+      class="service-card panel"
+      scrollReveal
+      [delay]="i * 120"
+    >
+      <div class="service-label">
+        <div class="card-icon" style="color: var(--accent)">
+          <svg *ngIf="i === 0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          <svg *ngIf="i === 1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <p class="eyebrow">Service 0{{ i + 1 }}</p>
+      </div>
       <h2>{{ service.title }}</h2>
+      <div class="section-divider"></div>
       <p>{{ service.description }}</p>
     </article>
   </section>
 
-  <section class="panel reveal">
-    <div class="image-shell services-visual">
-      <img src="images/placeholders/analytics-wave.svg" width="1200" height="800" alt="Analytics placeholder wave visual" />
+  <!-- ── VISUAL ── -->
+  <div class="full-image" scrollReveal>
+    <div class="image-shell">
+      <img
+        src="images/placeholders/analytics-wave.svg"
+        width="1200"
+        height="800"
+        alt="Analytics dashboard preview"
+      />
     </div>
-    <h2>{{ content().solutionsTitle }}</h2>
+  </div>
+
+  <!-- ── SOLUTIONS / PROCESS ── -->
+  <section class="solutions-section">
+    <div class="section-header" scrollReveal>
+      <p class="eyebrow">Our Approach</p>
+      <h2>{{ content().solutionsTitle }}</h2>
+      <div class="section-divider"></div>
+    </div>
     <div class="grid-3">
-      <article *ngFor="let solution of content().solutions" class="card">
+      <article
+        *ngFor="let solution of content().solutions; let i = index"
+        class="card process-card"
+        scrollReveal
+        [delay]="i * 100"
+      >
+        <span class="process-number">0{{ i + 1 }}</span>
         <h3>{{ solution.title }}</h3>
         <p>{{ solution.description }}</p>
       </article>
     </div>
   </section>
+
 </main>

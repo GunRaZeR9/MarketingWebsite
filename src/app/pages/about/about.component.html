@@ -1,22 +1,80 @@
-<main>
-  <section class="panel reveal">
+<main class="about-page">
+
+  <!-- ── HERO ── -->
+  <section class="page-hero" scrollReveal>
     <p class="eyebrow">{{ content().ui.aboutEyebrow }}</p>
     <h1>{{ content().ui.aboutTitle }}</h1>
-    <p>
-      {{ content().ui.aboutLead }}
-    </p>
-    <div class="image-shell about-visual">
-      <img src="images/placeholders/luxury-frame.svg" width="1200" height="800" alt="Luxury campaign placeholder composition" />
+    <div class="section-divider"></div>
+    <p class="hero-lead">{{ content().ui.aboutLead }}</p>
+  </section>
+
+  <!-- ── FULL IMAGE ── -->
+  <div class="full-image" scrollReveal [delay]="100">
+    <div class="image-shell">
+      <img
+        src="images/placeholders/luxury-frame.svg"
+        width="1200"
+        height="800"
+        alt="Luxury campaign composition"
+      />
+    </div>
+  </div>
+
+  <!-- ── INTRO DETAIL ── -->
+  <section class="panel intro-panel" scrollReveal [delay]="80">
+    <div class="intro-grid">
+      <div class="intro-col">
+        <p class="eyebrow">Our Mission</p>
+        <h2>{{ content().introTitle }}</h2>
+        <div class="section-divider"></div>
+        <p *ngFor="let paragraph of content().introBody">{{ paragraph }}</p>
+      </div>
+      <div class="platform-col">
+        <p class="eyebrow">Platforms</p>
+        <div class="platform-list">
+          <div class="platform-item">
+            <span class="platform-dot"></span>
+            <div>
+              <strong>Google Ads</strong>
+              <p>Search, Display, Shopping &amp; Performance Max campaigns for high-intent traffic.</p>
+            </div>
+          </div>
+          <div class="platform-item">
+            <span class="platform-dot"></span>
+            <div>
+              <strong>Meta Ads</strong>
+              <p>Facebook &amp; Instagram campaigns built for brand desirability and visual storytelling.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="panel reveal">
-    <h2>{{ content().advantagesTitle }}</h2>
+  <!-- ── ADVANTAGES ── -->
+  <section class="advantages-section">
+    <div class="section-header" scrollReveal>
+      <p class="eyebrow">Why Choose Us</p>
+      <h2>{{ content().advantagesTitle }}</h2>
+      <div class="section-divider"></div>
+    </div>
     <div class="grid-2">
-      <article *ngFor="let advantage of content().advantages" class="advantage">
+      <article
+        *ngFor="let advantage of content().advantages; let i = index"
+        class="card advantage-card"
+        scrollReveal
+        [delay]="i * 100"
+      >
+        <div class="card-icon advantage-icon">
+          <svg *ngIf="i === 0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          <svg *ngIf="i === 1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          <svg *ngIf="i === 2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <svg *ngIf="i === 3" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
         <h3>{{ advantage.title }}</h3>
         <p>{{ advantage.description }}</p>
       </article>
     </div>
   </section>
+
 </main>

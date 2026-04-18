@@ -17,5 +17,6 @@
     "default": ["{projectRoot}/**/*", "sharedGlobals"],
     "production": ["default"]
   },
-  "nxCloudId": "69e35cb39667cef9df9dcb3d"
+  "nxCloudId": "69e35cb39667cef9df9dcb3d",
+  "analytics": true
 }

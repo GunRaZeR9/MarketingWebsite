@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, signal } from '@angular/core';
+import { Component, HostListener, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { LanguageService } from '../../../core/services/language.service';
@@ -17,6 +17,7 @@ export class HeaderComponent {
   readonly currentLanguage = this.languageService.language;
   readonly languages = this.languageService.availableLanguages;
   readonly menuOpen = signal(false);
+  readonly scrolled = signal(false);
 
   readonly navItems = [
     { key: 'home', route: '/home' },
@@ -26,6 +27,11 @@ export class HeaderComponent {
     { key: 'contact', route: '/contact' }
   ] as const;
 
+  @HostListener('window:scroll')
+  onScroll(): void {
+    this.scrolled.set(window.scrollY > 40);
+  }
+
   setLanguage(language: string): void {
     if (language === 'en' || language === 'ro' || language === 'hu') {
       this.languageService.setLanguage(language as LanguageCode);
@@ -33,7 +39,7 @@ export class HeaderComponent {
   }
 
   toggleMenu(): void {
-    this.menuOpen.update((value) => !value);
+    this.menuOpen.update((v) => !v);
   }
 
   closeMobileMenu(): void {

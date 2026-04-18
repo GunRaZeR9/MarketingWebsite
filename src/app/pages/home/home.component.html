@@ -1,39 +1,125 @@
-<main>
-  <section class="hero panel reveal" [style.background]="heroBackgroundStyle">
-    <p class="eyebrow">{{ content().brandName }}</p>
-    <h1>{{ content().heroTitle }}</h1>
-    <p class="lead">{{ content().heroSubtitle }}</p>
-    <div class="hero-actions">
-      <a class="button button--accent" routerLink="/contact">{{ content().primaryCta }}</a>
-      <a class="button" routerLink="/services">{{ content().ui.homeExploreServices }}</a>
+<main class="home-page">
+
+  <!-- ── HERO ── -->
+  <section class="hero" scrollReveal>
+    <div class="hero-text">
+      <p class="eyebrow">{{ content().brandName }}</p>
+      <h1>
+        <span class="gradient-text">{{ content().heroTitle }}</span>
+      </h1>
+      <p class="hero-lead">{{ content().heroSubtitle }}</p>
+      <div class="hero-actions">
+        <a class="button button--accent" routerLink="/contact">
+          {{ content().primaryCta }} <span class="arrow">→</span>
+        </a>
+        <a class="button" routerLink="/services">
+          {{ content().ui.homeExploreServices }}
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="image-shell hero-image">
+        <img
+          src="images/background/bg1.png"
+          alt="Performance marketing campaigns"
+          width="900"
+          height="600"
+        />
+      </div>
+      <div class="hero-badge badge-left">
+        <span class="badge-number">3×</span>
+        <span class="badge-label">Avg. ROI</span>
+      </div>
+      <div class="hero-badge badge-right">
+        <span class="badge-number">50+</span>
+        <span class="badge-label">Campaigns</span>
+      </div>
     </div>
   </section>
 
-  <section class="panel split reveal">
-    <article>
+  <!-- ── STATS ── -->
+  <div class="stats-bar" scrollReveal [delay]="150">
+    <div class="stat-item">
+      <span class="stat-number">50+</span>
+      <span class="stat-label">Campaigns Run</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">3×</span>
+      <span class="stat-label">Average ROI</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">2</span>
+      <span class="stat-label">Top Platforms</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number">100%</span>
+      <span class="stat-label">Data-Driven</span>
+    </div>
+  </div>
+
+  <!-- ── INTRO ── -->
+  <section class="panel intro-split" scrollReveal [delay]="100">
+    <div class="intro-text">
+      <p class="eyebrow">Who We Are</p>
       <h2>{{ content().introTitle }}</h2>
+      <div class="section-divider"></div>
       <p *ngFor="let paragraph of content().introBody">{{ paragraph }}</p>
-    </article>
-    <article>
-      <h2>{{ content().problemTitle }}</h2>
-      <ul>
-        <li *ngFor="let point of content().problemPoints">{{ point }}</li>
-      </ul>
-    </article>
-    <article class="visual-frame">
+      <a class="button" routerLink="/about">
+        About Us <span class="arrow">→</span>
+      </a>
+    </div>
+    <div class="intro-visual">
       <div class="image-shell">
-        <img src="images/placeholders/studio-grid.svg" width="1600" height="900" alt="Marketing studio placeholder preview" />
+        <img
+          src="images/placeholders/studio-grid.svg"
+          width="1600"
+          height="900"
+          alt="Marketing studio"
+        />
       </div>
-    </article>
+    </div>
   </section>
 
-  <section class="panel cards reveal">
-    <h2>{{ content().solutionsTitle }}</h2>
+  <!-- ── SOLUTIONS ── -->
+  <section class="solutions-section">
+    <div class="section-header" scrollReveal>
+      <p class="eyebrow">{{ content().solutionsTitle }}</p>
+      <h2>Strategies That Deliver Real Results</h2>
+      <div class="section-divider"></div>
+    </div>
     <div class="grid-3">
-      <article *ngFor="let solution of content().solutions" class="card">
+      <article
+        *ngFor="let solution of content().solutions; let i = index"
+        class="card"
+        scrollReveal
+        [delay]="i * 110"
+      >
+        <div class="card-icon">
+          <svg *ngIf="i === 0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+          <svg *ngIf="i === 1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <svg *ngIf="i === 2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
         <h3>{{ solution.title }}</h3>
         <p>{{ solution.description }}</p>
       </article>
     </div>
   </section>
+
+  <!-- ── PROBLEM / CTA ── -->
+  <section class="panel cta-band" scrollReveal>
+    <div class="cta-band-content">
+      <p class="eyebrow">{{ content().problemTitle }}</p>
+      <h2>Ready to Break Through the Noise?</h2>
+      <ul class="problem-list">
+        <li *ngFor="let point of content().problemPoints">{{ point }}</li>
+      </ul>
+    </div>
+    <div class="cta-band-action">
+      <a class="button button--accent" routerLink="/contact">
+        Start Growing <span class="arrow">→</span>
+      </a>
+      <a class="button" routerLink="/pricing">View Pricing</a>
+    </div>
+  </section>
+
 </main>

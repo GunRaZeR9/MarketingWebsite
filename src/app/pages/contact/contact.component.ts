@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, effect, inject } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 
+import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
 
@@ -16,7 +17,7 @@ interface StoredLead {
 
 @Component({
   selector: 'app-contact-page',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, ScrollRevealDirective],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
@@ -37,7 +38,6 @@ export class ContactComponent {
   constructor(private readonly seo: SeoService) {
     effect(() => {
       const seoConfig = this.content().seo.contact;
-
       this.seo.update({
         title: seoConfig.title,
         description: seoConfig.description,
@@ -48,22 +48,18 @@ export class ContactComponent {
 
   submit(): void {
     this.submitted = false;
-
     if (this.leadForm.invalid) {
       this.leadForm.markAllAsTouched();
       return;
     }
-
     const payload: StoredLead = {
       ...this.leadForm.getRawValue(),
       submittedAt: new Date().toISOString()
     };
-
     const existing = localStorage.getItem('marketingLeads');
     const leads: StoredLead[] = existing ? (JSON.parse(existing) as StoredLead[]) : [];
     leads.push(payload);
     localStorage.setItem('marketingLeads', JSON.stringify(leads));
-
     this.leadForm.reset();
     this.submitted = true;
   }
