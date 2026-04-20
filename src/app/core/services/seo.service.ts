@@ -9,7 +9,7 @@ export class SeoService {
   private readonly document = inject(DOCUMENT);
 
   update(config: { title: string; description: string; keywords: string[]; image?: string }): void {
-    const pageTitle = `${config.title} | oOumm Growth Marketing`;
+    const pageTitle = `${config.title} | InsideGrowth`;
     const pageUrl = this.document.location.href;
     const image = new URL(config.image ?? 'images/background/bg1.png', this.document.baseURI).toString();
 

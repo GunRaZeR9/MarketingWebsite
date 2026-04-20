@@ -68,7 +68,29 @@ export interface SiteUiText {
   headerCta: string;
   footerTagline: string;
   footerContactLabel: string;
+  footerNavigateLabel: string;
+  footerAllRightsReserved: string;
+  footerPrivacyPolicy: string;
+  footerCookiePolicy: string;
+  footerTermsConditions: string;
   footerCopyrightPrefix: string;
+  homeWhoWeAre: string;
+  homeStrategiesTitle: string;
+  homeAboutUs: string;
+  homeReadyTitle: string;
+  homeStartGrowing: string;
+  homeViewPricing: string;
+  statsCampaignsRun: string;
+  statsAverageRoi: string;
+  statsTopPlatforms: string;
+  statsDataDriven: string;
+  aboutMissionEyebrow: string;
+  aboutPlatformsEyebrow: string;
+  aboutWhyChooseUs: string;
+  servicesApproachEyebrow: string;
+  cookieConsentMessage: string;
+  cookieConsentAccept: string;
+  cookieConsentDecline: string;
   aboutEyebrow: string;
   aboutTitle: string;
   aboutLead: string;
@@ -100,6 +122,26 @@ export interface SiteSeo {
   services: PageSeo;
   pricing: PageSeo;
   contact: PageSeo;
+  privacyPolicy: PageSeo;
+  cookiePolicy: PageSeo;
+  termsConditions: PageSeo;
+}
+
+export interface LegalSection {
+  heading: string;
+  paragraphs: string[];
+}
+
+export interface LegalPageContent {
+  title: string;
+  lastUpdated: string;
+  sections: LegalSection[];
+}
+
+export interface SiteLegalContent {
+  privacyPolicy: LegalPageContent;
+  cookiePolicy: LegalPageContent;
+  termsConditions: LegalPageContent;
 }
 
 export interface SiteContent {
@@ -127,4 +169,5 @@ export interface SiteContent {
   contact: ContactInfo;
   ui: SiteUiText;
   seo: SiteSeo;
+  legal: SiteLegalContent;
 }

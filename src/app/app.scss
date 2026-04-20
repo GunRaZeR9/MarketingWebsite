@@ -1,4 +1,73 @@
 .content-shell {
-	width: min(1120px, 92vw);
-	margin: 0 auto;
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+/* ── WhatsApp floating button ── */
+.wha-btn {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 999;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.72rem 1.1rem 0.72rem 0.85rem;
+  border-radius: 999px;
+  background: #25D366;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow:
+    0 8px 24px rgba(37, 211, 102, 0.38),
+    0 2px 8px rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.28s ease;
+  will-change: transform;
+}
+
+.wha-btn:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow:
+    0 14px 36px rgba(37, 211, 102, 0.5),
+    0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.wha-btn:active {
+  transform: translateY(0) scale(0.97);
+}
+
+.wha-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 2px solid rgba(37, 211, 102, 0.6);
+  animation: wha-ring 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  pointer-events: none;
+}
+
+@keyframes wha-ring {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  70%  { transform: scale(1.5); opacity: 0;   }
+  100% { transform: scale(1.5); opacity: 0;   }
+}
+
+.wha-icon { flex-shrink: 0; }
+
+.wha-label {
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+@media (max-width: 480px) {
+  .wha-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    padding: 0.85rem;
+    border-radius: 50%;
+  }
+  .wha-label { display: none; }
 }

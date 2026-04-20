@@ -41,31 +41,31 @@
   <div class="stats-bar" scrollReveal [delay]="150">
     <div class="stat-item">
       <span class="stat-number">50+</span>
-      <span class="stat-label">Campaigns Run</span>
+      <span class="stat-label">{{ content().ui.statsCampaignsRun }}</span>
     </div>
     <div class="stat-item">
       <span class="stat-number">3×</span>
-      <span class="stat-label">Average ROI</span>
+      <span class="stat-label">{{ content().ui.statsAverageRoi }}</span>
     </div>
     <div class="stat-item">
       <span class="stat-number">2</span>
-      <span class="stat-label">Top Platforms</span>
+      <span class="stat-label">{{ content().ui.statsTopPlatforms }}</span>
     </div>
     <div class="stat-item">
       <span class="stat-number">100%</span>
-      <span class="stat-label">Data-Driven</span>
+      <span class="stat-label">{{ content().ui.statsDataDriven }}</span>
     </div>
   </div>
 
   <!-- ── INTRO ── -->
   <section class="panel intro-split" scrollReveal [delay]="100">
     <div class="intro-text">
-      <p class="eyebrow">Who We Are</p>
+      <p class="eyebrow">{{ content().ui.homeWhoWeAre }}</p>
       <h2>{{ content().introTitle }}</h2>
       <div class="section-divider"></div>
       <p *ngFor="let paragraph of content().introBody">{{ paragraph }}</p>
       <a class="button" routerLink="/about">
-        About Us <span class="arrow">→</span>
+        {{ content().ui.homeAboutUs }} <span class="arrow">→</span>
       </a>
     </div>
     <div class="intro-visual">
@@ -84,7 +84,7 @@
   <section class="solutions-section">
     <div class="section-header" scrollReveal>
       <p class="eyebrow">{{ content().solutionsTitle }}</p>
-      <h2>Strategies That Deliver Real Results</h2>
+      <h2>{{ content().ui.homeStrategiesTitle }}</h2>
       <div class="section-divider"></div>
     </div>
     <div class="grid-3">
@@ -109,16 +109,16 @@
   <section class="panel cta-band" scrollReveal>
     <div class="cta-band-content">
       <p class="eyebrow">{{ content().problemTitle }}</p>
-      <h2>Ready to Break Through the Noise?</h2>
+      <h2>{{ content().ui.homeReadyTitle }}</h2>
       <ul class="problem-list">
         <li *ngFor="let point of content().problemPoints">{{ point }}</li>
       </ul>
     </div>
     <div class="cta-band-action">
       <a class="button button--accent" routerLink="/contact">
-        Start Growing <span class="arrow">→</span>
+        {{ content().ui.homeStartGrowing }} <span class="arrow">→</span>
       </a>
-      <a class="button" routerLink="/pricing">View Pricing</a>
+      <a class="button" routerLink="/pricing">{{ content().ui.homeViewPricing }}</a>
     </div>
   </section>
 

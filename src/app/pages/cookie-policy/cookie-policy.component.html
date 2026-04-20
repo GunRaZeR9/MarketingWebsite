@@ -1,0 +1,18 @@
+<main class="legal-page">
+  <section class="page-hero" scrollReveal>
+    <p class="eyebrow">InsideGrowth</p>
+    <h1>{{ content().legal.cookiePolicy.title }}</h1>
+    <div class="section-divider"></div>
+    <p class="hero-lead legal-updated">{{ content().legal.cookiePolicy.lastUpdated }}</p>
+  </section>
+
+  <div class="legal-content panel" scrollReveal [delay]="80">
+    <div
+      *ngFor="let section of content().legal.cookiePolicy.sections"
+      class="legal-section"
+    >
+      <h2>{{ section.heading }}</h2>
+      <p *ngFor="let paragraph of section.paragraphs">{{ paragraph }}</p>
+    </div>
+  </div>
+</main>
