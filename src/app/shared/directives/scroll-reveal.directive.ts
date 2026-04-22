@@ -14,7 +14,7 @@ export class ScrollRevealDirective implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     if (this.delay) {
-      this.el.nativeElement.style.transitionDelay = `${this.delay}ms`;
+      this.el.nativeElement.style.setProperty('--sr-delay', `${this.delay}ms`);
     }
     this.observer = new IntersectionObserver(
       ([entry]) => {
