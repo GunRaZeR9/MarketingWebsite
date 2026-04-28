@@ -3,7 +3,6 @@ import { Component, HostListener, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 import { LanguageService } from '../../../core/services/language.service';
-import { LanguageCode } from '../../../core/models/site-content';
 
 @Component({
   selector: 'app-header',
@@ -14,8 +13,6 @@ import { LanguageCode } from '../../../core/models/site-content';
 export class HeaderComponent {
   private readonly languageService = inject(LanguageService);
   readonly content = this.languageService.content;
-  readonly currentLanguage = this.languageService.language;
-  readonly languages = this.languageService.availableLanguages;
   readonly menuOpen = signal(false);
   readonly scrolled = signal(false);
 
@@ -30,12 +27,6 @@ export class HeaderComponent {
   @HostListener('window:scroll')
   onScroll(): void {
     this.scrolled.set(window.scrollY > 40);
-  }
-
-  setLanguage(language: string): void {
-    if (language === 'en' || language === 'ro' || language === 'hu') {
-      this.languageService.setLanguage(language as LanguageCode);
-    }
   }
 
   toggleMenu(): void {

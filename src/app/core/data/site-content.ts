@@ -6,18 +6,31 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
   en: {
     language: 'en',
     brandName: 'InsideGrowth',
-    heroTitle: 'Igniting Global Growth With Data-Driven Marketing',
+    heroTitle: 'More Than an Agency — A Growth Partner',
     heroSubtitle:
-      'A performance marketing agency built by former Google and Meta specialists to turn clicks into meaningful growth.',
-    introTitle: 'Introduction',
+      'A team of certified Google and Meta specialists with 20+ years of combined experience.',
+    introTitle: 'Growth, Built Together',
+    introSubtitle: 'Trusted to manage €50K+ in monthly ad spend',
     introBody: [
-      'We combine strategic insight, creative storytelling, and platform expertise to help brands scale through measurable campaigns.',
-      'From awareness to conversion and international expansion, our mission is to transform paid media into predictable business growth.'
+      'A team of ex-Google and Meta specialists with 20+ years of combined experience.',
+      'We don’t just run campaigns — we build growth systems.When your business scales profitably, we scale with you. That’s how we measure success.'
     ],
-    problemTitle: 'Problem Statement',
+    aboutIntroTitle: 'How We Think About Growth',
+    aboutIntroBody: [
+      'We don’t treat marketing as separate services.',
+      'We build systems where every part — traffic, conversion, and retention — works together to drive real business growth.',
+      'Most agencies focus on campaigns.We focus on results.'
+    ],
+    aboutPlatformItems: [
+      'Clear strategy, not guesswork',
+      'Focus on revenue, not just traffic',
+      'Scalable systems, not one-time wins'
+    ],
+    problemTitle: 'The Gap Between Traffic and Revenue',
     problemPoints: [
-      'Limited reach to high-value new customers and weak paid visibility among affluent, design-focused audiences.',
-      'Luxury positioning requires precision targeting and conversion clarity, but no paid advertising framework is currently deployed.'
+      'Running ads without a clear strategy.',
+      'No alignment between traffic, website, and conversions.',
+      'We bring everything together into a system that drives real results.'
     ],
     solutionsTitle: 'Our Solutions',
     solutions: [
@@ -37,40 +50,109 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
           'Focus budget on high-value regions and cities where luxury demand is strongest to drive efficient international growth.'
       }
     ],
-    servicesTitle: 'Discover Our Services',
+    servicesTitle: 'Services Built to Scale Your Business',
     services: [
       {
-        title: 'Digital Marketing',
+        title: 'Audit & Growth Analysis',
         description:
-          'Campaign planning and execution across Google Ads and Meta Ads to generate qualified traffic, stronger engagement, and sustainable ROI.'
+          'We analyze your entire marketing ecosystem — from website performance and tracking setup to ad campaigns and SEO — to identify what\'s working, what\'s holding you back, and where the biggest growth opportunities are.',
+        features: [
+          'Website speed & performance',
+          'Tracking setup (GTM, GA4, pixels)',
+          'Google & Meta Ads audit',
+          'SEO structure & technical review',
+          'Conversion flow & user journey'
+        ],
+        imagePosition: 'left',
+        image: '/images/services/Audit%26GrowthAnalysis.png'
       },
       {
-        title: 'Marketing Analytics',
+        title: 'Paid Media That Converts',
         description:
-          'Advanced tracking and reporting with GA4, Meta Pixel, and API integrations to support smarter budget allocation and continuous optimization.'
+          'We manage and scale high-performance campaigns across Google, Meta, and TikTok — focused on attracting qualified traffic that turns into real customers and revenue.',
+        features: [
+          'Google Ads (Search, Shopping, Performance Max)',
+          'Meta Ads (Facebook & Instagram)',
+          'TikTok Ads',
+          'Campaign optimization & scaling'
+        ],
+        imagePosition: 'right',
+        image: '/images/services/PaidMediaThatConverts.png'
+      },
+      {
+        title: 'SEO & Organic Growth',
+        description:
+          'We optimize your website to rank higher, attract consistent traffic, and build long-term visibility that supports your paid campaigns.',
+        features: [
+          'Technical SEO',
+          'On-page optimization',
+          'Keyword & structure strategy',
+          'Content optimization'
+        ],
+        imagePosition: 'left',
+        image: '/images/services/Seo%26OrganicGrowth.png'
+      },
+      {
+        title: 'Websites Built to Convert',
+        description:
+          'We design and develop custom websites and e-commerce platforms focused on speed, user experience, and conversion — turning visitors into paying customers.',
+        features: [
+          'Custom presentation websites',
+          'E-commerce development',
+          'Conversion-focused design',
+          'Mobile & speed optimization'
+        ],
+        imagePosition: 'right',
+        image: '/images/services/WebsiteBuiltToConvert.png'
+      },
+      {
+        title: 'Creative Production',
+        description:
+          'We create high-quality photo and video content designed to capture attention and drive performance across your marketing channels.',
+        features: [
+          'Product photography',
+          'Brand & location shoots',
+          'Video production & editing',
+          'Ad creatives'
+        ],
+        imagePosition: 'left',
+        image: '/images/services/CreativeProduction.png'
+      },
+      {
+        title: 'Tracking & Performance Systems',
+        description:
+          'We build the infrastructure behind your marketing — ensuring every action is tracked, measured, and optimized based on real data.',
+        features: [
+          'Google Tag Manager setup',
+          'GA4 & event tracking',
+          'Conversion tracking',
+          'Data accuracy & reporting'
+        ],
+        imagePosition: 'right',
+        image: '/images/services/Trackig%26PerformanceSystems.png'
       }
     ],
-    advantagesTitle: 'Key Competitive Advantages',
+    advantagesTitle: 'What Makes Us Different',
     advantages: [
       {
-        title: 'Expert Team',
+        title: 'Specialists not Generalists',
         description:
-          'Specialized professionals with practical, hands-on experience across high-performance paid media programs.'
+          'Each part of your growth is handled by a dedicated expert — from ads and SEO to websites and creative.'
       },
       {
-        title: 'Platform Expertise From the Inside',
+        title: 'Built Around Results',
         description:
-          'Former Google and Meta professionals with direct knowledge of ad systems, auction mechanics, and optimization levers.'
+          'We don’t focus on clicks or impressions — everything we do is designed to generate real customers and revenue.'
       },
       {
-        title: 'Customer Focus',
+        title: 'Systems, Not Just Campaigns',
         description:
-          'Relationship-first collaboration built around client goals and long-term performance partnerships.'
+          'We build complete growth systems where traffic, conversion, and performance work together.'
       },
       {
-        title: 'Data-Driven Execution',
+        title: 'Data Over Guesswork',
         description:
-          'Every decision is backed by measurement, experimentation, and iterative optimization for scalable growth.'
+          'Every decision is based on testing, data, and performance — not assumptions.'
       }
     ],
     pricingTitle: 'Revenue Model',
@@ -103,7 +185,65 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
     contactTitle: 'Ready to Scale Your Marketing?',
     contactSubtitle:
       'Share your goals and we will propose a performance plan tailored to your audience, budget, and growth targets.',
-    primaryCta: 'Get a Growth Plan',
+    primaryCta: 'Let\'s grow together',
+    growthServices: [
+      {
+        title: 'Paid Media That Converts',
+        description:
+          'We manage high-performance campaigns across Google, Meta, and TikTok — focused on bringing qualified traffic that turns into real customers and revenue.'
+      },
+      {
+        title: 'Creative That Drives Performance',
+        description:
+          'We produce high-converting ad creatives, photos, and videos designed to capture attention and increase conversions — not just look good.'
+      },
+      {
+        title: 'From Click to Customer',
+        description:
+          'We build structured marketing funnels that guide users from first interaction to final purchase, maximizing every step of the customer journey.'
+      },
+      {
+        title: 'Websites Built to Convert',
+        description:
+          'We design and optimize websites and landing pages focused on speed, user experience, and conversion — turning visitors into paying customers.'
+      },
+      {
+        title: 'SEO & Organic Growth',
+        description:
+          'We optimize your website to rank higher, attract consistent traffic, and build long-term visibility beyond paid ads.'
+      },
+      {
+        title: 'Tracking & Data Accuracy',
+        description:
+          'We set up and optimize tracking systems to ensure every decision is based on accurate data — from conversions to customer behavior.'
+      }
+    ],
+    howWeWork: [
+      {
+        step: '01',
+        title: 'Audit & Analysis',
+        description:
+          'We analyze your business, website, current campaigns, tracking, and performance to identify what\'s working, what\'s missing, and where growth is being blocked.'
+      },
+      {
+        step: '02',
+        title: 'Strategy & Planning',
+        description:
+          'We build a custom growth plan based on your goals, budget, market, and customer journey — so every channel has a clear purpose.'
+      },
+      {
+        step: '03',
+        title: 'Launch & Implementation',
+        description:
+          'We set up and launch the right campaigns, creatives, landing pages, tracking, and optimizations across the channels that matter most.'
+      },
+      {
+        step: '04',
+        title: 'Optimize & Scale',
+        description:
+          'We continuously test, improve, and scale what works — focusing on better performance, higher conversions, and profitable growth.'
+      }
+    ],
     contact: {
       person: 'Andrei Puscas',
       role: 'Marketing Specialist',
@@ -119,7 +259,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       },
       languageLabel: 'Language',
       homeExploreServices: 'Explore Services',
-      headerCta: 'Get a Growth Plan',
+      headerCta: 'Let\'s grow together',
       footerTagline: 'Former Google and Meta specialists helping brands scale globally.',
       footerContactLabel: 'Contact',
       footerNavigateLabel: 'Navigate',
@@ -128,30 +268,30 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       footerCookiePolicy: 'Cookie Policy',
       footerTermsConditions: 'Terms & Conditions',
       footerCopyrightPrefix: 'Copyright',
-      homeWhoWeAre: 'Who We Are',
+      homeWhoWeAre: 'INSIDEGROWTH',
       homeStrategiesTitle: 'Strategies That Deliver Real Results',
-      homeAboutUs: 'About Us',
-      homeReadyTitle: 'Ready to Break Through the Noise?',
-      homeStartGrowing: 'Start Growing',
+      homeAboutUs: 'Let’s Grow Together',
+      homeReadyTitle: 'Growth Doesn’t Happen by Guesswork',
+      homeStartGrowing: 'Let’s Grow Together',
       homeViewPricing: 'View Pricing',
-      statsCampaignsRun: 'Campaigns Run',
-      statsAverageRoi: 'Average ROI',
-      statsTopPlatforms: 'Top Platforms',
-      statsDataDriven: 'Data-Driven',
+      statsCampaignsRun: 'Campaign Optimizations',
+      statsAverageRoi: 'Monthly Ad Spend',
+      statsTopPlatforms: 'Google & Meta Core Platforms',
+      statsDataDriven: 'Performance Focused',
       aboutMissionEyebrow: 'Our Mission',
-      aboutPlatformsEyebrow: 'Platforms',
+      aboutPlatformsEyebrow: 'What This Means for You',
       aboutWhyChooseUs: 'Why Choose Us',
       servicesApproachEyebrow: 'Our Approach',
       cookieConsentMessage: 'We use cookies to improve your experience. By continuing, you agree to our Cookie Policy.',
       cookieConsentAccept: 'Accept',
       cookieConsentDecline: 'Decline',
       aboutEyebrow: 'About',
-      aboutTitle: 'Specialists Built for Performance Marketing',
+      aboutTitle: 'A Team Built to Scale Your Business',
       aboutLead:
-        'Our team combines in-platform expertise with practical campaign leadership to build full-funnel systems that produce measurable results.',
+        'We combine expertise across Google Ads, Meta, SEO, and creative to build systems that generate real, measurable growth.',
       servicesEyebrow: 'Services',
       servicesLead:
-        'We design channel strategy, creative execution, and analytics infrastructure so every campaign is measurable, accountable, and scalable.',
+        'We don’t offer isolated services — we build complete systems designed to generate traffic, convert customers, and scale your business profitably.',
       pricingEyebrow: 'Pricing',
       pricingFeatureComparison: 'Feature Comparison',
       pricingTableAriaLabel: 'Pricing feature comparison',
@@ -187,7 +327,20 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
         submitLabel: 'Submit Lead'
       },
       leadSavedMessage:
-        'Lead saved successfully. We will use your details to prepare a tailored growth proposal.'
+        'Lead saved successfully. We will use your details to prepare a tailored growth proposal.',
+      homeGrowthEyebrow: 'Growth Systems',
+      homeHowWeScaleTitle: 'How We Scale Your Business',
+      homeHowWeScaleSubtitle: 'Growth Systems, Not Just Services',
+      homeHowWeWorkEyebrow: 'Our Process',
+      homeHowWeWorkTitle: 'How We Work',
+      homeHowWeWorkSubtitle:
+        'A clear process designed to turn marketing into a predictable growth system — from audit to scalable performance.',
+      homeCredentialsTitle: 'Data, Audit & Scaling Strategy',
+      homeCredentialsBody:
+        'We analyze your data, audit your performance, and continuously optimize campaigns to scale what works and eliminate what doesn\'t.',
+      homeCredentialsBadge: 'Google & Meta Certified Team · 20+ Years Combined Experience',
+      homeMiniCta: 'Ready to scale your business?',
+      homeModalCta: 'Get Started'
     },
     seo: {
       home: {
@@ -387,7 +540,13 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
     heroSubtitle:
       'Agentie de marketing de performanta, construita de fosti specialisti Google si Meta, care transforma click-urile in crestere reala.',
     introTitle: 'Introducere',
+    introSubtitle: 'Trusted to manage €50K+ in monthly ad spend',
     introBody: [
+      'Combinam strategie, storytelling creativ si expertiza de platforma pentru a scala brandurile prin campanii masurabile.',
+      'De la awareness la conversie si extindere internationala, misiunea noastra este sa transformam media platita in crestere predictibila.'
+    ],
+    aboutIntroTitle: 'Introducere',
+    aboutIntroBody: [
       'Combinam strategie, storytelling creativ si expertiza de platforma pentru a scala brandurile prin campanii masurabile.',
       'De la awareness la conversie si extindere internationala, misiunea noastra este sa transformam media platita in crestere predictibila.'
     ],
@@ -414,17 +573,80 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
           'Directionam bugetul catre regiuni si orase cu potential ridicat de conversie pentru crestere internationala eficienta.'
       }
     ],
-    servicesTitle: 'Descopera Serviciile Noastre',
+    servicesTitle: 'Services Built to Scale Your Business',
     services: [
       {
-        title: 'Marketing Digital',
+        title: 'Audit & Growth Analysis',
         description:
-          'Planificare si executie de campanii pe Google Ads si Meta Ads pentru trafic calificat, engagement puternic si ROI sustenabil.'
+          'We analyze your entire marketing ecosystem — from website performance and tracking setup to ad campaigns and SEO — to identify what\'s working, what\'s holding you back, and where the biggest growth opportunities are.',
+        features: [
+          'Website speed & performance',
+          'Tracking setup (GTM, GA4, pixels)',
+          'Google & Meta Ads audit',
+          'SEO structure & technical review',
+          'Conversion flow & user journey'
+        ],
+        imagePosition: 'left'
       },
       {
-        title: 'Analytics de Marketing',
+        title: 'Paid Media That Converts',
         description:
-          'Tracking avansat si raportare cu GA4, Meta Pixel si integrari API pentru optimizare continua si alocare inteligenta a bugetului.'
+          'We manage and scale high-performance campaigns across Google, Meta, and TikTok — focused on attracting qualified traffic that turns into real customers and revenue.',
+        features: [
+          'Google Ads (Search, Shopping, Performance Max)',
+          'Meta Ads (Facebook & Instagram)',
+          'TikTok Ads',
+          'Campaign optimization & scaling'
+        ],
+        imagePosition: 'right'
+      },
+      {
+        title: 'SEO & Organic Growth',
+        description:
+          'We optimize your website to rank higher, attract consistent traffic, and build long-term visibility that supports your paid campaigns.',
+        features: [
+          'Technical SEO',
+          'On-page optimization',
+          'Keyword & structure strategy',
+          'Content optimization'
+        ],
+        imagePosition: 'left'
+      },
+      {
+        title: 'Websites Built to Convert',
+        description:
+          'We design and develop custom websites and e-commerce platforms focused on speed, user experience, and conversion — turning visitors into paying customers.',
+        features: [
+          'Custom presentation websites',
+          'E-commerce development',
+          'Conversion-focused design',
+          'Mobile & speed optimization'
+        ],
+        imagePosition: 'right'
+      },
+      {
+        title: 'Creative Production',
+        description:
+          'We create high-quality photo and video content designed to capture attention and drive performance across your marketing channels.',
+        features: [
+          'Product photography',
+          'Brand & location shoots',
+          'Video production & editing',
+          'Ad creatives'
+        ],
+        imagePosition: 'left'
+      },
+      {
+        title: 'Tracking & Performance Systems',
+        description:
+          'We build the infrastructure behind your marketing — ensuring every action is tracked, measured, and optimized based on real data.',
+        features: [
+          'Google Tag Manager setup',
+          'GA4 & event tracking',
+          'Conversion tracking',
+          'Data accuracy & reporting'
+        ],
+        imagePosition: 'right'
       }
     ],
     advantagesTitle: 'Avantaje Competitive Cheie',
@@ -477,6 +699,64 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
     contactSubtitle:
       'Spune-ne obiectivele tale si iti propunem un plan de performanta adaptat audientei, bugetului si tintelor de crestere.',
     primaryCta: 'Solicita Plan de Crestere',
+    growthServices: [
+      {
+        title: 'Media Plătită care Converteste',
+        description:
+          'Gestionam campanii de inalta performanta pe Google, Meta si TikTok — axate pe aducerea de trafic calificat care se transforma in clienti reali si venituri.'
+      },
+      {
+        title: 'Creativ care Genereaza Performanta',
+        description:
+          'Producem reclame, fotografii si videoclipuri cu conversie ridicata, concepute pentru a capta atentia si a creste conversiile — nu doar pentru a arata bine.'
+      },
+      {
+        title: 'De la Click la Client',
+        description:
+          'Construim funnel-uri de marketing structurate care ghideaza utilizatorii de la prima interactiune pana la achizitia finala, maximizand fiecare pas al drumului clientului.'
+      },
+      {
+        title: 'Site-uri Construite pentru Conversie',
+        description:
+          'Proiectam si optimizam site-uri si pagini de aterizare axate pe viteza, experienta utilizatorului si conversie — transformand vizitatorii in clienti platitori.'
+      },
+      {
+        title: 'SEO si Crestere Organica',
+        description:
+          'Optimizam site-ul tau pentru a se pozitiona mai sus, a atrage trafic constant si a construi vizibilitate pe termen lung dincolo de reclamele platite.'
+      },
+      {
+        title: 'Acuratete Tracking si Date',
+        description:
+          'Configuram si optimizam sisteme de tracking pentru a asigura ca fiecare decizie se bazeaza pe date precise — de la conversii la comportamentul clientilor.'
+      }
+    ],
+    howWeWork: [
+      {
+        step: '01',
+        title: 'Audit si Analiza',
+        description:
+          'Analizăm afacerea ta, site-ul, campaniile curente, tracking-ul si performanta pentru a identifica ce functioneaza, ce lipseste si unde e blocata cresterea.'
+      },
+      {
+        step: '02',
+        title: 'Strategie si Planificare',
+        description:
+          'Construim un plan personalizat de crestere bazat pe obiectivele, bugetul, piata si customer journey-ul tau — astfel incat fiecare canal sa aiba un scop clar.'
+      },
+      {
+        step: '03',
+        title: 'Lansare si Implementare',
+        description:
+          'Configuram si lansam campaniile, creativele, landing page-urile, tracking-ul si optimizarile potrivite pe canalele care conteaza cel mai mult.'
+      },
+      {
+        step: '04',
+        title: 'Optimizare si Scalare',
+        description:
+          'Testam, imbunatatim si scalăm continuu ce functioneaza — axati pe performanta mai buna, conversii mai mari si crestere profitabila.'
+      }
+    ],
     contact: {
       person: 'Andrei Puscas',
       role: 'Specialist Marketing',
@@ -507,10 +787,10 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       homeReadyTitle: 'Gata sa Depasesti Concurenta?',
       homeStartGrowing: 'Incepe sa Cresti',
       homeViewPricing: 'Vezi Preturile',
-      statsCampaignsRun: 'Campanii Rulate',
-      statsAverageRoi: 'ROI Mediu',
-      statsTopPlatforms: 'Platforme de Top',
-      statsDataDriven: 'Bazat pe Date',
+      statsCampaignsRun: 'Campaign Optimizations',
+      statsAverageRoi: 'Monthly Ad Spend',
+      statsTopPlatforms: 'TOP PLATFORMS',
+      statsDataDriven: 'Performance Focused',
       aboutMissionEyebrow: 'Misiunea Noastra',
       aboutPlatformsEyebrow: 'Platforme',
       aboutWhyChooseUs: 'De Ce Noi',
@@ -559,7 +839,20 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
         goalsValidation: 'Te rugam sa introduci minimum 20 de caractere.',
         submitLabel: 'Trimite Lead'
       },
-      leadSavedMessage: 'Lead-ul a fost salvat. Vom pregati o propunere personalizata de crestere.'
+      leadSavedMessage: 'Lead-ul a fost salvat. Vom pregati o propunere personalizata de crestere.',
+      homeGrowthEyebrow: 'Sisteme de Crestere',
+      homeHowWeScaleTitle: 'Cum Scalăm Afacerea Ta',
+      homeHowWeScaleSubtitle: 'Sisteme de Crestere, Nu Doar Servicii',
+      homeHowWeWorkEyebrow: 'Procesul Nostru',
+      homeHowWeWorkTitle: 'Cum Lucram',
+      homeHowWeWorkSubtitle:
+        'Un proces clar conceput pentru a transforma marketingul intr-un sistem de crestere predictibil — de la audit la performanta scalabila.',
+      homeCredentialsTitle: 'Date, Audit si Strategie de Scalare',
+      homeCredentialsBody:
+        'Analizăm datele tale, auditam performanta si optimizam continuu campaniile pentru a scala ce functioneaza si a elimina ce nu.',
+      homeCredentialsBadge: 'Echipa Certificata Google & Meta · 20+ Ani Experienta Combinata',
+      homeMiniCta: 'Gata sa iti scalezi afacerea?',
+      homeModalCta: 'Incepe Acum'
     },
     seo: {
       home: {
@@ -759,7 +1052,13 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
     heroSubtitle:
       'Teljesitmenymarketing ugynokseg volt Google es Meta szakemberekkel, akik a kattintasokat valodi novekedesse alakitjak.',
     introTitle: 'Bemutatkozas',
+    introSubtitle: 'Trusted to manage €50K+ in monthly ad spend',
     introBody: [
+      'Strategiai gondolkodast, kreativ storytellinget es platformszintu szakertelmet egyesitunk, hogy merheto kampanyokkal skalazzuk a markakat.',
+      'Az ismertseg novelestol a konverzioig es a nemzetkozi terjeszkedesig kuldetesunk a fizetett media kiszamithato uzleti novekedesse alakitasa.'
+    ],
+    aboutIntroTitle: 'Bemutatkozas',
+    aboutIntroBody: [
       'Strategiai gondolkodast, kreativ storytellinget es platformszintu szakertelmet egyesitunk, hogy merheto kampanyokkal skalazzuk a markakat.',
       'Az ismertseg novelestol a konverzioig es a nemzetkozi terjeszkedesig kuldetesunk a fizetett media kiszamithato uzleti novekedesse alakitasa.'
     ],
@@ -849,6 +1148,64 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
     contactSubtitle:
       'Oszd meg celjaidat, es szemelyre szabott teljesitmenytervet keszitunk kozonsegedhez, koltsegkeretedhez es novekedesi celjaidhoz.',
     primaryCta: 'Novekedesi Terv Keresese',
+    growthServices: [
+      {
+        title: 'Konvertaló Fizetett Media',
+        description:
+          'Magas teljesitmenyu kampanyokat kezelunk Google, Meta es TikTok platformokon — minosegi forgalomra koncentralva, amely valodi ugyfelekke es bevétellé valik.'
+      },
+      {
+        title: 'Teljesitmenyt Hajto Kreativok',
+        description:
+          'Magas konverziojs reklamkreativokat, fotokat es videokat keszitunk, amelyek figyelmet keltenek es novelik a konverziookat — nem csak jol neznek ki.'
+      },
+      {
+        title: 'Kattintastol az Ugyfelig',
+        description:
+          'Strukturalt marketing funnel-eket epitunk, amelyek az elso interakciótol a vasarlasig vegigkiserik a felhasznalokat, maximalizalva az ugyfélut minden lepeset.'
+      },
+      {
+        title: 'Konverzióra Tervezett Weboldalak',
+        description:
+          'Weboldalakat es landingoldalakat tervezunk es optimalizalunk, fokuszalva a sebessegre, felhasznaloi elmenyre es konverzióra — latogatókból fizeto ugyfeleket.'
+      },
+      {
+        title: 'SEO es Organikus Növekedés',
+        description:
+          'Optimalizaljuk weboldaladat a magasabb rangsorolasert, folyamatos forgalomert es fizetett hirdeteseken tuli hosszu tavu lathatosagert.'
+      },
+      {
+        title: 'Tracking es Adat Pontossag',
+        description:
+          'Tracking rendszereket allitunk be es optimalizalunk, hogy minden dontes pontos adatokon alapuljon — a konverzioktol az ugyfél viselkedéséig.'
+      }
+    ],
+    howWeWork: [
+      {
+        step: '01',
+        title: 'Audit es Elemzes',
+        description:
+          'Elemezzuk vallalkozasodat, weboldaladat, jelenlegi kampanyaidat, tracking-edet es teljesitmenyed, hogy azonositsuk mi mukodik es hol gatolt a növekedés.'
+      },
+      {
+        step: '02',
+        title: 'Strategia es Tervezes',
+        description:
+          'Egyedi növekedési tervet keszitunk celjaid, budzsed, piacod es vasarloi utvonalaid alapjan — hogy minden csatornanak legyen egyrtelmu celja.'
+      },
+      {
+        step: '03',
+        title: 'Inditas es Implementalas',
+        description:
+          'Beallitjuk es elindítjuk a megfelelo kampanyokat, kreativokat, landingoldalakat es optimalizaciokat a legfontosabb csatornákon.'
+      },
+      {
+        step: '04',
+        title: 'Optimalizalas es Skalazas',
+        description:
+          'Folyamatosan tesztelunk, javitunk es skalazunk — jobb teljesitmenyre, magasabb konverziokra es nyereseges növekedésre fokuszalva.'
+      }
+    ],
     contact: {
       person: 'Andrei Puscas',
       role: 'Marketing Specialista',
@@ -879,10 +1236,10 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       homeReadyTitle: 'Keszen Allsz Kitörni a Tömegbol?',
       homeStartGrowing: 'Kezdd el a Növekedest',
       homeViewPricing: 'Arak Megtekintese',
-      statsCampaignsRun: 'Futtatott Kampanyok',
-      statsAverageRoi: 'Atlagos ROI',
-      statsTopPlatforms: 'Top Platformok',
-      statsDataDriven: 'Adatvezerelt',
+      statsCampaignsRun: 'Campaign Optimizations',
+      statsAverageRoi: 'Monthly Ad Spend',
+      statsTopPlatforms: 'TOP PLATFORMS',
+      statsDataDriven: 'Performance Focused',
       aboutMissionEyebrow: 'Kuldetesunk',
       aboutPlatformsEyebrow: 'Platformok',
       aboutWhyChooseUs: 'Miert Minket Valassz',
@@ -931,7 +1288,20 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
         goalsValidation: 'Legalabb 20 karakter megadasa szukseges.',
         submitLabel: 'Lead Bekuldese'
       },
-      leadSavedMessage: 'A lead sikeresen elmentve. Hamarosan szemelyre szabott novekedesi tervet keszitunk.'
+      leadSavedMessage: 'A lead sikeresen elmentve. Hamarosan szemelyre szabott novekedesi tervet keszitunk.',
+      homeGrowthEyebrow: 'Növekedési Rendszerek',
+      homeHowWeScaleTitle: 'Hogyan Skalazzuk Vallalkozasodat',
+      homeHowWeScaleSubtitle: 'Növekedési Rendszerek, Nem Csupán Szolgáltatások',
+      homeHowWeWorkEyebrow: 'Folyamatunk',
+      homeHowWeWorkTitle: 'Hogyan Dolgozunk',
+      homeHowWeWorkSubtitle:
+        'Egy atlatható folyamat, amely a marketinget kiszamithato növekedési rendszerre alakitja — audittol a skalazható teljesitmenyig.',
+      homeCredentialsTitle: 'Adat, Audit es Skalazasi Strategia',
+      homeCredentialsBody:
+        'Elemezzuk adataidat, auditaljuk a teljesitmenyt es folyamatosan optimalizalunk — skalazva ami mukodik, kiszurve ami nem.',
+      homeCredentialsBadge: 'Google & Meta Tanusitott Csapat · 20+ Ev Kombinalt Tapasztalat',
+      homeMiniCta: 'Keszen allsz vallalkozasod skalazasara?',
+      homeModalCta: 'Kezdjuk El'
     },
     seo: {
       home: {

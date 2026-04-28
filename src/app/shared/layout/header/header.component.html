@@ -1,7 +1,7 @@
 <header class="site-header" [class.scrolled]="scrolled()">
   <div class="top-row">
     <a class="brand" routerLink="/home">
-      <img src="images/logos/yellow_dot.png" alt="oOumm logo" width="28" height="28" />
+      <img src="images/logos/inside_growth_logo_512p.png" alt="oOumm logo" width="75" height="75" />
       <span class="brand-name">{{ content().brandName }}</span>
     </a>
 
@@ -46,13 +46,6 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
       </a>
     </div>
-    <span class="actions-divider"></span>
-    <label class="language-picker">
-      <span>{{ content().ui.languageLabel }}</span>
-      <select [value]="currentLanguage()" (change)="setLanguage($any($event.target).value)">
-        <option *ngFor="let language of languages" [value]="language.code">{{ language.label }}</option>
-      </select>
-    </label>
     <a class="cta" routerLink="/contact">{{ content().ui.headerCta }}</a>
   </div>
 
@@ -67,12 +60,6 @@
       >{{ content().ui.nav[item.key] }}</a>
     </nav>
     <div class="actions">
-      <label class="language-picker">
-        <span>{{ content().ui.languageLabel }}</span>
-        <select [value]="currentLanguage()" (change)="setLanguage($any($event.target).value)">
-          <option *ngFor="let language of languages" [value]="language.code">{{ language.label }}</option>
-        </select>
-      </label>
       <a class="cta" routerLink="/contact" (click)="closeMobileMenu()">{{ content().ui.headerCta }}</a>
       <div class="social-icons mobile-social">
         <a href="" class="social-icon" aria-label="Phone">

@@ -12,53 +12,52 @@
   <section class="main-services">
     <article
       *ngFor="let service of content().services; let i = index"
-      class="service-card panel"
+      class="service-detail"
+      [ngClass]="'service-detail--' + service.imagePosition"
       scrollReveal
-      [delay]="i * 120"
+      [delay]="i * 80"
     >
-      <div class="service-label">
-        <div class="card-icon" style="color: var(--accent)">
-          <svg *ngIf="i === 0" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-          <svg *ngIf="i === 1" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      <div class="service-image">
+        <div class="image-shell">
+          <img
+            class="service-image__img"
+            [src]="service.image"
+            [alt]="service.title + ' image'"
+          />
         </div>
-        <p class="eyebrow">Service 0{{ i + 1 }}</p>
       </div>
-      <h2>{{ service.title }}</h2>
-      <div class="section-divider"></div>
-      <p>{{ service.description }}</p>
+      <div class="service-content">
+        <h2>{{ service.title }}</h2>
+        <div class="section-divider"></div>
+        <p>{{ service.description }}</p>
+        <ul class="features-list">
+          <li *ngFor="let feature of service.features">
+            <span class="feature-check">✔</span>
+            {{ feature }}
+          </li>
+        </ul>
+      </div>
     </article>
   </section>
 
-  <!-- ── VISUAL ── -->
-  <div class="full-image" scrollReveal>
-    <div class="image-shell">
-      <img
-        src="images/placeholders/analytics-wave.svg"
-        width="1200"
-        height="800"
-        alt="Analytics dashboard preview"
-      />
-    </div>
-  </div>
+  <!-- ── PRICING LINK ── -->
+  <section class="pricing-link-section" scrollReveal>
+    <p>Want to see pricing?</p>
+    <a class="button button--accent" routerLink="/pricing">
+      View our plans <span class="arrow">→</span>
+    </a>
+  </section>
 
-  <!-- ── SOLUTIONS / PROCESS ── -->
-  <section class="solutions-section">
-    <div class="section-header" scrollReveal>
-      <p class="eyebrow">{{ content().ui.servicesApproachEyebrow }}</p>
-      <h2>{{ content().solutionsTitle }}</h2>
+  <!-- ── CTA SECTION ── -->
+  <section class="cta-section panel" scrollReveal>
+    <div class="cta-content">
+      <h2>Ready to Scale Your Business?</h2>
+      <p class="cta-subtitle">We'll show you exactly what's working, what's not, and how to grow your business profitably.</p>
       <div class="section-divider"></div>
-    </div>
-    <div class="grid-3">
-      <article
-        *ngFor="let solution of content().solutions; let i = index"
-        class="card process-card"
-        scrollReveal
-        [delay]="i * 100"
-      >
-        <span class="process-number">0{{ i + 1 }}</span>
-        <h3>{{ solution.title }}</h3>
-        <p>{{ solution.description }}</p>
-      </article>
+      <a class="button button--accent" routerLink="/contact">
+        Let's Grow Together <span class="arrow">→</span>
+      </a>
+      <p class="cta-footnote">No commitment. Just actionable insights.</p>
     </div>
   </section>
 

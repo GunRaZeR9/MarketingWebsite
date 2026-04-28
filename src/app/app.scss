@@ -12,7 +12,7 @@
 
 /* ── WhatsApp floating button ── */
 .wha-btn {
-  --wha-scale: 1;
+  --wha-scale: 0.5;
   position: fixed;
   width: min(calc(100vw - 1.5rem), calc(12.5rem * var(--wha-scale)));
   height: calc(3.2rem * var(--wha-scale));
@@ -75,9 +75,15 @@
   letter-spacing: 0.01em;
 }
 
+@media (min-width: 768px) {
+  .wha-btn {
+    --wha-scale: 0.75;
+  }
+}
+
 @media (min-width: 1024px) {
   .wha-btn {
-    --wha-scale: 2.5;
+    --wha-scale: 1.25;
     bottom: 5rem;
     right: 5rem;
   }

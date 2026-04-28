@@ -8,46 +8,61 @@
     <p class="hero-lead">{{ content().ui.aboutLead }}</p>
   </section>
 
-  <!-- ── FULL IMAGE ── -->
-  <div class="full-image" scrollReveal [delay]="100">
-    <div class="image-shell">
-      <img
-        src="images/placeholders/luxury-frame.svg"
-        width="1200"
-        height="800"
-        alt="Luxury campaign composition"
-      />
-    </div>
-  </div>
-
   <!-- ── INTRO DETAIL ── -->
   <section class="panel intro-panel" scrollReveal [delay]="80">
     <div class="intro-grid">
       <div class="intro-col">
         <p class="eyebrow">{{ content().ui.aboutMissionEyebrow }}</p>
-        <h2>{{ content().introTitle }}</h2>
+        <h2>{{ content().aboutIntroTitle }}</h2>
         <div class="section-divider"></div>
-        <p *ngFor="let paragraph of content().introBody">{{ paragraph }}</p>
+        <p *ngFor="let paragraph of content().aboutIntroBody">{{ paragraph }}</p>
       </div>
       <div class="platform-col">
         <p class="eyebrow">{{ content().ui.aboutPlatformsEyebrow }}</p>
         <div class="platform-list">
-          <div class="platform-item">
-            <span class="platform-dot"></span>
+          <div
+            *ngFor="let item of content().aboutPlatformItems ?? []"
+            class="platform-item"
+          >
+            <span class="platform-check" aria-hidden="true">✓</span>
             <div>
-              <strong>Google Ads</strong>
-              <p>Search, Display, Shopping &amp; Performance Max campaigns for high-intent traffic.</p>
-            </div>
-          </div>
-          <div class="platform-item">
-            <span class="platform-dot"></span>
-            <div>
-              <strong>Meta Ads</strong>
-              <p>Facebook &amp; Instagram campaigns built for brand desirability and visual storytelling.</p>
+              <strong>{{ item }}</strong>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- ── MEET THE TEAM ── -->
+  <section class="team-section">
+    <div class="section-header" scrollReveal>
+      <p class="eyebrow">Our Team</p>
+      <h2>Meet the Team Behind InsideGrowth</h2>
+      <p class="section-subtitle">A team of specialists, each focused on a key part of your business growth.</p>
+      <div class="section-divider"></div>
+    </div>
+
+    <div class="team-grid">
+      <article
+        *ngFor="let member of teamMembers; let i = index"
+        class="team-card"
+        scrollReveal
+        [delay]="i * 100"
+      >
+        <div class="team-photo">
+          <img [src]="member.photo" [alt]="member.name" width="400" height="400" />
+        </div>
+        <div class="team-info">
+          <h3>{{ member.name }}</h3>
+          <p class="team-role">{{ member.role }}</p>
+          <p class="team-bio">{{ member.bio }}</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="team-tagline" scrollReveal [delay]="600">
+      <p>We work as one team — focused on one goal: <strong>your growth.</strong></p>
     </div>
   </section>
 
@@ -58,7 +73,7 @@
       <h2>{{ content().advantagesTitle }}</h2>
       <div class="section-divider"></div>
     </div>
-    <div class="grid-2">
+    <div class="grid-2-fixed">
       <article
         *ngFor="let advantage of content().advantages; let i = index"
         class="card advantage-card"

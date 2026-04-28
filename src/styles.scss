@@ -334,6 +334,7 @@ li { margin-bottom: 0.6rem; color: var(--text-dim); line-height: 1.6; }
   color: var(--accent);
   line-height: 1;
   letter-spacing: -0.04em;
+  font-variant-numeric: tabular-nums;
 }
 
 .stat-label {
@@ -353,10 +354,37 @@ li { margin-bottom: 0.6rem; color: var(--text-dim); line-height: 1.6; }
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
+/* Enforce exactly two columns (2xN) for sections that should always display two cards per row
+   Falls back to a single column on narrow screens */
+.grid-2-fixed {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+}
+
+@media (max-width: 640px) {
+  .grid-2-fixed {
+    grid-template-columns: 1fr;
+  }
+}
+
 .grid-3 {
   display: grid;
   gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  /* Fixed 3-column layout on wide screens to ensure 3 cards per row */
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+}
+
+@media (max-width: 1024px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ── Card icon area ── */
@@ -403,6 +431,8 @@ li { margin-bottom: 0.6rem; color: var(--text-dim); line-height: 1.6; }
 .grid-2 > .sr:nth-child(3),
 .grid-3 > .sr:nth-child(3) { --sr-delay: 160ms; }
 .grid-3 > .sr:nth-child(4) { --sr-delay: 240ms; }
+.grid-3 > .sr:nth-child(5) { --sr-delay: 320ms; }
+.grid-3 > .sr:nth-child(6) { --sr-delay: 400ms; }
 
 /* Section divider animated grow */
 .section-divider.sr {

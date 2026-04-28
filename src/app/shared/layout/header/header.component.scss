@@ -29,12 +29,17 @@
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  font-weight: 700;
+  font-weight: 1000;
   text-decoration: none;
   color: var(--text);
 }
 
-.brand-name { font-family: 'Sora', sans-serif; font-weight: 700; }
+.brand-name {
+  font-family: 'Sora', sans-serif;
+  font-weight: 1000;
+  font-size: clamp(1.10rem, 3vw, 2.1rem);
+  line-height: 1.2;
+}
 
 nav {
   display: flex;

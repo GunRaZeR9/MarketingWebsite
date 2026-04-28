@@ -1,6 +1,15 @@
 export interface ServiceItem {
   title: string;
   description: string;
+  features?: string[];
+  imagePosition?: 'left' | 'right';
+  image?: string;
+}
+
+export interface HowWeWorkStep {
+  step: string;
+  title: string;
+  description: string;
 }
 
 export type LanguageCode = 'en' | 'ro' | 'hu';
@@ -108,6 +117,17 @@ export interface SiteUiText {
   contactShareGoals: string;
   contactForm: ContactFormText;
   leadSavedMessage: string;
+  homeGrowthEyebrow: string;
+  homeHowWeScaleTitle: string;
+  homeHowWeScaleSubtitle: string;
+  homeHowWeWorkEyebrow: string;
+  homeHowWeWorkTitle: string;
+  homeHowWeWorkSubtitle: string;
+  homeCredentialsTitle: string;
+  homeCredentialsBody: string;
+  homeCredentialsBadge: string;
+  homeMiniCta: string;
+  homeModalCta: string;
 }
 
 export interface PageSeo {
@@ -150,7 +170,11 @@ export interface SiteContent {
   heroTitle: string;
   heroSubtitle: string;
   introTitle: string;
+  introSubtitle: string;
   introBody: string[];
+  aboutIntroTitle: string;
+  aboutIntroBody: string[];
+  aboutPlatformItems?: string[];
   problemTitle: string;
   problemPoints: string[];
   solutionsTitle: string;
@@ -166,6 +190,8 @@ export interface SiteContent {
   contactTitle: string;
   contactSubtitle: string;
   primaryCta: string;
+  growthServices: ServiceItem[];
+  howWeWork: HowWeWorkStep[];
   contact: ContactInfo;
   ui: SiteUiText;
   seo: SiteSeo;

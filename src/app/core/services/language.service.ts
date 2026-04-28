@@ -4,8 +4,6 @@ import { computed, inject, Injectable, signal } from '@angular/core';
 import { DEFAULT_LANGUAGE, SITE_CONTENT_BY_LANGUAGE } from '../data/site-content';
 import { LanguageCode } from '../models/site-content';
 
-const STORAGE_KEY = 'siteLanguage';
-
 @Injectable({ providedIn: 'root' })
 export class LanguageService {
   private readonly document = inject(DOCUMENT);
@@ -13,26 +11,20 @@ export class LanguageService {
 
   readonly language = this.currentLanguageSignal.asReadonly();
   readonly content = computed(() => SITE_CONTENT_BY_LANGUAGE[this.currentLanguageSignal()]);
-  readonly availableLanguages = [
-    { code: 'en' as const, label: 'EN' },
-    { code: 'ro' as const, label: 'RO' },
-    { code: 'hu' as const, label: 'HU' }
-  ];
+  readonly availableLanguages = [{ code: 'en' as const, label: 'EN' }];
 
   constructor() {
-    const storedLanguage = localStorage.getItem(STORAGE_KEY);
-
-    if (storedLanguage === 'ro' || storedLanguage === 'hu' || storedLanguage === 'en') {
-      this.currentLanguageSignal.set(storedLanguage);
-    }
-
-    this.applyDocumentLanguage(this.currentLanguageSignal());
+    this.currentLanguageSignal.set(DEFAULT_LANGUAGE);
+    this.applyDocumentLanguage(DEFAULT_LANGUAGE);
   }
 
   setLanguage(language: LanguageCode): void {
-    this.currentLanguageSignal.set(language);
-    localStorage.setItem(STORAGE_KEY, language);
-    this.applyDocumentLanguage(language);
+    if (language !== DEFAULT_LANGUAGE) {
+      return;
+    }
+
+    this.currentLanguageSignal.set(DEFAULT_LANGUAGE);
+    this.applyDocumentLanguage(DEFAULT_LANGUAGE);
   }
 
   private applyDocumentLanguage(language: LanguageCode): void {

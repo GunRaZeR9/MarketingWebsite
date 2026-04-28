@@ -27,18 +27,23 @@ export const routes: Routes = [
 		loadComponent: () => import('./pages/contact/contact.component').then((m) => m.ContactComponent)
 	},
 	{
-		path: 'privacy-policy',
+		path: 'results',
 		data: { animIndex: 5 },
+		loadComponent: () => import('./pages/results/results.component').then((m) => m.ResultsComponent)
+	},
+	{
+		path: 'privacy-policy',
+		data: { animIndex: 6 },
 		loadComponent: () => import('./pages/privacy-policy/privacy-policy.component').then((m) => m.PrivacyPolicyComponent)
 	},
 	{
 		path: 'cookie-policy',
-		data: { animIndex: 5 },
+		data: { animIndex: 6 },
 		loadComponent: () => import('./pages/cookie-policy/cookie-policy.component').then((m) => m.CookiePolicyComponent)
 	},
 	{
 		path: 'terms-conditions',
-		data: { animIndex: 5 },
+		data: { animIndex: 6 },
 		loadComponent: () => import('./pages/terms-conditions/terms-conditions.component').then((m) => m.TermsConditionsComponent)
 	},
 	{ path: '', pathMatch: 'full', redirectTo: 'home' },
