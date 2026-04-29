@@ -1,6 +1,105 @@
-import { LanguageCode, SiteContent } from '../models/site-content';
+import { LanguageCode, LegalPageContent, SiteContent } from '../models/site-content';
 
 export const DEFAULT_LANGUAGE: LanguageCode = 'en';
+
+const ROMANIAN_COOKIE_POLICY: LegalPageContent = {
+  title: 'Politica Cookies',
+  lastUpdated: 'Aprilie 2026',
+  sections: [
+    {
+      heading: '1. Ce sunt cookie-urile?',
+      paragraphs: [
+        'Un "internet Cookie" (termen cunoscut si sub denumirea de "browser cookie" sau "HTTP cookie" ori pur si simplu "cookie") reprezinta un fisier de mici dimensiuni, format din litere si numere, care va fi stocat pe computerul, terminalul mobil sau pe alte echipamente ale unui utilizator prin intermediul carora se acceseaza internetul.',
+        'Cookie-urile sunt instalate prin solicitarea emisa de un web-server catre un browser (de ex. Internet Explorer, Firefox, Chrome).',
+        'Cookie-urile odata instalate au o durata de existenta determinata, ramanand "pasive", in sensul ca nu contin programe software, virusi sau spyware si nu vor accesa informatiile de pe hard driverul utilizatorului pe al carui echipament au fost instalate.',
+        'Un cookie este format din doua parti: numele cookie-ului si continutul / valoarea cookie-ului.',
+        'Din punct de vedere tehnic, doar web-serverul care a trimis cookie-ul il poate accesa din nou in momentul in care un utilizator se intoarce pe pagina de internet asociata web-serverului respectiv.'
+      ]
+    },
+    {
+      heading: '2. Pentru ce scopuri sunt utilizate cookie-urile prin intermediul acestei pagini de internet',
+      paragraphs: [
+        'Cookie-urile sunt utilizate pentru a furniza utilizatorilor acestei pagini de internet o experienta mai buna de navigare si servicii adaptate nevoilor si interesului fiecarui utilizator in parte, dupa cum urmeaza:',
+        'imbunatatirea utilizarii acestei pagini de internet, inclusiv prin identificarea oricaror erori care apar in timpul vizitarii / utilizarii acesteia de catre utilizatori;',
+        'furnizarea de statistici anonime cu privire la modul in care este utilizata aceasta pagina de internet catre, in calitate de detinator al acestei pagini de internet;',
+        'anticiparea unor eventuale bunuri care vor fi in viitor puse la dispozitia utilizatorilor prin intermediul acestei pagini de internet, in functie de serviciile / produsele accesate.',
+        'Pe baza feedback-ului transmis prin cookie-uri in legatura cu modul in care se utilizeaza aceasta pagina de internet, poate adopta masuri pentru ca aceasta pagina de internet sa fie mai eficienta si mai accesibila pentru utilizatori.'
+      ]
+    },
+    {
+      heading: '3. Care este durata de viata a cookie-urilor?',
+      paragraphs: [
+        'Durata de viata a cookie-urilor poate varia in functie de scopul pentru care este plasat. Exista urmatoarele categorii de cookie-uri care determina si durata de viata a acestora:',
+        'Cookie-uri de sesiune - este un cookie care este sters automat cand utilizatorul isi inchide browserul.',
+        'Cookie-uri persistente / fixe - este un cookie care ramane stocat in terminalul utilizatorului pana cand atinge o anumita data de expirare (cateva minute, zile sau cativa ani in viitor) sau pana la stegerea acestuia de catre utilizator in orice moment prin intermediul setarilor browserului.'
+      ]
+    },
+    {
+      heading: '4. Ce sunt cookie-urile plasate de terti?',
+      paragraphs: [
+        'Anumite sectiuni de continut de pe pagina de internet pot fi furnizate prin intermediul unor terti, adica nu de catre [detinatorul website-ului], caz in care aceste cookie-uri sunt denumite cookie-uri plasate de terti.',
+        'Aceste cookie-uri pot proveni de la urmatorii terti:',
+        'Google Analytics',
+        'Facebook Pixel'
+      ]
+    },
+    {
+      heading: '5. Ce cookie-uri sunt folosite prin intermediul acestei pagini de internet?',
+      paragraphs: [
+        'Prin utilizarea / vizitarea paginii de internet pot fi plasate urmatoarele cookie-uri:',
+        'a. Cookie-uri de performanta a paginii de internet',
+        'b. Cookie-uri de analiza a utilizatorilor',
+        'c. Cookie-uri pentru geotargeting',
+        'd. Cookie-uri de inregistrare',
+        'e. Cookie-uri pentru publicitate',
+        'f. Cookie-uri ale furnizorilor de publicitate',
+        'a. Cookie-uri de performanta - Prin acest tip de cookie-uri sunt memorate preferintele utilizatorului acestei pagini de internet, astfel incat setarea din nou a preferintelor in cazul vizitarii ulterioare a paginii de internet nu mai este necesara.',
+        'b. Cookie-uri de analiza a utilizatorilor - Aceste cookie-uri ne informeaza daca un anumit utilizator al paginii de internet a mai vizitat / utilizat aceasta pagina de internet anterior. Aceste cookie-uri sunt utilizate doar in scopuri statistice.',
+        'c. Cookie-uri pentru geotargeting - Aceste cookie-uri sunt utilizate de catre un soft care stabileste tara de provenienta a utilizatorului paginii de internet. Vor fi primite aceleasi reclame indiferent de limba selectata.',
+        'd. Cookie-uri pentru inregistrare - Atunci cand va inregistrati pe acest site, se genereaza cookie-uri care memoreaza acest fapt. Serverele utilizeaza aceste cookie-uri pentru a ne arata contul cu care sunteti inregistrat.',
+        'De asemenea, utilizarea acestor cookie-uri permite sa asociem orice comentariu postat pe pagina de internet cu username-ul contului folosit. In cazul in care nu a fost selectata optiunea "pastreaza-ma inregistrat", aceste cookie-uri se vor sterge automat la momentul terminarii sesiunii de navigare.',
+        'e. Cookie-uri pentru publicitate - Aceste cookie-uri permit aflarea vizualizarii de catre un utilizator a unei reclame online, tipul acesteia si timpul scurs de la momentul vizualizarii respectviului mesaj publicitar.',
+        'Ca atare, astfel de cookie-uri sunt folosite pentru targetarea publicitatii online. Ele sunt anonime, stocand informatii despre contentul vizualizat, nu si despre utilizatori.'
+      ]
+    },
+    {
+      heading: '6. Ce tip de informatii sunt stocate si accesate prin intermediul cookie-urilor?',
+      paragraphs: [
+        'Cookie-urile pastreaza informatii intr-un fisier text de mici dimensiuni care permit recunoasterea browserului. Aceasta pagina de internet recunoaste browserul pana cand cookie-urile expira sau sunt sterse.'
+      ]
+    },
+    {
+      heading: '7. Cum pot fi oprite cookie-urile?',
+      paragraphs: [
+        'Dezactivarea si refuzul de a primi cookie-uri pot face aceasta pagina de internet dificil de vizitat, atragand dupa sine limitari ale posibilitatilor de utilizare ale acesteia.',
+        'Utilizatorii isi pot configura browserul sa respinga fisierele cookie sau sa fie acceptate cookie-uri de la o pagina de internet anume. Cu toate acestea, refuzarea sau dezactivarea cookie-urilor nu inseamna ca nu veti mai primi publicitate online - ci doar ca aceasta nu va fi adaptata preferintelor si interesele dumneavoastra, evidentiate prin comportamentul de navigare.',
+        'Toate browserele moderne ofera posibilitatea de a schimba setarile cookie-urilor. Aceste setari pot fi accesate, ca regula, in sectiunea "optiuni" sau in meniul de "preferinte" al browserului tau.',
+        'Pentru a intelege aceste setari, urmatoarele linkuri pot fi folositoare:',
+        'Setari Cookie pentru Google Chrome',
+        'Setari Cookie pentru Mozilla Firefox',
+        'Setari Cookie pentru Apple Safari',
+        'Setari Cookie pentru Microsoft Internet Explorer',
+        'Pentru orice intrebari suplimentare cu privire la modul in sunt utilizate cookie-urile prin intermediul acestei pagini de internet, va rugam sa va adresati la:'
+      ]
+    },
+    {
+      heading: 'Tipuri de Cookies Folosite',
+      paragraphs: [
+        '1. Necesare pentru functionarea website-ului - Acest website foloseste cookie-uri pentru a salva sesiunile utilizatorilor si pentru activitati strict necesare pentru functionarea lui, de exemplu cosul de cumparaturi sau produsele vizualizate recent.',
+        '2. Analytics - Acest tip de servicii permite monitorizarea si analiza traficului in website. Poate sa fie folosit pentru a urmari comportamentul utilizatorilor.',
+        'Google Analytics (Google Inc.) - Este un serviciu de analiza web furnizat de Google. Acesta monitorizeaza utilizarea website-urilor pentru a crea rapoarte si ne ajuta sa imbunatatim experienta utilizatorilor in pagini.',
+        '3. Marketing si analiza comportamentului - Acest tip de servicii permit website-ului si partenerilor lor sa afiseze reclame pronind de la modul in care utilizatorul foloseste website-ul.',
+        'Facebook (Facebook Inc.) - Acesta este un serviciu de remarketing comportamental care analizeaza vizitatorii acestui website si permite afisarea de reclame personalizate.',
+        'Locatie de Prelucrare: SUA',
+        '4. Afisarea de continut din alte platforme - Acest tip de servicii permit incarcarea continut extern si interactiunea cu acesta direct in website. Aceste servicii pot sa culeaga informatii despre trafic chiar daca utilizatorul nu le foloseste.',
+        'Widget video YouTube - Acesta este un serviciu de remarketing comportamental care analizeaza vizitatorii acestui website si permite afisarea de reclame personalizate.',
+        'Locatie de Prelucrare: SUA',
+        'Video Player Vimeo - Este un serviciu de vizualizare continut video furnizat de InterActiveCorp care ne permite sa adaugam continut de tip video in paginile web.',
+        'Locatie de Prelucrare: SUA'
+      ]
+    }
+  ]
+};
 
 export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>> = {
   en: {
@@ -675,46 +774,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           }
         ]
       },
-      cookiePolicy: {
-        title: 'Cookie Policy',
-        lastUpdated: 'April 2026',
-        sections: [
-          {
-            heading: 'What Are Cookies',
-            paragraphs: [
-              'Cookies are small text files stored on your device when you visit a website. They help websites remember your preferences, improve performance, and deliver relevant content.'
-            ]
-          },
-          {
-            heading: 'Types of Cookies We Use',
-            paragraphs: [
-              'Essential Cookies: These are required for the basic functionality of our website. They cannot be disabled without affecting how the site works.',
-              'Analytics Cookies: We use Google Analytics to understand how visitors interact with our website. This data helps us improve our content and user experience.',
-              'Marketing Cookies: We use Meta Pixel to measure the effectiveness of our advertising campaigns and deliver relevant ads to users who have visited our site.'
-            ]
-          },
-          {
-            heading: 'Third-Party Cookies',
-            paragraphs: [
-              'Our website may include cookies set by third-party services including Google Analytics, Google Ads, and Meta (Facebook). These providers maintain their own privacy and cookie policies which we encourage you to review.'
-            ]
-          },
-          {
-            heading: 'Managing Cookies',
-            paragraphs: [
-              'You can control and manage cookies through your browser settings. Most browsers allow you to view, delete, and block cookies from specific websites or all websites.',
-              'Please note that disabling certain cookies may affect the functionality and user experience of our website. Declining non-essential cookies will not prevent you from using our core services.'
-            ]
-          },
-          {
-            heading: 'Updates to This Policy',
-            paragraphs: [
-              'We may update this Cookie Policy from time to time to reflect changes in our practices or applicable law. We will notify you of significant changes by updating the date at the top of this page.',
-              'For questions about our use of cookies, contact us at: puscas.forbusiness@gmail.com'
-            ]
-          }
-        ]
-      },
+      cookiePolicy: ROMANIAN_COOKIE_POLICY,
       termsConditions: {
         title: 'Terms & Conditions',
         lastUpdated: 'April 2026',
@@ -1187,46 +1247,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           }
         ]
       },
-      cookiePolicy: {
-        title: 'Politica de Cookie-uri',
-        lastUpdated: 'Aprilie 2026',
-        sections: [
-          {
-            heading: 'Ce sunt Cookie-urile',
-            paragraphs: [
-              'Cookie-urile sunt fisiere text de mici dimensiuni stocate pe dispozitivul tau atunci cand vizitezi un site web. Ele ajuta site-urile sa isi aminteasca preferintele tale, sa imbunatateasca performanta si sa ofere continut relevant.'
-            ]
-          },
-          {
-            heading: 'Tipurile de Cookie-uri Utilizate',
-            paragraphs: [
-              'Cookie-uri esentiale: Necesare pentru functionarea de baza a site-ului. Nu pot fi dezactivate fara a afecta functionarea acestuia.',
-              'Cookie-uri analitice: Utilizam Google Analytics pentru a intelege cum interactioneaza vizitatorii cu site-ul nostru. Aceste date ne ajuta sa imbunatatim continutul si experienta utilizatorului.',
-              'Cookie-uri de marketing: Utilizam Meta Pixel pentru a masura eficienta campaniilor noastre publicitare si a afisa reclame relevante utilizatorilor care ne-au vizitat site-ul.'
-            ]
-          },
-          {
-            heading: 'Cookie-uri de la Terti',
-            paragraphs: [
-              'Site-ul nostru poate include cookie-uri setate de servicii terte, inclusiv Google Analytics, Google Ads si Meta (Facebook). Acesti furnizori au propriile politici de confidentialitate si cookie-uri pe care te incurajam sa le consulti.'
-            ]
-          },
-          {
-            heading: 'Gestionarea Cookie-urilor',
-            paragraphs: [
-              'Poti controla si gestiona cookie-urile prin setarile browserului tau. Majoritatea browserelor permit vizualizarea, stergerea si blocarea cookie-urilor de pe site-uri specifice sau de pe toate site-urile.',
-              'Retine ca dezactivarea anumitor cookie-uri poate afecta functionalitatea si experienta de utilizare a site-ului nostru. Refuzul cookie-urilor non-esentiale nu te va impiedica sa utilizezi serviciile noastre de baza.'
-            ]
-          },
-          {
-            heading: 'Actualizari ale Politicii',
-            paragraphs: [
-              'Putem actualiza aceasta Politica de Cookie-uri periodic pentru a reflecta modificarile in practicile noastre sau in legislatia aplicabila. Te vom notifica cu privire la schimbarile semnificative prin actualizarea datei din partea de sus a acestei pagini.',
-              'Pentru intrebari despre utilizarea cookie-urilor, ne poti contacta la: puscas.forbusiness@gmail.com'
-            ]
-          }
-        ]
-      },
+      cookiePolicy: ROMANIAN_COOKIE_POLICY,
       termsConditions: {
         title: 'Termeni si Conditii',
         lastUpdated: 'Aprilie 2026',
@@ -1635,46 +1656,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           }
         ]
       },
-      cookiePolicy: {
-        title: 'Cookie Iranyelvek',
-        lastUpdated: '2026 aprilis',
-        sections: [
-          {
-            heading: 'Mik azok a Cookie-k',
-            paragraphs: [
-              'A cookie-k kis szovegfajlok, amelyek az eszkozoden tarolodnak, amikor meglogatasz egy webhelyet. Segitenek a webhelyeknek megjegyezni beallitasaidat, javitani a teljesitmenyt es relevans tartalmat nyujtani.'
-            ]
-          },
-          {
-            heading: 'Altalunk Hasznalt Cookie-Tipusok',
-            paragraphs: [
-              'Esszencialis cookie-k: A webhely alapveto mukodesehez szuksegesek. Nem tilthatoak le a mukodes befolyasolasa nelkul.',
-              'Analitikai cookie-k: A Google Analytics segitsegevel megertjuk, hogyan lepnek kapcsolatba a latogatoi a webhelyunkkel. Ezek az adatok segitenek javitani tartalmainkat es a felhasznaloi elmenyt.',
-              'Marketing cookie-k: A Meta Pixel segitsegevel meruk reklamkampanyaink hatekonysagat es relevans hirdeteseket jelenitunk meg a webhelyet latogatoknak.'
-            ]
-          },
-          {
-            heading: 'Harmadik Feles Cookie-k',
-            paragraphs: [
-              'Weboldalunk tartalmazhat harmadik feles szolgaltatok altal beallitott cookie-kat, beleertve a Google Analytics, Google Ads es a Meta (Facebook) cookie-jait. Ezek a szolgaltatok sajat adatvedelmi es cookie iranyelvekkel rendelkeznek, amelyek atkinteset batoritjuk.'
-            ]
-          },
-          {
-            heading: 'Cookie-k Kezelese',
-            paragraphs: [
-              'A cookie-kat a bongeszoje beallitasain keresztul ellenorizheti es kezelheti. A legtobb bongeszoen megtekintheti, torolheti es blokkolhatja az adott webhelyektol vagy az osszes webhelytol szarmazo cookie-kat.',
-              'Vegye figyelembe, hogy bizonyos cookie-k letiltasa befolyasolhatja a webhely mukodeset es a felhasznaloi elmenyt. A nem esszencialis cookie-k elutasitasa nem akadalyozza meg az alapszolgaltatasaink hasznalatat.'
-            ]
-          },
-          {
-            heading: 'Az Iranyelvek Frissitesei',
-            paragraphs: [
-              'Ezeket a Cookie Iranyelveket idorol idore frissithetjuk, hogy tukrozzuk a gyakorlatainkban vagy az alkalmazando jogban bekovetkezo valtozasokat. A jelentos valtozasokrol az oldal tetejen levo datum frissitesevel ertesitjuk.',
-              'A cookie-k hasznalataval kapcsolatos kerdesekert keresson minket: puscas.forbusiness@gmail.com'
-            ]
-          }
-        ]
-      },
+      cookiePolicy: ROMANIAN_COOKIE_POLICY,
       termsConditions: {
         title: 'Altalanos Feltetelek',
         lastUpdated: '2026 aprilis',
