@@ -36,7 +36,12 @@
         <li *ngFor="let feature of plan.features">{{ feature }}</li>
       </ul>
       <div class="plan-divider"></div>
-      <a class="button" [class.button--accent]="plan.featured" routerLink="/contact">
+      <a
+        class="button"
+        [class.button--accent]="plan.featured"
+        [routerLink]="['/contact']"
+        [queryParams]="{ plan: plan.name, budget: plan.recommendedBudget }"
+      >
         {{ plan.ctaLabel }} <span class="arrow">→</span>
       </a>
     </article>
@@ -139,7 +144,7 @@
     <h2>{{ content().pricingBuildRightSystemTitle }}</h2>
     <p class="section-copy">{{ content().pricingBuildRightSystemBody }}</p>
     <p class="cta-note">{{ content().pricingNoCommitment }}</p>
-    <a class="button button--accent final-cta-button" routerLink="/contact">
+    <a class="button button--accent final-cta-button" [routerLink]="['/contact']">
       {{ content().primaryCta }} <span class="arrow">→</span>
     </a>
   </section>

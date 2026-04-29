@@ -177,6 +177,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         price: 'From €500 / month',
         description: 'For businesses starting with structured campaigns and consistent optimization.',
         ctaLabel: 'Get Started',
+        recommendedBudget: 'under-1000',
         features: [
           'Google Ads Management',
           'Campaign setup & optimization',
@@ -191,6 +192,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         description: 'For businesses ready to scale with a full-funnel approach and deeper optimization.',
         ctaLabel: 'Let’s Talk',
         featured: true,
+        recommendedBudget: '1000-3000',
         features: [
           'Everything in Foundation',
           'Meta Ads Management',
@@ -206,6 +208,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         price: '€1,300+ / month',
         description: 'For brands looking for aggressive growth with full strategic involvement.',
         ctaLabel: 'Apply to Work With Us',
+        recommendedBudget: '3000-10000',
         features: [
           'Everything in Scaling',
           'TikTok Ads Management',
@@ -266,10 +269,10 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           'Yes. We can support presentation websites, e-commerce projects, photography, and video production as part of a custom growth system.'
       }
     ],
-    contactTitle: 'Ready to Scale Your Marketing?',
+    contactTitle: 'Let’s Talk About Your Growth',
     contactSubtitle:
-      'Share your goals and we will propose a performance plan tailored to your audience, budget, and growth targets.',
-    primaryCta: 'Let\'s grow together',
+      'Tell us about your business and goals — we’ll come back with a clear strategy and next steps tailored to your growth.',
+    primaryCta: 'Let\'s Grow Together',
     growthServices: [
       {
         title: 'Paid Media That Converts',
@@ -329,9 +332,10 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
       }
     ],
     contact: {
-      person: 'Andrei Puscas',
-      role: 'Marketing Specialist',
-      email: 'puscas.forbusiness@gmail.com'
+      person: 'InsideGrowth',
+      role: 'Digital Marketing Agency',
+      email: 'contact@insidegrowth.ro',
+      phone: '0756169099'
     },
     ui: {
       nav: {
@@ -386,33 +390,127 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
       pricingIncluded: 'Included',
       pricingOptional: 'Optional',
       contactEyebrow: 'Contact',
-      contactShareGoals: 'Share Your Growth Goals',
+      contactShareGoals: 'Tell us about your business and goals',
       contactForm: {
+        planLabel: 'Business plan',
+        planPlaceholder: 'Select your plan',
+        planValidation: 'Please select a plan.',
+        budgetLabel: 'Recommended budget',
+        budgetPlaceholder: 'Select budget range',
+        budgetValidation: 'Budget range is required.',
+        businessLabel: 'Business name',
+        businessPlaceholder: 'Your business name',
+        businessValidation: 'Business name is required.',
         fullNameLabel: 'Full name',
         fullNamePlaceholder: 'Your name',
         fullNameValidation: 'Name is required.',
         emailLabel: 'Business email',
         emailPlaceholder: 'you@company.com',
         emailValidation: 'Enter a valid email.',
-        companyLabel: 'Company',
-        companyPlaceholder: 'Company name',
-        companyValidation: 'Company is required.',
-        budgetLabel: 'Monthly media budget',
-        budgetPlaceholder: 'Select budget range',
-        budgetValidation: 'Budget range is required.',
+        websiteLabel: 'Website',
+        websitePlaceholder: 'yourwebsite.com',
+        websiteValidation: 'Website is required.',
         budgetOptions: [
-          { value: 'under-1000', label: 'Under 1,000 EUR' },
-          { value: '1000-3000', label: '1,000 - 3,000 EUR' },
-          { value: '3000-10000', label: '3,000 - 10,000 EUR' },
-          { value: '10000-plus', label: '10,000+ EUR' }
+          { value: 'under-1000', label: '€500 – €1,000' },
+          { value: '1000-3000', label: '€1,000 – €3,000' },
+          { value: '3000-10000', label: '€3,000 – €10,000' },
+          { value: '10000-plus', label: '€10,000+' }
         ],
         goalsLabel: 'Growth goals',
-        goalsPlaceholder: 'Tell us what results you want to achieve',
+        goalsPlaceholder: 'Tell us about your business, goals, and anything else we should know',
         goalsValidation: 'Please provide at least 20 characters.',
-        submitLabel: 'Submit Lead'
+        submitLabel: 'Send inquiry'
       },
+      contactNextStepsTitle: 'What Happens Next',
+      contactNextSteps: [
+        'We review your business',
+        'We identify growth opportunities',
+        'We come back with a clear plan'
+      ],
+      contactResponseTimeTitle: 'Response Time',
+      contactResponseTimeBody: 'We typically respond within 24 hours',
+      contactDirectContactTitle: 'Direct Contact',
+      contactLimitedClientsNote: 'We work with a limited number of clients to ensure quality and performance.',
+      contactFaqTitle: 'FAQ',
+      contactFaqs: [
+        {
+          question: 'Do you guarantee results?',
+          answer:
+            'We don’t guarantee specific numbers — because real growth depends on multiple factors like your market, offer, and budget. What we do guarantee is a clear strategy, consistent optimization, and a focus on scaling what works over time.'
+        },
+        {
+          question: 'How many clients do you work with?',
+          answer:
+            'We work with a limited number of clients to ensure every project gets the attention and focus it needs. Our goal is quality and performance — not volume.'
+        },
+        {
+          question: 'How does pricing work?',
+          answer:
+            'We tailor pricing based on your business, goals, and the level of support required to scale effectively. The plans shown are starting points — final pricing is built around your specific needs.'
+        },
+        {
+          question: 'How long does it take to see results?',
+          answer:
+            'Most campaigns start improving within the first 1–3 months. However, sustainable growth is built over time through testing, optimization, and scaling.'
+        },
+        {
+          question: 'Do you guarantee results?',
+          answer:
+            'We don’t guarantee specific numbers — no serious agency does. What we do guarantee is a structured approach focused on continuous improvement and measurable growth.'
+        },
+        {
+          question: 'Do I need a large budget to start?',
+          answer:
+            'Not necessarily. We work with different budget levels, but meaningful scaling requires proper investment in both ads and optimization.'
+        },
+        {
+          question: 'What platforms do you work with?',
+          answer:
+            'We manage campaigns across Google, Meta (Facebook & Instagram), and TikTok — depending on what fits your business best.'
+        },
+        {
+          question: 'Do you work with all types of businesses?',
+          answer:
+            'We work with most business types, but we don’t partner with everyone. We focus on businesses that are serious about growth and open to building a long-term collaboration based on trust and performance.'
+        },
+        {
+          question: 'What happens after I submit the form?',
+          answer:
+            'We review your business, current setup, and goals. Then we come back with a clear strategy and recommended next steps tailored to your situation.'
+        },
+        {
+          question: 'Do you only run ads, or do you handle everything?',
+          answer:
+            'We go beyond ads. We focus on the full system — including SEO, website optimization, tracking, and creative — to ensure everything works together.'
+        },
+        {
+          question: 'Can you work with my existing website and setup?',
+          answer:
+            'Yes. We can optimize your current setup or rebuild parts of it if needed to improve performance.'
+        },
+        {
+          question: 'What makes you different from other agencies?',
+          answer:
+            'We don’t focus on volume or short-term wins. We build systems designed for long-term growth and only work with businesses where we can create real impact.'
+        },
+        {
+          question: 'Do you offer one-time services?',
+          answer:
+            'In most cases, no. We focus on ongoing partnerships, because consistent optimization is what drives real results.'
+        },
+        {
+          question: 'Will I be involved in the process?',
+          answer:
+            'Yes. We believe strong collaboration leads to better results, especially when it comes to product insights, offers, and direction.'
+        },
+        {
+          question: 'Do you create content as well?',
+          answer:
+            'Yes. We offer photo and video production for ads and branding, depending on your needs and the level of collaboration.'
+        }
+      ],
       leadSavedMessage:
-        'Lead saved successfully. We will use your details to prepare a tailored growth proposal.',
+        'Thank you. We’ve received your details and will prepare a tailored growth proposal.',
       homeGrowthEyebrow: 'Growth Systems',
       homeHowWeScaleTitle: 'How We Scale Your Business',
       homeHowWeScaleSubtitle: 'Growth Systems, Not Just Services',

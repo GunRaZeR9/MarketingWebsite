@@ -3,9 +3,9 @@
   <!-- HERO -->
     <section class="page-hero" scrollReveal>
     <p class="eyebrow">{{ content().ui.homeGrowthEyebrow }}</p>
-    <h1>{{ content().portfolio?.[0]?.title }}</h1>
+    <h1>{{ content().portfolio[0].title }}</h1>
     <div class="section-divider"></div>
-    <p class="hero-lead">{{ content().portfolio?.[0]?.description }}</p>
+    <p class="hero-lead">{{ content().portfolio[0].description }}</p>
   </section>
 
   <!-- CASE STUDIES -->
@@ -13,12 +13,12 @@
     <article
       *ngFor="let item of content().portfolio; let i = index"
       class="service-detail"
-      [ngClass]="'service-detail--' + (item.imagePosition || (i % 2 === 0 ? 'left' : 'right'))"
+      [ngClass]="item.image ? 'service-detail--' + (item.imagePosition || (i % 2 === 0 ? 'left' : 'right')) : 'service-detail--text-only'"
       scrollReveal
       [delay]="i * 80"
       [attr.id]="'case-' + (i + 1)"
     >
-      <div class="service-image">
+      <div *ngIf="item.image" class="service-image">
         <div class="image-shell">
           <img class="service-image__img" [src]="item.image" [alt]="item.title + ' image'" />
         </div>

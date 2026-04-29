@@ -1,16 +1,20 @@
 import { CommonModule } from '@angular/common';
-import { Component, effect, inject } from '@angular/core';
+import { Component, DestroyRef, effect, inject } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
 
 interface StoredLead {
+  plan: string;
+  budget: string;
   name: string;
   email: string;
   company: string;
-  budget: string;
+  website: string;
   message: string;
   submittedAt: string;
 }
@@ -23,15 +27,20 @@ interface StoredLead {
 })
 export class ContactComponent {
   private readonly languageService = inject(LanguageService);
+  private readonly route = inject(ActivatedRoute);
+  private readonly destroyRef = inject(DestroyRef);
   readonly content = this.languageService.content;
   submitted = false;
+  expandedFaqIndex: number | null = null;
   private readonly fb = inject(FormBuilder);
 
   readonly leadForm = this.fb.nonNullable.group({
+    plan: ['', [Validators.required]],
+    budget: ['', [Validators.required]],
     name: ['', [Validators.required, Validators.minLength(2)]],
     email: ['', [Validators.required, Validators.email]],
     company: ['', [Validators.required]],
-    budget: ['', [Validators.required]],
+    website: ['', [Validators.required]],
     message: ['', [Validators.required, Validators.minLength(20)]]
   });
 
@@ -43,6 +52,27 @@ export class ContactComponent {
         description: seoConfig.description,
         keywords: seoConfig.keywords
       });
+    });
+
+    this.leadForm.controls.plan.valueChanges.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((planName) => {
+      const selectedPlan = this.content().pricingPlans.find((plan) => plan.name === planName);
+
+      if (selectedPlan) {
+        this.leadForm.controls.budget.setValue(selectedPlan.recommendedBudget);
+      }
+    });
+
+    this.route.queryParamMap.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((params) => {
+      const plan = params.get('plan');
+      const budget = params.get('budget');
+
+      if (plan) {
+        this.leadForm.controls.plan.setValue(plan);
+      }
+
+      if (budget) {
+        this.leadForm.controls.budget.setValue(budget);
+      }
     });
   }
 
@@ -62,5 +92,9 @@ export class ContactComponent {
     localStorage.setItem('marketingLeads', JSON.stringify(leads));
     this.leadForm.reset();
     this.submitted = true;
+  }
+
+  toggleFaq(index: number): void {
+    this.expandedFaqIndex = this.expandedFaqIndex === index ? null : index;
   }
 }

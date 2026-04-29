@@ -31,6 +31,7 @@ export interface PricingPlan {
   price: string;
   description: string;
   ctaLabel: string;
+  recommendedBudget: string;
   featured?: boolean;
   features: string[];
 }
@@ -50,6 +51,12 @@ export interface ContactInfo {
   person: string;
   role: string;
   email: string;
+  phone: string;
+}
+
+export interface ContactFaqItem {
+  question: string;
+  answer: string;
 }
 
 export interface BudgetOption {
@@ -58,18 +65,24 @@ export interface BudgetOption {
 }
 
 export interface ContactFormText {
+  planLabel: string;
+  planPlaceholder: string;
+  planValidation: string;
+  budgetLabel: string;
+  budgetPlaceholder: string;
+  budgetValidation: string;
+  businessLabel: string;
+  businessPlaceholder: string;
+  businessValidation: string;
   fullNameLabel: string;
   fullNamePlaceholder: string;
   fullNameValidation: string;
   emailLabel: string;
   emailPlaceholder: string;
   emailValidation: string;
-  companyLabel: string;
-  companyPlaceholder: string;
-  companyValidation: string;
-  budgetLabel: string;
-  budgetPlaceholder: string;
-  budgetValidation: string;
+  websiteLabel: string;
+  websitePlaceholder: string;
+  websiteValidation: string;
   budgetOptions: BudgetOption[];
   goalsLabel: string;
   goalsPlaceholder: string;
@@ -130,6 +143,14 @@ export interface SiteUiText {
   contactEyebrow: string;
   contactShareGoals: string;
   contactForm: ContactFormText;
+  contactNextStepsTitle: string;
+  contactNextSteps: string[];
+  contactResponseTimeTitle: string;
+  contactResponseTimeBody: string;
+  contactDirectContactTitle: string;
+  contactLimitedClientsNote: string;
+  contactFaqTitle: string;
+  contactFaqs: ContactFaqItem[];
   leadSavedMessage: string;
   homeGrowthEyebrow: string;
   homeHowWeScaleTitle: string;
