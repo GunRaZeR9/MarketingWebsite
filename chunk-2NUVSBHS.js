@@ -1,1 +1,0 @@
-import{Ja as s,Za as n}from"./chunk-MAIHGHM6.js";var o=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=s({type:t,selectors:[["app-results-page"]],decls:1,vars:0,consts:[[1,"results-page"]],template:function(e,p){e&1&&n(0,"main",0)},styles:[".results-page[_ngcontent-%COMP%]{min-height:calc(100vh - 8rem)}"]})};export{o as ResultsComponent};
