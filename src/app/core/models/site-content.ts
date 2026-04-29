@@ -21,8 +21,9 @@ export interface AdvantageItem {
 
 export interface PricingFeature {
   label: string;
-  standard: boolean;
-  premium: boolean;
+  foundation: boolean;
+  scaling: boolean;
+  partner: boolean;
 }
 
 export interface PricingPlan {
@@ -31,6 +32,18 @@ export interface PricingPlan {
   description: string;
   ctaLabel: string;
   featured?: boolean;
+  features: string[];
+}
+
+export interface PricingSpotlight {
+  title: string;
+  description: string;
+  eyebrow?: string;
+}
+
+export interface PricingFaqItem {
+  question: string;
+  answer: string;
 }
 
 export interface ContactInfo {
@@ -68,6 +81,7 @@ export interface SiteUiText {
   nav: {
     home: string;
     about: string;
+    portfolio: string;
     services: string;
     pricing: string;
     contact: string;
@@ -145,6 +159,7 @@ export interface SiteSeo {
   privacyPolicy: PageSeo;
   cookiePolicy: PageSeo;
   termsConditions: PageSeo;
+  portfolio?: PageSeo;
 }
 
 export interface LegalSection {
@@ -185,8 +200,21 @@ export interface SiteContent {
   advantages: AdvantageItem[];
   pricingTitle: string;
   pricingSubtitle: string;
+  pricingComparisonTitle: string;
+  pricingVatNote: string;
+  pricingSpotlightsTitle: string;
+  pricingFaqTitle: string;
+  pricingCustomTitle: string;
+  pricingCustomSubtitle: string;
+  pricingLimitedClientsTitle: string;
+  pricingLimitedClientsBody: string;
+  pricingBuildRightSystemTitle: string;
+  pricingBuildRightSystemBody: string;
+  pricingNoCommitment: string;
   pricingPlans: PricingPlan[];
+  pricingSpotlights: PricingSpotlight[];
   pricingFeatures: PricingFeature[];
+  pricingFaqs: PricingFaqItem[];
   contactTitle: string;
   contactSubtitle: string;
   primaryCta: string;
@@ -196,4 +224,17 @@ export interface SiteContent {
   ui: SiteUiText;
   seo: SiteSeo;
   legal: SiteLegalContent;
+  portfolio: CaseStudy[];
+}
+
+export interface CaseStudy {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+  metrics?: string[];
+  description: string;
+  results?: string;
+  image?: string;
+  imagePosition?: 'left' | 'right';
+  features?: string[];
 }

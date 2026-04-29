@@ -1,6 +1,4 @@
 <main class="pricing-page">
-
-  <!-- ── HERO ── -->
   <section class="page-hero" scrollReveal>
     <p class="eyebrow">{{ content().ui.pricingEyebrow }}</p>
     <h1>{{ content().pricingTitle }}</h1>
@@ -8,22 +6,35 @@
     <p class="hero-lead">{{ content().pricingSubtitle }}</p>
   </section>
 
-  <!-- ── PLAN CARDS ── -->
+  <section class="spotlight-section" scrollReveal [delay]="60">
+    <h2>{{ content().pricingSpotlightsTitle }}</h2>
+    <div class="section-divider"></div>
+    <div class="spotlight-grid">
+    <article *ngFor="let spotlight of content().pricingSpotlights; let i = index" class="spotlight-card panel">
+      <p class="spotlight-index">{{ spotlight.eyebrow }}</p>
+      <h2>{{ spotlight.title }}</h2>
+      <p>{{ spotlight.description }}</p>
+    </article>
+    </div>
+  </section>
+
   <section class="plan-grid">
     <article
       *ngFor="let plan of content().pricingPlans; let i = index"
       class="plan-card panel"
       [class.featured]="plan.featured"
       scrollReveal
-      [delay]="i * 150"
+      [delay]="i * 120"
     >
       <div *ngIf="plan.featured" class="featured-badge">Most Popular</div>
       <p class="eyebrow">{{ plan.name }}</p>
       <div class="plan-price">
         <span class="price-amount">{{ plan.price }}</span>
-        <span class="price-period">/ month</span>
       </div>
       <p class="plan-desc">{{ plan.description }}</p>
+      <ul class="plan-features">
+        <li *ngFor="let feature of plan.features">{{ feature }}</li>
+      </ul>
       <div class="plan-divider"></div>
       <a class="button" [class.button--accent]="plan.featured" routerLink="/contact">
         {{ plan.ctaLabel }} <span class="arrow">→</span>
@@ -31,9 +42,8 @@
     </article>
   </section>
 
-  <!-- ── FEATURE TABLE ── -->
-  <section class="panel" scrollReveal [delay]="100">
-    <h2>{{ content().ui.pricingFeatureComparison }}</h2>
+  <section class="panel comparison-panel" scrollReveal [delay]="120">
+    <h2>{{ content().pricingComparisonTitle }}</h2>
     <div class="section-divider"></div>
     <div class="table-wrap" role="region" [attr.aria-label]="content().ui.pricingTableAriaLabel" tabindex="0">
       <table>
@@ -42,23 +52,95 @@
             <th>{{ content().ui.pricingFeatureHeader }}</th>
             <th>{{ content().ui.pricingStandardHeader }}</th>
             <th>{{ content().ui.pricingPremiumHeader }}</th>
+            <th>Performance Partner</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let feature of content().pricingFeatures">
             <td>{{ feature.label }}</td>
             <td>
-              <span *ngIf="feature.standard" class="check">✓</span>
-              <span *ngIf="!feature.standard" class="dash">–</span>
+              <span *ngIf="feature.foundation" class="check">✓</span>
+              <span *ngIf="!feature.foundation" class="dash">–</span>
             </td>
             <td>
-              <span *ngIf="feature.premium" class="check">✓</span>
-              <span *ngIf="!feature.premium" class="dash">–</span>
+              <span *ngIf="feature.scaling" class="check">✓</span>
+              <span *ngIf="!feature.scaling" class="dash">–</span>
+            </td>
+            <td>
+              <span *ngIf="feature.partner" class="check">✓</span>
+              <span *ngIf="!feature.partner" class="dash">–</span>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
+    <p class="pricing-note">{{ content().pricingVatNote }}</p>
   </section>
 
+  <section class="panel custom-panel" scrollReveal [delay]="180">
+    <p class="eyebrow">{{ content().pricingCustomTitle }}</p>
+    <h2>{{ content().pricingCustomSubtitle }}</h2>
+    <div class="section-divider"></div>
+    <p class="section-copy">
+      {{ content().pricingLimitedClientsBody }}
+    </p>
+    <div class="custom-grid">
+      <article>
+        <h3>{{ content().pricingLimitedClientsTitle }}</h3>
+        <p>{{ content().pricingLimitedClientsBody }}</p>
+      </article>
+      <article>
+        <h3>{{ content().pricingBuildRightSystemTitle }}</h3>
+        <p>{{ content().pricingBuildRightSystemBody }}</p>
+      </article>
+      <article>
+        <h3>Custom Projects</h3>
+        <ul>
+          <li>Custom websites for presentation and e-commerce brands</li>
+          <li>Advanced SEO systems and ongoing optimization</li>
+          <li>Product photography and video production</li>
+          <li>Full funnel and brand setup</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel faq-panel" scrollReveal [delay]="240">
+    <h2>{{ content().pricingFaqTitle }}</h2>
+    <div class="section-divider"></div>
+    <div class="faq-list">
+      <article *ngFor="let item of content().pricingFaqs; let i = index" class="faq-item">
+        <button
+          type="button"
+          class="faq-trigger"
+          [attr.aria-expanded]="expandedFaqIndex === i"
+          [attr.aria-controls]="'faq-answer-' + i"
+          [id]="'faq-trigger-' + i"
+          (click)="toggleFaq(i)"
+        >
+          <span>{{ item.question }}</span>
+          <span class="faq-icon">{{ expandedFaqIndex === i ? '−' : '+' }}</span>
+        </button>
+        <div
+          *ngIf="expandedFaqIndex === i"
+          class="faq-answer"
+          [id]="'faq-answer-' + i"
+          role="region"
+          [attr.aria-labelledby]="'faq-trigger-' + i"
+        >
+          <p>{{ item.answer }}</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel final-cta" scrollReveal [delay]="300">
+    <p class="eyebrow">{{ content().pricingLimitedClientsTitle }}</p>
+    <h2>{{ content().pricingBuildRightSystemTitle }}</h2>
+    <p class="section-copy">{{ content().pricingBuildRightSystemBody }}</p>
+    <p class="cta-note">{{ content().pricingNoCommitment }}</p>
+    <a class="button button--accent final-cta-button" routerLink="/contact">
+      {{ content().primaryCta }} <span class="arrow">→</span>
+    </a>
+  </section>
 </main>

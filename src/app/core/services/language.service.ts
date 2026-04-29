@@ -10,7 +10,13 @@ export class LanguageService {
   private readonly currentLanguageSignal = signal<LanguageCode>(DEFAULT_LANGUAGE);
 
   readonly language = this.currentLanguageSignal.asReadonly();
-  readonly content = computed(() => SITE_CONTENT_BY_LANGUAGE[this.currentLanguageSignal()]);
+  // Ensure content() always returns a SiteContent by falling back to the default language
+  readonly content = computed(() => {
+    // force a non-undefined SiteContent for templates — data file may omit other languages
+    return (
+      (SITE_CONTENT_BY_LANGUAGE[this.currentLanguageSignal()] || SITE_CONTENT_BY_LANGUAGE[DEFAULT_LANGUAGE]) as import('../models/site-content').SiteContent
+    );
+  });
   readonly availableLanguages = [{ code: 'en' as const, label: 'EN' }];
 
   constructor() {

@@ -154,7 +154,7 @@
         We turn strategy into measurable outcomes across spend, efficiency, and growth. This
         section will expand into a dedicated results page next.
       </p>
-      <a class="button button--accent" routerLink="/results">
+      <a class="button button--accent" [routerLink]="['/portfolio']" fragment="case-1">
         Learn More <span class="arrow">→</span>
       </a>
     </div>
@@ -169,9 +169,7 @@
       </div>
     </div>
   </section>
-
-  <!-- mini-cta removed (moved above stats) -->
-
+  
   <!-- ── PROBLEM / CTA ── -->
   <section class="panel cta-band" scrollReveal>
     <div class="cta-band-content">

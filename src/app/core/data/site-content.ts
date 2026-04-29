@@ -2,7 +2,7 @@ import { LanguageCode, SiteContent } from '../models/site-content';
 
 export const DEFAULT_LANGUAGE: LanguageCode = 'en';
 
-export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
+export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>> = {
   en: {
     language: 'en',
     brandName: 'InsideGrowth',
@@ -155,32 +155,116 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
           'Every decision is based on testing, data, and performance — not assumptions.'
       }
     ],
-    pricingTitle: 'Revenue Model',
-    pricingSubtitle: 'Choose a plan designed for your stage of growth.',
+    pricingTitle: 'Transparent Pricing. Built for Real Growth',
+    pricingSubtitle:
+      'We structure pricing based on your business, growth potential, and the level of involvement required to scale profitably.',
+    pricingComparisonTitle: 'Product Comparison',
+    pricingVatNote: 'All prices are exclusive of VAT and may vary depending on the scope of the project.',
+    pricingSpotlightsTitle: 'Built for the work that actually moves revenue',
+    pricingFaqTitle: 'Frequently Asked Questions',
+    pricingCustomTitle: 'Custom Growth Systems',
+    pricingCustomSubtitle: 'Tailored pricing based on your needs',
+    pricingLimitedClientsTitle: 'We Work With a Limited Number of Clients',
+    pricingLimitedClientsBody:
+      'We focus on partnerships, not volume. We only take on projects where we know we can deliver measurable growth and build long-term success.',
+    pricingBuildRightSystemTitle: 'Let’s Build the Right System for Your Business',
+    pricingBuildRightSystemBody:
+      'We’ll analyze your business and recommend the best approach — including pricing tailored to your needs.',
+    pricingNoCommitment: 'No commitment. Just clarity.',
     pricingPlans: [
       {
-        name: 'Standard Plan',
-        price: '500 EUR / month',
-        description: 'Best for focused channel activation with monthly reporting.',
-        ctaLabel: 'Choose Standard'
+        name: 'Growth Foundation',
+        price: 'From €500 / month',
+        description: 'For businesses starting with structured campaigns and consistent optimization.',
+        ctaLabel: 'Get Started',
+        features: [
+          'Google Ads Management',
+          'Campaign setup & optimization',
+          'SEO foundation',
+          'Basic tracking setup',
+          'Monthly reporting'
+        ]
       },
       {
-        name: 'Premium Plan',
-        price: '800 EUR / month',
-        description: 'Built for brands scaling aggressively across channels.',
-        ctaLabel: 'Choose Premium',
-        featured: true
+        name: 'Growth & Scaling',
+        price: 'From €800 / month',
+        description: 'For businesses ready to scale with a full-funnel approach and deeper optimization.',
+        ctaLabel: 'Let’s Talk',
+        featured: true,
+        features: [
+          'Everything in Foundation',
+          'Meta Ads Management',
+          'Ongoing SEO optimization',
+          'Funnel optimization',
+          'Conversion rate improvements',
+          'Creative testing & iteration',
+          'Advanced tracking & data insights'
+        ]
+      },
+      {
+        name: 'Performance Partner',
+        price: '€1,300+ / month',
+        description: 'For brands looking for aggressive growth with full strategic involvement.',
+        ctaLabel: 'Apply to Work With Us',
+        features: [
+          'Everything in Scaling',
+          'TikTok Ads Management',
+          'Full growth strategy & planning',
+          'Daily performance analysis and decisions',
+          'Budget scaling & allocation strategy',
+          'Creative direction (what to shoot, test, scale)',
+          'Direct collaboration & priority execution',
+          'Continuous scaling across channels'
+        ]
+      }
+    ],
+    pricingSpotlights: [
+      {
+        eyebrow: '1',
+        title: 'Custom websites from project scope',
+        description: 'Presentation sites and conversion-led pages built around your business model and growth stage.'
+      },
+      {
+        eyebrow: '2',
+        title: 'Photo and video production from project scope',
+        description: 'Creative assets that support paid media, brand building, and conversion-focused campaigns.'
+      },
+      {
+        eyebrow: '3',
+        title: 'Custom growth systems',
+        description: 'Strategy, tracking, creative, SEO, and media working together as one performance system.'
       }
     ],
     pricingFeatures: [
-      { label: 'Google and Meta Marketing', standard: true, premium: true },
-      { label: 'Performance Reporting', standard: true, premium: true },
-      { label: 'Support Level', standard: true, premium: true },
-      { label: 'Tracking Integration', standard: false, premium: true },
-      { label: 'Feed Optimization', standard: false, premium: true },
-      { label: 'SEO Management', standard: false, premium: true },
-      { label: 'Pinterest Ads', standard: false, premium: true },
-      { label: 'TikTok Ads', standard: false, premium: true }
+      { label: 'Google Ads', foundation: true, scaling: true, partner: true },
+      { label: 'Daily optimization', foundation: false, scaling: true, partner: true },
+      { label: 'Meta Ads', foundation: false, scaling: true, partner: true },
+      { label: 'TikTok Ads', foundation: false, scaling: false, partner: true },
+      { label: 'SEO foundation and optimization', foundation: true, scaling: true, partner: true },
+      { label: 'Audit and tracking setup', foundation: true, scaling: true, partner: true },
+      { label: 'Monthly reporting', foundation: true, scaling: true, partner: true }
+    ],
+    pricingFaqs: [
+      {
+        question: 'How many clients do you work with?',
+        answer:
+          'We keep a limited client load so every account gets real attention. On average, we manage around 10 to 15 accounts per specialist.'
+      },
+      {
+        question: 'Can you guarantee results?',
+        answer:
+          'No marketing partner can guarantee results, but we can guarantee deep involvement, clear reporting, and a process built to improve performance consistently.'
+      },
+      {
+        question: 'What is included in the plans?',
+        answer:
+          'All plans include strategy, SEO, paid media, audit, tracking, and reporting. The difference is the depth of optimization, channel mix, and level of collaboration.'
+      },
+      {
+        question: 'Do you work with custom websites and content production?',
+        answer:
+          'Yes. We can support presentation websites, e-commerce projects, photography, and video production as part of a custom growth system.'
+      }
     ],
     contactTitle: 'Ready to Scale Your Marketing?',
     contactSubtitle:
@@ -253,6 +337,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       nav: {
         home: 'Home',
         about: 'About',
+        portfolio: 'Portfolio',
         services: 'Services',
         pricing: 'Pricing',
         contact: 'Contact'
@@ -296,8 +381,8 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       pricingFeatureComparison: 'Feature Comparison',
       pricingTableAriaLabel: 'Pricing feature comparison',
       pricingFeatureHeader: 'Feature',
-      pricingStandardHeader: 'Standard',
-      pricingPremiumHeader: 'Premium',
+      pricingStandardHeader: 'Foundation',
+      pricingPremiumHeader: 'Scaling',
       pricingIncluded: 'Included',
       pricingOptional: 'Optional',
       contactEyebrow: 'Contact',
@@ -342,6 +427,54 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       homeMiniCta: 'Ready to scale your business?',
       homeModalCta: 'Get Started'
     },
+    portfolio: [
+      {
+        eyebrow: 'Results',
+        title: 'Real Results. Real Growth.',
+        subtitle: 'We focus on building systems that generate consistent performance — not isolated wins.',
+        description:
+          'As a data-driven marketing agency, we focus on building systems that generate consistent performance and scalable growth — not isolated wins. Real Growth Comes from the Right System. Every result you see below is built through a combination of strategy, execution, and collaboration. We don’t chase short-term wins — we focus on building systems that generate consistent, scalable growth over time.',
+        imagePosition: 'right',
+        image: '/images/results/Results1.png'
+      },
+      {
+        title: 'E-commerce Growth System',
+        metrics: ['48.6x ROAS (Campaign Performance)', '€112K+ Revenue Generated'],
+        description:
+          'The business had strong potential but wasn’t fully optimized across SEO and paid campaigns. We rebuilt the SEO structure across all pages and products, continuously optimizing keywords and ensuring proper indexing to maintain top search visibility. At the same time, we refined and scaled ad campaigns — focusing on performance, product selection, and full funnel optimization. Results were built progressively over a 3-month period, leading to consistent and scalable growth.',
+        imagePosition: 'left',
+        image: '/images/results/Results1.png',
+      },
+      {
+        title: 'Lead Generation & Local Growth',
+        metrics: ['1M+ Impressions', '144+ Conversions'],
+        description:
+          'The goal was not just traffic — but generating qualified leads for a physical business offering services. We rebuilt the SEO foundation, created structured ad groups, and continuously tested different creatives and targeting strategies. The focus was on promoting a core service first, with secondary emphasis on sales. Through constant optimization, we achieved a steady flow of leads and improved campaign efficiency over time.',
+        imagePosition: 'right',
+        image: '/images/results/Results2.png',
+      },
+      {
+        title: 'Full Growth Support for Local Business',
+        metrics: ['7.85x ROAS', 'From near-zero to consistent growth'],
+        description:
+          'This project started with a local business with minimal online presence. We built everything from the ground up — website, SEO structure, product visuals, and marketing campaigns. By combining multiple elements into one system, we helped the business grow steadily and establish a strong online presence.',
+        imagePosition: 'left',
+        image: '/images/results/Results3.png',
+      },
+      {
+        title: 'We Don’t Work With Everyone',
+        description:
+          'We believe performance comes from strong partnerships. That’s why we work with a limited number of clients — businesses where we know we can create real impact and grow together. Every project is built on trust, communication, and long-term collaboration. Results vary depending on industry, budget, and market conditions. Our focus is always the same: build systems that scale what works.',
+        imagePosition: 'right'
+      },
+      {
+        title: 'Ready to See What We Can Improve in Your Business?',
+        subtitle: 'Let’s Grow Together',
+        description:
+          'We’ll analyze your current setup and show you exactly where growth opportunities exist. No commitment. Just actionable insights.',
+        imagePosition: 'left'
+      }
+    ],
     seo: {
       home: {
         title: 'Home',
@@ -361,8 +494,9 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       },
       pricing: {
         title: 'Pricing',
-        description: 'Compare InsideGrowth standard and premium monthly growth plans for performance marketing.',
-        keywords: ['InsideGrowth pricing', 'marketing plans', 'google ads management pricing']
+        description:
+          'Transparent pricing for Google Ads, SEO, paid media, and custom growth systems tailored to your business.',
+        keywords: ['InsideGrowth pricing', 'marketing plans', 'google ads management pricing', 'SEO pricing', 'growth systems']
       },
       contact: {
         title: 'Contact',
@@ -383,6 +517,11 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
         title: 'Terms & Conditions',
         description: 'Read the InsideGrowth terms and conditions governing the use of our services and website.',
         keywords: ['InsideGrowth terms', 'terms and conditions', 'service agreement', 'insideads.ro']
+      },
+      portfolio: {
+        title: 'Portfolio',
+        description: 'Case studies showing how we build growth systems that scale revenue, ROAS and conversions.',
+        keywords: ['portfolio', 'case studies', 'results', 'growth systems']
       }
     },
     legal: {
@@ -533,7 +672,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
       }
     }
   },
-  ro: {
+  /* ro: {
     language: 'ro',
     brandName: 'InsideGrowth',
     heroTitle: 'Acceleram Cresterea Globala Prin Marketing Bazat pe Date',
@@ -1044,8 +1183,8 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
         ]
       }
     }
-  },
-  hu: {
+  }, */
+  /* hu: {
     language: 'hu',
     brandName: 'InsideGrowth',
     heroTitle: 'Globalis Novekedes Adatalapu Marketinggal',
@@ -1492,5 +1631,5 @@ export const SITE_CONTENT_BY_LANGUAGE: Record<LanguageCode, SiteContent> = {
         ]
       }
     }
-  }
+  } */
 };

@@ -15,6 +15,7 @@ import { SeoService } from '../../core/services/seo.service';
 export class PricingComponent {
   private readonly languageService = inject(LanguageService);
   readonly content = this.languageService.content;
+  expandedFaqIndex: number | null = null;
 
   constructor(private readonly seo: SeoService) {
     effect(() => {
@@ -25,5 +26,9 @@ export class PricingComponent {
         keywords: seoConfig.keywords
       });
     });
+  }
+
+  toggleFaq(index: number): void {
+    this.expandedFaqIndex = this.expandedFaqIndex === index ? null : index;
   }
 }

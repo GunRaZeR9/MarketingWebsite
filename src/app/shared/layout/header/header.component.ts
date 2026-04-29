@@ -19,6 +19,7 @@ export class HeaderComponent {
   readonly navItems = [
     { key: 'home', route: '/home' },
     { key: 'about', route: '/about' },
+    { key: 'portfolio', route: '/portfolio' },
     { key: 'services', route: '/services' },
     { key: 'pricing', route: '/pricing' },
     { key: 'contact', route: '/contact' }

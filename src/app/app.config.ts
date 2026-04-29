@@ -1,9 +1,21 @@
-import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { ApplicationConfig, provideBrowserGlobalErrorListeners, APP_INITIALIZER } from '@angular/core';
 import { provideRouter } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import { routes } from './app.routes';
+import { ScrollService } from './core/services/scroll.service';
+
+export function initScroll(scroll: ScrollService) {
+  return () => {
+    /* service constructed to subscribe to router events */
+  };
+}
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideBrowserGlobalErrorListeners(), provideRouter(routes), provideAnimationsAsync()],
+  providers: [
+    provideBrowserGlobalErrorListeners(),
+    provideRouter(routes),
+    provideAnimationsAsync(),
+    { provide: APP_INITIALIZER, useFactory: initScroll, deps: [ScrollService], multi: true }
+  ],
 };

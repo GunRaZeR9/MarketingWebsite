@@ -27,9 +27,9 @@ export const routes: Routes = [
 		loadComponent: () => import('./pages/contact/contact.component').then((m) => m.ContactComponent)
 	},
 	{
-		path: 'results',
+		path: 'portfolio',
 		data: { animIndex: 5 },
-		loadComponent: () => import('./pages/results/results.component').then((m) => m.ResultsComponent)
+		loadComponent: () => import('./pages/portfolio/portfolio.component').then((m) => m.PortfolioComponent)
 	},
 	{
 		path: 'privacy-policy',

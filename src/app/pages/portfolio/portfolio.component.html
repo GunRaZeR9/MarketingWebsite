@@ -1,0 +1,55 @@
+<main class="portfolio-page">
+
+  <!-- HERO -->
+    <section class="page-hero" scrollReveal>
+    <p class="eyebrow">{{ content().ui.homeGrowthEyebrow }}</p>
+    <h1>{{ content().portfolio?.[0]?.title }}</h1>
+    <div class="section-divider"></div>
+    <p class="hero-lead">{{ content().portfolio?.[0]?.description }}</p>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="main-services">
+    <article
+      *ngFor="let item of content().portfolio; let i = index"
+      class="service-detail"
+      [ngClass]="'service-detail--' + (item.imagePosition || (i % 2 === 0 ? 'left' : 'right'))"
+      scrollReveal
+      [delay]="i * 80"
+      [attr.id]="'case-' + (i + 1)"
+    >
+      <div class="service-image">
+        <div class="image-shell">
+          <img class="service-image__img" [src]="item.image" [alt]="item.title + ' image'" />
+        </div>
+      </div>
+      <div class="service-content">
+        <h2>{{ item.title }}</h2>
+        <div class="section-divider"></div>
+        <p *ngIf="item.subtitle">{{ item.subtitle }}</p>
+        <p>{{ item.description }}</p>
+        <ul class="features-list" *ngIf="item.metrics">
+          <li *ngFor="let m of item.metrics">
+            <span class="feature-check">✔</span>
+            {{ m }}
+          </li>
+        </ul>
+        <p *ngIf="item.results" class="service-results">{{ item.results }}</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section panel" scrollReveal>
+    <div class="cta-content">
+      <h2>{{ content().portfolio && content().portfolio.slice(-2)[0]?.title || 'Ready to Grow' }}</h2>
+      <p class="cta-subtitle">{{ content().portfolio && content().portfolio.slice(-2)[0]?.description }}</p>
+      <div class="section-divider"></div>
+      <a class="button button--accent" routerLink="/contact">
+      {{ content().primaryCta }} <span class="arrow">→</span>
+      </a>
+      <p class="cta-footnote">No commitment. Just actionable insights.</p>
+    </div>
+  </section>
+
+</main>
