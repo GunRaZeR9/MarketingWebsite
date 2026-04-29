@@ -319,4 +319,19 @@ tr:last-child td { border-bottom: none; }
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .table-wrap {
+    margin-inline: -1rem;
+    border-inline: none;
+    border-radius: 0;
+  }
+
+  table {
+    min-width: 520px;
+  }
+
+  th, td {
+    padding: 0.7rem 0.75rem;
+    font-size: 0.82rem;
+  }
 }

@@ -1,6 +1,8 @@
 .content-shell {
   width: min(1120px, 92vw);
   margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
 .page-transition-host {
@@ -73,6 +75,24 @@
 .wha-label {
   white-space: nowrap;
   letter-spacing: 0.01em;
+}
+
+@media (max-width: 767px) {
+  .wha-label {
+    display: none;
+  }
+
+  .wha-btn {
+    width: 3.4rem;
+    height: 3.4rem;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .wha-icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
 }
 
 @media (min-width: 768px) {

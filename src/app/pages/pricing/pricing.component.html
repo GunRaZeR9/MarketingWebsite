@@ -72,8 +72,9 @@
               <span *ngIf="!feature.scaling" class="dash">–</span>
             </td>
             <td>
-              <span *ngIf="feature.partner" class="check">✓</span>
-              <span *ngIf="!feature.partner" class="dash">–</span>
+              <span *ngIf="feature.partner === true" class="check">✓</span>
+              <span *ngIf="feature.partner === false" class="dash">–</span>
+              <span *ngIf="feature.partner !== true && feature.partner !== false">{{ feature.partner }}</span>
             </td>
           </tr>
         </tbody>

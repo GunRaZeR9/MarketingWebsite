@@ -107,7 +107,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
     brandName: 'InsideGrowth',
     heroTitle: 'More Than an Agency — A Growth Partner',
     heroSubtitle:
-      'A team of certified Google and Meta specialists with 20+ years of combined experience.',
+      'We are a digital marketing agency helping businesses grow through performance-driven strategies — backed by a team of certified specialists with 20+ years of combined experience.',
     introTitle: 'Growth, Built Together',
     introSubtitle: 'Trusted to manage €50K+ in monthly ad spend',
     introBody: [
@@ -339,12 +339,23 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
     ],
     pricingFeatures: [
       { label: 'Google Ads', foundation: true, scaling: true, partner: true },
-      { label: 'Daily optimization', foundation: false, scaling: true, partner: true },
       { label: 'Meta Ads', foundation: false, scaling: true, partner: true },
       { label: 'TikTok Ads', foundation: false, scaling: false, partner: true },
-      { label: 'SEO foundation and optimization', foundation: true, scaling: true, partner: true },
-      { label: 'Audit and tracking setup', foundation: true, scaling: true, partner: true },
-      { label: 'Monthly reporting', foundation: true, scaling: true, partner: true }
+      { label: 'Paid Ads Management', foundation: true, scaling: true, partner: true },
+      { label: 'Reporting', foundation: true, scaling: true, partner: true },
+      { label: 'SEO Foundation', foundation: true, scaling: true, partner: true },
+      { label: 'Ongoing SEO Optimization', foundation: false, scaling: true, partner: true },
+      { label: 'Tracking Setup', foundation: true, scaling: true, partner: true },
+      { label: 'Advanced Tracking & Attribution', foundation: false, scaling: true, partner: true },
+      { label: 'Funnel Optimization', foundation: false, scaling: true, partner: true },
+      { label: 'Conversion Rate Optimization', foundation: false, scaling: true, partner: true },
+      { label: 'Creative Testing', foundation: false, scaling: true, partner: true },
+      { label: 'Growth Strategy & Planning', foundation: false, scaling: false, partner: true },
+      { label: 'Budget Scaling Strategy', foundation: false, scaling: false, partner: true },
+      { label: 'Creative Direction', foundation: false, scaling: false, partner: true },
+      { label: 'Daily Optimisation & Decisions', foundation: false, scaling: false, partner: true },
+      { label: 'Priority Support', foundation: false, scaling: false, partner: true },
+      { label: 'Website / Content', foundation: false, scaling: false, partner: 'Custom' }
     ],
     pricingFaqs: [
       {
@@ -609,7 +620,9 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         }
       ],
       leadSavedMessage:
-        'Thank you. We’ve received your details and will prepare a tailored growth proposal.',
+        "Thank you. We’ve received your details and will prepare a tailored growth proposal.",
+      leadSendingMessage: 'Sending your message…',
+      leadErrorMessage: 'Something went wrong. Please try again or email us directly.',
       homeGrowthEyebrow: 'Growth Systems',
       homeHowWeScaleTitle: 'How We Scale Your Business',
       homeHowWeScaleSubtitle: 'Growth Systems, Not Just Services',
@@ -1137,6 +1150,8 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         submitLabel: 'Trimite Lead'
       },
       leadSavedMessage: 'Lead-ul a fost salvat. Vom pregati o propunere personalizata de crestere.',
+      leadSendingMessage: 'Se trimite mesajul…',
+      leadErrorMessage: 'A apărut o eroare. Te rugăm să reîncerci sau să ne scrii direct.',
       homeGrowthEyebrow: 'Sisteme de Crestere',
       homeHowWeScaleTitle: 'Cum Scalăm Afacerea Ta',
       homeHowWeScaleSubtitle: 'Sisteme de Crestere, Nu Doar Servicii',
@@ -1547,6 +1562,8 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         submitLabel: 'Lead Bekuldese'
       },
       leadSavedMessage: 'A lead sikeresen elmentve. Hamarosan szemelyre szabott novekedesi tervet keszitunk.',
+      leadSendingMessage: 'Üzenet küldése folyamatban…',
+      leadErrorMessage: 'Hiba történt. Kérjük, próbáld újra vagy írj nekünk közvetlenül.',
       homeGrowthEyebrow: 'Növekedési Rendszerek',
       homeHowWeScaleTitle: 'Hogyan Skalazzuk Vallalkozasodat',
       homeHowWeScaleSubtitle: 'Növekedési Rendszerek, Nem Csupán Szolgáltatások',

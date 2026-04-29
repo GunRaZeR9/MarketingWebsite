@@ -64,9 +64,6 @@
         <div class="field">
           <label>{{ content().ui.contactForm.websiteLabel }}</label>
           <input type="url" formControlName="website" [placeholder]="content().ui.contactForm.websitePlaceholder" />
-          <small *ngIf="leadForm.controls.website.touched && leadForm.controls.website.invalid">
-            {{ content().ui.contactForm.websiteValidation }}
-          </small>
         </div>
 
         <div class="field">
@@ -85,10 +82,16 @@
           </small>
         </div>
 
-        <button class="button button--accent submit-btn" type="submit">
-          {{ content().ui.contactForm.submitLabel }} <span class="arrow">→</span>
+        <button class="button button--accent submit-btn" type="submit" [disabled]="sending">
+          {{ sending ? content().ui.leadSendingMessage : content().ui.contactForm.submitLabel }}
+          <span class="arrow" *ngIf="!sending">→</span>
         </button>
       </form>
+
+      <div *ngIf="submitError" class="error-msg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+        {{ submitError }}
+      </div>
 
       <div class="form-footer">
         <p class="limited-note">{{ content().ui.contactLimitedClientsNote }}</p>

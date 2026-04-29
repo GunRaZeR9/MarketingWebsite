@@ -23,7 +23,7 @@ export interface PricingFeature {
   label: string;
   foundation: boolean;
   scaling: boolean;
-  partner: boolean;
+  partner: boolean | string;
 }
 
 export interface PricingPlan {
@@ -152,6 +152,8 @@ export interface SiteUiText {
   contactFaqTitle: string;
   contactFaqs: ContactFaqItem[];
   leadSavedMessage: string;
+  leadSendingMessage: string;
+  leadErrorMessage: string;
   homeGrowthEyebrow: string;
   homeHowWeScaleTitle: string;
   homeHowWeScaleSubtitle: string;

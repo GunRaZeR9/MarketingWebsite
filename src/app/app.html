@@ -1,7 +1,7 @@
 <app-header></app-header>
 
-<main [@routeSlideAnimation]="getAnimationState(outlet)" class="page-transition-host">
-  <div class="content-shell">
+<main class="page-transition-host">
+  <div class="content-shell" [@routeSlideAnimation]="getAnimationState(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
 </main>
