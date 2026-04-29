@@ -163,7 +163,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           'Conversion flow & user journey'
         ],
         imagePosition: 'left',
-        image: '/images/services/Audit%26GrowthAnalysis.png'
+        image: 'images/services/Audit%26GrowthAnalysis.png'
       },
       {
         title: 'Paid Media That Converts',
@@ -176,7 +176,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           'Campaign optimization & scaling'
         ],
         imagePosition: 'right',
-        image: '/images/services/PaidMediaThatConverts.png'
+        image: 'images/services/PaidMediaThatConverts.png'
       },
       {
         title: 'SEO & Organic Growth',
@@ -189,7 +189,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           'Content optimization'
         ],
         imagePosition: 'left',
-        image: '/images/services/Seo%26OrganicGrowth.png'
+        image: 'images/services/Seo%26OrganicGrowth.png'
       },
       {
         title: 'Websites Built to Convert',
@@ -202,7 +202,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           'Mobile & speed optimization'
         ],
         imagePosition: 'right',
-        image: '/images/services/WebsiteBuiltToConvert.png'
+        image: 'images/services/WebsiteBuiltToConvert.png'
       },
       {
         title: 'Creative Production',
@@ -215,7 +215,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           'Ad creatives'
         ],
         imagePosition: 'left',
-        image: '/images/services/CreativeProduction.png'
+        image: 'images/services/CreativeProduction.png'
       },
       {
         title: 'Tracking & Performance Systems',
@@ -228,7 +228,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
           'Data accuracy & reporting'
         ],
         imagePosition: 'right',
-        image: '/images/services/Trackig%26PerformanceSystems.png'
+        image: 'images/services/Trackig%26PerformanceSystems.png'
       }
     ],
     advantagesTitle: 'What Makes Us Different',
@@ -632,7 +632,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         description:
           'As a data-driven marketing agency, we focus on building systems that generate consistent performance and scalable growth — not isolated wins. Real Growth Comes from the Right System. Every result you see below is built through a combination of strategy, execution, and collaboration. We don’t chase short-term wins — we focus on building systems that generate consistent, scalable growth over time.',
         imagePosition: 'right',
-        image: '/images/results/Results1.png'
+        image: 'images/results/Results1.png'
       },
       {
         title: 'E-commerce Growth System',
@@ -640,7 +640,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         description:
           'The business had strong potential but wasn’t fully optimized across SEO and paid campaigns. We rebuilt the SEO structure across all pages and products, continuously optimizing keywords and ensuring proper indexing to maintain top search visibility. At the same time, we refined and scaled ad campaigns — focusing on performance, product selection, and full funnel optimization. Results were built progressively over a 3-month period, leading to consistent and scalable growth.',
         imagePosition: 'left',
-        image: '/images/results/Results1.png',
+        image: 'images/results/Results1.png',
       },
       {
         title: 'Lead Generation & Local Growth',
@@ -648,7 +648,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         description:
           'The goal was not just traffic — but generating qualified leads for a physical business offering services. We rebuilt the SEO foundation, created structured ad groups, and continuously tested different creatives and targeting strategies. The focus was on promoting a core service first, with secondary emphasis on sales. Through constant optimization, we achieved a steady flow of leads and improved campaign efficiency over time.',
         imagePosition: 'right',
-        image: '/images/results/Results2.png',
+        image: 'images/results/Results2.png',
       },
       {
         title: 'Full Growth Support for Local Business',
@@ -656,7 +656,7 @@ export const SITE_CONTENT_BY_LANGUAGE: Partial<Record<LanguageCode, SiteContent>
         description:
           'This project started with a local business with minimal online presence. We built everything from the ground up — website, SEO structure, product visuals, and marketing campaigns. By combining multiple elements into one system, we helped the business grow steadily and establish a strong online presence.',
         imagePosition: 'left',
-        image: '/images/results/Results3.png',
+        image: 'images/results/Results3.png',
       },
       {
         title: 'We Don’t Work With Everyone',
