@@ -17,7 +17,7 @@ export class HeaderComponent {
   readonly scrolled = signal(false);
 
   readonly navItems = [
-    { key: 'home', route: '/home' },
+    { key: 'home', route: '/' },
     { key: 'about', route: '/about' },
     { key: 'portfolio', route: '/portfolio' },
     { key: 'services', route: '/services' },

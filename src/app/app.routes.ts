@@ -2,7 +2,8 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
 	{
-		path: 'home',
+		path: '',
+		pathMatch: 'full',
 		data: { animIndex: 0 },
 		loadComponent: () => import('./pages/home/home.component').then((m) => m.HomeComponent)
 	},
@@ -12,24 +13,24 @@ export const routes: Routes = [
 		loadComponent: () => import('./pages/about/about.component').then((m) => m.AboutComponent)
 	},
 	{
-		path: 'services',
+		path: 'portfolio',
 		data: { animIndex: 2 },
+		loadComponent: () => import('./pages/portfolio/portfolio.component').then((m) => m.PortfolioComponent)
+	},
+	{
+		path: 'services',
+		data: { animIndex: 3 },
 		loadComponent: () => import('./pages/services/services.component').then((m) => m.ServicesComponent)
 	},
 	{
 		path: 'pricing',
-		data: { animIndex: 3 },
+		data: { animIndex: 4 },
 		loadComponent: () => import('./pages/pricing/pricing.component').then((m) => m.PricingComponent)
 	},
 	{
 		path: 'contact',
-		data: { animIndex: 4 },
-		loadComponent: () => import('./pages/contact/contact.component').then((m) => m.ContactComponent)
-	},
-	{
-		path: 'portfolio',
 		data: { animIndex: 5 },
-		loadComponent: () => import('./pages/portfolio/portfolio.component').then((m) => m.PortfolioComponent)
+		loadComponent: () => import('./pages/contact/contact.component').then((m) => m.ContactComponent)
 	},
 	{
 		path: 'privacy-policy',
@@ -46,6 +47,5 @@ export const routes: Routes = [
 		data: { animIndex: 6 },
 		loadComponent: () => import('./pages/terms-conditions/terms-conditions.component').then((m) => m.TermsConditionsComponent)
 	},
-	{ path: '', pathMatch: 'full', redirectTo: 'home' },
-	{ path: '**', redirectTo: 'home' }
+	{ path: '**', redirectTo: '' }
 ];
