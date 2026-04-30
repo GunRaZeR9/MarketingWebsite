@@ -18,14 +18,12 @@ export class GrowthResultsComponent {
 
   constructor(private readonly seo: SeoService) {
     effect(() => {
-      const seoConfig = this.content().seo.portfolio;
-      if (seoConfig) {
-        this.seo.update({
-          title: seoConfig.title,
-          description: seoConfig.description,
-          keywords: seoConfig.keywords
-        });
-      }
+      const seoConfig = this.content().seo.growthResults;
+      this.seo.update({
+        title: seoConfig.title,
+        description: seoConfig.description,
+        keywords: seoConfig.keywords
+      });
     });
   }
 }

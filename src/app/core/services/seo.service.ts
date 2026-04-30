@@ -8,7 +8,7 @@ export class SeoService {
   private readonly meta = inject(Meta);
   private readonly document = inject(DOCUMENT);
 
-  update(config: { title: string; description: string; keywords: string[]; image?: string }): void {
+  update(config: { title: string; description: string; keywords: string[]; image?: string; noindex?: boolean }): void {
     const pageTitle = `${config.title} | InsideGrowth`;
     const pageUrl = this.document.location.href;
     const image = new URL(config.image ?? 'images/background/bg1.png', this.document.baseURI).toString();
@@ -28,5 +28,19 @@ export class SeoService {
     this.meta.updateTag({ name: 'twitter:title', content: pageTitle });
     this.meta.updateTag({ name: 'twitter:description', content: config.description });
     this.meta.updateTag({ name: 'twitter:image', content: image });
+
+    let canonical = this.document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
+    if (!canonical) {
+      canonical = this.document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      this.document.head.appendChild(canonical);
+    }
+    canonical.setAttribute('href', pageUrl);
+
+    if (config.noindex) {
+      this.meta.updateTag({ name: 'robots', content: 'noindex, nofollow' });
+    } else {
+      this.meta.removeTag("name='robots'");
+    }
   }
 }

@@ -725,102 +725,171 @@ export const SITE_CONTENT_EN: SiteContent = {
   ],
   seo: {
     home: {
-      title: 'Home',
-      description:
-        'InsideGrowth – data-driven marketing agency helping brands scale with Meta and Google campaigns. insideads.ro',
-      keywords: ['InsideGrowth', 'marketing agency', 'google ads', 'meta ads', 'growth marketing', 'performance marketing']
+      title: 'Digital Marketing Agency | Google Ads, Meta Ads & SEO',
+      description: 'We are a digital marketing agency helping businesses grow through Google Ads, Meta Ads, and SEO strategies focused on real results and scalable growth.',
+      keywords: ['digital marketing agency', 'google ads', 'meta ads', 'SEO', 'InsideGrowth', 'performance marketing']
     },
     about: {
-      title: 'About',
-      description: 'Meet the InsideGrowth team of former Google and Meta professionals focused on measurable growth.',
-      keywords: ['InsideGrowth about', 'google meta experts', 'performance team', 'insideads.ro']
+      title: 'About Our Marketing Agency | Growth-Focused Team',
+      description: 'Learn more about our digital marketing agency and how we combine Google Ads, SEO, and performance strategies to help businesses scale.',
+      keywords: ['about InsideGrowth', 'marketing agency team', 'google ads experts', 'SEO agency']
     },
     services: {
-      title: 'Services',
-      description: 'Explore InsideGrowth digital marketing and analytics services across Google Ads and Meta Ads.',
-      keywords: ['InsideGrowth services', 'digital marketing', 'marketing analytics', 'ga4 tracking', 'meta pixel']
+      title: 'Marketing Services | Google Ads, SEO & Website Growth',
+      description: 'Explore our marketing services including Google Ads management, Meta Ads campaigns, SEO optimization, and website development.',
+      keywords: ['marketing services', 'google ads management', 'meta ads', 'SEO optimization', 'website development']
+    },
+    growthResults: {
+      title: 'Growth Results | Marketing Agency Case Studies',
+      description: 'See real results from Google Ads, Meta Ads, and SEO campaigns focused on consistent growth and performance.',
+      keywords: ['growth results', 'case studies', 'google ads results', 'SEO results', 'marketing performance']
     },
     pricing: {
-      title: 'Pricing',
-      description:
-        'Transparent pricing for Google Ads, SEO, paid media, and custom growth systems tailored to your business.',
-      keywords: ['InsideGrowth pricing', 'marketing plans', 'google ads management pricing', 'SEO pricing', 'growth systems']
+      title: 'Marketing Agency Pricing | Google Ads & SEO Services',
+      description: 'Transparent pricing for marketing services including Google Ads, SEO, and full growth systems tailored to your business.',
+      keywords: ['marketing agency pricing', 'google ads pricing', 'SEO pricing', 'growth systems pricing']
     },
     contact: {
-      title: 'Contact',
-      description: 'Contact InsideGrowth – send your growth goals and receive a tailored performance marketing plan.',
-      keywords: ['contact InsideGrowth', 'request growth plan', 'insideads.ro contact']
+      title: 'Contact Our Marketing Agency | Start Your Growth Plan',
+      description: 'Get in touch with our digital marketing agency to discuss your business, strategy, and growth opportunities.',
+      keywords: ['contact InsideGrowth', 'start growth plan', 'marketing agency contact', 'insidegrowth.ro']
     },
     privacyPolicy: {
       title: 'Privacy Policy',
       description: 'Read the InsideGrowth privacy policy. Learn how we collect, use, and protect your personal data.',
-      keywords: ['InsideGrowth privacy policy', 'data protection', 'GDPR', 'insideads.ro']
+      keywords: ['InsideGrowth privacy policy', 'data protection', 'GDPR', 'insidegrowth.ro']
     },
     cookiePolicy: {
       title: 'Cookie Policy',
       description: 'Learn how InsideGrowth uses cookies to improve your website experience.',
-      keywords: ['InsideGrowth cookie policy', 'cookies', 'analytics cookies', 'insideads.ro']
+      keywords: ['InsideGrowth cookie policy', 'cookies', 'analytics cookies', 'insidegrowth.ro']
     },
     termsConditions: {
       title: 'Terms & Conditions',
       description: 'Read the InsideGrowth terms and conditions governing the use of our services and website.',
-      keywords: ['InsideGrowth terms', 'terms and conditions', 'service agreement', 'insideads.ro']
-    },
-    portfolio: {
-      title: 'Portfolio',
-      description: 'Case studies showing how we build growth systems that scale revenue, ROAS and conversions.',
-      keywords: ['portfolio', 'case studies', 'results', 'growth systems']
+      keywords: ['InsideGrowth terms', 'terms and conditions', 'service agreement', 'insidegrowth.ro']
     }
   },
   legal: {
     privacyPolicy: {
       title: 'Privacy Policy',
-      lastUpdated: 'April 2026',
+      lastUpdated: '30 April 2026',
       sections: [
         {
-          heading: 'Who We Are',
+          heading: 'Chapter I. General Overview',
           paragraphs: [
-            'InsideGrowth is a performance marketing agency based in Romania, operating at insideads.ro. We are committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and applicable Romanian law.',
-            'This Privacy Policy explains what personal data we collect, how we use it, and your rights in relation to it.'
+            'The website insidegrowth.ro is owned and operated by SELLMOTION S.R.L. ("Insidegroth", "we"). SELLMOTION S.R.L. is based in Targu Mures, is registered with the Trade Register under no. J2025039552007 and has tax identification number RO51902547.',
+            'By "insidegrowth.ro" we mean any web page (website, landing page, subdomain) owned, administered or operated by SELLMOTION S.R.L.',
+            'This Privacy Policy describes how we collect and process personal data when you use the website, complete forms, download materials, subscribe to the newsletter or interact with us through the contact channels displayed.',
+            'By using the website, you confirm that you have read and understood this Privacy Policy. If you do not agree with the provisions below, please do not use the forms and do not provide personal data through the website.'
           ]
         },
         {
-          heading: 'What Data We Collect',
+          heading: 'Chapter II. Terms and Definitions',
           paragraphs: [
-            'We may collect the following categories of personal data: name and contact details (email, phone number), company name, information you provide through our contact form (growth goals, monthly budget), technical data (IP address, browser type, device information), and usage data collected through analytics tools.'
+            'Online Platform / Site: Refers to insidegrowth.ro and the associated pages administered by SELLMOTION S.R.L.',
+            'Controller: SELLMOTION S.R.L., Targu Mures, J2025039552007, RO51902547',
+            'User: An individual or legal entity using the website',
+            'Personal Data: Any information that can directly or indirectly identify a person, such as name, email, phone number and the content of messages sent',
+            'Submission: Transmission of data by the User through the website, for example by completing a contact form, subscribing to a newsletter or downloading a resource',
+            'Processor: A contractual partner that processes data on behalf of the Controller, under an agreement'
           ]
         },
         {
-          heading: 'How We Use Your Data',
+          heading: 'Chapter III. Contact Details',
           paragraphs: [
-            'We use your personal data to respond to your inquiries and provide requested services, prepare customized marketing proposals, improve our website and services, comply with legal obligations, and send relevant marketing communications where you have given consent.'
+            'For questions or requests regarding personal data, you can contact us as follows:',
+            'Email: office@insidegrowth.ro',
+            'Phone: +40 799 900 187',
+            'We do not have a designated Data Protection Officer (DPO). We handle personal-data requests through the email address above.'
           ]
         },
         {
-          heading: 'Third-Party Services',
+          heading: 'Chapter IV. What Data We Collect',
           paragraphs: [
-            'We use Google Analytics and Meta Pixel for website analytics. These services may set their own cookies and process data in accordance with their own privacy policies.',
-            'Your data may be processed by Google LLC (Google Ads, Google Analytics) and Meta Platforms Inc. (Meta Ads, Meta Pixel). We encourage you to review their respective privacy policies.'
+            'We may collect the following categories of data depending on how you use the website: full name, email address, phone number, message and information included in free-text fields, answers to questions in forms, questionnaires or quizzes, data provided for newsletter subscription, and data provided to access or download materials (lead magnets).',
+            'We do not carry out automated profiling and we do not make decisions solely by automated means that produce legal or similarly significant effects on Users.'
           ]
         },
         {
-          heading: 'Data Retention',
+          heading: 'Chapter V. Purposes of Processing and Legal Bases',
           paragraphs: [
-            'We retain your personal data for as long as necessary to fulfill the purposes outlined in this policy or as required by law. Contact form data is retained for a maximum of 2 years after the last interaction.'
+            'We process personal data for the following purposes: responding to requests and discussions initiated through forms or direct contact, making offers and pre-contractual steps, sending communications by newsletter, providing requested materials via download, measuring website performance and improving the user experience, and measuring conversions and optimizing marketing campaigns.',
+            'The legal bases for these purposes are: performance of pre-contractual steps for offer requests and discussions initiated through forms; consent for sending marketing communications (newsletter), downloading materials (lead magnets) and activating tracking tools (pixels/cookies); and legitimate interest for measuring website performance, optimizing campaigns and securing the platform.'
           ]
         },
         {
-          heading: 'Your Rights',
+          heading: 'Chapter VI. Tools Used and Technical Data',
           paragraphs: [
-            'Under the GDPR, you have the right to: access your personal data, correct inaccurate data, request deletion of your data ("right to be forgotten"), restrict or object to processing, receive your data in a portable format, and withdraw consent at any time.',
-            'To exercise any of these rights, please contact us using the details below.'
+            'The website may use measurement and marketing tools implemented through Google Tag Manager. Depending on the consent given in the cookie banner, we may activate Google Analytics for traffic and performance analysis, Google Ads for conversion measurement and campaign optimization, and Meta Ads through Meta Business Manager for conversion measurement and campaign optimization.',
+            'In practice, analytics services may process the IP address transiently for technical functions such as security and location estimation. We do not use this data for identification and we do not track the IP address as an identifying element in our reports.'
           ]
         },
         {
-          heading: 'Contact',
+          heading: 'Chapter VII. Recipients, Processors and Transfers',
           paragraphs: [
-            'For any privacy-related inquiries or to exercise your rights, please contact us at: puscas.forbusiness@gmail.com',
-            'InsideGrowth — insideads.ro'
+            'Data may be processed by the hosting provider Hostico, Google Workspace, Google Tag Manager, Google Analytics, Google Ads, Meta Business Manager, as well as collaborators and contractual partners, including freelancers, when this is necessary for service delivery.',
+            'Where certain providers are located outside the European Economic Area, transfers may take place under GDPR-permitted conditions, including Standard Contractual Clauses and additional measures where applicable. We do not sell personal data and we do not transfer it to third parties for commercial purposes independent of our services.',
+            'When using analytics and advertising services, certain data may be transferred to or accessed by the parent entities of Google and Meta located in the United States. These transfers take place under the EU-U.S. Data Privacy Framework (for certified organizations) or under the Standard Contractual Clauses (SCCs) approved by the European Commission, ensuring a level of protection equivalent to that in the European Union.'
+          ]
+        },
+        {
+          heading: 'Chapter VIII. Retention Period',
+          paragraphs: [
+            'We retain data collected through contact forms for up to 1 year in the case of requests that do not result in a contract. Data provided for newsletter subscription or downloading materials (lead magnets) is retained for 3 years from the last interaction, or until consent is withdrawn.',
+            'Consent can be withdrawn at any time using the unsubscribe option included in communications or by sending a request to office@insidegrowth.ro.'
+          ]
+        },
+        {
+          heading: 'Chapter IX. Data Subject Rights',
+          paragraphs: [
+            'Under the GDPR, you have the following rights: the right of access, the right to rectification, the right to erasure, the right to restriction of processing, the right to object, the right to data portability, the right to withdraw consent where processing is based on consent, and the right to lodge a complaint with the competent authority.',
+            'To exercise your rights, you can write to hello@agensio.ro. We may request additional information to confirm identity when necessary.'
+          ]
+        },
+        {
+          heading: 'Chapter X. Minors',
+          paragraphs: [
+            'The website and the services presented are not intended for minors. We do not intentionally collect data from persons under 18 years of age. If you suspect that we have received such data, please contact us for deletion.'
+          ]
+        },
+        {
+          heading: 'Chapter XI. Cookies and Consent',
+          paragraphs: [
+            'The website uses cookies and similar technologies. Consent management is handled through the Cookie Consent by Moove plugin. Optional cookies, such as analytics and marketing cookies, are activated based on the choices expressed by the User.',
+            'For details about categories and how they are managed, please consult the Cookie Policy available on the website.'
+          ]
+        },
+        {
+          heading: 'Chapter XII. Data Security',
+          paragraphs: [
+            'We apply technical and organizational measures to protect data, including access control, role separation, server-level protection and the use of secure communication channels.',
+            'Submitting information through forms involves the voluntary provision of data by the User. We recommend that you do not submit sensitive information that is not necessary for assessing the request.'
+          ]
+        },
+        {
+          heading: 'Chapter XIII. Third-Party Links',
+          paragraphs: [
+            'The website may contain links to websites operated by third parties. We do not control their content or policies, and their use is at your own risk. We recommend reviewing the privacy policies of those websites.'
+          ]
+        },
+        {
+          heading: 'Chapter XIV. Policy Updates',
+          paragraphs: [
+            'We may update this Privacy Policy when changes occur in our activity, in the tools we use, or in legal requirements. The updated version will be published on this page.'
+          ]
+        },
+        {
+          heading: 'Chapter XV. Contact Information',
+          paragraphs: [
+            'Questions, suggestions and requests regarding this policy can be sent to office@insidegrowth.ro or to phone number +40 799 900 187.'
+          ]
+        },
+        {
+          heading: 'Chapter XVI. Final Provisions',
+          paragraphs: [
+            'If any of the above clauses is found to be null or invalid, this will not affect the validity of the remaining clauses.',
+            'Updated version as of 30.04.2026'
           ]
         }
       ]
@@ -828,53 +897,126 @@ export const SITE_CONTENT_EN: SiteContent = {
     cookiePolicy: ENGLISH_COOKIE_POLICY,
     termsConditions: {
       title: 'Terms & Conditions',
-      lastUpdated: 'April 2026',
+      lastUpdated: '30 April 2026',
       sections: [
         {
-          heading: 'Agreement to Terms',
+          heading: 'Chapter I. General Overview',
           paragraphs: [
-            'By accessing and using insideads.ro, you accept and agree to be bound by these Terms & Conditions and our Privacy Policy. If you do not agree to these terms, please do not use our website or services.'
+            'The website insidegrowth.ro is owned and operated by SELLMOTION S.R.L. ("Insidegroth", "we"). SELLMOTION S.R.L. is based in Targu Mures, is registered with the Trade Register under no. J2025039552007 and has tax identification number RO51902547.',
+            'By "insidegrowth.ro" we mean any web page (website, landing page, subdomain) owned, administered or operated by SELLMOTION S.R.L. During browsing on the Site, terms such as "we" or "our" refer to the aforementioned company.',
+            'Insidegrowth.ro includes online information for users who accept the terms and conditions below, as well as any additional policies available on the site.',
+            'By visiting and using our online platform, you undertake to comply with these Terms and Conditions and the associated policies mentioned on the site. These Terms and Conditions apply to all users, including visitors who browse, submit requests or download materials.',
+            'Please read these Terms and Conditions before using the website. By accessing or using any part of the website, you confirm that you accept the provisions. If you do not accept the terms, please stop using the website and do not use the available forms or materials.',
+            'Any new feature or section added to the website will be subject to these Terms and Conditions. We reserve the right to update, modify or replace any part of these Terms and Conditions by publishing the updated version on this page. It is your responsibility to check this page periodically. Continued use of the website after the changes are published constitutes acceptance of those changes.'
           ]
         },
         {
-          heading: 'Services',
+          heading: 'Chapter II. Terms and Definitions',
           paragraphs: [
-            'InsideGrowth provides performance marketing services including Google Ads management, Meta Ads management, marketing analytics, SEO management, and related digital marketing services.',
-            'Service details, scope, deliverables, and timelines are outlined in individual service agreements signed between InsideGrowth and each client.'
+            'Online Platform / Site: Refers to Insidegrowth.ro and the associated pages administered by SELLMOTION S.R.L.',
+            'Owner: SELLMOTION S.R.L., based in Targu Mures, registered with the Trade Register under no. J2025039552007, tax ID RO51902547',
+            'User: A natural or legal person while using the website',
+            'Submission: Transmission of data by the User through the website, for example by completing a contact form, subscribing to a newsletter or downloading a resource',
+            'Link: A link to an internal or external page accessed by click',
+            'Services: The online marketing and web development services presented on the website, including Google and Meta campaigns, consulting and related services'
           ]
         },
         {
-          heading: 'Payment Terms',
+          heading: 'Chapter III. Intellectual Property Rights',
           paragraphs: [
-            'Payment terms are defined in individual service contracts. Standard payment is monthly in advance before service delivery begins.',
-            'Late payments may result in service suspension until the outstanding balance is resolved. All prices are quoted in EUR and exclude applicable VAT and taxes.'
+            'The content of the website insidegrowth.ro, including texts, images, graphic elements, downloadable materials, scripts, page structures, code and visual identity elements, constitutes the property of insidegrowth.ro or is used lawfully with the right of use. Use of any elements without written consent is prohibited and may give rise to liability under applicable law.',
+            'We may grant the User the right to use certain materials through a separate agreement or through conditions explicitly stated at the time the material is provided. This right is limited to the purpose, period and person indicated and does not confer rights over other elements of the website.',
+            'The use on the website of any trademarks or logos belonging to third parties is for informational purposes and does not imply affiliation, sponsorship or endorsement in the absence of an express statement.',
+            'If you notice a possible copyright infringement in the website content, please contact us at office@insidegrowth.ro.'
           ]
         },
         {
-          heading: 'Intellectual Property',
+          heading: 'Chapter IV. General Conditions of Use',
           paragraphs: [
-            'All content on insideads.ro, including text, graphics, logos, images, and software, is the property of InsideGrowth and is protected by applicable intellectual property laws.',
-            'You may not reproduce, distribute, modify, or create derivative works from any content on this website without our express written permission.'
+            'By using the website you confirm that you are at least 18 years old and have the legal capacity to enter into legal acts. The website is not intended for minors and we do not intentionally collect data from persons under 18.',
+            'The website content is informational in nature. No part of the content constitutes a firm and binding offer to contract services. Any collaboration is established by accepting an offer, a contract or a written agreement, as applicable.',
+            'We make reasonable efforts to keep the information up to date, but typographical errors, inaccuracies or omissions may occur. We may correct the content and update the information at any time.',
+            'It is forbidden to use the website to transmit malicious code, attempt unauthorized access, spam, unauthorized data collection or any action that may affect the operation of the website or cause damage.',
+            'We may limit or stop access to the website, in whole or in part, in the event of a breach of these Terms and Conditions or when we reasonably believe it is necessary for the security of the platform.'
           ]
         },
         {
-          heading: 'Limitation of Liability',
+          heading: 'Chapter V. Services, Estimates and Results',
           paragraphs: [
-            'InsideGrowth shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our services or website, including loss of revenue, loss of data, or business interruption.',
-            'Our total liability for any claim arising from the use of our services shall not exceed the amount paid for those services in the preceding calendar month.'
+            'The services presented on the website may include online marketing, Google and Meta campaigns, analytics and tracking, strategy, optimizations and web development services. The exact details of deliverables, deadlines and commercial terms are established through contractual documents.',
+            'Any estimates, projections or examples of results are indicative and depend on factors such as budget, industry, season, competition, the quality of the promoted product or service, technical conditions and audience behavior. We do not guarantee specific financial results in the absence of an express contractual clause.',
+            'The User understands that online marketing services involve technical and market variables that cannot be fully controlled by the Controller. The estimates and projections provided are informational and are based on historical data or momentary analysis, and do not constitute an obligation of result. The Controller shall not be held responsible for any direct or indirect loss resulting from fluctuations in the algorithms of third-party platforms (such as Google, Meta, TikTok) or from changes in their advertising policies. Any advertising budgets are the sole responsibility of the User.'
           ]
         },
         {
-          heading: 'Governing Law',
+          heading: 'Chapter VI. Personal Data Processing',
           paragraphs: [
-            'These Terms & Conditions are governed by the laws of Romania. Any disputes arising from the use of our website or services shall be subject to the exclusive jurisdiction of the courts of Romania.'
+            'We respect the confidentiality of website users. The website can be visited without providing personal data. Data are processed when the User submits information through forms, subscribes to the newsletter, downloads materials or contacts us through the available channels.',
+            'For details regarding categories of data, purposes and rights, please consult the Privacy Policy available on the website.'
           ]
         },
         {
-          heading: 'Contact',
+          heading: 'Chapter VII. Use of Cookies',
           paragraphs: [
-            'For questions regarding these Terms & Conditions, please contact us at: puscas.forbusiness@gmail.com',
-            'InsideGrowth — insideads.ro'
+            'Insidegrowth.ro uses cookies and similar technologies. For details on categories, consent and management, please consult the Cookie Policy available on the website.'
+          ]
+        },
+        {
+          heading: 'Chapter VIII. Data and Platform Security',
+          paragraphs: [
+            'We apply technical and organizational measures to secure the website and protect data. However, no online platform can guarantee absolute security. The User assumes responsibility for the data they choose to transmit and for the security of their own device. In the event of a security breach affecting personal data, we will notify the affected users in accordance with the applicable legal provisions.'
+          ]
+        },
+        {
+          heading: 'Chapter IX. Third-Party Links',
+          paragraphs: [
+            'The website may include links to sites operated by third parties. These links are for informational purposes. We do not control the content or policies of those sites and do not assume responsibility for their use. We recommend consulting the terms and policies of those websites.'
+          ]
+        },
+        {
+          heading: 'Chapter X. Errors, Inaccuracies and Omissions',
+          paragraphs: [
+            'Occasionally, website content may include typographical errors, inaccuracies or omissions. We reserve the right to correct these situations and update the content without prior notice where necessary.'
+          ]
+        },
+        {
+          heading: 'Chapter XI. Prohibited Uses',
+          paragraphs: [
+            'The website may not be used for: any illegal action or action that infringes third-party rights; infringement of intellectual property rights; harassment, intimidation, defamation or discrimination; transmitting false or misleading information or impersonating another person; transmitting viruses, malware or destructive code; unauthorized collection or monitoring of other users\' data; unauthorized access attempts, vulnerability testing or attacks on security systems; automated or abusive use of the website that exceeds normal and reasonable browsing.',
+            'We reserve the right to restrict access, including by blocking IP addresses, when we identify behavior that may affect the operation of the website or its security.'
+          ]
+        },
+        {
+          heading: 'Chapter XII. Disclaimer of Warranties; Limitation of Liability',
+          paragraphs: [
+            'The website and its content are provided for informational purposes. We do not guarantee that the website will operate without interruptions or errors and we are not liable for indirect damages resulting from the use or inability to use the website, to the extent permitted by law.',
+            'We are not responsible for the effects generated by decisions made solely on the basis of the information published on the website, in the absence of a contract or written confirmation regarding applicability in the specific case.'
+          ]
+        },
+        {
+          heading: 'Chapter XIII. Termination of Use',
+          paragraphs: [
+            'You may stop using the website at any time by ceasing to access our pages. If we believe that you have breached these Terms and Conditions or if there are reasonable suspicions of a breach, we may suspend or stop access to the website without prior notice.'
+          ]
+        },
+        {
+          heading: 'Chapter XIV. Dispute Resolution. Governing Law',
+          paragraphs: [
+            'Any attempt at unauthorized access or fraud will be reported to the competent authorities. Any conflict between SELLMOTION S.R.L. and the User will be attempted to be resolved amicably. Please send us any complaint at office@insidegrowth.ro so we can try to resolve it quickly.',
+            'If amicable settlement is not possible, Romanian law applies and the competent courts are those in Romania.'
+          ]
+        },
+        {
+          heading: 'Chapter XV. Contact Information',
+          paragraphs: [
+            'Questions, suggestions and complaints related to these Terms and Conditions or associated policies may be sent to office@insidegrowth.ro or to phone number +40 799 900 187.'
+          ]
+        },
+        {
+          heading: 'Chapter XVI. Final Provisions',
+          paragraphs: [
+            'If any of the above clauses is found to be null or invalid, this will not affect the validity of the remaining clauses.',
+            'Updated version as of 30.04.2026'
           ]
         }
       ]

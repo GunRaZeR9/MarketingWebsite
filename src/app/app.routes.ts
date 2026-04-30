@@ -47,5 +47,9 @@ export const routes: Routes = [
 		data: { animIndex: 6 },
 		loadComponent: () => import('./pages/terms-conditions/terms-conditions.component').then((m) => m.TermsConditionsComponent)
 	},
+	{
+		path: 'thank-you',
+		loadComponent: () => import('./pages/thank-you/thank-you.component').then((m) => m.ThankYouComponent)
+	},
 	{ path: '**', redirectTo: '' }
 ];

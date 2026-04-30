@@ -1,7 +1,7 @@
 import emailjs from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { Component, DestroyRef, effect, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
@@ -31,6 +31,7 @@ interface StoredLead {
 export class ContactComponent {
   private readonly languageService = inject(LanguageService);
   private readonly route = inject(ActivatedRoute);
+  private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
   readonly content = this.languageService.content;
   submitted = false;
@@ -116,7 +117,7 @@ export class ContactComponent {
         }),
       ]);
       this.leadForm.reset();
-      this.submitted = true;
+      void this.router.navigate(['/thank-you']);
     } catch {
       this.submitError = this.content().ui.leadErrorMessage;
     } finally {

@@ -195,12 +195,12 @@ export interface SiteSeo {
   home: PageSeo;
   about: PageSeo;
   services: PageSeo;
+  growthResults: PageSeo;
   pricing: PageSeo;
   contact: PageSeo;
   privacyPolicy: PageSeo;
   cookiePolicy: PageSeo;
   termsConditions: PageSeo;
-  portfolio?: PageSeo;
 }
 
 export interface LegalSection {

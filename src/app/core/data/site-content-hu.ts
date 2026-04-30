@@ -719,154 +719,298 @@ export const SITE_CONTENT_HU: SiteContent = {
   ],
   seo: {
     home: {
-      title: 'Kezdőlap',
-      description: 'InsideGrowth – adatalapú marketing ügynökség, amely márkákat segít skálázni Meta és Google kampányokkal. insideads.ro',
-      keywords: ['InsideGrowth', 'marketing ügynökség', 'google ads', 'meta ads', 'teljesítményi marketing', 'üzleti növekedés']
+      title: 'Digital Marketing Agency | Google Ads, Meta Ads & SEO',
+      description: 'We are a digital marketing agency helping businesses grow through Google Ads, Meta Ads, and SEO strategies focused on real results and scalable growth.',
+      keywords: ['digital marketing agency', 'google ads', 'meta ads', 'SEO', 'InsideGrowth', 'performance marketing']
     },
     about: {
-      title: 'Rólunk',
-      description: 'Ismerd meg az InsideGrowth csapatát, volt Google és Meta szakemberek a mérhető növekedésre összpontosítva.',
-      keywords: ['InsideGrowth rólunk', 'google meta szakemberek', 'teljesítményi csapat', 'insideads.ro']
+      title: 'About Our Marketing Agency | Growth-Focused Team',
+      description: 'Learn more about our digital marketing agency and how we combine Google Ads, SEO, and performance strategies to help businesses scale.',
+      keywords: ['about InsideGrowth', 'marketing agency team', 'google ads experts', 'SEO agency']
     },
     services: {
-      title: 'Szolgáltatások',
-      description: 'Fedezd fel az InsideGrowth digitális marketing és analitikai szolgáltatásait a Google Ads és Meta Ads platformokon.',
-      keywords: ['InsideGrowth szolgáltatások', 'digitális marketing', 'marketing analitika', 'ga4', 'meta pixel']
+      title: 'Marketing Services | Google Ads, SEO & Website Growth',
+      description: 'Explore our marketing services including Google Ads management, Meta Ads campaigns, SEO optimization, and website development.',
+      keywords: ['marketing services', 'google ads management', 'meta ads', 'SEO optimization', 'website development']
+    },
+    growthResults: {
+      title: 'Growth Results | Marketing Agency Case Studies',
+      description: 'See real results from Google Ads, Meta Ads, and SEO campaigns focused on consistent growth and performance.',
+      keywords: ['growth results', 'case studies', 'google ads results', 'SEO results', 'marketing performance']
     },
     pricing: {
-      title: 'Árak',
-      description: 'Hasonlítsd össze az InsideGrowth Alapozás és Skálázás havi teljesítményi marketing csomagokat.',
-      keywords: ['InsideGrowth árak', 'havi marketing csomag', 'google ads kezelés ár']
+      title: 'Marketing Agency Pricing | Google Ads & SEO Services',
+      description: 'Transparent pricing for marketing services including Google Ads, SEO, and full growth systems tailored to your business.',
+      keywords: ['marketing agency pricing', 'google ads pricing', 'SEO pricing', 'growth systems pricing']
     },
     contact: {
-      title: 'Kapcsolat',
-      description: 'Lépj kapcsolatba az InsideGrowth-vel — küldd el céljaidat, és személyre szabott tervet készítünk.',
-      keywords: ['InsideGrowth kapcsolat', 'növekedési terv kérése', 'insideads.ro kapcsolat']
+      title: 'Contact Our Marketing Agency | Start Your Growth Plan',
+      description: 'Get in touch with our digital marketing agency to discuss your business, strategy, and growth opportunities.',
+      keywords: ['contact InsideGrowth', 'start growth plan', 'marketing agency contact', 'insidegrowth.ro']
     },
     privacyPolicy: {
       title: 'Adatvédelmi Irányelvek',
       description: 'Olvasd el az InsideGrowth adatvédelmi irányelveit. Tudj meg az adataid védelméről.',
-      keywords: ['InsideGrowth adatvédelem', 'adatvédelem', 'GDPR', 'insideads.ro']
+      keywords: ['InsideGrowth adatvédelem', 'adatvédelem', 'GDPR', 'insidegrowth.ro']
     },
     cookiePolicy: {
       title: 'Cookie Irányelvek',
       description: 'Tudj meg, hogyan használja az InsideGrowth a cookie-kat a jobb felhasználói élmény érdekében.',
-      keywords: ['InsideGrowth cookie', 'cookie irányelvek', 'analitika', 'insideads.ro']
+      keywords: ['InsideGrowth cookie', 'cookie irányelvek', 'analitika', 'insidegrowth.ro']
     },
     termsConditions: {
       title: 'Általános Feltételek',
       description: 'Olvasd el az InsideGrowth általános feltételeit, amelyek a szolgáltatások és webhely használatát szabályozzák.',
-      keywords: ['InsideGrowth feltételek', 'általános feltételek', 'szolgáltatás szerződés', 'insideads.ro']
-    },
-    portfolio: {
-      title: 'Portfólió',
-      description: 'Esettanulmányok, amelyek bemutatják, hogyan építünk növekedési rendszereket, amelyek a bevételt, a ROAS-t és a konverziókat skálázza.',
-      keywords: ['portfólió', 'esettanulmányok', 'eredmények', 'növekedési rendszerek']
+      keywords: ['InsideGrowth feltételek', 'általános feltételek', 'szolgáltatás szerződés', 'insidegrowth.ro']
     }
   },
   legal: {
     privacyPolicy: {
       title: 'Adatvédelmi Irányelvek',
-      lastUpdated: 'Április 2026',
+      lastUpdated: '2026. április 30.',
       sections: [
         {
-          heading: 'Kik Vagyunk',
+          heading: 'I. fejezet. Általános áttekintés',
           paragraphs: [
-            'Az InsideGrowth egy Magyarországon alapított teljesítményi marketing ügynökség, amely az insideads.ro weboldalon működik. Kötelezettségünk az adataid védelme az Általános Adatvédelmi Rendelet (GDPR) és az alkalmazandó magyar jog szerint.',
-            'Ez az Adatvédelmi Irányelv ismerteti, milyen személyes adatokat gyűjtünk, hogyan használjuk azokat, és milyen jogok illletik meg ezzel kapcsolatban.'
+            'Az insidegrowth.ro weboldal a SELLMOTION S.R.L. tulajdonában és üzemeltetésében áll („Insidegroth”, „mi”). A SELLMOTION S.R.L. székhelye Targu Muresben található, a Kereskedelmi Nyilvántartásban J2025039552007 számon van bejegyezve, adószáma pedig RO51902547.',
+            'Az „insidegrowth.ro” alatt minden olyan weboldalt, landing oldalt vagy aldomaint értünk, amelyet a SELLMOTION S.R.L. birtokol, kezel vagy üzemeltet.',
+            'Jelen Adatvédelmi Irányelvek ismertetik, hogyan gyűjtjük és kezeljük a személyes adatokat, amikor használod az oldalt, űrlapokat töltesz ki, anyagokat töltesz le, feliratkozol a hírlevélre vagy kapcsolatba lépsz velünk a megjelenített elérhetőségeken keresztül.',
+            'Az oldal használatával megerősíted, hogy elolvastad és megértetted ezeket az Adatvédelmi Irányelveket. Ha nem értesz egyet az alábbiakkal, kérjük, ne használd az űrlapokat, és ne adj meg személyes adatokat az oldalon keresztül.'
           ]
         },
         {
-          heading: 'Milyen Adatokat Gyűjtünk',
+          heading: 'II. fejezet. Fogalmak és meghatározások',
           paragraphs: [
-            'Gyűjthetünk a következő kategóriájú személyes adatokat: név és elérhetőségi adatok (e-mail, telefonszám), cégnév, a kapcsolatfelvételi formon megadott információk (növekedési célok, havi költségvetés), technikai adatok (IP cím, böngésző típusa, eszközadatok) és az analitikai eszközökkel gyűjtött használati adatok.'
+            'Online platform / Oldal: Az insidegrowth.ro és a SELLMOTION S.R.L. által kezelt kapcsolódó oldalak.',
+            'Adatkezelő: SELLMOTION S.R.L., Targu Mures, J2025039552007, RO51902547',
+            'Felhasználó: Az az egyén vagy jogi személy, aki az oldalt használja',
+            'Személyes adat: Olyan információ, amely közvetve vagy közvetlenül azonosíthat egy személyt, például név, e-mail cím, telefonszám és a küldött üzenetek tartalma',
+            'Beküldés: Az adatok továbbítása a Felhasználó által az oldalon keresztül, például kapcsolatfelvételi űrlap kitöltése, hírlevélre feliratkozás vagy anyag letöltése által',
+            'Adatfeldolgozó: Olyan szerződéses partner, aki az Adatkezelő nevében, megállapodás alapján dolgoz fel adatokat'
           ]
         },
         {
-          heading: 'Hogyan Használjuk az Adataidat',
+          heading: 'III. fejezet. Elérhetőségek',
           paragraphs: [
-            'A személyes adataid az alábbiak céljára használjuk: a megkereséseidre válaszolni és a kért szolgáltatásokat nyújtani, személyre szabott marketing javaslatokat készíteni, webhelyünk és szolgáltatásaink fejlesztésére, jogi kötelezettségek teljesítésére, valamint releváns marketing kommunikációra az adott szövegezéseidet adataidat.'
+            'Személyes adatokkal kapcsolatos kérdések vagy megkeresések esetén az alábbi elérhetőségeken kereshetsz meg minket:',
+            'E-mail: office@insidegrowth.ro',
+            'Telefon: +40 799 900 187',
+            'Nincs kijelölt adatvédelmi tisztviselőnk (DPO). A személyes adatokkal kapcsolatos megkereséseket a fenti e-mail címen kezeljük.'
           ]
         },
         {
-          heading: 'Harmadik Fél Szolgáltatások',
+          heading: 'IV. fejezet. Milyen adatokat gyűjtünk',
           paragraphs: [
-            'A Google Analytics és a Meta Pixel segítségével végzünk webhelyelemzéseket. Ezek a szolgáltatások beállíthatják saját cookie-kat, és az adatoknak a saját adatvédelmi irányelvei szerint dolgozhatnak fel.',
-            'Az adataidat a Google LLC (Google Ads, Google Analytics) és a Meta Platforms Inc. (Meta Ads, Meta Pixel) dolgozhatja fel. Javasoljuk, hogy tekintse meg azok adatvédelmi irányelveit.'
+            'Az oldal használatának módjától függően az alábbi adatkategóriákat gyűjthetjük: név és vezetéknév, e-mail cím, telefonszám, az üzenet és a szabad szöveges mezőkben megadott információk, az űrlapokban, kérdőívekben vagy kvízekben adott válaszok, a hírlevél-feliratkozáshoz megadott adatok, valamint az anyagok (lead magnetek) eléréséhez vagy letöltéséhez megadott adatok.',
+            'Nem végzünk automatizált profilalkotást, és nem hozunk olyan, kizárólag automatizált döntéseket, amelyek joghatással vagy hasonló hatással járnának a Felhasználókra.'
           ]
         },
         {
-          heading: 'Adatok Megőrzése',
+          heading: 'V. fejezet. Az adatkezelés céljai és jogalapjai',
           paragraphs: [
-            'Személyes adataidat megőrizzük mindaddig, amíg szükséges az ebben az irányelvben felsorolt célok teljesítéséhez, vagy ahogy azt a jog előírja. A kapcsolatfelvételi form adatait az utolsó interakciótól számított legfeljebb 2 évig őrizzük.'
+            'A személyes adatokat az alábbi célokból kezeljük: az űrlapokon vagy közvetlen kapcsolaton keresztül indított megkeresésekre és beszélgetésekre való válaszadás, ajánlattétel és előzetes szerződéses lépések, hírlevél útján történő kommunikáció küldése, a kért anyagok elérhetővé tétele letöltés útján, a weboldal teljesítményének mérése és a felhasználói élmény javítása, valamint a konverziók mérése és a marketingkampányok optimalizálása.',
+            'Az ehhez kapcsolódó jogalapok: az ajánlatkérésekre és az űrlapokon indított egyeztetésekre adott válaszoknál az előzetes szerződéses lépések teljesítése; a marketingkommunikáció (hírlevél), az anyagok letöltése (lead magnetek) és a követési eszközök (pixelek / cookie-k) aktiválásánál az hozzájárulás; a weboldal teljesítményének mérésénél, a kampányok optimalizálásánál és a platform biztonságánál az jogos érdek.'
           ]
         },
         {
-          heading: 'Az Adatok Jogai',
+          heading: 'VI. fejezet. Használt eszközök és technikai adatok',
           paragraphs: [
-            'A GDPR alapján jogod van: hozzáférer az adataiddhoz, helyesbíteni az pontatlan adatokat, kérni az adatok törléseit ("elfelejtéshez való jog"), korlátozni vagy ellenezni a feldolgozást, kérni az adatok hordozható formában és bármikor visszavonni az hozzájárulásodat.',
-            'Ezen jogok bármelyikének gyakorlásához kérjük, hogy lépj kapcsolatba velünk az alábbi adatok alapján.'
+            'Az oldal mérési és marketingeszközöket használhat, amelyeket a Google Tag Manageren keresztül valósítunk meg. A cookie-bannerben megadott hozzájárulástól függően aktiválhatjuk a Google Analyticset a forgalom és teljesítmény elemzésére, a Google Ads-et a konverziók mérésére és a kampányok optimalizálására, valamint a Meta Ads-et a Meta Business Manageren keresztül a konverziók mérésére és a kampányok optimalizálására.',
+            'A gyakorlatban az elemző szolgáltatások az IP-címet ideiglenesen feldolgozhatják technikai funkciók, például biztonság és helymeghatározás céljából. Ezt az adatot nem használjuk azonosításra, és nem követjük az IP-címet azonosító elemként a jelentéseinkben.'
           ]
         },
         {
-          heading: 'Kapcsolat',
+          heading: 'VII. fejezet. Címzettek, adatfeldolgozók és adattovábbítások',
           paragraphs: [
-            'Adatvédelem kapcsolatos kérdésekhez vagy jogaid gyakorlásához kérjük, hogy lépj kapcsolatba velünk: puscas.forbusiness@gmail.com',
-            'InsideGrowth — insideads.ro'
+            'Az adatokat a Hostico tárhelyszolgáltató, a Google Workspace, a Google Tag Manager, a Google Analytics, a Google Ads, a Meta Business Manager, valamint együttműködők és szerződéses partnerek, beleértve a szabadúszókat is, kezelhetik, amikor ez a szolgáltatások nyújtásához szükséges.',
+            'Amennyiben bizonyos szolgáltatók az Európai Gazdasági Térségen kívül találhatók, az adattovábbításra a GDPR által megengedett feltételek mellett kerülhet sor, beleértve az általános szerződési kikötéseket és adott esetben további intézkedéseket. Személyes adatokat nem értékesítünk, és nem adjuk át azokat harmadik feleknek a szolgáltatásainktól független kereskedelmi célokra.',
+            'Az elemző és hirdetési szolgáltatások használata során bizonyos adatok a Google és a Meta Egyesült Államokban található anyavállalataihoz továbbíthatók vagy azok számára hozzáférhetővé válhatnak. Ezek az adattovábbítások az EU-U.S. Data Privacy Framework alapján (tanúsított szervezetek esetén) vagy az Európai Bizottság által jóváhagyott Standard Contractual Clauses (SCC) alapján történnek, és az Európai Unióban elvárhatóval egyenértékű adatvédelmi szintet biztosítanak.'
+          ]
+        },
+        {
+          heading: 'VIII. fejezet. Megőrzési idő',
+          paragraphs: [
+            'A kapcsolatfelvételi űrlapokon gyűjtött adatokat legfeljebb 1 évig őrizzük meg olyan megkeresések esetén, amelyek nem vezettek szerződéshez. A hírlevél-feliratkozáshoz vagy anyagok letöltéséhez megadott adatokat 3 évig őrizzük az utolsó interakciótól számítva, vagy a hozzájárulás visszavonásáig.',
+            'A hozzájárulás bármikor visszavonható a kommunikációkban található leiratkozási lehetőséggel vagy az office@insidegrowth.ro címre küldött kéréssel.'
+          ]
+        },
+        {
+          heading: 'IX. fejezet. Az érintettek jogai',
+          paragraphs: [
+            'A GDPR szerint a következő jogok illetnek meg: hozzáféréshez való jog, helyesbítéshez való jog, törléshez való jog, az adatkezelés korlátozásához való jog, tiltakozáshoz való jog, adathordozhatósághoz való jog, a hozzájárulás visszavonásának joga, ha az adatkezelés hozzájáruláson alapul, valamint a panasztétel joga az illetékes hatóságnál.',
+            'A jogok gyakorlásához a hello@agensio.ro címre írhatsz. Szükség esetén további információkat kérhetünk a személyazonosság megerősítésére.'
+          ]
+        },
+        {
+          heading: 'X. fejezet. Kiskorúak',
+          paragraphs: [
+            'Az oldal és a bemutatott szolgáltatások nem kiskorúak számára készültek. Nem gyűjtünk szándékosan 18 év alatti személyek adatait. Ha azt gyanítod, hogy ilyen adatokat kaptunk, kérjük, vedd fel velünk a kapcsolatot a törlés érdekében.'
+          ]
+        },
+        {
+          heading: 'XI. fejezet. Cookie-k és hozzájárulás',
+          paragraphs: [
+            'Az oldal cookie-kat és hasonló technológiákat használ. A hozzájárulás kezelése a Cookie Consent by Moove bővítményen keresztül történik. Az opcionális cookie-k, például az elemzési és marketing cookie-k, a Felhasználó által kifejezett választások alapján aktiválódnak.',
+            'A kategóriákkal és kezelésükkel kapcsolatos részletekért kérjük, tekintsd meg az oldalon elérhető Cookie-szabályzatot.'
+          ]
+        },
+        {
+          heading: 'XII. fejezet. Adatbiztonság',
+          paragraphs: [
+            'Technikai és szervezési intézkedéseket alkalmazunk az adatok védelme érdekében, beleértve a hozzáférés-ellenőrzést, a szerepkörök szétválasztását, a szerveroldali védelmet és a biztonságos kommunikációs csatornák használatát.',
+            'Az űrlapokon keresztüli információküldés a Felhasználó önkéntes adatszolgáltatását jelenti. Javasoljuk, hogy ne küldj olyan érzékeny információt, amely nem szükséges a kérés elbírálásához.'
+          ]
+        },
+        {
+          heading: 'XIII. fejezet. Harmadik félhez vezető linkek',
+          paragraphs: [
+            'Az oldal tartalmazhat harmadik felek által üzemeltetett weboldalakra mutató linkeket. Nem ellenőrizzük azok tartalmát vagy szabályzatait, és használatuk saját felelősségre történik. Javasoljuk az érintett oldalak adatvédelmi szabályzatainak áttekintését.'
+          ]
+        },
+        {
+          heading: 'XIV. fejezet. A szabályzat frissítése',
+          paragraphs: [
+            'Ezt az Adatvédelmi Irányelvet frissíthetjük, ha változások történnek a tevékenységünkben, a használt eszközökben vagy a jogszabályi követelményekben. A frissített verziót ezen az oldalon tesszük közzé.'
+          ]
+        },
+        {
+          heading: 'XV. fejezet. Elérhetőségek',
+          paragraphs: [
+            'Az ezzel a szabályzattal kapcsolatos kérdések, javaslatok és megkeresések az office@insidegrowth.ro címre vagy a +40 799 900 187 telefonszámra küldhetők.'
+          ]
+        },
+        {
+          heading: 'XVI. fejezet. Záró rendelkezések',
+          paragraphs: [
+            'Ha a fenti rendelkezések bármelyike semmisnek vagy érvénytelennek bizonyul, ez nem érinti a többi rendelkezés érvényességét.',
+            'Frissített verzió dátuma: 30.04.2026'
           ]
         }
       ]
     },
     cookiePolicy: HUNGARIAN_COOKIE_POLICY,
     termsConditions: {
-      title: 'Általános Feltételek',
-      lastUpdated: 'Április 2026',
+      title: 'Általános Szerződési Feltételek',
+      lastUpdated: '2026. április 30.',
       sections: [
         {
-          heading: 'A Feltételek Elfogadása',
+          heading: 'I. fejezet. Általános áttekintés',
           paragraphs: [
-            'Az insideads.ro webhelyre való hozzáféréssel és használatával elfogadsz és beleegyezel az Általános Feltételek és az Adatvédelmi Irányelvünk betartásába. Ha nem értesz egyet ezekkel a feltételekkel, kérjük, ne használd webhelyünket vagy szolgáltatásainkat.'
+            'Az insidegrowth.ro weboldal a SELLMOTION S.R.L. tulajdonában és üzemeltetésében áll („Insidegroth”, „mi”). A SELLMOTION S.R.L. székhelye Targu Muresben található, a Kereskedelmi Nyilvántartásban J2025039552007 számon van bejegyezve, adószáma pedig RO51902547.',
+            'Az „insidegrowth.ro” alatt minden olyan weboldalt, landing oldalt vagy aldomaint értünk, amelyet a SELLMOTION S.R.L. birtokol, kezel vagy üzemeltet. A webhelyen böngészés közben az olyan kifejezések, mint a „mi” vagy „minket”, a fent említett társaságra utalnak.',
+            'Az insidegrowth.ro online információkat biztosít az alábbi feltételeket elfogadó felhasználók számára, valamint az oldalon elérhető további szabályzatok számára.',
+            'Online platformunk meglátogatásával és használatával vállalod, hogy betartod ezeket az Általános Szerződési Feltételeket, valamint az oldalon említett kapcsolódó szabályzatokat. Ezek a feltételek minden felhasználóra vonatkoznak, beleértve a böngésző látogatókat, a megkereséseket küldő és az anyagokat letöltő felhasználókat is.',
+            'Kérjük, használd előtt olvasd el ezeket a feltételeket. Az oldal bármely részének elérésével vagy használatával megerősíted, hogy elfogadod a rendelkezéseket. Ha nem fogadod el a feltételeket, kérjük, hagyd abba az oldal használatát, és ne használd az elérhető űrlapokat vagy anyagokat.',
+            'Az oldalhoz hozzáadott minden új funkció vagy szakasz ezeknek a feltételeknek lesz alárendelve. Fenntartjuk a jogot, hogy bármely részt frissítsünk, módosítsunk vagy lecseréljünk a frissített változat közzétételével ezen az oldalon. A lap tartalmának rendszeres ellenőrzése a te felelősséged. Az oldal használatának folytatása a változások közzététele után az elfogadást jelenti.'
           ]
         },
         {
-          heading: 'Szolgáltatások',
+          heading: 'II. fejezet. Fogalmak és meghatározások',
           paragraphs: [
-            'Az InsideGrowth teljesítményi marketing szolgáltatásokat nyújt, beleértve a Google Ads kezelést, a Meta Ads kezelést, a marketing analitikát, az SEO kezelést és a kapcsolódó digitális marketing szolgáltatásokat.',
-            'A szolgáltatások részletei, a terjedelem, a szállítások és az időhatárok az InsideGrowth és az egyes ügyfelek között kötött egyedi szolgáltatási szerződésekben állnak.'
+            'Online platform / Oldal: Az insidegrowth.ro és a SELLMOTION S.R.L. által kezelt kapcsolódó oldalak.',
+            'Tulajdonos: SELLMOTION S.R.L., Targu Muresben található székhellyel, a Kereskedelmi Nyilvántartásban J2025039552007 számon bejegyezve, adószáma RO51902547',
+            'Felhasználó: Az oldalt használó természetes vagy jogi személy',
+            'Beküldés: Az adatok továbbítása a Felhasználó által az oldalon keresztül, például kapcsolatfelvételi űrlap kitöltésével, hírlevélre feliratkozással vagy anyag letöltésével',
+            'Link: Belső vagy külső oldalra mutató, kattintással elérhető hivatkozás',
+            'Szolgáltatások: Az oldalon bemutatott online marketing- és webfejlesztési szolgáltatások, beleértve a Google és Meta kampányokat, a tanácsadást és a kapcsolódó szolgáltatásokat'
           ]
         },
         {
-          heading: 'Fizetési Feltételek',
+          heading: 'III. fejezet. Szellemi tulajdonjog',
           paragraphs: [
-            'A fizetési feltételeket az egyedi szolgáltatási szerződések határozzák meg. A standard fizetés havonta előre, a szolgáltatás megkezdése előtt történik.',
-            'A késedelmes fizetés a szolgáltatás felfüggesztéséhez vezethet, amíg a fennmaradó egyenletet rendezik. Minden ár EUR-ban van megadva, és nem tartalmazza az alkalmazandó ÁFA-t és adókat.'
+            'Az insidegrowth.ro weboldal tartalma, beleértve a szövegeket, képeket, grafikai elemeket, letölthető anyagokat, szkripteket, oldalszerkezeteket, kódot és vizuális arculati elemeket, az insidegrowth.ro tulajdonát képezi, vagy jogszerűen, használati joggal kerül felhasználásra. Bármely elem írásos hozzájárulás nélküli használata tilos, és az alkalmazandó jogszabályok szerint felelősséget vonhat maga után.',
+            'Egyes anyagok használatára külön megállapodás vagy az anyag átadásakor kifejezetten jelzett feltételek alapján adhatunk jogot a Felhasználónak. Ez a jog kizárólag a megjelölt célra, időtartamra és személyre korlátozódik, és nem biztosít jogot az oldal más elemeire.',
+            'Az oldalon harmadik felekhez tartozó márkanevek vagy logók használata tájékoztató jellegű, és kifejezett kijelentés hiányában nem jelent kapcsolatot, szponzorációt vagy ajánlást.',
+            'Ha esetleges szerzői jogsértést észlelsz az oldalon, kérjük, vedd fel velünk a kapcsolatot az office@insidegrowth.ro címen.'
           ]
         },
         {
-          heading: 'Szellemi Tulajdon',
+          heading: 'IV. fejezet. Általános használati feltételek',
           paragraphs: [
-            'Az insideads.ro összes tartalma, beleértve a szövegeket, grafikákat, logókat, képeket és szoftvereket, az InsideGrowth tulajdona, és az alkalmazandó szellemi tulajdon törvények védenek.',
-            'Nem sokszorosíthatod, nem terjesztheted, nem módosíthatod és nem hozhatsz létre származékos műveket ebből a webhelyből szóló tartalomból az InsideGrowth kifejezett írásos engedélye nélkül.'
+            'Az oldal használatával megerősíted, hogy legalább 18 éves vagy, és jogképes vagy jognyilatkozatok megtételére. Az oldal nem kiskorúaknak szól, és nem gyűjtünk szándékosan 18 év alatti személyektől adatot.',
+            'Az oldal tartalma tájékoztató jellegű. A tartalom egyetlen része sem minősül a szolgáltatások nyújtására vonatkozó végleges és kötelező ajánlatnak. Bármely együttműködés ajánlat, szerződés vagy írásos megállapodás elfogadásával jön létre, az adott esettől függően.',
+            'Ésszerű erőfeszítéseket teszünk az információk naprakészen tartására, de előfordulhatnak tipográfiai hibák, pontatlanságok vagy kihagyások. A tartalmat bármikor kijavíthatjuk és frissíthetjük.',
+            'Tilos az oldalt rosszindulatú kód továbbítására, jogosulatlan hozzáférési kísérletekre, spamre, jogosulatlan adatgyűjtésre vagy bármilyen olyan cselekményre használni, amely az oldal működését befolyásolhatja vagy kárt okozhat.',
+            'Az oldalhoz való hozzáférést részben vagy egészben korlátozhatjuk vagy megszüntethetjük a jelen feltételek megsértése esetén, vagy ha ésszerűen úgy ítéljük meg, hogy ez a platform biztonsága érdekében szükséges.'
           ]
         },
         {
-          heading: 'Felelősség Korlátozása',
+          heading: 'V. fejezet. Szolgáltatások, becslések és eredmények',
           paragraphs: [
-            'Az InsideGrowth nem felelős semmilyen közvetett, járulékos, különleges vagy következményes károkért, amelyek a szolgáltatások vagy a webhely használatából adódnak, beleértve a bevételvesztést, az adatvesztést vagy az üzletmenet-szünetelést.',
-            'Az InsideGrowth teljes felelőssége a szolgáltatások használatából eredő bármilyen igény tekintetében nem haladhatja meg az előző naptári hónapban ezen szolgáltatásokért fizetett összeget.'
+            'Az oldalon bemutatott szolgáltatások közé tartozhat az online marketing, a Google és Meta kampányok, az elemzés és követés, a stratégia, az optimalizálás és a webfejlesztés. A teljesítések, határidők és kereskedelmi feltételek pontos részleteit a szerződéses dokumentumok határozzák meg.',
+            'Bármely becslés, előrejelzés vagy eredményre példa tájékoztató jellegű, és olyan tényezőktől függ, mint a költségvetés, az iparág, az évszak, a verseny, a népszerűsített termék vagy szolgáltatás minősége, a technikai feltételek és a közönség viselkedése. Kifejezett szerződéses kikötés hiányában nem garantálunk konkrét pénzügyi eredményeket.',
+            'A Felhasználó tudomásul veszi, hogy az online marketing szolgáltatások olyan technikai és piaci változókat tartalmaznak, amelyeket az Adatkezelő nem tud teljes mértékben ellenőrizni. A megadott becslések és előrejelzések tájékoztató jellegűek, és történeti adatokon vagy pillanatnyi elemzésen alapulnak, nem jelentenek eredménykötelezettséget. Az Adatkezelő nem felel semmilyen közvetlen vagy közvetett veszteségért, amely harmadik fél platformjainak algoritmusváltozásaiból (például Google, Meta, TikTok) vagy azok hirdetési szabályzatának változásaiból ered. Minden hirdetési költségvetés kizárólag a Felhasználó felelőssége.'
           ]
         },
         {
-          heading: 'Irányadó Jog',
+          heading: 'VI. fejezet. Személyes adatok kezelése',
           paragraphs: [
-            'Az Általános Feltételeket a magyar jog szabályozza. A webhely vagy a szolgáltatások használatából eredő viták a magyar bíróságok kizárólagos joghatóságára tartoznak.'
+            'Tiszteletben tartjuk a weboldal felhasználóinak bizalmas adatkezelését. Az oldal személyes adatok megadása nélkül is látogatható. Az adatokat akkor kezeljük, amikor a Felhasználó űrlapokon keresztül információt küld, feliratkozik a hírlevélre, anyagokat tölt le vagy a rendelkezésre álló csatornákon keresztül felveszi velünk a kapcsolatot.',
+            'Az adatkategóriákra, célokra és jogokra vonatkozó részletekért kérjük, tekintsd meg az oldalon elérhető Adatvédelmi Irányelveket.'
           ]
         },
         {
-          heading: 'Kapcsolat',
+          heading: 'VII. fejezet. Cookie-k használata',
           paragraphs: [
-            'Az Általános Feltételekre vonatkozó kérdésekhez kérjük, hogy lépj kapcsolatba velünk: puscas.forbusiness@gmail.com',
-            'InsideGrowth — insideads.ro'
+            'Az insidegrowth.ro cookie-kat és hasonló technológiákat használ. A kategóriákról, a hozzájárulásról és a kezelésről az oldalon elérhető Cookie-szabályzatból tájékozódhatsz.'
+          ]
+        },
+        {
+          heading: 'VIII. fejezet. Az adatok és a platform biztonsága',
+          paragraphs: [
+            'Műszaki és szervezési intézkedéseket alkalmazunk az oldal biztonságának és az adatok védelmének érdekében. Ugyanakkor egyetlen online platform sem tud teljes körű biztonságot garantálni. A Felhasználó felelősséget vállal az általa továbbított adatokért és saját eszközének biztonságáért. Személyes adatokat érintő biztonsági incidens esetén az érintett felhasználókat a hatályos jogszabályoknak megfelelően értesítjük.'
+          ]
+        },
+        {
+          heading: 'IX. fejezet. Harmadik felekhez vezető linkek',
+          paragraphs: [
+            'Az oldal tartalmazhat harmadik felek által üzemeltetett oldalakra mutató linkeket. Ezek a linkek tájékoztató jellegűek. Nem ellenőrizzük e weboldalak tartalmát vagy szabályzatait, és nem vállalunk felelősséget használatukért. Javasoljuk az érintett oldalak feltételeinek és szabályzatainak áttekintését.'
+          ]
+        },
+        {
+          heading: 'X. fejezet. Hibák, pontatlanságok és kihagyások',
+          paragraphs: [
+            'Időről időre az oldal tartalma tipográfiai hibákat, pontatlanságokat vagy kihagyásokat tartalmazhat. Fenntartjuk a jogot, hogy ezeket a helyzeteket kijavítsuk és a tartalmat előzetes értesítés nélkül frissítsük, amikor szükséges.'
+          ]
+        },
+        {
+          heading: 'XI. fejezet. Tiltott felhasználások',
+          paragraphs: [
+            'Az oldal nem használható a következőkre: bármely jogellenes cselekményre vagy harmadik fél jogainak megsértésére; szellemi tulajdonjog megsértésére; zaklatásra, fenyegetésre, rágalmazásra vagy diszkriminációra; hamis vagy félrevezető információ továbbítására vagy más személynek való kiadásra; vírusok, malware vagy pusztító kód továbbítására; más felhasználók adatainak jogosulatlan gyűjtésére vagy figyelésére; jogosulatlan hozzáférési kísérletekre, sérülékenység-tesztelésre vagy biztonsági rendszerek elleni támadásokra; az oldal normális és ésszerű böngészést meghaladó automatikus vagy visszaélésszerű használatára.',
+            'Fenntartjuk a jogot a hozzáférés korlátozására, beleértve az IP-címek blokkolását is, ha olyan viselkedést észlelünk, amely az oldal működését vagy biztonságát veszélyeztetheti.'
+          ]
+        },
+        {
+          heading: 'XII. fejezet. Garancia kizárása; felelősségkorlátozás',
+          paragraphs: [
+            'Az oldal és annak tartalma tájékoztató jelleggel kerül biztosításra. Nem garantáljuk, hogy az oldal megszakítások és hibák nélkül működik, és a törvény által megengedett mértékben nem vállalunk felelősséget az oldal használatából vagy használhatatlanságából eredő közvetett károkért.',
+            'Nem felelünk az olyan döntések következményeiért, amelyek kizárólag az oldalon közzétett információk alapján születnek, szerződés vagy írásos megerősítés hiányában, amely az adott konkrét esetre való alkalmazhatóságot igazolja.'
+          ]
+        },
+        {
+          heading: 'XIII. fejezet. A használat megszüntetése',
+          paragraphs: [
+            'Az oldal használatát bármikor megszüntetheted az oldalaink elérésének abbahagyásával. Ha úgy ítéljük meg, hogy megsértetted ezeket a feltételeket, vagy megalapozott gyanú merül fel a megsértésre, a weboldalhoz való hozzáférést előzetes értesítés nélkül felfüggeszthetjük vagy megszüntethetjük.'
+          ]
+        },
+        {
+          heading: 'XIV. fejezet. Jogviták rendezése. Irányadó jog',
+          paragraphs: [
+            'Bármilyen jogosulatlan hozzáférési kísérletet vagy csalást jelentünk az illetékes hatóságoknak. A SELLMOTION S.R.L. és a Felhasználó közötti bármely vitát megpróbáljuk békés úton rendezni. Kérjük, küldj bármilyen bejelentést az office@insidegrowth.ro címre, hogy gyors megoldást találhassunk.',
+            'Amennyiben a békés rendezés nem lehetséges, a román jog alkalmazandó, és az illetékes bíróságok Romániában találhatók.'
+          ]
+        },
+        {
+          heading: 'XV. fejezet. Kapcsolat',
+          paragraphs: [
+            'Az Általános Szerződési Feltételekkel vagy a kapcsolódó szabályzatokkal kapcsolatos kérdések, javaslatok és panaszok az office@insidegrowth.ro címre vagy a +40 799 900 187 telefonszámra küldhetők.'
+          ]
+        },
+        {
+          heading: 'XVI. fejezet. Záró rendelkezések',
+          paragraphs: [
+            'Ha a fenti rendelkezések bármelyike semmisnek vagy érvénytelennek bizonyul, ez nem érinti a többi rendelkezés érvényességét.',
+            'Frissített verzió dátuma: 30.04.2026'
           ]
         }
       ]

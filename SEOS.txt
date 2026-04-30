@@ -1,0 +1,77 @@
+Home Page : 
+
+META TITLE
+
+Digital Marketing Agency | Google Ads, Meta Ads & SEO
+
+META DESCRIPTION
+
+We are a digital marketing agency helping businesses grow through Google Ads, Meta Ads, and SEO strategies focused on real results and scalable growth.
+
+About Page : 
+
+META TITLE
+
+About Our Marketing Agency | Growth-Focused Team
+
+META DESCRIPTION
+
+Learn more about our digital marketing agency and how we combine Google Ads, SEO, and performance strategies to help businesses scale.
+
+Services Page:
+
+META TITLE
+
+Marketing Services | Google Ads, SEO & Website Growth
+
+META DESCRIPTION
+
+Explore our marketing services including Google Ads management, Meta Ads campaigns, SEO optimization, and website development.
+
+Growth Results Page: 
+
+META TITLE
+
+Growth Results | Marketing Agency Case Studies
+
+META DESCRIPTION
+
+See real results from Google Ads, Meta Ads, and SEO campaigns focused on consistent growth and performance.
+
+Pricing Page: 
+
+META TITLE
+
+Marketing Agency Pricing | Google Ads & SEO Services
+
+META DESCRIPTION
+
+Transparent pricing for marketing services including Google Ads, SEO, and full growth systems tailored to your business.
+
+Contact Page :
+
+META TITLE
+
+Contact Our Marketing Agency | Start Your Growth Plan
+
+META DESCRIPTION
+
+Get in touch with our digital marketing agency to discuss your business, strategy, and growth opportunities.
+
+
+TAG MANAGER: 
+head
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TPKHHCG5');</script>
+<!-- End Google Tag Manager →
+
+Body
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TPKHHCG5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
