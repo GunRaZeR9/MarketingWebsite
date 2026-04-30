@@ -13,10 +13,11 @@ import { environment } from '../../../environments/environment';
 interface StoredLead {
   plan: string;
   budget: string;
-  name: string;
-  email: string;
   company: string;
   website: string;
+  email: string;
+  name: string;
+  phone: string;
   message: string;
   submittedAt: string;
 }
@@ -41,11 +42,12 @@ export class ContactComponent {
   readonly leadForm = this.fb.nonNullable.group({
     plan: ['', [Validators.required]],
     budget: ['', [Validators.required]],
-    name: ['', [Validators.required, Validators.minLength(2)]],
-    email: ['', [Validators.required, Validators.email]],
     company: ['', [Validators.required]],
     website: [''],
-    message: ['', [Validators.required, Validators.minLength(20)]]
+    email: ['', [Validators.required, Validators.email]],
+    name: ['', [Validators.required, Validators.minLength(2)]],
+    phone: ['', [Validators.required, Validators.pattern(/^[\d\s\-\+\(\)]+$/)]],
+    message: ['', [Validators.required, Validators.minLength(50)]]
   });
 
   constructor(private readonly seo: SeoService) {

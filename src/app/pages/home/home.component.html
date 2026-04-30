@@ -148,14 +148,13 @@
   <!-- ── RESULTS ── -->
   <section class="results-section" scrollReveal [delay]="100">
     <div class="results-copy">
-      <p class="eyebrow">Results</p>
-      <h2>See what the process can deliver</h2>
+      <p class="eyebrow">{{ content().ui.homeResultsEyebrow }}</p>
+      <h2>{{ content().ui.homeResultsTitle }}</h2>
       <p>
-        We turn strategy into measurable outcomes across spend, efficiency, and growth. This
-        section will expand into a dedicated results page next.
+        {{ content().ui.homeResultsBody }}
       </p>
-      <a class="button button--accent" [routerLink]="['/portfolio']" fragment="case-1">
-        Learn More <span class="arrow">→</span>
+      <a class="button button--accent" [routerLink]="['/growth-results']" fragment="case-1">
+        {{ content().ui.homeResultsLink }} <span class="arrow">→</span>
       </a>
     </div>
     <div class="results-visual">

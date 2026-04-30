@@ -1,4 +1,4 @@
-<main class="portfolio-page">
+<main class="growth-results-page">
 
   <!-- HERO -->
     <section class="page-hero" scrollReveal>
@@ -11,7 +11,7 @@
   <!-- CASE STUDIES -->
   <section class="main-services">
     <article
-      *ngFor="let item of content().portfolio; let i = index"
+      *ngFor="let item of content().portfolio.slice(0, -1); let i = index"
       class="service-detail"
       [ngClass]="item.image ? 'service-detail--' + (item.imagePosition || (i % 2 === 0 ? 'left' : 'right')) : 'service-detail--text-only'"
       scrollReveal
@@ -42,8 +42,12 @@
   <!-- CTA -->
   <section class="cta-section panel" scrollReveal>
     <div class="cta-content">
-      <h2>{{ content().portfolio && content().portfolio.slice(-2)[0]?.title || 'Ready to Grow' }}</h2>
-      <p class="cta-subtitle">{{ content().portfolio && content().portfolio.slice(-2)[0]?.description }}</p>
+      <p class="eyebrow cta-eyebrow">{{ content().portfolio[content().portfolio.length - 1].title }}</p>
+      <h2>{{ content().portfolio[content().portfolio.length - 1].subtitle }}</h2>
+      <p class="cta-subtitle">{{ content().portfolio[content().portfolio.length - 1].description }}</p>
+      <div class="section-divider"></div>
+      <h3>{{ content().ui.homeMiniCta || 'Ready to Grow' }}</h3>
+      <p class="cta-subtitle">{{ content().contactSubtitle }}</p>
       <div class="section-divider"></div>
       <a class="button button--accent" routerLink="/contact">
       {{ content().primaryCta }} <span class="arrow">→</span>

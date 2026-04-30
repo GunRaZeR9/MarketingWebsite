@@ -1,17 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component, effect, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
 
 @Component({
-  selector: 'app-portfolio-page',
-  imports: [CommonModule, ScrollRevealDirective],
-  templateUrl: './portfolio.component.html',
-  styleUrl: './portfolio.component.scss'
+  selector: 'app-growth-results-page',
+  imports: [CommonModule, RouterLink, ScrollRevealDirective],
+  templateUrl: './growthResults.component.html',
+  styleUrl: './growthResults.component.scss'
 })
-export class PortfolioComponent {
+export class GrowthResultsComponent {
   private readonly languageService = inject(LanguageService);
   readonly content = this.languageService.content;
 

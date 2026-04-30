@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, effect, inject } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { LanguageService } from '../../core/services/language.service';
@@ -7,7 +8,7 @@ import { SeoService } from '../../core/services/seo.service';
 
 @Component({
   selector: 'app-services-page',
-  imports: [CommonModule, ScrollRevealDirective],
+  imports: [CommonModule, RouterLink, ScrollRevealDirective],
   templateUrl: './services.component.html',
   styleUrl: './services.component.scss'
 })

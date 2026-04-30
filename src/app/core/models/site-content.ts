@@ -19,6 +19,13 @@ export interface AdvantageItem {
   description: string;
 }
 
+export interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  photo: string;
+}
+
 export interface PricingFeature {
   label: string;
   foundation: boolean;
@@ -83,6 +90,9 @@ export interface ContactFormText {
   websiteLabel: string;
   websitePlaceholder: string;
   websiteValidation: string;
+  phoneLabel: string;
+  phonePlaceholder: string;
+  phoneValidation: string;
   budgetOptions: BudgetOption[];
   goalsLabel: string;
   goalsPlaceholder: string;
@@ -94,7 +104,7 @@ export interface SiteUiText {
   nav: {
     home: string;
     about: string;
-    portfolio: string;
+    growthResults: string;
     services: string;
     pricing: string;
     contact: string;
@@ -116,6 +126,10 @@ export interface SiteUiText {
   homeReadyTitle: string;
   homeStartGrowing: string;
   homeViewPricing: string;
+  homeResultsEyebrow: string;
+  homeResultsTitle: string;
+  homeResultsBody: string;
+  homeResultsLink: string;
   statsCampaignsRun: string;
   statsAverageRoi: string;
   statsTopPlatforms: string;
@@ -123,6 +137,10 @@ export interface SiteUiText {
   aboutMissionEyebrow: string;
   aboutPlatformsEyebrow: string;
   aboutWhyChooseUs: string;
+  aboutTeamEyebrow: string;
+  aboutTeamTitle: string;
+  aboutTeamSubtitle: string;
+  aboutTeamTagline: string;
   servicesApproachEyebrow: string;
   cookieConsentMessage: string;
   cookieConsentAccept: string;
@@ -213,6 +231,11 @@ export interface SiteContent {
   aboutIntroTitle: string;
   aboutIntroBody: string[];
   aboutPlatformItems?: string[];
+  aboutTeamEyebrow: string;
+  aboutTeamTitle: string;
+  aboutTeamSubtitle: string;
+  aboutTeamTagline: string;
+  aboutTeamMembers?: TeamMember[];
   problemTitle: string;
   problemPoints: string[];
   solutionsTitle: string;

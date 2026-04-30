@@ -13,13 +13,15 @@ import { LanguageService } from '../../../core/services/language.service';
 export class HeaderComponent {
   private readonly languageService = inject(LanguageService);
   readonly content = this.languageService.content;
+  readonly availableLanguages = this.languageService.availableLanguages;
+  readonly activeLanguage = this.languageService.language;
   readonly menuOpen = signal(false);
   readonly scrolled = signal(false);
 
   readonly navItems = [
     { key: 'home', route: '/' },
     { key: 'about', route: '/about' },
-    { key: 'portfolio', route: '/portfolio' },
+    { key: 'growthResults', route: '/growth-results' },
     { key: 'services', route: '/services' },
     { key: 'pricing', route: '/pricing' },
     { key: 'contact', route: '/contact' }
@@ -36,5 +38,10 @@ export class HeaderComponent {
 
   closeMobileMenu(): void {
     this.menuOpen.set(false);
+  }
+
+  setLanguage(language: 'en' | 'ro'): void {
+    this.languageService.setLanguage(language);
+    this.closeMobileMenu();
   }
 }

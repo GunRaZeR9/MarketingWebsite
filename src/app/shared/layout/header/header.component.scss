@@ -123,6 +123,10 @@ nav a.active::after {
   font-size: 0.82rem;
 }
 
+.language-picker span {
+  white-space: nowrap;
+}
+
 .language-picker select {
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -254,6 +258,10 @@ nav a.active::after {
 
   .mobile-menu .cta { width: 100%; }
   .language-picker span { display: none; }
+
+  .language-picker--mobile {
+    justify-content: flex-start;
+  }
 
   .mobile-social {
     grid-column: 1 / -1;

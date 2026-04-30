@@ -37,15 +37,15 @@
   <!-- ── MEET THE TEAM ── -->
   <section class="team-section">
     <div class="section-header" scrollReveal>
-      <p class="eyebrow">Our Team</p>
-      <h2>Meet the Team Behind InsideGrowth</h2>
-      <p class="section-subtitle">A team of specialists, each focused on a key part of your business growth.</p>
+      <p class="eyebrow">{{ content().ui.aboutTeamEyebrow }}</p>
+      <h2>{{ content().ui.aboutTeamTitle }}</h2>
+      <p class="section-subtitle">{{ content().ui.aboutTeamSubtitle }}</p>
       <div class="section-divider"></div>
     </div>
 
     <div class="team-grid">
       <article
-        *ngFor="let member of teamMembers; let i = index"
+        *ngFor="let member of teamMembers(); let i = index"
         class="team-card"
         scrollReveal
         [delay]="i * 100"
@@ -62,7 +62,7 @@
     </div>
 
     <div class="team-tagline" scrollReveal [delay]="600">
-      <p>We work as one team — focused on one goal: <strong>your growth.</strong></p>
+      <p>{{ content().ui.aboutTeamTagline }}</p>
     </div>
   </section>
 

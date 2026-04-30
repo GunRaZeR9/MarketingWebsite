@@ -20,7 +20,7 @@
 
       <form [formGroup]="leadForm" (ngSubmit)="submit()" novalidate>
         <div class="field">
-          <label>{{ content().ui.contactForm.planLabel }}</label>
+          <label>{{ content().ui.contactForm.planLabel }} <span class="required">*</span></label>
           <select formControlName="plan">
             <option value="" disabled>{{ content().ui.contactForm.planPlaceholder }}</option>
             <option *ngFor="let plan of content().pricingPlans" [value]="plan.name">
@@ -33,7 +33,7 @@
         </div>
 
         <div class="field">
-          <label>{{ content().ui.contactForm.budgetLabel }}</label>
+          <label>{{ content().ui.contactForm.budgetLabel }} <span class="required">*</span></label>
           <select formControlName="budget">
             <option value="" disabled>{{ content().ui.contactForm.budgetPlaceholder }}</option>
             <option *ngFor="let budgetOption of content().ui.contactForm.budgetOptions" [value]="budgetOption.value">
@@ -46,18 +46,10 @@
         </div>
 
         <div class="field">
-          <label>{{ content().ui.contactForm.fullNameLabel }}</label>
-          <input type="text" formControlName="name" [placeholder]="content().ui.contactForm.fullNamePlaceholder" />
-          <small *ngIf="leadForm.controls.name.touched && leadForm.controls.name.invalid">
-            {{ content().ui.contactForm.fullNameValidation }}
-          </small>
-        </div>
-
-        <div class="field">
-          <label>{{ content().ui.contactForm.emailLabel }}</label>
-          <input type="email" formControlName="email" [placeholder]="content().ui.contactForm.emailPlaceholder" />
-          <small *ngIf="leadForm.controls.email.touched && leadForm.controls.email.invalid">
-            {{ content().ui.contactForm.emailValidation }}
+          <label>{{ content().ui.contactForm.businessLabel }} <span class="required">*</span></label>
+          <input type="text" formControlName="company" [placeholder]="content().ui.contactForm.businessPlaceholder" />
+          <small *ngIf="leadForm.controls.company.touched && leadForm.controls.company.invalid">
+            {{ content().ui.contactForm.businessValidation }}
           </small>
         </div>
 
@@ -67,15 +59,31 @@
         </div>
 
         <div class="field">
-          <label>{{ content().ui.contactForm.businessLabel }}</label>
-          <input type="text" formControlName="company" [placeholder]="content().ui.contactForm.businessPlaceholder" />
-          <small *ngIf="leadForm.controls.company.touched && leadForm.controls.company.invalid">
-            {{ content().ui.contactForm.businessValidation }}
+          <label>{{ content().ui.contactForm.emailLabel }} <span class="required">*</span></label>
+          <input type="email" formControlName="email" [placeholder]="content().ui.contactForm.emailPlaceholder" />
+          <small *ngIf="leadForm.controls.email.touched && leadForm.controls.email.invalid">
+            {{ content().ui.contactForm.emailValidation }}
           </small>
         </div>
 
         <div class="field">
-          <label>{{ content().ui.contactForm.goalsLabel }}</label>
+          <label>{{ content().ui.contactForm.fullNameLabel }} <span class="required">*</span></label>
+          <input type="text" formControlName="name" [placeholder]="content().ui.contactForm.fullNamePlaceholder" />
+          <small *ngIf="leadForm.controls.name.touched && leadForm.controls.name.invalid">
+            {{ content().ui.contactForm.fullNameValidation }}
+          </small>
+        </div>
+
+        <div class="field">
+          <label>{{ content().ui.contactForm.phoneLabel }} <span class="required">*</span></label>
+          <input type="tel" formControlName="phone" [placeholder]="content().ui.contactForm.phonePlaceholder" />
+          <small *ngIf="leadForm.controls.phone.touched && leadForm.controls.phone.invalid">
+            {{ content().ui.contactForm.phoneValidation }}
+          </small>
+        </div>
+
+        <div class="field">
+          <label>{{ content().ui.contactForm.goalsLabel }} <span class="required">*</span></label>
           <textarea formControlName="message" rows="5" [placeholder]="content().ui.contactForm.goalsPlaceholder"></textarea>
           <small *ngIf="leadForm.controls.message.touched && leadForm.controls.message.invalid">
             {{ content().ui.contactForm.goalsValidation }}

@@ -13,9 +13,9 @@ export const routes: Routes = [
 		loadComponent: () => import('./pages/about/about.component').then((m) => m.AboutComponent)
 	},
 	{
-		path: 'portfolio',
+		path: 'growth-results',
 		data: { animIndex: 2 },
-		loadComponent: () => import('./pages/portfolio/portfolio.component').then((m) => m.PortfolioComponent)
+		loadComponent: () => import('./pages/growthResults/growthResults.component').then((m) => m.GrowthResultsComponent)
 	},
 	{
 		path: 'services',
