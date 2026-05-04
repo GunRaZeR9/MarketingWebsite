@@ -588,16 +588,6 @@ export const SITE_CONTENT_EN: SiteContent = {
     contactFaqTitle: 'FAQ',
     contactFaqs: [
       {
-        question: 'Do you guarantee results?',
-        answer:
-          'We don\'t guarantee specific numbers — because real growth depends on multiple factors like your market, offer, and budget. What we do guarantee is a clear strategy, consistent optimization, and a focus on scaling what works over time.'
-      },
-      {
-        question: 'How many clients do you work with?',
-        answer:
-          'We work with a limited number of clients to ensure every project gets the attention and focus it needs. Our goal is quality and performance — not volume.'
-      },
-      {
         question: 'How does pricing work?',
         answer:
           'We tailor pricing based on your business, goals, and the level of support required to scale effectively. The plans shown are starting points — final pricing is built around your specific needs.'
@@ -606,11 +596,6 @@ export const SITE_CONTENT_EN: SiteContent = {
         question: 'How long does it take to see results?',
         answer:
           'Most campaigns start improving within the first 1–3 months. However, sustainable growth is built over time through testing, optimization, and scaling.'
-      },
-      {
-        question: 'Do you guarantee results?',
-        answer:
-          'We don\'t guarantee specific numbers — no serious agency does. What we do guarantee is a structured approach focused on continuous improvement and measurable growth.'
       },
       {
         question: 'Do I need a large budget to start?',
@@ -623,24 +608,9 @@ export const SITE_CONTENT_EN: SiteContent = {
           'We manage campaigns across Google, Meta (Facebook & Instagram), and TikTok — depending on what fits your business best.'
       },
       {
-        question: 'Do you work with all types of businesses?',
-        answer:
-          'We work with most business types, but we don\'t partner with everyone. We focus on businesses that are serious about growth and open to building a long-term collaboration based on trust and performance.'
-      },
-      {
-        question: 'What happens after I submit the form?',
-        answer:
-          'We review your business, current setup, and goals. Then we come back with a clear strategy and recommended next steps tailored to your situation.'
-      },
-      {
         question: 'Do you only run ads, or do you handle everything?',
         answer:
           'We go beyond ads. We focus on the full system — including SEO, website optimization, tracking, and creative — to ensure everything works together.'
-      },
-      {
-        question: 'Can you work with my existing website and setup?',
-        answer:
-          'Yes. We can optimize your current setup or rebuild parts of it if needed to improve performance.'
       },
       {
         question: 'What makes you different from other agencies?',
@@ -656,11 +626,6 @@ export const SITE_CONTENT_EN: SiteContent = {
         question: 'Will I be involved in the process?',
         answer:
           'Yes. We believe strong collaboration leads to better results, especially when it comes to product insights, offers, and direction.'
-      },
-      {
-        question: 'Do you create content as well?',
-        answer:
-          'Yes. We offer photo and video production for ads and branding, depending on your needs and the level of collaboration.'
       }
     ],
     leadSavedMessage:
@@ -687,9 +652,7 @@ export const SITE_CONTENT_EN: SiteContent = {
       title: 'Real Results. Real Growth.',
       subtitle: 'We focus on building systems that generate consistent performance — not isolated wins.',
       description:
-        'As a data-driven marketing agency, we focus on building systems that generate consistent performance and scalable growth — not isolated wins. Real Growth Comes from the Right System. Every result you see below is built through a combination of strategy, execution, and collaboration. We don\'t chase short-term wins — we focus on building systems that generate consistent, scalable growth over time.',
-      imagePosition: 'right',
-      image: 'images/results/Results1.png'
+        'As a data-driven marketing agency, we focus on building systems that generate consistent performance and scalable growth — not isolated wins. Real Growth Comes from the Right System. Every result you see below is built through a combination of strategy, execution, and collaboration. We don\'t chase short-term wins — we focus on building systems that generate consistent, scalable growth over time.'
     },
     {
       title: 'E-commerce Growth System',
@@ -725,7 +688,7 @@ export const SITE_CONTENT_EN: SiteContent = {
   ],
   seo: {
     home: {
-      title: 'Digital Marketing Agency | Google Ads, Meta Ads & SEO',
+      title: 'InsideGrowth | Digital Marketing Agency',
       description: 'We are a digital marketing agency helping businesses grow through Google Ads, Meta Ads, and SEO strategies focused on real results and scalable growth.',
       keywords: ['digital marketing agency', 'google ads', 'meta ads', 'SEO', 'InsideGrowth', 'performance marketing']
     },

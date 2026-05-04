@@ -581,16 +581,6 @@ export const SITE_CONTENT_RO: SiteContent = {
     contactFaqTitle: 'Intrebari frecvente',
     contactFaqs: [
       {
-        question: 'Garantati rezultate?',
-        answer:
-          'Nu garantam cifre specifice, pentru ca evolutia reala depinde de mai multi factori, precum piata, oferta si bugetul. Ceea ce garantam este o strategie clara, optimizare constanta si focus pe scalarea a ceea ce functioneaza.'
-      },
-      {
-        question: 'Cu cati clienti lucrati?',
-        answer:
-          'Lucram cu un numar limitat de clienti pentru a ne asigura ca fiecare proiect primeste atentia si focusul necesar. Obiectivul nostru este calitate si performanta, nu volum.'
-      },
-      {
         question: 'Cum functioneaza tarificarea?',
         answer:
           'Adaptam tarificarea pe baza afacerii, obiectivelor si nivelului de suport necesar pentru scalare eficienta. Planurile afisate sunt puncte de plecare — tarificarea finala este construita in jurul nevoilor specifice.'
@@ -599,11 +589,6 @@ export const SITE_CONTENT_RO: SiteContent = {
         question: 'Cât timp ia pana vad rezultate?',
         answer:
           'Cele mai multe campanii incep sa se imbunatateasca in primele 1-3 luni. Insa, cresterea durabil se construieste in timp prin testare, optimizare si scalare.'
-      },
-      {
-        question: 'Garantati rezultate?',
-        answer:
-          'Nu garantam numere specifice — nici o agentie serioasa nu face asta. Ceea ce garantam este o abordare structurata focusata pe imbunatatire continua si crestere masurabila.'
       },
       {
         question: 'Ai nevoie de un buget mare pentru a incepe?',
@@ -616,24 +601,9 @@ export const SITE_CONTENT_RO: SiteContent = {
           'Gestionez campanii pe Google, Meta (Facebook & Instagram) si TikTok — in functie de ceea ce se potriveste cel mai bine afacerii tale.'
       },
       {
-        question: 'Lucrati cu toate tipurile de afaceri?',
-        answer:
-          'Lucram cu cele mai multe tipuri de afaceri, dar nu ne asociem cu toata lumea. Ne focusam pe afaceri care sunt serioase in privinta cresterii si deschise pentru a construi o colaborare pe termen lung bazata pe incredere si performanta.'
-      },
-      {
-        question: 'Ce se intampla dupa ce trimit formularul?',
-        answer:
-          'Revizuim afacerea, configurarea actuala si obiectivele. Apoi revenim cu o strategie clara si urmatorii pasi recomandati adaptati situatiei tale.'
-      },
-      {
         question: 'Puteti doar rula reclame sau va ocupati de totul?',
         answer:
           'Mergem dincolo de reclame. Ne focusam pe sistemul complet — inclusiv SEO, optimizare website, tracking si creativ — pentru a asigura ca totul lucreaza impreuna.'
-      },
-      {
-        question: 'Puteti lucra cu website-ul si configuratia existenta?',
-        answer:
-          'Da. Putem optimiza configuratia curenta sau reconstrui parti din ea daca este necesar pentru a imbunatati performanta.'
       },
       {
         question: 'Ce ne deosebeste de alte agentii?',
@@ -649,11 +619,6 @@ export const SITE_CONTENT_RO: SiteContent = {
         question: 'Voi fi implicat in proces?',
         answer:
           'Da. Credem ca colaborarea puternica duce la rezultate mai bune, mai ales cand vine vorba de insighturile produsului, oferte si directie.'
-      },
-      {
-        question: 'Creati si continut?',
-        answer:
-          'Da. Oferim fotografie si productie video pentru reclame si branding, in functie de nevoile si nivelul de colaborare.'
       }
     ],
     leadSavedMessage:
@@ -680,9 +645,7 @@ export const SITE_CONTENT_RO: SiteContent = {
       title: 'Rezultate Reale. Crestere Reala.',
       subtitle: 'Ne focusam pe construirea sistemelor care genereaza performanta consistenta — nu victorii izolate.',
       description:
-        'Ca agentie de marketing bazata pe date, ne focusam pe construirea sistemelor care genereaza performanta consistenta si crestere scalabila — nu victorii izolate. Cresterea Reala Provine din Sistemul Potrivit. Fiecare rezultat pe care il vedeti mai jos este construit printr-o combinatie de strategie, executie si colaborare. Nu urmarim victorii pe termen scurt — ne focusam pe construirea sistemelor care genereaza crestere consistenta si scalabila in timp.',
-      imagePosition: 'right',
-      image: 'images/results/Results1.png'
+        'Ca agentie de marketing bazata pe date, ne focusam pe construirea sistemelor care genereaza performanta consistenta si crestere scalabila — nu victorii izolate. Cresterea Reala Provine din Sistemul Potrivit. Fiecare rezultat pe care il vedeti mai jos este construit printr-o combinatie de strategie, executie si colaborare. Nu urmarim victorii pe termen scurt — ne focusam pe construirea sistemelor care genereaza crestere consistenta si scalabila in timp.'
     },
     {
       title: 'Sistem de Crestere E-commerce',
@@ -718,7 +681,7 @@ export const SITE_CONTENT_RO: SiteContent = {
   ],
   seo: {
     home: {
-      title: 'Digital Marketing Agency | Google Ads, Meta Ads & SEO',
+      title: 'InsideGrowth | Digital Marketing Agency',
       description: 'We are a digital marketing agency helping businesses grow through Google Ads, Meta Ads, and SEO strategies focused on real results and scalable growth.',
       keywords: ['digital marketing agency', 'google ads', 'meta ads', 'SEO', 'InsideGrowth', 'performance marketing']
     },

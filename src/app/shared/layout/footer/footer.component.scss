@@ -1,7 +1,7 @@
 .site-footer {
   margin-top: clamp(4rem, 8vw, 7rem);
   border-top: 1px solid var(--line);
-  padding: clamp(2rem, 4vw, 3.5rem) 0 2rem;
+  padding: clamp(2rem, 4vw, 3.5rem) clamp(1rem, 5vw, 3rem) 2rem;
   display: grid;
   gap: 2.5rem 3rem;
   grid-template-columns: 1.4fr 1fr 1fr 1fr;

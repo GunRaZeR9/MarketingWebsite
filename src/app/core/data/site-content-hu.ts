@@ -582,16 +582,6 @@ export const SITE_CONTENT_HU: SiteContent = {
     contactFaqTitle: 'Gyakran ismételt kérdések',
     contactFaqs: [
       {
-        question: 'Garantálható az eredmények?',
-        answer:
-          'Nem garantálunk konkrét számokat — mert a valódi növekedés több tényezőtől függ, mint a piac, az ajánlat és a költségvetés. Amit garantálunk az egy egyértelmű stratégia, konzisztens optimalizálás és az arra irányuló fokusz, hogy az idővel működőket skálázunk.'
-      },
-      {
-        question: 'Hány ügyféllel dolgozik?',
-        answer:
-          'Korlátozott számú ügyféllel dolgozunk, hogy biztosítsuk, hogy minden projekt megkapja a szükséges figyelmet és fókuszt. Célunk a minőség és teljesítmény — nem a kötet.'
-      },
-      {
         question: 'Hogyan működik a díjszabás?',
         answer:
           'A díjszabást az üzleted, céljaid és a hatékony skálázáshoz szükséges támogatás szintje alapján szabjuk testre. A megjelenített csomagok kiindulópontok — a végső díjszabás az konkrét igények körül épül.'
@@ -600,11 +590,6 @@ export const SITE_CONTENT_HU: SiteContent = {
         question: 'Meddig tart az eredmények meglátásához?',
         answer:
           'A legtöbb kampánya az első 1-3 hónapban kezd javulni. Az egészséges növekedés azonban idővel, tesztelésen, optimalizáláson és skálázáson keresztül épül fel.'
-      },
-      {
-        question: 'Garantálható az eredmények?',
-        answer:
-          'Nem garantálunk konkrét számokat — nem is komoly ügynökség. Amit garantálunk az egy strukturált megközelítés, amely a folyamatos javításra és a mérhető növekedésre összpontosít.'
       },
       {
         question: 'Nagy költségvetésre van szükségem az induláshoz?',
@@ -617,24 +602,9 @@ export const SITE_CONTENT_HU: SiteContent = {
           'A Google, Meta (Facebook és Instagram) és TikTok között menedzselem a kampányokat — az üzleted legjobban illő szerint.'
       },
       {
-        question: 'Az összes típusú üzlettel dolgozik?',
-        answer:
-          'A legtöbb üzlettípussal dolgozunk, de nem mindennel társulunk. Az olyan üzletekre összpontosítunk, amelyek komolyan veszik a növekedést és nyitottak egy hosszú távú kollaboráció felépítésére a bizalom és teljesítmény alapján.'
-      },
-      {
-        question: 'Mi történik az űrlap elküldése után?',
-        answer:
-          'Áttekintjük az üzleted, jelenlegi beállítása és céljait. Ezután egy egyértelmű stratégiával és az helyzetre szabott javasolt lépésekkel térünk vissza.'
-      },
-      {
         question: 'Csak hirdetéseket futtat, vagy mindent kezel?',
         answer:
           'Túlmegyünk a hirdetéseken. A teljes rendszerre összpontosítunk — beleértve a SEO-t, a webhely optimalizálást, a nyomkövetést és a kreatíveket — hogy biztosítsuk, hogy minden együttesen működik.'
-      },
-      {
-        question: 'Dolgozhat a meglévő webhellyel és beállítással?',
-        answer:
-          'Igen. Optimalizálhatjuk a jelenlegi beállítást vagy szükség szerint újraépítjük a teljesítmény javítása érdekében.'
       },
       {
         question: 'Mi deosebít minket más ügynökségektől?',
@@ -650,11 +620,6 @@ export const SITE_CONTENT_HU: SiteContent = {
         question: 'Vagyok bevonva a folyamatba?',
         answer:
           'Igen. Hiszünk abban, hogy az erős kolaboráció jobb eredményekhez vezet, különösen amikor a termék insightok, ajánlatokés irány jönnek szóba.'
-      },
-      {
-        question: 'Készítesz tartalmat is?',
-        answer:
-          'Igen. A hirdetésekhez és márkázáshoz fotó- és videoprodukciot kínálunk, az igények és az együttműködés szintje szerint.'
       }
     ],
     leadSavedMessage:
@@ -681,9 +646,7 @@ export const SITE_CONTENT_HU: SiteContent = {
       title: 'Valódi Eredmények. Valódi Növekedés.',
       subtitle: 'Az olyan rendszerekre összpontosítunk, amelyek konzisztens teljesítményt generálnak — nem izolált győzelmeket.',
       description:
-        'Mint adatalapú marketing ügynökség, az olyan rendszerekre összpontosítunk, amelyek konzisztens teljesítményt és skálázható növekedést generálnak — nem izolált győzelmeket. A valódi növekedés a megfelelő rendszerből származik. Az alábbi minden eredmény stratégia, végrehajtás és kollaboráció kombinációjával épül fel. Nem rövid távú győzelmeket követünk — az olyan rendszerekre összpontosítunk, amelyek konzisztens, skálázható növekedést generálnak az idő során.',
-      imagePosition: 'right',
-      image: 'images/results/Results1.png'
+        'Mint adatalapú marketing ügynökség, az olyan rendszerekre összpontosítunk, amelyek konzisztens teljesítményt és skálázható növekedést generálnak — nem izolált győzelmeket. A valódi növekedés a megfelelő rendszerből származik. Az alábbi minden eredmény stratégia, végrehajtás és kollaboráció kombinációjával épül fel. Nem rövid távú győzelmeket követünk — az olyan rendszerekre összpontosítunk, amelyek konzisztens, skálázható növekedést generálnak az idő során.'
     },
     {
       title: 'E-kereskedelmi Növekedés Rendszer',
@@ -719,7 +682,7 @@ export const SITE_CONTENT_HU: SiteContent = {
   ],
   seo: {
     home: {
-      title: 'Digital Marketing Agency | Google Ads, Meta Ads & SEO',
+      title: 'InsideGrowth | Digital Marketing Agency',
       description: 'We are a digital marketing agency helping businesses grow through Google Ads, Meta Ads, and SEO strategies focused on real results and scalable growth.',
       keywords: ['digital marketing agency', 'google ads', 'meta ads', 'SEO', 'InsideGrowth', 'performance marketing']
     },
