@@ -9,6 +9,7 @@ export class ScrollRevealDirective implements OnInit, OnDestroy {
   @Input() delay = 0;
 
   private observer!: IntersectionObserver;
+  private prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   constructor(private readonly el: ElementRef<HTMLElement>) {}
 
@@ -16,6 +17,13 @@ export class ScrollRevealDirective implements OnInit, OnDestroy {
     if (this.delay) {
       this.el.nativeElement.style.setProperty('--sr-delay', `${this.delay}ms`);
     }
+
+    // If user prefers reduced motion, show immediately without animation
+    if (this.prefersReducedMotion) {
+      this.el.nativeElement.classList.add('visible');
+      return;
+    }
+
     this.observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {

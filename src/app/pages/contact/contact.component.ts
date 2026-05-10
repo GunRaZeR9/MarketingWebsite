@@ -1,4 +1,3 @@
-import emailjs from '@emailjs/browser';
 import { CommonModule } from '@angular/common';
 import { Component, DestroyRef, effect, inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
@@ -109,6 +108,7 @@ export class ContactComponent {
       growth_goals: formValue.message,
     };
     try {
+      const emailjs = (await import('@emailjs/browser')).default;
       await Promise.all([
         emailjs.send(environment.emailjs.serviceId, environment.emailjs.notificationTemplateId, sharedParams),
         emailjs.send(environment.emailjs.serviceId, environment.emailjs.autoReplyTemplateId, {
