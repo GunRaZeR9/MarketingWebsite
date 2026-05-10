@@ -1,0 +1,582 @@
+================================================================================
+INSIDEGROWTH - ENGLISH TRANSLATIONS FOR PROFESSIONAL REVIEW
+================================================================================
+Generated: 2026-05-10
+Source: src/app/core/data/site-content-en.ts
+
+================================================================================
+BRAND & HERO CONTENT
+================================================================================
+
+Brand Name: InsideGrowth
+
+Hero Title: More Than an Agency — A Growth Partner
+
+Hero Subtitle:
+We are a digital marketing agency helping businesses grow through performance-driven strategies — backed by a team of certified specialists with 20+ years of combined experience.
+
+Intro Title: Growth, Built Together
+
+Intro Subtitle: Trusted to manage €50K+ in monthly ad spend
+
+Intro Body:
+- A team of ex-Google and Meta specialists with 20+ years of combined experience.
+- We don't just run campaigns — we build growth systems. When your business scales profitably, we scale with you. That's how we measure success.
+
+About Intro Title: How We Think About Growth
+
+About Intro Body:
+- We don't treat marketing as separate services.
+- We build systems where every part — traffic, conversion, and retention — works together to drive real business growth.
+- Most agencies focus on campaigns. We focus on results.
+
+About Platform Items:
+- Clear strategy, not guesswork
+- Focus on revenue, not just traffic
+- Scalable systems, not one-time wins
+
+================================================================================
+TEAM MEMBERS
+================================================================================
+
+Razvan Puscas
+Role: Founder & Growth Strategist
+Bio: Leads strategy, paid media, and SEO — ensuring all parts of the system work together to drive real business growth.
+
+Andrei Puscas
+Role: Paid Media Specialist
+Bio: Manages and optimizes campaigns across Google and Meta, focusing on performance, scaling, and profitability.
+
+Paul Tatar
+Role: Web & Funnel Specialist
+Bio: Builds high-converting websites and landing pages designed to turn traffic into customers.
+
+Mihai Borsan
+Role: Creative Specialist
+Bio: Creates photo and video content designed to capture attention and increase conversions.
+
+Nico Puscas
+Role: Client Growth & Sales
+Bio: Works directly with clients to understand their goals and ensure the right strategy is implemented.
+
+Team Section Title: Meet the Team Behind InsideGrowth
+Team Section Subtitle: A team of specialists, each focused on a key part of your business growth.
+Team Section Tagline: We work as one team — focused on one goal: your growth.
+
+================================================================================
+PROBLEMS & SOLUTIONS
+================================================================================
+
+Problem Title: The Gap Between Traffic and Revenue
+
+Problem Points:
+- Running ads without a clear strategy.
+- No alignment between traffic, website, and conversions.
+- We bring everything together into a system that drives real results.
+
+Solutions Title: Our Solutions
+
+Solution 1 Title: Launch Targeted PPC on Meta and Google
+Solution 1 Description: Activate data-driven campaigns for high-intent and luxury-interest audiences to appear where premium buyers are already searching and browsing.
+
+Solution 2 Title: Build a Full-Funnel Paid Media System
+Solution 2 Description: Guide prospects from first discovery to purchase with awareness, consideration, and conversion layers across Meta and Google.
+
+Solution 3 Title: Expand Into New Markets With Geo-Targeting
+Solution 3 Description: Focus budget on high-value regions and cities where luxury demand is strongest to drive efficient international growth.
+
+================================================================================
+SERVICES
+================================================================================
+
+Services Title: Services Built to Scale Your Business
+
+SERVICE 1: Audit & Growth Analysis
+Description: We analyze your entire marketing ecosystem — from website performance and tracking setup to ad campaigns and SEO — to identify what's working, what's holding you back, and where the biggest growth opportunities are.
+Features:
+- Website speed & performance
+- Tracking setup (GTM, GA4, pixels)
+- Google & Meta Ads audit
+- SEO structure & technical review
+- Conversion flow & user journey
+
+SERVICE 2: Paid Media That Converts
+Description: We manage and scale high-performance campaigns across Google, Meta, and TikTok — focused on attracting qualified traffic that turns into real customers and revenue.
+Features:
+- Google Ads (Search, Shopping, Performance Max)
+- Meta Ads (Facebook & Instagram)
+- TikTok Ads
+- Campaign optimization & scaling
+
+SERVICE 3: SEO & Organic Growth
+Description: We optimize your website to rank higher, attract consistent traffic, and build long-term visibility that supports your paid campaigns.
+Features:
+- Technical SEO
+- On-page optimization
+- Keyword & structure strategy
+- Content optimization
+
+SERVICE 4: Websites Built to Convert
+Description: We design and develop custom websites and e-commerce platforms focused on speed, user experience, and conversion — turning visitors into paying customers.
+Features:
+- Custom presentation websites
+- E-commerce development
+- Conversion-focused design
+- Mobile & speed optimization
+
+SERVICE 5: Creative Production
+Description: We create high-quality photo and video content designed to capture attention and drive performance across your marketing channels.
+Features:
+- Product photography
+- Brand & location shoots
+- Video production & editing
+- Ad creatives
+
+SERVICE 6: Tracking & Performance Systems
+Description: We build the infrastructure behind your marketing — ensuring every action is tracked, measured, and optimized based on real data.
+Features:
+- Google Tag Manager setup
+- GA4 & event tracking
+- Conversion tracking
+- Data accuracy & reporting
+
+================================================================================
+ADVANTAGES / WHY CHOOSE US
+================================================================================
+
+Advantages Title: What Makes Us Different
+
+ADVANTAGE 1 Title: Specialists not Generalists
+Description: Each part of your growth is handled by a dedicated expert — from ads and SEO to websites and creative.
+
+ADVANTAGE 2 Title: Built Around Results
+Description: We don't focus on clicks or impressions — everything we do is designed to generate real customers and revenue.
+
+ADVANTAGE 3 Title: Systems, Not Just Campaigns
+Description: We build complete growth systems where traffic, conversion, and performance work together.
+
+ADVANTAGE 4 Title: Data Over Guesswork
+Description: Every decision is based on testing, data, and performance — not assumptions.
+
+================================================================================
+PRICING SECTION
+================================================================================
+
+Pricing Title: Transparent Pricing. Built for Real Growth
+
+Pricing Subtitle:
+We structure pricing based on your business, growth potential, and the level of involvement required to scale profitably.
+
+Comparison Title: Product Comparison
+
+VAT Note: All prices are exclusive of VAT and may vary depending on the scope of the project.
+
+Spotlights Title: Built for the work that actually moves revenue
+
+FAQ Title: Frequently Asked Questions
+
+Custom Title: Custom Growth Systems
+
+Custom Subtitle: Tailored pricing based on your needs
+
+Limited Clients Title: We Work With a Limited Number of Clients
+
+Limited Clients Body:
+We focus on partnerships, not volume. We only take on projects where we know we can deliver measurable growth and build long-term success.
+
+Build Right System Title: Let's Build the Right System for Your Business
+
+Build Right System Body:
+We'll analyze your business and recommend the best approach — including pricing tailored to your needs.
+
+No Commitment: No commitment. Just clarity.
+
+PRICING PLAN 1: Growth Foundation
+Price: From €500 / month
+Description: For businesses starting with structured campaigns and consistent optimization.
+CTA Label: Get Started
+Recommended Budget: under-1000
+Features:
+- Google Ads Management
+- Campaign setup & optimization
+- SEO foundation
+- Basic tracking setup
+- Monthly reporting
+
+PRICING PLAN 2: Growth & Scaling
+Price: From €800 / month
+Description: For businesses ready to scale with a full-funnel approach and deeper optimization.
+CTA Label: Let's Talk
+Featured: Yes
+Recommended Budget: 1000-3000
+Features:
+- Everything in Foundation
+- Meta Ads Management
+- Ongoing SEO optimization
+- Funnel optimization
+- Conversion rate improvements
+- Creative testing & iteration
+- Advanced tracking & data insights
+
+PRICING PLAN 3: Performance Partner
+Price: €1,300+ / month
+Description: For brands looking for aggressive growth with full strategic involvement.
+CTA Label: Apply to Work With Us
+Recommended Budget: 3000-10000
+Features:
+- Everything in Scaling
+- TikTok Ads Management
+- Full growth strategy & planning
+- Daily performance analysis and decisions
+- Budget scaling & allocation strategy
+- Creative direction (what to shoot, test, scale)
+- Direct collaboration & priority execution
+- Continuous scaling across channels
+
+PRICING SPOTLIGHTS
+
+Spotlight 1
+Title: Custom websites from project scope
+Description: Presentation sites and conversion-led pages built around your business model and growth stage.
+
+Spotlight 2
+Title: Photo and video production from project scope
+Description: Creative assets that support paid media, brand building, and conversion-focused campaigns.
+
+Spotlight 3
+Title: Custom growth systems
+Description: Strategy, tracking, creative, SEO, and media working together as one performance system.
+
+PRICING FAQS
+
+Q: How many clients do you work with?
+A: We keep a limited client load so every account gets real attention. On average, we manage around 10 to 15 accounts per specialist.
+
+Q: Can you guarantee results?
+A: No marketing partner can guarantee results, but we can guarantee deep involvement, clear reporting, and a process built to improve performance consistently.
+
+Q: What is included in the plans?
+A: All plans include strategy, SEO, paid media, audit, tracking, and reporting. The difference is the depth of optimization, channel mix, and level of collaboration.
+
+Q: Do you work with custom websites and content production?
+A: Yes. We can support presentation websites, e-commerce projects, photography, and video production as part of a custom growth system.
+
+================================================================================
+CONTACT & GROWTH SERVICES
+================================================================================
+
+Contact Title: Let's Talk About Your Growth
+
+Contact Subtitle:
+Tell us about your business and goals — we'll come back with a clear strategy and next steps tailored to your growth.
+
+Primary CTA: Let's Grow Together
+
+GROWTH SERVICES
+
+Service 1 Title: Paid Media That Converts
+Description: We manage high-performance campaigns across Google, Meta, and TikTok — focused on bringing qualified traffic that turns into real customers and revenue.
+
+Service 2 Title: Creative That Drives Performance
+Description: We produce high-converting ad creatives, photos, and videos designed to capture attention and increase conversions — not just look good.
+
+Service 3 Title: From Click to Customer
+Description: We build structured marketing funnels that guide users from first interaction to final purchase, maximizing every step of the customer journey.
+
+Service 4 Title: Websites Built to Convert
+Description: We design and optimize websites and landing pages focused on speed, user experience, and conversion — turning visitors into paying customers.
+
+Service 5 Title: SEO & Organic Growth
+Description: We optimize your website to rank higher, attract consistent traffic, and build long-term visibility beyond paid ads.
+
+Service 6 Title: Tracking & Data Accuracy
+Description: We set up and optimize tracking systems to ensure every decision is based on accurate data — from conversions to customer behavior.
+
+================================================================================
+HOW WE WORK
+================================================================================
+
+HOW WE WORK STEPS
+
+Step 01 Title: Audit & Analysis
+Description: We analyze your business, website, current campaigns, tracking, and performance to identify what's working, what's missing, and where growth is being blocked.
+
+Step 02 Title: Strategy & Planning
+Description: We build a custom growth plan based on your goals, budget, market, and customer journey — so every channel has a clear purpose.
+
+Step 03 Title: Launch & Implementation
+Description: We set up and launch the right campaigns, creatives, landing pages, tracking, and optimizations across the channels that matter most.
+
+Step 04 Title: Optimize & Scale
+Description: We continuously test, improve, and scale what works — focusing on better performance, higher conversions, and profitable growth.
+
+================================================================================
+CONTACT INFORMATION
+================================================================================
+
+Contact Person: InsideGrowth
+Contact Role: Digital Marketing Agency
+Contact Email: contact@insidegrowth.ro
+Contact Phone: +40799900187
+
+================================================================================
+UI STRINGS & LABELS
+================================================================================
+
+NAV LABELS
+Home: Home
+About: About
+Growth Results: Growth Results
+Services: Services
+Pricing: Pricing
+Contact: Contact
+
+GENERAL UI
+Language Label: Language
+Home Explore Services: Explore Services
+Header CTA: Let's grow together
+Footer Tagline: Former Google and Meta specialists helping brands scale globally.
+Footer Contact Label: Contact
+Footer Navigate Label: Navigate
+Footer All Rights Reserved: All rights reserved
+Footer Privacy Policy: Privacy Policy
+Footer Cookie Policy: Cookie Policy
+Footer Terms Conditions: Terms & Conditions
+Footer Copyright Prefix: Copyright
+
+HOME PAGE
+Who We Are: INSIDEGROWTH
+Strategies Title: Strategies That Deliver Real Results
+About Us: Let's Grow Together
+Ready Title: Growth Doesn't Happen by Guesswork
+Start Growing: Let's Grow Together
+View Pricing: View Pricing
+Results Eyebrow: Results
+Results Title: See what the process can deliver
+Results Body: We turn strategy into measurable outcomes across spend, efficiency, and growth. This section will expand into a dedicated results page next.
+Results Link: Learn More
+Stats Campaigns Run: Campaign Optimizations
+Stats Average ROI: Monthly Ad Spend
+Stats Top Platforms: Google & Meta Core Platforms
+Stats Data Driven: Performance Focused
+Growth Eyebrow: Growth Systems
+How We Scale Title: How We Scale Your Business
+How We Scale Subtitle: Growth Systems, Not Just Services
+How We Work Eyebrow: Our Process
+How We Work Title: How We Work
+How We Work Subtitle: A clear process designed to turn marketing into a predictable growth system — from audit to scalable performance.
+Credentials Title: Data, Audit & Scaling Strategy
+Credentials Body: We analyze your data, audit your performance, and continuously optimize campaigns to scale what works and eliminate what doesn't.
+Credentials Badge: Google & Meta Certified Team · 20+ Years Combined Experience
+Mini CTA: Ready to scale your business?
+Modal CTA: Get Started
+
+ABOUT PAGE
+About Eyebrow: About
+About Title: A Team Built to Scale Your Business
+About Lead: We combine expertise across Google Ads, Meta, SEO, and creative to build systems that generate real, measurable growth.
+Mission Eyebrow: Our Mission
+Platforms Eyebrow: What This Means for You
+Why Choose Us: Why Choose Us
+
+SERVICES PAGE
+Services Eyebrow: Services
+Services Lead: We don't offer isolated services — we build complete systems designed to generate traffic, convert customers, and scale your business profitably.
+Approach Eyebrow: Our Approach
+
+PRICING PAGE
+Pricing Eyebrow: Pricing
+Feature Comparison: Feature Comparison
+Pricing Table Aria Label: Pricing feature comparison
+Feature Header: Feature
+Standard Header: Foundation
+Premium Header: Scaling
+Included: Included
+Optional: Optional
+
+CONTACT PAGE
+Contact Eyebrow: Contact
+Share Goals: Tell us about your business and goals
+Form Plan Label: Business plan
+Form Plan Placeholder: Select your plan
+Form Plan Validation: Please select a plan.
+Form Budget Label: Media paid budget
+Form Budget Placeholder: Select budget range
+Form Budget Validation: Budget range is required.
+Form Business Label: Business name
+Form Business Placeholder: Your business name
+Form Business Validation: Business name is required.
+Form Full Name Label: Full name
+Form Full Name Placeholder: Your name
+Form Full Name Validation: Name is required.
+Form Email Label: Business email
+Form Email Placeholder: you@company.com
+Form Email Validation: Enter a valid email.
+Form Website Label: Website
+Form Website Placeholder: yourwebsite.com
+Form Website Validation: Website is required.
+Form Phone Label: Phone number
+Form Phone Placeholder: Your phone number
+Form Phone Validation: Please enter a valid phone number.
+Form Budget Options:
+- €500 – €1,000
+- €1,000 – €3,000
+- €3,000 – €10,000
+- €10,000+
+Form Goals Label: Growth plans
+Form Goals Placeholder: Tell us about your business, goals, and anything else we should know
+Form Goals Validation: Please provide at least 50 characters.
+Form Submit Label: Send inquiry
+
+Next Steps Title: What Happens Next
+Next Steps:
+- We review your business
+- We identify growth opportunities
+- We come back with a clear plan
+
+Response Time Title: Response Time
+Response Time Body: We typically respond within 24 hours
+
+Direct Contact Title: Direct Contact
+
+Limited Clients Note: We work with a limited number of clients to ensure quality and performance.
+
+FAQ Title: FAQ
+
+Frequently Asked Questions:
+
+Q: How does pricing work?
+A: We tailor pricing based on your business, goals, and the level of support required to scale effectively. The plans shown are starting points — final pricing is built around your specific needs.
+
+Q: How long does it take to see results?
+A: Most campaigns start improving within the first 1–3 months. However, sustainable growth is built over time through testing, optimization, and scaling.
+
+Q: Do I need a large budget to start?
+A: Not necessarily. We work with different budget levels, but meaningful scaling requires proper investment in both ads and optimization.
+
+Q: What platforms do you work with?
+A: We manage campaigns across Google, Meta (Facebook & Instagram), and TikTok — depending on what fits your business best.
+
+Q: Do you only run ads, or do you handle everything?
+A: We go beyond ads. We focus on the full system — including SEO, website optimization, tracking, and creative — to ensure everything works together.
+
+Q: What makes you different from other agencies?
+A: We don't focus on volume or short-term wins. We build systems designed for long-term growth and only work with businesses where we can create real impact.
+
+Q: Do you offer one-time services?
+A: In most cases, no. We focus on ongoing partnerships, because consistent optimization is what drives real results.
+
+Q: Will I be involved in the process?
+A: Yes. We believe strong collaboration leads to better results, especially when it comes to product insights, offers, and direction.
+
+FORM MESSAGES
+Lead Saved Message: Thank you. We've received your details and will prepare a tailored growth proposal.
+Lead Sending Message: Sending your message…
+Lead Error Message: Something went wrong. Please try again or email us directly.
+
+COOKIE CONSENT
+Message: We use cookies to improve your experience. By continuing, you agree to our Cookie Policy.
+Accept: Accept
+Decline: Decline
+
+================================================================================
+PORTFOLIO / CASE STUDIES
+================================================================================
+
+Portfolio Eyebrow: Results
+Portfolio Main Title: Real Results. Real Growth.
+Portfolio Main Subtitle: We focus on building systems that generate consistent performance — not isolated wins.
+Portfolio Description:
+As a data-driven marketing agency, we focus on building systems that generate consistent performance and scalable growth — not isolated wins. Real Growth Comes from the Right System. Every result you see below is built through a combination of strategy, execution, and collaboration. We don't chase short-term wins — we focus on building systems that generate consistent, scalable growth over time.
+
+CASE STUDY 1: E-commerce Growth System
+Metrics: 48.6x ROAS (Campaign Performance), €112K+ Revenue Generated
+Description: The business had strong potential but wasn't fully optimized across SEO and paid campaigns. We rebuilt the SEO structure across all pages and products, continuously optimizing keywords and ensuring proper indexing to maintain top search visibility. At the same time, we refined and scaled ad campaigns — focusing on performance, product selection, and full funnel optimization. Results were built progressively over a 3-month period, leading to consistent and scalable growth.
+
+CASE STUDY 2: Lead Generation & Local Growth
+Metrics: 1M+ Impressions, 144+ Conversions
+Description: The goal was not just traffic — but generating qualified leads for a physical business offering services. We rebuilt the SEO foundation, created structured ad groups, and continuously tested different creatives and targeting strategies. The focus was on promoting a core service first, with secondary emphasis on sales. Through constant optimization, we achieved a steady flow of leads and improved campaign efficiency over time.
+
+CASE STUDY 3: Full Growth Support for Local Business
+Metrics: 7.85x ROAS, From near-zero to consistent growth
+Description: This project started with a local business with minimal online presence. We built everything from the ground up — website, SEO structure, product visuals, and marketing campaigns. By combining multiple elements into one system, we helped the business grow steadily and establish a strong online presence.
+
+CASE STUDY 4: Final Section
+Title: We Don't Work With Everyone
+Subtitle: Ready to See What We Can Improve in Your Business?
+Description: We believe performance comes from strong partnerships. That's why we work with a limited number of clients — businesses where we know we can create real impact and grow together. Every project is built on trust, communication, and long-term collaboration. Results vary depending on industry, budget, and market conditions. Our focus is always the same: build systems that scale what works. We'll analyze your current setup and show you exactly where growth opportunities exist. No commitment. Just actionable insights.
+
+================================================================================
+SEO METADATA
+================================================================================
+
+HOME PAGE SEO
+Title: InsideGrowth | Digital Marketing Agency
+Description: We are a digital marketing agency helping businesses grow through Google Ads, Meta Ads, and SEO strategies focused on real results and scalable growth.
+Keywords: digital marketing agency, google ads, meta ads, SEO, InsideGrowth, performance marketing
+
+ABOUT PAGE SEO
+Title: About Our Marketing Agency | Growth-Focused Team
+Description: Learn more about our digital marketing agency and how we combine Google Ads, SEO, and performance strategies to help businesses scale.
+Keywords: about InsideGrowth, marketing agency team, google ads experts, SEO agency
+
+SERVICES PAGE SEO
+Title: Marketing Services | Google Ads, SEO & Website Growth
+Description: Explore our marketing services including Google Ads management, Meta Ads campaigns, SEO optimization, and website development.
+Keywords: marketing services, google ads management, meta ads, SEO optimization, website development
+
+GROWTH RESULTS PAGE SEO
+Title: Growth Results | Marketing Agency Case Studies
+Description: See real results from Google Ads, Meta Ads, and SEO campaigns focused on consistent growth and performance.
+Keywords: growth results, case studies, google ads results, SEO results, marketing performance
+
+PRICING PAGE SEO
+Title: Marketing Agency Pricing | Google Ads & SEO Services
+Description: Transparent pricing for marketing services including Google Ads, SEO, and full growth systems tailored to your business.
+Keywords: marketing agency pricing, google ads pricing, SEO pricing, growth systems pricing
+
+CONTACT PAGE SEO
+Title: Contact Our Marketing Agency | Start Your Growth Plan
+Description: Get in touch with our digital marketing agency to discuss your business, strategy, and growth opportunities.
+Keywords: contact InsideGrowth, start growth plan, marketing agency contact, insidegrowth.ro
+
+PRIVACY POLICY PAGE SEO
+Title: Privacy Policy
+Description: Read the InsideGrowth privacy policy. Learn how we collect, use, and protect your personal data.
+Keywords: InsideGrowth privacy policy, data protection, GDPR, insidegrowth.ro
+
+COOKIE POLICY PAGE SEO
+Title: Cookie Policy
+Description: Learn how InsideGrowth uses cookies to improve your website experience.
+Keywords: InsideGrowth cookie policy, cookies, analytics cookies, insidegrowth.ro
+
+TERMS & CONDITIONS PAGE SEO
+Title: Terms & Conditions
+Description: Read the InsideGrowth terms and conditions governing the use of our services and website.
+Keywords: InsideGrowth terms, terms and conditions, service agreement, insidegrowth.ro
+
+================================================================================
+LEGAL DOCUMENTS
+================================================================================
+
+These are extensive legal documents. Key sections included:
+
+COOKIE POLICY
+- Chapter headings (1-16)
+- All paragraph content about cookie usage, types, and management
+
+PRIVACY POLICY
+- Chapter headings (I-XVI)
+- All paragraph content about data collection, processing, and user rights
+- Contact information and GDPR compliance details
+
+TERMS & CONDITIONS
+- Chapter headings (I-XVI)
+- All paragraph content about website usage, intellectual property, services
+- Disclaimer, dispute resolution, and governing law
+
+[Full legal document content is preserved in the TypeScript files and should be reviewed by translator for legal accuracy]
+
+================================================================================
+END OF ENGLISH TRANSLATIONS
+================================================================================

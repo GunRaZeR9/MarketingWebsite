@@ -29,14 +29,14 @@
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  font-weight: 1000;
+  font-weight: 900;
   text-decoration: none;
   color: var(--text);
 }
 
 .brand-name {
   font-family: 'Sora', sans-serif;
-  font-weight: 1000;
+  font-weight: 900;
   font-size: clamp(1.10rem, 3vw, 2.1rem);
   line-height: 1.2;
 }

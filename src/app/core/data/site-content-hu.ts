@@ -103,19 +103,20 @@ const HUNGARIAN_COOKIE_POLICY: LegalPageContent = {
 export const SITE_CONTENT_HU: SiteContent = {
   language: 'hu',
   brandName: 'InsideGrowth',
-  heroTitle: 'Globális Növekedés Adatalapú Marketinggal',
+  heroTitle: 'Több, mint egy ügynökség — Egy növekedési partner',
   heroSubtitle:
-    'Teljesítményi marketing ügynökség, volt Google és Meta szakemberekkel, akik a kattintásokat valódi növekedésé alakítják.',
-  introTitle: 'Bevezetés',
-  introSubtitle: 'Megbízhatóan kezelünk havi 50 ezer eurónál is nagyobb hirdetési költést',
+    'Egy digitális marketing ügynökség, amely segít az üzleteknek növekedni teljesítményre összpontosított stratégiákon keresztül — egy tanúsított szakemberekből álló csapat támogatásával, amely 20+ év kombinált tapasztalattal rendelkezik.',
+  introTitle: 'Növekedés, Együtt Felépítve',
+  introSubtitle: 'Megbízva kezelünk €50K+ havi hirdetési költséget',
   introBody: [
-    'Stratégiai gondolkodást, kreatív storytellinget és platformszintű szakértelmet egyesítünk, hogy mérhető kampányokkal skálázzuk a márkákat.',
-    'A tudatosságnövelésből a konverzióig és nemzetközi expanzióig, küldetésünk a fizetett médiatartalmak kiszámítható üzleti növekedésé alakítása.'
+    'Egy csapat volt Google és Meta szakember, 20+ év kombinált tapasztalattal.',
+    'Nem csak kampányokat futtatunk — növekedési rendszereket építünk. Amikor az üzleted nyereségesen skálázódik, mi is skálázódunk veled. Így mérjük a sikert.'
   ],
-  aboutIntroTitle: 'Bevezetés',
+  aboutIntroTitle: 'Hogyan Gondolkozunk a Növekedésről',
   aboutIntroBody: [
-    'Stratégiai gondolkodást, kreatív storytellinget és platformszintű szakértelmet egyesítünk, hogy mérhető kampányokkal skálázzuk a márkákat.',
-    'A tudatosságnövelésből a konverzióig és nemzetközi expanzióig, küldetésünk a fizetett médiatartalmak kiszámítható üzleti növekedésé alakítása.'
+    'Nem kezeljük a marketinget külön szolgáltatásokként.',
+    'Olyan rendszereket építünk, ahol minden rész — a forgalom, konverzió és megtartás — együtt működik a valódi üzleti növekedés meghajtásához.',
+    'A legtöbb ügynökség a kampányokra fókuszál. Mi az eredményekre.'
   ],
   aboutPlatformItems: [
     'Egyértelmű stratégia, nem találgatás',
@@ -158,10 +159,11 @@ export const SITE_CONTENT_HU: SiteContent = {
       photo: 'images/placeholders/studio-grid.svg'
     }
   ],
-  problemTitle: 'Problémameghatározás',
+  problemTitle: 'A Forgalom és Bevétel Közötti Rés',
   problemPoints: [
-    'Korlátozott elérés a magas értékű új ügyfelek felé, és alacsony fizetett láthatóság a prémium, designorientált közönség között.',
-    'A prémium pozicionáláshoz precíz célzás és konverziós átláthatóság szükséges, de jelenleg nincs teljes fizetett hirdetési keretrendszer.'
+    'Hirdetések futtatása világos stratégia nélkül.',
+    'Nincs igazítás a forgalom, webhely és konverziók között.',
+    'Mi mindent egy rendszerbe hozunk, amely valódi eredményeket hajt meg.'
   ],
   solutionsTitle: 'Megoldásaink',
   solutions: [
@@ -186,7 +188,7 @@ export const SITE_CONTENT_HU: SiteContent = {
     {
       title: 'Audit & Növekedés Elemzés',
       description:
-        'Elemzem az egész marketing ökoszisztémádat — a webhely teljesítménytől és a nyomkövetési beállítástól a hirdetési kampányokig és a keresőoptimalizálásig — hogy azonosítsam, mi működik, mi korlátoz és ahol a legnagyobb növekedési lehetőségek vannak.',
+        'Elemezzük az egész marketing ökoszisztémádat — a webhely teljesítménytől és a nyomkövetési beállítástól a hirdetési kampányokig és a keresőoptimalizálásig — hogy azonosítsuk, mi működik, mi korlátoz és ahol a legnagyobb növekedési lehetőségek vannak.',
       features: [
         'Webhely sebessége és teljesítménye',
         'Nyomkövetési beállítás (GTM, GA4, pixelek)',
@@ -195,12 +197,12 @@ export const SITE_CONTENT_HU: SiteContent = {
         'Konverziós folyamat és felhasználói utazás'
       ],
       imagePosition: 'left',
-      image: 'images/services/Audit%26GrowthAnalysis.png'
+      image: 'images/services/Audit%26GrowthAnalysis.webp'
     },
     {
       title: 'Fizetett Média, Amely Konvertál',
       description:
-        'Magas teljesítményű kampányokat kezelek és skálázok a Google, Meta és TikTok között — a minőségi forgalom felkeltésére összpontosítva, amely valódi ügyfelekké és bevételekké alakul.',
+        'Magas teljesítményű kampányokat kezelünk és skálázunk a Google, Meta és TikTok között — a minőségi forgalom felkeltésére összpontosítva, amely valódi ügyfelekké és bevételekké alakul.',
       features: [
         'Google Ads (Keresés, Vásárlás, Performance Max)',
         'Meta Ads (Facebook és Instagram)',
@@ -208,12 +210,12 @@ export const SITE_CONTENT_HU: SiteContent = {
         'Kampányadaptálás és skálázás'
       ],
       imagePosition: 'right',
-      image: 'images/services/PaidMediaThatConverts.png'
+      image: 'images/services/PaidMediaThatConverts.webp'
     },
     {
       title: 'SEO és Szerves Növekedés',
       description:
-        'Optimalizálom webhelyed, hogy magasabbra rangsoroljam, konzisztens forgalmat vonzz és hosszú távú láthatóságot építsek, amely támogatja a fizetett kampányokat.',
+        'Optimalizáljuk webhelyed, hogy magasabbra rangsoroljuk, konzisztens forgalmat vonzz és hosszú távú láthatóságot építsük, amely támogatja a fizetett kampányokat.',
       features: [
         'Technikai SEO',
         'On-page optimalizálás',
@@ -221,12 +223,12 @@ export const SITE_CONTENT_HU: SiteContent = {
         'Tartalom optimalizálás'
       ],
       imagePosition: 'left',
-      image: 'images/services/Seo%26OrganicGrowth.png'
+      image: 'images/services/Seo%26OrganicGrowth.webp'
     },
     {
       title: 'Konverzióra Tervezett Webhelyek',
       description:
-        'Egyedi weboldalakat és e-kereskedelmi platformokat tervezek és fejlesztek, amelyek a sebességre, felhasználói élményre és konverzióra összpontosítanak — a látogatókat fizető ügyfelekké alakítva.',
+        'Egyedi weboldalakat és e-kereskedelmi platformokat tervezünk és fejlesztünk, amelyek a sebességre, felhasználói élményre és konverzióra összpontosítanak — a látogatókat fizető ügyfelekké alakítva.',
       features: [
         'Egyedi bemutatóhelyek',
         'E-kereskedelmi fejlesztés',
@@ -234,12 +236,12 @@ export const SITE_CONTENT_HU: SiteContent = {
         'Mobilés sebesség-optimalizálás'
       ],
       imagePosition: 'right',
-      image: 'images/services/WebsiteBuiltToConvert.png'
+      image: 'images/services/WebsiteBuiltToConvert.webp'
     },
     {
       title: 'Kreatív Produkcio',
       description:
-        'Magas minőségű fotó- és videótartalmakat készítok, amelyeket úgy terveztem, hogy felhívjam a figyelmet és javítsam a teljesítményt a marketing csatornákon.',
+        'Magas minőségű fotó- és videótartalmakat készítünk, amelyeket úgy terveztünk, hogy felhívjuk a figyelmet és javítsuk a teljesítményt a marketing csatornákon.',
       features: [
         'Termékes fotózás',
         'Márka- és helyszín-fotozás',
@@ -247,12 +249,12 @@ export const SITE_CONTENT_HU: SiteContent = {
         'Hirdetési kreatívok'
       ],
       imagePosition: 'left',
-      image: 'images/services/CreativeProduction.png'
+      image: 'images/services/CreativeProduction.webp'
     },
     {
       title: 'Nyomkövetés és Teljesítményi Rendszerek',
       description:
-        'Felépítem a marketinged mögött lévő infrastruktúrát — biztosítva, hogy minden cselekvés nyomon követett, mért és valós adatok alapján optimalizált.',
+        'Felépítjük a marketinged mögött lévő infrastruktúrát — biztosítva, hogy minden cselekvés nyomon követett, mért és valós adatok alapján optimalizált.',
       features: [
         'Google Tag Manager beállítás',
         'GA4 és esemény nyomkövetés',
@@ -260,43 +262,48 @@ export const SITE_CONTENT_HU: SiteContent = {
         'Adatok pontossága és jelentéskészítés'
       ],
       imagePosition: 'right',
-      image: 'images/services/Trackig%26PerformanceSystems.png'
+      image: 'images/services/Trackig%26PerformanceSystems.webp'
     }
   ],
-  advantagesTitle: 'Legfontosabb Versenyképes Előnyök',
+  advantagesTitle: 'Mi Tesz Minket Másabbá',
   advantages: [
     {
-      title: 'Szakérto Csapat',
-      description: 'Tapasztalt szakemberek a gyakorlati tudással összetett teljesítményi marketing programokhoz.'
+      title: 'Szakemberek, Nem Általánosok',
+      description:
+        'A növekedés minden része dedikált szakértő által kezelhető — a hirdetésektől és az SEO-tól a weboldalakig és a kreatívekig.'
     },
     {
-      title: 'Platformismeret Belülről',
-      description: 'Volt Google és Meta szakemberek mély megértéssel az algoritmusokról és az aukciósmechanizmusokról.'
+      title: 'Az Eredmények Köré Felépítve',
+      description:
+        'Nem a kattintásokra vagy impressziókra fókuszálunk — mindaz, amit teszünk, valódi ügyfelek és bevételek generálása érdekében van megtervezve.'
     },
     {
-      title: 'Ügyfélközpontú Megközelítés',
-      description: 'Hosszú távú partnerségek az üzleti célok, az bizalom és az erős kommunikáció alapján.'
+      title: 'Rendszerek, Nem Csak Kampányok',
+      description:
+        'Teljes növekedési rendszereket építünk, ahol a forgalom, konverzió és teljesítmény együtt működnek.'
     },
     {
-      title: 'Adatalapú Végrehajtás',
-      description: 'Minden döntés mérésen, tesztelésen és iteratív optimalizáláson alapul a skálázható növekedéshez.'
+      title: 'Adatok a Találgatás Helyett',
+      description:
+        'Minden döntés tesztelésen, adaton és teljesítményen alapul — nem feltevéseken.'
     }
   ],
-  pricingTitle: 'Árazás',
-  pricingSubtitle: 'Az árazást az üzleted, a növekedési potenciálod és a skálázáshoz szükséges bevonódás szintje alapján alakítjuk ki.',
-  pricingComparisonTitle: 'Csomag összehasonlítás',
+  pricingTitle: 'Átlátható Árazás. Valódi Növekedésre Felépítve',
+  pricingSubtitle:
+    'Az árazást az üzleted, a növekedési potenciál és a nyereséges skálázáshoz szükséges bevonódás szintje alapján strukturáljuk.',
+  pricingComparisonTitle: 'Termék Összehasonlítás',
   pricingVatNote: 'Az összes ár az ÁFÁ nélkül, és a projekt hatálya alapján változhat.',
-  pricingSpotlightsTitle: 'A bevételt valóban mozgatómunkához kialakítva',
+  pricingSpotlightsTitle: 'A munkához kialakítva, amely valóban mozgatja a bevételt',
   pricingFaqTitle: 'Gyakran Ismételt Kérdések',
   pricingCustomTitle: 'Egyedi Növekedési Rendszerek',
   pricingCustomSubtitle: 'Az igényeidre szabott díjak',
   pricingLimitedClientsTitle: 'Korlátozott Számú Ügyféllel Dolgozunk',
   pricingLimitedClientsBody:
     'Partnerségekre összpontosítunk, nem volumenre. Csak azokat a projekteket végezzük el, ahol tudjuk, hogy mérhető növekedést és hosszú távú sikert érhetünk el.',
-  pricingBuildRightSystemTitle: 'Alkossuk Meg az Üzletedhez Illő Rendszert',
+  pricingBuildRightSystemTitle: 'Készítsük el az Üzletedhez Szükséges Rendszert',
   pricingBuildRightSystemBody:
-    'Elemezzük az üzleted, és javasoljuk a legjobb megközelítést — az igényeidre szabott díjakkal is.',
-  pricingNoCommitment: 'Nincs kötelezettség. Csak világosság.',
+    'Elemezzük az üzletedet és ajánljuk a legjobb megközelítést — az igényeidhez szabott díjakkal is.',
+  pricingNoCommitment: 'Nincs kötelezettség. Csak jelenlét.',
   pricingPlans: [
     {
       name: 'Növekedés Alapítványa',
@@ -406,40 +413,40 @@ export const SITE_CONTENT_HU: SiteContent = {
         'Igen. Támogathatunk bemutató weboldalakat, e-kereskedelmi projekteket, fotózást és videoprodukciot mint egyedi növekedési rendszer részét.'
     }
   ],
-  contactTitle: 'Beszéljünk az Üzlet Növekedéséről',
+  contactTitle: 'Beszéljünk a Növekedésedről',
   contactSubtitle:
-    'Mesélj az üzletedről és céljaidról — egyértelműséggel és méretre szabott lépésekkel térünk vissza.',
+    'Mesélj az üzletedről és céljaidról — világos stratégiával és az igényeidre szabott következő lépésekkel térünk vissza.',
   primaryCta: 'Nőjünk Együtt',
   growthServices: [
     {
       title: 'Fizetett Média, Amely Konvertál',
       description:
-        'Magas teljesítményű kampányokat kezelek a Google, Meta és TikTok között — a minőségi forgalom felkeltésére összpontosítva, amely valódi ügyfelekké és bevételekké alakul.'
+        'Magas teljesítményű kampányokat kezelünk a Google, Meta és TikTok között — a minőségi forgalom felkeltésére összpontosítva, amely valódi ügyfelekké és bevételekké alakul.'
     },
     {
       title: 'Teljesítményt Hajtó Kreativ',
       description:
-        'Magas konverziós hirdetési kreatívokat, fotókat és videókat készítok, amelyeket úgy terveztem, hogy felhívjam a figyelmet és javítsam a konverziókat — nem csak jól nézzenek ki.'
+        'Magas konverziós hirdetési kreatívokat, fotókat és videókat készítünk, amelyeket úgy terveztünk, hogy felhívjuk a figyelmet és javítsuk a konverziókat — nem csak jól nézzenek ki.'
     },
     {
       title: 'A Kattintástól az Ügyfelig',
       description:
-        'Strukturált marketing funnel-eket építek, amelyek a felhasználókat az első interakciótól a végső vásárlásig vezetik, maximalizálva az ügyfélút minden lépését.'
+        'Strukturált marketing funnel-eket építünk, amelyek a felhasználókat az első interakciótól a végső vásárlásig vezetik, maximalizálva az ügyfélút minden lépését.'
     },
     {
       title: 'Konverziőra Tervezett Webhelyek',
       description:
-        'Webhelyeket és landingoldalakat tervezek és optimalizálok, amelyek a sebességre, felhasználói élményre és konverzióra összpontosítanak — a látogatókat fizető ügyfelekké alakítva.'
+        'Webhelyeket és landingoldalakat tervezünk és optimalizálunk, amelyek a sebességre, felhasználói élményre és konverzióra összpontosítanak — a látogatókat fizető ügyfelekké alakítva.'
     },
     {
       title: 'SEO és Szerves Növekedés',
       description:
-        'Optimalizálom webhelyed, hogy magasabbra rangsoroljam, konzisztens forgalmat vonzz és hosszú távú láthatóságot építsek a fizetett hirdetéseken túl.'
+        'Optimalizáljuk webhelyed, hogy magasabbra rangsoroljuk, konzisztens forgalmat vonzz és hosszú távú láthatóságot építsük a fizetett hirdetéseken túl.'
     },
     {
       title: 'Nyomkövetés és Adatok Pontossága',
       description:
-        'Nyomkövetési rendszereket állítok be és optimalizálok, hogy biztosítsam, hogy minden döntés pontos adatokon alapuljon — a konverziótól az ügyfélviselkedésig.'
+        'Nyomkövetési rendszereket állítunk be és optimalizálunk, hogy biztosítsuk, hogy minden döntés pontos adatokon alapuljon — a konverziótól az ügyfélviselkedésig.'
     }
   ],
   howWeWork: [
@@ -447,25 +454,25 @@ export const SITE_CONTENT_HU: SiteContent = {
       step: '01',
       title: 'Audit és Elemzés',
       description:
-        'Elemzem az üzleted, webhelyed, jelenlegi kampányaidat, nyomkövetésed és teljesítményed, hogy azonosítsam, mi működik, mi hiányzik, és ahol a növekedés blokkolva van.'
+        'Elemezzük az üzleted, webhelyed, jelenlegi kampányaidat, nyomkövetésed és teljesítményed, hogy azonosítsuk, mi működik, mi hiányzik, és ahol a növekedés blokkolva van.'
     },
     {
       step: '02',
       title: 'Stratégia és Tervezés',
       description:
-        'Egyedi növekedési tervet építek az igényeid, budzsed, piaci és ügyfélutazások alapján — hogy minden csatornának legyen egyértelmű célja.'
+        'Egyedi növekedési tervet építünk az igényeid, budzsed, piaci és ügyfélutazások alapján — hogy minden csatornának legyen egyértelmű célja.'
     },
     {
       step: '03',
       title: 'Indítás és Megvalósítás',
       description:
-        'Beállítom és elindítom a megfelelő kampányokat, kreatívokat, landingoldalakat és optimalizálásokat a legfontosabb csatornákon.'
+        'Beállítjuk és elindítjuk a megfelelő kampányokat, kreatívokat, landingoldalakat és optimalizálásokat a legfontosabb csatornákon.'
     },
     {
       step: '04',
       title: 'Optimalizálás és Skálázás',
       description:
-        'Folyamatosan tesztelek, javítok és skálázok — jobb teljesítményre, magasabb konverziókra és nyereséges növekedésre összpontosítva.'
+        'Folyamatosan tesztelünk, javítunk és skálázunk — jobb teljesítményre, magasabb konverziókra és nyereséges növekedésre összpontosítva.'
     }
   ],
   contact: {
@@ -484,8 +491,8 @@ export const SITE_CONTENT_HU: SiteContent = {
       contact: 'Kapcsolat'
     },
     languageLabel: 'Nyelv',
-    homeExploreServices: 'Szolgáltatások megtekintése',
-    headerCta: 'Növekedjünk együtt',
+    homeExploreServices: 'Nézd Meg a Szolgáltatásokat',
+    headerCta: 'Nőjünk Együtt',
     footerTagline: 'Volt Google és Meta szakemberek, akik segítik a márkákat globálisan növekedni.',
     footerContactLabel: 'Kapcsolat',
     footerNavigateLabel: 'Navigáció',
@@ -494,11 +501,11 @@ export const SITE_CONTENT_HU: SiteContent = {
     footerCookiePolicy: 'Cookie Irányelvek',
     footerTermsConditions: 'Általános Feltételek',
     footerCopyrightPrefix: 'Szerzői jogok',
-    homeWhoWeAre: 'Kik Vagyunk',
-    homeStrategiesTitle: 'Stratégiák, amelyek valódi eredményeket hoznak',
-    homeAboutUs: 'Rólunk',
-    homeReadyTitle: 'Kész Kiemelkedni a Tömegből?',
-    homeStartGrowing: 'Kezdje a Növekedést',
+    homeWhoWeAre: 'INSIDEGROWTH',
+    homeStrategiesTitle: 'Stratégiák, Amelyek Valódi Eredményeket Hoznak',
+    homeAboutUs: 'Nőjünk Együtt',
+    homeReadyTitle: 'A Növekedés Nem a Találgatásból Történik',
+    homeStartGrowing: 'Nőjünk Együtt',
     homeViewPricing: 'Árak megtekintése',
     homeResultsEyebrow: 'Eredmények',
     homeResultsTitle: 'Lásd, mit tud nyújtani a folyamatunk',
@@ -506,10 +513,10 @@ export const SITE_CONTENT_HU: SiteContent = {
     homeResultsLink: 'Tudj meg többet',
     statsCampaignsRun: 'Kampánya Optimalizálások',
     statsAverageRoi: 'Havi hirdetési költés',
-    statsTopPlatforms: 'Fő platformok',
+    statsTopPlatforms: 'Google & Meta Fő Platformok',
     statsDataDriven: 'Teljesítményre Összpontosítva',
     aboutMissionEyebrow: 'Küldetésünk',
-    aboutPlatformsEyebrow: 'Platformok',
+    aboutPlatformsEyebrow: 'Ez Mit Jelent Neked',
     aboutWhyChooseUs: 'Miért Minket Válassz',
     aboutTeamEyebrow: 'Csapatunk',
     aboutTeamTitle: 'Ismerd meg az InsideGrowth mögötti csapatot',
@@ -522,10 +529,10 @@ export const SITE_CONTENT_HU: SiteContent = {
     aboutEyebrow: 'Rólunk',
     aboutTitle: 'Szakemberek a Teljesítményi Marketing Szolgálatában',
     aboutLead:
-      'Csapatunk közvetlen platformmegértést és gyakorlati kampányleadership-et egyesít, hogy mérhető teljesítményes full-funnel rendszereket építsen.',
+      'Csapatunk a Google Ads, Meta, SEO és kreatívok közötti szakértelmet egyesít, hogy valódi, mérhető növekedést generáló rendszereket építsen.',
     servicesEyebrow: 'Szolgáltatások',
     servicesLead:
-      'Csatornastratégiát, kreatív végrehajtást és analitikai infrastruktúrát építek, hogy minden kampány mérhető és skálázható legyen.',
+      'Nem izolált szolgáltatásokat kínálunk — teljes rendszereket építünk, amelyeket arra terveztek, hogy forgalmat generáljanak, ügyfeleket konvertáljanak és nyereségesen skálázza az üzletedet.',
     pricingEyebrow: 'Árak',
     pricingFeatureComparison: 'Funkció Összehasonlítás',
     pricingTableAriaLabel: 'Árcsomag funkció összehasonlítás',
@@ -535,7 +542,7 @@ export const SITE_CONTENT_HU: SiteContent = {
     pricingIncluded: 'Tartalmazza',
     pricingOptional: 'Opcionális',
     contactEyebrow: 'Kapcsolat',
-    contactShareGoals: 'Oszd Meg Növekedési Céljaidat',
+    contactShareGoals: 'Mesélj az Üzletedről és Céljaidról',
     contactForm: {
       planLabel: 'Üzleti terv',
       planPlaceholder: 'Válassz tervet',
@@ -607,9 +614,9 @@ export const SITE_CONTENT_HU: SiteContent = {
           'Túlmegyünk a hirdetéseken. A teljes rendszerre összpontosítunk — beleértve a SEO-t, a webhely optimalizálást, a nyomkövetést és a kreatíveket — hogy biztosítsuk, hogy minden együttesen működik.'
       },
       {
-        question: 'Mi deosebít minket más ügynökségektől?',
+        question: 'Mi tesz minket másabbá a többi ügynökségtől?',
         answer:
-          'Nem összpontosítunk a kötetre vagy a rövid időhöz. Olyan rendszereket építünk, amelyek hosszú távú növekedésre terveztek, és csak olyan üzletekkel dolgozunk, ahol tudjuk, hogy valódi hatást tehetünk.'
+          'Nem a volumenre vagy a rövid távú sikerekre fókuszálunk. Olyan rendszereket építünk, amelyek hosszú távú növekedésre vannak tervezve, és csak azokkal az üzletekkel dolgozunk, ahol valódi hatást tudunk létrehozni.'
       },
       {
         question: 'Kínál egyszeri szolgáltatásokat?',
@@ -627,16 +634,16 @@ export const SITE_CONTENT_HU: SiteContent = {
     leadSendingMessage: 'Az üzeneted küldése folyamatban…',
     leadErrorMessage: 'Hiba történt. Kérjük, próbálkozzon újra, vagy írjon nekünk közvetlenül.',
     homeGrowthEyebrow: 'Növekedési Rendszerek',
-    homeHowWeScaleTitle: 'Hogyan Skálázunk az Üzleted',
+    homeHowWeScaleTitle: 'Hogyan Skálázunk az Üzletedet',
     homeHowWeScaleSubtitle: 'Növekedési Rendszerek, Nem Csak Szolgáltatások',
-    homeHowWeWorkEyebrow: 'Eljárásunk',
+    homeHowWeWorkEyebrow: 'A Folyamatunk',
     homeHowWeWorkTitle: 'Hogyan Dolgozunk',
     homeHowWeWorkSubtitle:
-      'Egy egyértelmű eljárás, amely a marketinget kiszámítható növekedési rendszerre fordítja — az audittól a skálázható teljesítményig.',
+      'Egy világos folyamat, amelyet arra terveztek, hogy a marketinget kiszámítható növekedési rendszerre fordítsa — az audittól a skálázható teljesítményig.',
     homeCredentialsTitle: 'Adatok, Audit és Skálázási Stratégia',
     homeCredentialsBody:
-      'Elemezzük az adataid, auditáljuk a teljesítményt és folyamatosan optimalizáljuk a kampányokat az működőket skálázva és az nem működőket kiküszöbölve.',
-    homeCredentialsBadge: 'Google és Meta Tanúsított Csapat · 20+ Év Kombinált Tapasztalat',
+      'Elemezzük az adataidat, auditáljuk a teljesítményed, és folyamatosan optimalizáljuk a kampányokat az működőket skálázva és az nem működőket kiküszöbölve.',
+    homeCredentialsBadge: 'Google & Meta Tanúsított Csapat · 20+ Év Kombinált Tapasztalat',
     homeMiniCta: 'Kész az üzleted skálázására?',
     homeModalCta: 'Kezdje El'
   },
@@ -654,7 +661,7 @@ export const SITE_CONTENT_HU: SiteContent = {
       description:
         'Az üzlet nagy potenciállal rendelkezett, de nem volt teljes optimalizálás az SEO és fizetett kampányok között. Az SEO szerkezetet az összes oldal és termék között újraépítettük, folyamatosan optimalizálva a kulcsszavakat és biztosítva a megfelelő indexelést a top keresési láthatóság megőrzéséhez. Ugyanakkor finomítottuk és skálázattuk a hirdetési kampányokat — a teljesítményre, termékkiválasztásra és full funnel optimalizálásra összpontosítva. Az eredmények 3 hónapok alatt fokozatosan épültek fel, amely konzisztens és skálázható növekedéshez vezetett.',
       imagePosition: 'left',
-      image: 'images/results/Results1.png',
+      image: 'images/results/Results1.webp',
     },
     {
       title: 'Lead Generálás és Helyi Növekedés',
@@ -662,7 +669,7 @@ export const SITE_CONTENT_HU: SiteContent = {
       description:
         'A cél nem csupán forgalom volt — hanem minőségi lead generálás egy fizikai üzlethez, amely szolgáltatásokat nyújt. Az SEO alapozást újraépítettük, strukturált hirdetési csoportokat hoztunk létre, és folyamatosan teszteltük a különböző kreatívokat és célzási stratégiákat. A fókusz az elsődleges szolgáltatás promóciójára volt, másodlagos hangsúllyal az eladásokon. Az folyamatos optimalizáláson keresztül állandó lead-folyamot értek el, és a kampányadaptálási hatékonyságot fejlesztettük az idővel.',
       imagePosition: 'right',
-      image: 'images/results/Results2.png',
+      image: 'images/results/Results2.webp',
     },
     {
       title: 'Teljes Növekedési Támogatás a Helyi Üzlethez',
@@ -670,7 +677,7 @@ export const SITE_CONTENT_HU: SiteContent = {
       description:
         'Ez a projekt egy minimális online jelenléten alapuló helyi üzletből indult. Mindent az alapoktól építettünk fel — webhely, SEO szerkezet, terméklátványok és marketing kampányok. Több elem egyetlen rendszerbe kombinálásával segítettük az üzletet fokozatos növekedésben és egy erős online jelenlét felépítésében.',
       imagePosition: 'left',
-      image: 'images/results/Results3.png',
+      image: 'images/results/Results3.webp',
     },
     {
       title: 'Nem Mindenki Dolgozik',

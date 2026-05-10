@@ -196,7 +196,7 @@ export const SITE_CONTENT_EN: SiteContent = {
         'Conversion flow & user journey'
       ],
       imagePosition: 'left',
-      image: 'images/services/Audit%26GrowthAnalysis.png'
+      image: 'images/services/Audit%26GrowthAnalysis.webp'
     },
     {
       title: 'Paid Media That Converts',
@@ -209,7 +209,7 @@ export const SITE_CONTENT_EN: SiteContent = {
         'Campaign optimization & scaling'
       ],
       imagePosition: 'right',
-      image: 'images/services/PaidMediaThatConverts.png'
+      image: 'images/services/PaidMediaThatConverts.webp'
     },
     {
       title: 'SEO & Organic Growth',
@@ -222,7 +222,7 @@ export const SITE_CONTENT_EN: SiteContent = {
         'Content optimization'
       ],
       imagePosition: 'left',
-      image: 'images/services/Seo%26OrganicGrowth.png'
+      image: 'images/services/Seo%26OrganicGrowth.webp'
     },
     {
       title: 'Websites Built to Convert',
@@ -235,7 +235,7 @@ export const SITE_CONTENT_EN: SiteContent = {
         'Mobile & speed optimization'
       ],
       imagePosition: 'right',
-      image: 'images/services/WebsiteBuiltToConvert.png'
+      image: 'images/services/WebsiteBuiltToConvert.webp'
     },
     {
       title: 'Creative Production',
@@ -248,7 +248,7 @@ export const SITE_CONTENT_EN: SiteContent = {
         'Ad creatives'
       ],
       imagePosition: 'left',
-      image: 'images/services/CreativeProduction.png'
+      image: 'images/services/CreativeProduction.webp'
     },
     {
       title: 'Tracking & Performance Systems',
@@ -261,7 +261,7 @@ export const SITE_CONTENT_EN: SiteContent = {
         'Data accuracy & reporting'
       ],
       imagePosition: 'right',
-      image: 'images/services/Trackig%26PerformanceSystems.png'
+      image: 'images/services/Trackig%26PerformanceSystems.webp'
     }
   ],
   advantagesTitle: 'What Makes Us Different',
@@ -660,7 +660,7 @@ export const SITE_CONTENT_EN: SiteContent = {
       description:
         'The business had strong potential but wasn\'t fully optimized across SEO and paid campaigns. We rebuilt the SEO structure across all pages and products, continuously optimizing keywords and ensuring proper indexing to maintain top search visibility. At the same time, we refined and scaled ad campaigns — focusing on performance, product selection, and full funnel optimization. Results were built progressively over a 3-month period, leading to consistent and scalable growth.',
       imagePosition: 'left',
-      image: 'images/results/Results1.png',
+      image: 'images/results/Results1.webp',
     },
     {
       title: 'Lead Generation & Local Growth',
@@ -668,7 +668,7 @@ export const SITE_CONTENT_EN: SiteContent = {
       description:
         'The goal was not just traffic — but generating qualified leads for a physical business offering services. We rebuilt the SEO foundation, created structured ad groups, and continuously tested different creatives and targeting strategies. The focus was on promoting a core service first, with secondary emphasis on sales. Through constant optimization, we achieved a steady flow of leads and improved campaign efficiency over time.',
       imagePosition: 'right',
-      image: 'images/results/Results2.png',
+      image: 'images/results/Results2.webp',
     },
     {
       title: 'Full Growth Support for Local Business',
@@ -676,7 +676,7 @@ export const SITE_CONTENT_EN: SiteContent = {
       description:
         'This project started with a local business with minimal online presence. We built everything from the ground up — website, SEO structure, product visuals, and marketing campaigns. By combining multiple elements into one system, we helped the business grow steadily and establish a strong online presence.',
       imagePosition: 'left',
-      image: 'images/results/Results3.png',
+      image: 'images/results/Results3.webp',
     },
     {
       title: 'We Don\'t Work With Everyone',

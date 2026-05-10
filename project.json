@@ -25,7 +25,8 @@
         "styles": [
           "src/styles.scss"
         ],
-        "outputPath": "dist/marketing-website"
+        "outputPath": "dist/marketing-website",
+        "baseHref": "/MarketingWebsite/"
       },
       "configurations": {
         "production": {

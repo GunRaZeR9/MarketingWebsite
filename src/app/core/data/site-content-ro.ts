@@ -194,7 +194,7 @@ export const SITE_CONTENT_RO: SiteContent = {
         'Flow conversie si user journey'
       ],
       imagePosition: 'left',
-      image: 'images/services/Audit%26GrowthAnalysis.png'
+      image: 'images/services/Audit%26GrowthAnalysis.webp'
     },
     {
       title: 'Media Platita Care Converteste',
@@ -207,7 +207,7 @@ export const SITE_CONTENT_RO: SiteContent = {
         'Optimizare si scalare campanii'
       ],
       imagePosition: 'right',
-      image: 'images/services/PaidMediaThatConverts.png'
+      image: 'images/services/PaidMediaThatConverts.webp'
     },
     {
       title: 'SEO & Crestere Organica',
@@ -220,7 +220,7 @@ export const SITE_CONTENT_RO: SiteContent = {
         'Optimizare continut'
       ],
       imagePosition: 'left',
-      image: 'images/services/Seo%26OrganicGrowth.png'
+      image: 'images/services/Seo%26OrganicGrowth.webp'
     },
     {
       title: 'Website-uri Construite Pentru Conversie',
@@ -233,7 +233,7 @@ export const SITE_CONTENT_RO: SiteContent = {
         'Optimizare mobil & viteza'
       ],
       imagePosition: 'right',
-      image: 'images/services/WebsiteBuiltToConvert.png'
+      image: 'images/services/WebsiteBuiltToConvert.webp'
     },
     {
       title: 'Productie Creativa',
@@ -246,7 +246,7 @@ export const SITE_CONTENT_RO: SiteContent = {
         'Reclame creative'
       ],
       imagePosition: 'left',
-      image: 'images/services/CreativeProduction.png'
+      image: 'images/services/CreativeProduction.webp'
     },
     {
       title: 'Sisteme Tracking & Performanta',
@@ -259,7 +259,7 @@ export const SITE_CONTENT_RO: SiteContent = {
         'Acuratete date & raportare'
       ],
       imagePosition: 'right',
-      image: 'images/services/Trackig%26PerformanceSystems.png'
+      image: 'images/services/Trackig%26PerformanceSystems.webp'
     }
   ],
   advantagesTitle: 'Avantaje Competitive Cheie',
@@ -653,7 +653,7 @@ export const SITE_CONTENT_RO: SiteContent = {
       description:
         'Afacerea avea potentia puternica dar nu era complet optimizata pe SEO si campanii platite. Am reconstruit structura SEO pe toate paginile si produsele, optimizand continuu cuvinte-cheie si asigurand indexarea corecta pentru a mentine vizibilitatea de top in cautari. In acelasi timp, am rafinat si scalat campaniile de reclame — focusandu-ma pe performanta, selectia produselor si optimizare full funnel. Rezultatele au fost construite progresiv pe o perioada de 3 luni, ducand la crestere consistenta si scalabila.',
       imagePosition: 'left',
-      image: 'images/results/Results1.png',
+      image: 'images/results/Results1.webp',
     },
     {
       title: 'Generare de Lead & Crestere Locala',
@@ -661,7 +661,7 @@ export const SITE_CONTENT_RO: SiteContent = {
       description:
         'Obiectivul nu era doar trafic — ci generarea de lead-uri calificate pentru o afacere fizica care ofera servicii. Am reconstruit fundamentul SEO, am creat grupuri de reclame structurate si am testat continuu strategii diferite de creativ si targeting. Focus-ul a fost pe promovarea unui serviciu de baza in primul rand, cu accent secundar pe vanzari. Prin optimizare continua, am obtinut un flux constant de lead-uri si am imbunatatit eficienta campaniei in timp.',
       imagePosition: 'right',
-      image: 'images/results/Results2.png',
+      image: 'images/results/Results2.webp',
     },
     {
       title: 'Suport Complet de Crestere Pentru Afacere Locala',
@@ -669,7 +669,7 @@ export const SITE_CONTENT_RO: SiteContent = {
       description:
         'Acest proiect a inceput cu o afacere locala cu prezenta online minima. Am construit totul de la zero — website, structura SEO, imagini de produse si campanii de marketing. Prin combinarea mai multor elemente intr-un singur sistem, am ajutat afacerea sa creasca progresiv si sa-si stabileasca o prezenta puternica online.',
       imagePosition: 'left',
-      image: 'images/results/Results3.png',
+      image: 'images/results/Results3.webp',
     },
     {
       title: 'Nu Lucram Cu Toata Lumea',

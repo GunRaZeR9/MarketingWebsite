@@ -20,7 +20,7 @@
     >
       <div *ngIf="item.image" class="service-image">
         <div class="image-shell">
-          <img class="service-image__img" [src]="item.image" [alt]="item.title + ' image'" />
+          <img class="service-image__img" [src]="item.image" [alt]="item.title + ' image'" loading="lazy" />
         </div>
       </div>
       <div class="service-content">
