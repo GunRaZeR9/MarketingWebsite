@@ -481,6 +481,14 @@
     display: none;
   }
 
+  .hero-image {
+    animation: none;
+  }
+
+  .hero-badge {
+    animation: none;
+  }
+
   .intro-split {
     grid-template-columns: 1fr;
   }
