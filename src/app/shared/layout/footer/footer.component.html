@@ -1,7 +1,10 @@
 <footer class="site-footer">
   <div class="footer-brand">
     <div class="footer-logo">
-      <img src="images/logos/inside_growth_logo_512p.png" alt="InsideGrowth" width="48" height="48" />
+      <picture>
+        <source srcset="images/logos/inside_growth_logo_96.webp 1x, images/logos/inside_growth_logo_192.webp 2x" type="image/webp" />
+        <img src="images/logos/inside_growth_logo_512p.png" alt="InsideGrowth" width="48" height="48" loading="lazy" />
+      </picture>
       <strong>{{ content().brandName }}</strong>
     </div>
     <p class="footer-tagline">{{ content().ui.footerTagline }}</p>

@@ -51,7 +51,7 @@
         [delay]="i * 100"
       >
         <div class="team-photo">
-          <img [src]="member.photo" [alt]="member.name" width="400" height="400" />
+          <img [src]="member.photo" [alt]="member.name" width="400" height="400" loading="lazy" />
         </div>
         <div class="team-info">
           <h3>{{ member.name }}</h3>
