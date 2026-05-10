@@ -47,3 +47,11 @@ Thumbs.db
 
 .nx/cache
 .nx/workspace-data
+
+# Chromium browser (downloaded by automation)
+/chromium
+/chromium-*
+
+# Lighthouse reports
+/lighthouse-reports
+/lh-reports
