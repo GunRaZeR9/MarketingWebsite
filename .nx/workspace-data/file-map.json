@@ -1,0 +1,2040 @@
+{
+  "version": "6.0",
+  "nxVersion": "22.6.5",
+  "pathMappings": {},
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "marketing-website": [
+        {
+          "file": ".agents/skills/adapt/SKILL.md",
+          "hash": "2811130041479083279"
+        },
+        {
+          "file": ".agents/skills/animate/SKILL.md",
+          "hash": "10428876750349456457"
+        },
+        {
+          "file": ".agents/skills/audit/SKILL.md",
+          "hash": "15952913170599773887"
+        },
+        {
+          "file": ".agents/skills/bolder/SKILL.md",
+          "hash": "5054435364297942275"
+        },
+        {
+          "file": ".agents/skills/clarify/SKILL.md",
+          "hash": "700571707638137964"
+        },
+        {
+          "file": ".agents/skills/colorize/SKILL.md",
+          "hash": "978951089419382971"
+        },
+        {
+          "file": ".agents/skills/critique/SKILL.md",
+          "hash": "7958955769805164504"
+        },
+        {
+          "file": ".agents/skills/critique/reference/cognitive-load.md",
+          "hash": "10265690939112622069"
+        },
+        {
+          "file": ".agents/skills/critique/reference/heuristics-scoring.md",
+          "hash": "7668659912523414910"
+        },
+        {
+          "file": ".agents/skills/critique/reference/personas.md",
+          "hash": "13811664358812514586"
+        },
+        {
+          "file": ".agents/skills/delight/SKILL.md",
+          "hash": "5538600799264696200"
+        },
+        {
+          "file": ".agents/skills/distill/SKILL.md",
+          "hash": "5672315074869624479"
+        },
+        {
+          "file": ".agents/skills/emil-design-eng/SKILL.md",
+          "hash": "1269983404274871236"
+        },
+        {
+          "file": ".agents/skills/impeccable/SKILL.md",
+          "hash": "1992720784123688714"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/color-and-contrast.md",
+          "hash": "13714116431493982343"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/craft.md",
+          "hash": "10319467408631329848"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/extract.md",
+          "hash": "4853158894463235375"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/interaction-design.md",
+          "hash": "12251253328844024971"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/motion-design.md",
+          "hash": "12150191793405984878"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/responsive-design.md",
+          "hash": "5842829951953693058"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/spatial-design.md",
+          "hash": "8325295755859926211"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/typography.md",
+          "hash": "8040776739833794931"
+        },
+        {
+          "file": ".agents/skills/impeccable/reference/ux-writing.md",
+          "hash": "17168661836601960856"
+        },
+        {
+          "file": ".agents/skills/impeccable/scripts/cleanup-deprecated.mjs",
+          "hash": "13606459689132269030"
+        },
+        {
+          "file": ".agents/skills/layout/SKILL.md",
+          "hash": "10794659322869094798"
+        },
+        {
+          "file": ".agents/skills/optimize/SKILL.md",
+          "hash": "710735984086856752"
+        },
+        {
+          "file": ".agents/skills/overdrive/SKILL.md",
+          "hash": "16798819139341132966"
+        },
+        {
+          "file": ".agents/skills/polish/SKILL.md",
+          "hash": "4058242079366203328"
+        },
+        {
+          "file": ".agents/skills/quieter/SKILL.md",
+          "hash": "9028049571815333424"
+        },
+        {
+          "file": ".agents/skills/shape/SKILL.md",
+          "hash": "11599296231333650957"
+        },
+        {
+          "file": ".agents/skills/typeset/SKILL.md",
+          "hash": "17590901152863325227"
+        },
+        {
+          "file": ".claude-flow/.gitignore",
+          "hash": "14591857130578017930"
+        },
+        {
+          "file": ".claude-flow/CAPABILITIES.md",
+          "hash": "17510826259993557367"
+        },
+        {
+          "file": ".claude-flow/config.yaml",
+          "hash": "8318610056850545060"
+        },
+        {
+          "file": ".claude-flow/metrics/learning.json",
+          "hash": "14790179239209327288"
+        },
+        {
+          "file": ".claude-flow/metrics/swarm-activity.json",
+          "hash": "1219262038510921399"
+        },
+        {
+          "file": ".claude-flow/metrics/v3-progress.json",
+          "hash": "11182652993233416051"
+        },
+        {
+          "file": ".claude-flow/security/audit-status.json",
+          "hash": "12541232052815572960"
+        },
+        {
+          "file": ".claude-flow/swarm/swarm-state.json",
+          "hash": "8113502188877466879"
+        },
+        {
+          "file": ".claude-flow/system/metrics.json",
+          "hash": "10280804512815937459"
+        },
+        {
+          "file": ".claude/agents/analysis/analyze-code-quality.md",
+          "hash": "8887521580937921775"
+        },
+        {
+          "file": ".claude/agents/analysis/code-analyzer.md",
+          "hash": "9655033753141644834"
+        },
+        {
+          "file": ".claude/agents/analysis/code-review/analyze-code-quality.md",
+          "hash": "8887521580937921775"
+        },
+        {
+          "file": ".claude/agents/architecture/arch-system-design.md",
+          "hash": "4848799580310335642"
+        },
+        {
+          "file": ".claude/agents/architecture/system-design/arch-system-design.md",
+          "hash": "6458551326239372175"
+        },
+        {
+          "file": ".claude/agents/browser/browser-agent.yaml",
+          "hash": "2787336991804427960"
+        },
+        {
+          "file": ".claude/agents/consensus/byzantine-coordinator.md",
+          "hash": "11998412945118468885"
+        },
+        {
+          "file": ".claude/agents/consensus/crdt-synchronizer.md",
+          "hash": "12876799429321294723"
+        },
+        {
+          "file": ".claude/agents/consensus/gossip-coordinator.md",
+          "hash": "15793084244203775136"
+        },
+        {
+          "file": ".claude/agents/consensus/performance-benchmarker.md",
+          "hash": "264623967320671874"
+        },
+        {
+          "file": ".claude/agents/consensus/quorum-manager.md",
+          "hash": "1438459336859267662"
+        },
+        {
+          "file": ".claude/agents/consensus/raft-manager.md",
+          "hash": "4764892152066387004"
+        },
+        {
+          "file": ".claude/agents/consensus/security-manager.md",
+          "hash": "12705307030322006263"
+        },
+        {
+          "file": ".claude/agents/core/coder.md",
+          "hash": "4076800185174872320"
+        },
+        {
+          "file": ".claude/agents/core/planner.md",
+          "hash": "6388627835194062482"
+        },
+        {
+          "file": ".claude/agents/core/researcher.md",
+          "hash": "242190590862107371"
+        },
+        {
+          "file": ".claude/agents/core/reviewer.md",
+          "hash": "10381668775322115046"
+        },
+        {
+          "file": ".claude/agents/core/tester.md",
+          "hash": "9016030489732867583"
+        },
+        {
+          "file": ".claude/agents/custom/test-long-runner.md",
+          "hash": "5987878793422157991"
+        },
+        {
+          "file": ".claude/agents/data/data-ml-model.md",
+          "hash": "11193578018239417230"
+        },
+        {
+          "file": ".claude/agents/data/ml/data-ml-model.md",
+          "hash": "14220823783348822267"
+        },
+        {
+          "file": ".claude/agents/development/backend/dev-backend-api.md",
+          "hash": "6028336285848305377"
+        },
+        {
+          "file": ".claude/agents/development/dev-backend-api.md",
+          "hash": "5272166385240450140"
+        },
+        {
+          "file": ".claude/agents/devops/ci-cd/ops-cicd-github.md",
+          "hash": "2191103418791199323"
+        },
+        {
+          "file": ".claude/agents/devops/ops-cicd-github.md",
+          "hash": "11901794461510606567"
+        },
+        {
+          "file": ".claude/agents/documentation/api-docs/docs-api-openapi.md",
+          "hash": "15553236461530813512"
+        },
+        {
+          "file": ".claude/agents/documentation/docs-api-openapi.md",
+          "hash": "4337709008094836961"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/app-store.md",
+          "hash": "11992812087865507787"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/authentication.md",
+          "hash": "2569393381969020552"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/challenges.md",
+          "hash": "16876852760894701526"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/neural-network.md",
+          "hash": "9437269081559744794"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/payments.md",
+          "hash": "14986058672486154124"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/sandbox.md",
+          "hash": "260199896317346713"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/swarm.md",
+          "hash": "8260574388916278188"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/user-tools.md",
+          "hash": "12854935326146523838"
+        },
+        {
+          "file": ".claude/agents/flow-nexus/workflow.md",
+          "hash": "18270765732966072340"
+        },
+        {
+          "file": ".claude/agents/github/code-review-swarm.md",
+          "hash": "4469010190995932817"
+        },
+        {
+          "file": ".claude/agents/github/github-modes.md",
+          "hash": "10725041938669908404"
+        },
+        {
+          "file": ".claude/agents/github/issue-tracker.md",
+          "hash": "18107172482980734012"
+        },
+        {
+          "file": ".claude/agents/github/multi-repo-swarm.md",
+          "hash": "6916471141581761528"
+        },
+        {
+          "file": ".claude/agents/github/pr-manager.md",
+          "hash": "4766431936995875005"
+        },
+        {
+          "file": ".claude/agents/github/project-board-sync.md",
+          "hash": "7879575368169245719"
+        },
+        {
+          "file": ".claude/agents/github/release-manager.md",
+          "hash": "4805468657707372350"
+        },
+        {
+          "file": ".claude/agents/github/release-swarm.md",
+          "hash": "10673152354875369908"
+        },
+        {
+          "file": ".claude/agents/github/repo-architect.md",
+          "hash": "14127060778880426166"
+        },
+        {
+          "file": ".claude/agents/github/swarm-issue.md",
+          "hash": "12114565871464121374"
+        },
+        {
+          "file": ".claude/agents/github/swarm-pr.md",
+          "hash": "13568687916375584200"
+        },
+        {
+          "file": ".claude/agents/github/sync-coordinator.md",
+          "hash": "17643748998788061072"
+        },
+        {
+          "file": ".claude/agents/github/workflow-automation.md",
+          "hash": "4710799538736254086"
+        },
+        {
+          "file": ".claude/agents/goal/agent.md",
+          "hash": "1887556519099044813"
+        },
+        {
+          "file": ".claude/agents/goal/goal-planner.md",
+          "hash": "103452997643202147"
+        },
+        {
+          "file": ".claude/agents/optimization/benchmark-suite.md",
+          "hash": "10939215523960209263"
+        },
+        {
+          "file": ".claude/agents/optimization/load-balancer.md",
+          "hash": "18277479045306955981"
+        },
+        {
+          "file": ".claude/agents/optimization/performance-monitor.md",
+          "hash": "9945638389820498726"
+        },
+        {
+          "file": ".claude/agents/optimization/resource-allocator.md",
+          "hash": "13670564976911898027"
+        },
+        {
+          "file": ".claude/agents/optimization/topology-optimizer.md",
+          "hash": "2593511729906105473"
+        },
+        {
+          "file": ".claude/agents/payments/agentic-payments.md",
+          "hash": "3811445029996333463"
+        },
+        {
+          "file": ".claude/agents/sona/sona-learning-optimizer.md",
+          "hash": "2650927684297354577"
+        },
+        {
+          "file": ".claude/agents/sparc/architecture.md",
+          "hash": "5983758077477372511"
+        },
+        {
+          "file": ".claude/agents/sparc/pseudocode.md",
+          "hash": "9769568177555311731"
+        },
+        {
+          "file": ".claude/agents/sparc/refinement.md",
+          "hash": "5147913505545081746"
+        },
+        {
+          "file": ".claude/agents/sparc/specification.md",
+          "hash": "4778416781308084660"
+        },
+        {
+          "file": ".claude/agents/specialized/mobile/spec-mobile-react-native.md",
+          "hash": "3874566515872994584"
+        },
+        {
+          "file": ".claude/agents/specialized/spec-mobile-react-native.md",
+          "hash": "12626981369587665347"
+        },
+        {
+          "file": ".claude/agents/sublinear/consensus-coordinator.md",
+          "hash": "5394109012016269066"
+        },
+        {
+          "file": ".claude/agents/sublinear/matrix-optimizer.md",
+          "hash": "5026916050145913661"
+        },
+        {
+          "file": ".claude/agents/sublinear/pagerank-analyzer.md",
+          "hash": "7712647763568126296"
+        },
+        {
+          "file": ".claude/agents/sublinear/performance-optimizer.md",
+          "hash": "2548431465125903263"
+        },
+        {
+          "file": ".claude/agents/sublinear/trading-predictor.md",
+          "hash": "6703285226279062541"
+        },
+        {
+          "file": ".claude/agents/swarm/adaptive-coordinator.md",
+          "hash": "11081319160378693648"
+        },
+        {
+          "file": ".claude/agents/swarm/hierarchical-coordinator.md",
+          "hash": "12963504880035439442"
+        },
+        {
+          "file": ".claude/agents/swarm/mesh-coordinator.md",
+          "hash": "5899321858646598758"
+        },
+        {
+          "file": ".claude/agents/templates/automation-smart-agent.md",
+          "hash": "4964682688496036783"
+        },
+        {
+          "file": ".claude/agents/templates/base-template-generator.md",
+          "hash": "3990196862212673667"
+        },
+        {
+          "file": ".claude/agents/templates/coordinator-swarm-init.md",
+          "hash": "11106941398214174527"
+        },
+        {
+          "file": ".claude/agents/templates/github-pr-manager.md",
+          "hash": "14918797845205577291"
+        },
+        {
+          "file": ".claude/agents/templates/implementer-sparc-coder.md",
+          "hash": "8868891523070238673"
+        },
+        {
+          "file": ".claude/agents/templates/memory-coordinator.md",
+          "hash": "16890925846390016841"
+        },
+        {
+          "file": ".claude/agents/templates/orchestrator-task.md",
+          "hash": "15187899723900559294"
+        },
+        {
+          "file": ".claude/agents/templates/performance-analyzer.md",
+          "hash": "5431486576921218877"
+        },
+        {
+          "file": ".claude/agents/templates/sparc-coordinator.md",
+          "hash": "7977078760334031272"
+        },
+        {
+          "file": ".claude/agents/testing/production-validator.md",
+          "hash": "11675738908598956633"
+        },
+        {
+          "file": ".claude/agents/testing/tdd-london-swarm.md",
+          "hash": "1997021825234022541"
+        },
+        {
+          "file": ".claude/agents/v3/adr-architect.md",
+          "hash": "4389918892174786035"
+        },
+        {
+          "file": ".claude/agents/v3/aidefence-guardian.md",
+          "hash": "2654929119099786158"
+        },
+        {
+          "file": ".claude/agents/v3/claims-authorizer.md",
+          "hash": "16656020452371861187"
+        },
+        {
+          "file": ".claude/agents/v3/collective-intelligence-coordinator.md",
+          "hash": "11348846074423692709"
+        },
+        {
+          "file": ".claude/agents/v3/ddd-domain-expert.md",
+          "hash": "12966959042272489829"
+        },
+        {
+          "file": ".claude/agents/v3/injection-analyst.md",
+          "hash": "7527022978621916827"
+        },
+        {
+          "file": ".claude/agents/v3/memory-specialist.md",
+          "hash": "10758173384885137216"
+        },
+        {
+          "file": ".claude/agents/v3/performance-engineer.md",
+          "hash": "6204726715220080382"
+        },
+        {
+          "file": ".claude/agents/v3/pii-detector.md",
+          "hash": "5415079630169704953"
+        },
+        {
+          "file": ".claude/agents/v3/reasoningbank-learner.md",
+          "hash": "13154941088672217091"
+        },
+        {
+          "file": ".claude/agents/v3/security-architect-aidefence.md",
+          "hash": "12966224630265777612"
+        },
+        {
+          "file": ".claude/agents/v3/security-architect.md",
+          "hash": "3685556118867535449"
+        },
+        {
+          "file": ".claude/agents/v3/security-auditor.md",
+          "hash": "6501253989801018732"
+        },
+        {
+          "file": ".claude/agents/v3/sparc-orchestrator.md",
+          "hash": "14898718768480043539"
+        },
+        {
+          "file": ".claude/agents/v3/swarm-memory-manager.md",
+          "hash": "13093975423352924296"
+        },
+        {
+          "file": ".claude/agents/v3/v3-integration-architect.md",
+          "hash": "1775268820392985604"
+        },
+        {
+          "file": ".claude/commands/analysis/COMMAND_COMPLIANCE_REPORT.md",
+          "hash": "727961451962789790"
+        },
+        {
+          "file": ".claude/commands/analysis/README.md",
+          "hash": "3329186830542376251"
+        },
+        {
+          "file": ".claude/commands/analysis/bottleneck-detect.md",
+          "hash": "9122521381634076166"
+        },
+        {
+          "file": ".claude/commands/analysis/performance-bottlenecks.md",
+          "hash": "2648808396977600420"
+        },
+        {
+          "file": ".claude/commands/analysis/performance-report.md",
+          "hash": "8271053716238400175"
+        },
+        {
+          "file": ".claude/commands/analysis/token-efficiency.md",
+          "hash": "12092658254693510736"
+        },
+        {
+          "file": ".claude/commands/analysis/token-usage.md",
+          "hash": "14596377141250608936"
+        },
+        {
+          "file": ".claude/commands/automation/README.md",
+          "hash": "1466918242049877706"
+        },
+        {
+          "file": ".claude/commands/automation/auto-agent.md",
+          "hash": "17223208100350742249"
+        },
+        {
+          "file": ".claude/commands/automation/self-healing.md",
+          "hash": "15762432146660041180"
+        },
+        {
+          "file": ".claude/commands/automation/session-memory.md",
+          "hash": "5060386331122866651"
+        },
+        {
+          "file": ".claude/commands/automation/smart-agents.md",
+          "hash": "1829580177203740843"
+        },
+        {
+          "file": ".claude/commands/automation/smart-spawn.md",
+          "hash": "12371835600096101386"
+        },
+        {
+          "file": ".claude/commands/automation/workflow-select.md",
+          "hash": "13979101742741861122"
+        },
+        {
+          "file": ".claude/commands/claude-flow-help.md",
+          "hash": "2686736584680938734"
+        },
+        {
+          "file": ".claude/commands/claude-flow-memory.md",
+          "hash": "4989607114491825941"
+        },
+        {
+          "file": ".claude/commands/claude-flow-swarm.md",
+          "hash": "4297185299892271768"
+        },
+        {
+          "file": ".claude/commands/github/README.md",
+          "hash": "743391404330330356"
+        },
+        {
+          "file": ".claude/commands/github/code-review-swarm.md",
+          "hash": "12327309929163509571"
+        },
+        {
+          "file": ".claude/commands/github/code-review.md",
+          "hash": "3643123080107245778"
+        },
+        {
+          "file": ".claude/commands/github/github-modes.md",
+          "hash": "17639707809486295500"
+        },
+        {
+          "file": ".claude/commands/github/github-swarm.md",
+          "hash": "9820087894045491332"
+        },
+        {
+          "file": ".claude/commands/github/issue-tracker.md",
+          "hash": "4056630091734368382"
+        },
+        {
+          "file": ".claude/commands/github/issue-triage.md",
+          "hash": "1424506320595252328"
+        },
+        {
+          "file": ".claude/commands/github/multi-repo-swarm.md",
+          "hash": "8657538454136914629"
+        },
+        {
+          "file": ".claude/commands/github/pr-enhance.md",
+          "hash": "14699396494088840954"
+        },
+        {
+          "file": ".claude/commands/github/pr-manager.md",
+          "hash": "12818283818502550294"
+        },
+        {
+          "file": ".claude/commands/github/project-board-sync.md",
+          "hash": "11869838771511077674"
+        },
+        {
+          "file": ".claude/commands/github/release-manager.md",
+          "hash": "8532013824659745377"
+        },
+        {
+          "file": ".claude/commands/github/release-swarm.md",
+          "hash": "11395347469117359116"
+        },
+        {
+          "file": ".claude/commands/github/repo-analyze.md",
+          "hash": "1986056593381829404"
+        },
+        {
+          "file": ".claude/commands/github/repo-architect.md",
+          "hash": "13734814438735556908"
+        },
+        {
+          "file": ".claude/commands/github/swarm-issue.md",
+          "hash": "6028070625823254036"
+        },
+        {
+          "file": ".claude/commands/github/swarm-pr.md",
+          "hash": "640786421741048519"
+        },
+        {
+          "file": ".claude/commands/github/sync-coordinator.md",
+          "hash": "2707806358336324754"
+        },
+        {
+          "file": ".claude/commands/github/workflow-automation.md",
+          "hash": "10060576655890731609"
+        },
+        {
+          "file": ".claude/commands/hooks/README.md",
+          "hash": "530530801462833482"
+        },
+        {
+          "file": ".claude/commands/hooks/overview.md",
+          "hash": "6892988115340623743"
+        },
+        {
+          "file": ".claude/commands/hooks/post-edit.md",
+          "hash": "15517026717270100890"
+        },
+        {
+          "file": ".claude/commands/hooks/post-task.md",
+          "hash": "5472084110648313255"
+        },
+        {
+          "file": ".claude/commands/hooks/pre-edit.md",
+          "hash": "6486388193721721801"
+        },
+        {
+          "file": ".claude/commands/hooks/pre-task.md",
+          "hash": "5905549154850833687"
+        },
+        {
+          "file": ".claude/commands/hooks/session-end.md",
+          "hash": "7686410177978113139"
+        },
+        {
+          "file": ".claude/commands/hooks/setup.md",
+          "hash": "17886667826021365268"
+        },
+        {
+          "file": ".claude/commands/monitoring/README.md",
+          "hash": "17389175699213221746"
+        },
+        {
+          "file": ".claude/commands/monitoring/agent-metrics.md",
+          "hash": "18265936820432755160"
+        },
+        {
+          "file": ".claude/commands/monitoring/agents.md",
+          "hash": "12576290937398159302"
+        },
+        {
+          "file": ".claude/commands/monitoring/real-time-view.md",
+          "hash": "7267386349025804168"
+        },
+        {
+          "file": ".claude/commands/monitoring/status.md",
+          "hash": "12484352436861803582"
+        },
+        {
+          "file": ".claude/commands/monitoring/swarm-monitor.md",
+          "hash": "1237236811797705958"
+        },
+        {
+          "file": ".claude/commands/optimization/README.md",
+          "hash": "509118662231206905"
+        },
+        {
+          "file": ".claude/commands/optimization/auto-topology.md",
+          "hash": "10403204820134747936"
+        },
+        {
+          "file": ".claude/commands/optimization/cache-manage.md",
+          "hash": "642441873405635185"
+        },
+        {
+          "file": ".claude/commands/optimization/parallel-execute.md",
+          "hash": "3255384816043774450"
+        },
+        {
+          "file": ".claude/commands/optimization/parallel-execution.md",
+          "hash": "13515763788347168874"
+        },
+        {
+          "file": ".claude/commands/optimization/topology-optimize.md",
+          "hash": "10137064880686527145"
+        },
+        {
+          "file": ".claude/commands/sparc/analyzer.md",
+          "hash": "5663960165894657307"
+        },
+        {
+          "file": ".claude/commands/sparc/architect.md",
+          "hash": "2531303138388841649"
+        },
+        {
+          "file": ".claude/commands/sparc/ask.md",
+          "hash": "11361498284797056"
+        },
+        {
+          "file": ".claude/commands/sparc/batch-executor.md",
+          "hash": "15667897642936112960"
+        },
+        {
+          "file": ".claude/commands/sparc/code.md",
+          "hash": "15939272282451648526"
+        },
+        {
+          "file": ".claude/commands/sparc/coder.md",
+          "hash": "10120604431657459773"
+        },
+        {
+          "file": ".claude/commands/sparc/debug.md",
+          "hash": "1472487042900525141"
+        },
+        {
+          "file": ".claude/commands/sparc/debugger.md",
+          "hash": "911757801433164496"
+        },
+        {
+          "file": ".claude/commands/sparc/designer.md",
+          "hash": "3572271609371722389"
+        },
+        {
+          "file": ".claude/commands/sparc/devops.md",
+          "hash": "12438218162101251915"
+        },
+        {
+          "file": ".claude/commands/sparc/docs-writer.md",
+          "hash": "355026446192543881"
+        },
+        {
+          "file": ".claude/commands/sparc/documenter.md",
+          "hash": "13300810328860472678"
+        },
+        {
+          "file": ".claude/commands/sparc/innovator.md",
+          "hash": "14685219229166302726"
+        },
+        {
+          "file": ".claude/commands/sparc/integration.md",
+          "hash": "15214318306005404693"
+        },
+        {
+          "file": ".claude/commands/sparc/mcp.md",
+          "hash": "15774846057825362019"
+        },
+        {
+          "file": ".claude/commands/sparc/memory-manager.md",
+          "hash": "12653821741797927570"
+        },
+        {
+          "file": ".claude/commands/sparc/optimizer.md",
+          "hash": "1553193303200638881"
+        },
+        {
+          "file": ".claude/commands/sparc/orchestrator.md",
+          "hash": "5509317089187765169"
+        },
+        {
+          "file": ".claude/commands/sparc/post-deployment-monitoring-mode.md",
+          "hash": "6900393975889717121"
+        },
+        {
+          "file": ".claude/commands/sparc/refinement-optimization-mode.md",
+          "hash": "16958075508816324016"
+        },
+        {
+          "file": ".claude/commands/sparc/researcher.md",
+          "hash": "6135279472367301503"
+        },
+        {
+          "file": ".claude/commands/sparc/reviewer.md",
+          "hash": "9798904776819861289"
+        },
+        {
+          "file": ".claude/commands/sparc/security-review.md",
+          "hash": "2047264831652814631"
+        },
+        {
+          "file": ".claude/commands/sparc/sparc-modes.md",
+          "hash": "12212875050082279178"
+        },
+        {
+          "file": ".claude/commands/sparc/sparc.md",
+          "hash": "6649357290826046246"
+        },
+        {
+          "file": ".claude/commands/sparc/spec-pseudocode.md",
+          "hash": "14472232104807345766"
+        },
+        {
+          "file": ".claude/commands/sparc/supabase-admin.md",
+          "hash": "15040862749041245314"
+        },
+        {
+          "file": ".claude/commands/sparc/swarm-coordinator.md",
+          "hash": "10647301778778681290"
+        },
+        {
+          "file": ".claude/commands/sparc/tdd.md",
+          "hash": "2794900588095570202"
+        },
+        {
+          "file": ".claude/commands/sparc/tester.md",
+          "hash": "17496806170796483211"
+        },
+        {
+          "file": ".claude/commands/sparc/tutorial.md",
+          "hash": "787481126763448876"
+        },
+        {
+          "file": ".claude/commands/sparc/workflow-manager.md",
+          "hash": "1886706465275127260"
+        },
+        {
+          "file": ".claude/helpers/README.md",
+          "hash": "7658726803115248207"
+        },
+        {
+          "file": ".claude/helpers/adr-compliance.sh",
+          "hash": "6064682403932184523"
+        },
+        {
+          "file": ".claude/helpers/auto-commit.sh",
+          "hash": "17022745139907892596"
+        },
+        {
+          "file": ".claude/helpers/auto-memory-hook.mjs",
+          "hash": "16905441510169183113"
+        },
+        {
+          "file": ".claude/helpers/checkpoint-manager.sh",
+          "hash": "13576145101863602273"
+        },
+        {
+          "file": ".claude/helpers/daemon-manager.sh",
+          "hash": "17489324118613623324"
+        },
+        {
+          "file": ".claude/helpers/ddd-tracker.sh",
+          "hash": "164961617471596474"
+        },
+        {
+          "file": ".claude/helpers/github-safe.js",
+          "hash": "12508892759911501860"
+        },
+        {
+          "file": ".claude/helpers/github-setup.sh",
+          "hash": "9910073135816027018"
+        },
+        {
+          "file": ".claude/helpers/guidance-hook.sh",
+          "hash": "980009829427786860"
+        },
+        {
+          "file": ".claude/helpers/guidance-hooks.sh",
+          "hash": "9571369681395987922"
+        },
+        {
+          "file": ".claude/helpers/health-monitor.sh",
+          "hash": "15030778264588587699"
+        },
+        {
+          "file": ".claude/helpers/hook-handler.cjs",
+          "hash": "13800995976635888240"
+        },
+        {
+          "file": ".claude/helpers/intelligence.cjs",
+          "hash": "6144242059060647251"
+        },
+        {
+          "file": ".claude/helpers/learning-hooks.sh",
+          "hash": "992004492044273476"
+        },
+        {
+          "file": ".claude/helpers/learning-optimizer.sh",
+          "hash": "16955114785367151401"
+        },
+        {
+          "file": ".claude/helpers/learning-service.mjs",
+          "hash": "16910895471071158538"
+        },
+        {
+          "file": ".claude/helpers/memory.js",
+          "hash": "3541574108297035077"
+        },
+        {
+          "file": ".claude/helpers/metrics-db.mjs",
+          "hash": "8223553526075158274"
+        },
+        {
+          "file": ".claude/helpers/pattern-consolidator.sh",
+          "hash": "10975734390267719156"
+        },
+        {
+          "file": ".claude/helpers/perf-worker.sh",
+          "hash": "6135837637985746946"
+        },
+        {
+          "file": ".claude/helpers/post-commit",
+          "hash": "14422884646355820777"
+        },
+        {
+          "file": ".claude/helpers/pre-commit",
+          "hash": "6609427264520349132"
+        },
+        {
+          "file": ".claude/helpers/quick-start.sh",
+          "hash": "10380862909055738684"
+        },
+        {
+          "file": ".claude/helpers/router.js",
+          "hash": "7168056699752225369"
+        },
+        {
+          "file": ".claude/helpers/security-scanner.sh",
+          "hash": "16862213315509057534"
+        },
+        {
+          "file": ".claude/helpers/session.js",
+          "hash": "3273718761388665864"
+        },
+        {
+          "file": ".claude/helpers/setup-mcp.sh",
+          "hash": "1238636570008634145"
+        },
+        {
+          "file": ".claude/helpers/standard-checkpoint-hooks.sh",
+          "hash": "15062422732443805977"
+        },
+        {
+          "file": ".claude/helpers/statusline-hook.sh",
+          "hash": "17090680804792945030"
+        },
+        {
+          "file": ".claude/helpers/statusline.cjs",
+          "hash": "7743605903235065561"
+        },
+        {
+          "file": ".claude/helpers/statusline.js",
+          "hash": "17200146213342789814"
+        },
+        {
+          "file": ".claude/helpers/swarm-comms.sh",
+          "hash": "4591623582581940547"
+        },
+        {
+          "file": ".claude/helpers/swarm-hooks.sh",
+          "hash": "14551685311204589361"
+        },
+        {
+          "file": ".claude/helpers/swarm-monitor.sh",
+          "hash": "1109889080594405157"
+        },
+        {
+          "file": ".claude/helpers/sync-v3-metrics.sh",
+          "hash": "16978705398217398846"
+        },
+        {
+          "file": ".claude/helpers/update-v3-progress.sh",
+          "hash": "1965993246477442304"
+        },
+        {
+          "file": ".claude/helpers/v3-quick-status.sh",
+          "hash": "8130592780919687636"
+        },
+        {
+          "file": ".claude/helpers/v3.sh",
+          "hash": "5582424666550823226"
+        },
+        {
+          "file": ".claude/helpers/validate-v3-config.sh",
+          "hash": "4303430297013650969"
+        },
+        {
+          "file": ".claude/helpers/worker-manager.sh",
+          "hash": "9163836988298562114"
+        },
+        {
+          "file": ".claude/settings.json",
+          "hash": "16315886400420018300"
+        },
+        {
+          "file": ".claude/skills/adapt/SKILL.md",
+          "hash": "2811130041479083279"
+        },
+        {
+          "file": ".claude/skills/agentdb-advanced/SKILL.md",
+          "hash": "13422494004356997680"
+        },
+        {
+          "file": ".claude/skills/agentdb-learning/SKILL.md",
+          "hash": "16867510267851771718"
+        },
+        {
+          "file": ".claude/skills/agentdb-memory-patterns/SKILL.md",
+          "hash": "12515919548282282185"
+        },
+        {
+          "file": ".claude/skills/agentdb-optimization/SKILL.md",
+          "hash": "10427644378352240663"
+        },
+        {
+          "file": ".claude/skills/agentdb-vector-search/SKILL.md",
+          "hash": "11304064915929208429"
+        },
+        {
+          "file": ".claude/skills/animate/SKILL.md",
+          "hash": "10428876750349456457"
+        },
+        {
+          "file": ".claude/skills/audit/SKILL.md",
+          "hash": "15952913170599773887"
+        },
+        {
+          "file": ".claude/skills/bolder/SKILL.md",
+          "hash": "5054435364297942275"
+        },
+        {
+          "file": ".claude/skills/browser/SKILL.md",
+          "hash": "5776348248588655956"
+        },
+        {
+          "file": ".claude/skills/clarify/SKILL.md",
+          "hash": "700571707638137964"
+        },
+        {
+          "file": ".claude/skills/colorize/SKILL.md",
+          "hash": "978951089419382971"
+        },
+        {
+          "file": ".claude/skills/critique/SKILL.md",
+          "hash": "7958955769805164504"
+        },
+        {
+          "file": ".claude/skills/critique/reference/cognitive-load.md",
+          "hash": "10265690939112622069"
+        },
+        {
+          "file": ".claude/skills/critique/reference/heuristics-scoring.md",
+          "hash": "7668659912523414910"
+        },
+        {
+          "file": ".claude/skills/critique/reference/personas.md",
+          "hash": "13811664358812514586"
+        },
+        {
+          "file": ".claude/skills/delight/SKILL.md",
+          "hash": "5538600799264696200"
+        },
+        {
+          "file": ".claude/skills/distill/SKILL.md",
+          "hash": "5672315074869624479"
+        },
+        {
+          "file": ".claude/skills/emil-design-eng/SKILL.md",
+          "hash": "1269983404274871236"
+        },
+        {
+          "file": ".claude/skills/github-code-review/SKILL.md",
+          "hash": "5309514132132359159"
+        },
+        {
+          "file": ".claude/skills/github-multi-repo/SKILL.md",
+          "hash": "8982812096800968121"
+        },
+        {
+          "file": ".claude/skills/github-project-management/SKILL.md",
+          "hash": "18283953183479178145"
+        },
+        {
+          "file": ".claude/skills/github-release-management/SKILL.md",
+          "hash": "967348492040210349"
+        },
+        {
+          "file": ".claude/skills/github-workflow-automation/SKILL.md",
+          "hash": "13770879740773547238"
+        },
+        {
+          "file": ".claude/skills/hooks-automation/SKILL.md",
+          "hash": "15241153070071238147"
+        },
+        {
+          "file": ".claude/skills/impeccable/SKILL.md",
+          "hash": "1992720784123688714"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/color-and-contrast.md",
+          "hash": "13714116431493982343"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/craft.md",
+          "hash": "10319467408631329848"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/extract.md",
+          "hash": "4853158894463235375"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/interaction-design.md",
+          "hash": "12251253328844024971"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/motion-design.md",
+          "hash": "12150191793405984878"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/responsive-design.md",
+          "hash": "5842829951953693058"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/spatial-design.md",
+          "hash": "8325295755859926211"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/typography.md",
+          "hash": "8040776739833794931"
+        },
+        {
+          "file": ".claude/skills/impeccable/reference/ux-writing.md",
+          "hash": "17168661836601960856"
+        },
+        {
+          "file": ".claude/skills/impeccable/scripts/cleanup-deprecated.mjs",
+          "hash": "13606459689132269030"
+        },
+        {
+          "file": ".claude/skills/layout/SKILL.md",
+          "hash": "10794659322869094798"
+        },
+        {
+          "file": ".claude/skills/optimize/SKILL.md",
+          "hash": "710735984086856752"
+        },
+        {
+          "file": ".claude/skills/overdrive/SKILL.md",
+          "hash": "16798819139341132966"
+        },
+        {
+          "file": ".claude/skills/pair-programming/SKILL.md",
+          "hash": "9609463764319478561"
+        },
+        {
+          "file": ".claude/skills/polish/SKILL.md",
+          "hash": "4058242079366203328"
+        },
+        {
+          "file": ".claude/skills/quieter/SKILL.md",
+          "hash": "9028049571815333424"
+        },
+        {
+          "file": ".claude/skills/reasoningbank-agentdb/SKILL.md",
+          "hash": "4211238177998879415"
+        },
+        {
+          "file": ".claude/skills/reasoningbank-intelligence/SKILL.md",
+          "hash": "11759815421309154534"
+        },
+        {
+          "file": ".claude/skills/shape/SKILL.md",
+          "hash": "11599296231333650957"
+        },
+        {
+          "file": ".claude/skills/skill-builder/SKILL.md",
+          "hash": "15457889352249185828"
+        },
+        {
+          "file": ".claude/skills/sparc-methodology/SKILL.md",
+          "hash": "14606615135631941649"
+        },
+        {
+          "file": ".claude/skills/stream-chain/SKILL.md",
+          "hash": "8045835515253033842"
+        },
+        {
+          "file": ".claude/skills/swarm-advanced/SKILL.md",
+          "hash": "15159685502465649840"
+        },
+        {
+          "file": ".claude/skills/swarm-orchestration/SKILL.md",
+          "hash": "11277857970989824820"
+        },
+        {
+          "file": ".claude/skills/typeset/SKILL.md",
+          "hash": "17590901152863325227"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/SKILL.md",
+          "hash": "16632290872755272854"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/charts.csv",
+          "hash": "10656689716007646391"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/colors.csv",
+          "hash": "4636695273321165146"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/icons.csv",
+          "hash": "17558892444946133958"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/landing.csv",
+          "hash": "15389709396434658788"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/products.csv",
+          "hash": "1963389218443953909"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/react-performance.csv",
+          "hash": "15212520148740762503"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/astro.csv",
+          "hash": "10060257620331710483"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/flutter.csv",
+          "hash": "13540265230583501617"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/html-tailwind.csv",
+          "hash": "7669949382492541392"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/jetpack-compose.csv",
+          "hash": "16760083898593126177"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/nextjs.csv",
+          "hash": "12296720666442230029"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/nuxt-ui.csv",
+          "hash": "9613262640752275631"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/nuxtjs.csv",
+          "hash": "1726554461640380984"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/react-native.csv",
+          "hash": "13719672206270108043"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/react.csv",
+          "hash": "12905216936519405930"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/shadcn.csv",
+          "hash": "16716792631225856961"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/svelte.csv",
+          "hash": "13938842804703053765"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/swiftui.csv",
+          "hash": "14184179233975360274"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/stacks/vue.csv",
+          "hash": "9156931242778499107"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/styles.csv",
+          "hash": "7896845384329690680"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/typography.csv",
+          "hash": "8804766764563034168"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/ui-reasoning.csv",
+          "hash": "17212863929984404313"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/ux-guidelines.csv",
+          "hash": "1002546704252260694"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/data/web-interface.csv",
+          "hash": "374719912877310747"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-314.pyc",
+          "hash": "6178560403165823632"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/scripts/__pycache__/design_system.cpython-314.pyc",
+          "hash": "5633405078217982661"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/scripts/__pycache__/search.cpython-314.pyc",
+          "hash": "5760373548557571209"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/scripts/core.py",
+          "hash": "4354432485044637460"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/scripts/design_system.py",
+          "hash": "5510276670519432989"
+        },
+        {
+          "file": ".claude/skills/ui-ux-pro-max/scripts/search.py",
+          "hash": "60539512677754189"
+        },
+        {
+          "file": ".claude/skills/v3-cli-modernization/SKILL.md",
+          "hash": "6081866325716983024"
+        },
+        {
+          "file": ".claude/skills/v3-core-implementation/SKILL.md",
+          "hash": "6870831497196034461"
+        },
+        {
+          "file": ".claude/skills/v3-ddd-architecture/SKILL.md",
+          "hash": "10998265873891663224"
+        },
+        {
+          "file": ".claude/skills/v3-integration-deep/SKILL.md",
+          "hash": "17906786543989587495"
+        },
+        {
+          "file": ".claude/skills/v3-mcp-optimization/SKILL.md",
+          "hash": "9542845547963396013"
+        },
+        {
+          "file": ".claude/skills/v3-memory-unification/SKILL.md",
+          "hash": "11380514172875432628"
+        },
+        {
+          "file": ".claude/skills/v3-performance-optimization/SKILL.md",
+          "hash": "6316104201871605163"
+        },
+        {
+          "file": ".claude/skills/v3-security-overhaul/SKILL.md",
+          "hash": "6651847164324329820"
+        },
+        {
+          "file": ".claude/skills/v3-swarm-coordination/SKILL.md",
+          "hash": "9630107659315238194"
+        },
+        {
+          "file": ".claude/skills/verification-quality/SKILL.md",
+          "hash": "11848002265803746427"
+        },
+        {
+          "file": ".editorconfig",
+          "hash": "8037249353422744134"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "16564195187810814070"
+        },
+        {
+          "file": ".mcp.json",
+          "hash": "4452163502384423649"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "7467919868826279542"
+        },
+        {
+          "file": ".swarm/memory.db",
+          "hash": "17923097607485934272"
+        },
+        {
+          "file": ".swarm/schema.sql",
+          "hash": "7410467851232626372"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "846410922303958854"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "17406702432687230417"
+        },
+        {
+          "file": ".vscode/mcp.json",
+          "hash": "11492871017727097845"
+        },
+        {
+          "file": ".vscode/tasks.json",
+          "hash": "11080398893561185157"
+        },
+        {
+          "file": "CLAUDE.md",
+          "hash": "14585658721487132402"
+        },
+        {
+          "file": "README.md",
+          "hash": "4031176070165565435"
+        },
+        {
+          "file": "SEOS.txt",
+          "hash": "4201642951978570470"
+        },
+        {
+          "file": "nx.json",
+          "hash": "10798933183534797097"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "1786459300955748745"
+        },
+        {
+          "file": "package.json",
+          "hash": "6267970480498941193"
+        },
+        {
+          "file": "pdf-extracted.md",
+          "hash": "8636328814884423864"
+        },
+        {
+          "file": "project.json",
+          "hash": "4651804345113008523"
+        },
+        {
+          "file": "public/.htaccess",
+          "hash": "61789713748201634"
+        },
+        {
+          "file": "public/favicon.ico",
+          "hash": "3988961587069885523"
+        },
+        {
+          "file": "public/images/background/bg1.png",
+          "hash": "13385407131715982767"
+        },
+        {
+          "file": "public/images/background/bg1.webp",
+          "hash": "10274462198599397629"
+        },
+        {
+          "file": "public/images/logos/inside_growth_logo_512p.png",
+          "hash": "1036043595746359658"
+        },
+        {
+          "file": "public/images/logos/inside_growth_logo_512p.webp",
+          "hash": "6922953139096616717"
+        },
+        {
+          "file": "public/images/logos/yellow_dot.png",
+          "hash": "16114255046849027368"
+        },
+        {
+          "file": "public/images/logos/yellow_dot.webp",
+          "hash": "10765927101069426143"
+        },
+        {
+          "file": "public/images/placeholders/analytics-wave.svg",
+          "hash": "10939899806152636667"
+        },
+        {
+          "file": "public/images/placeholders/luxury-frame.svg",
+          "hash": "13360566458980321815"
+        },
+        {
+          "file": "public/images/placeholders/studio-grid.svg",
+          "hash": "5721885150250628983"
+        },
+        {
+          "file": "public/images/results/Results1.png",
+          "hash": "668967635874654279"
+        },
+        {
+          "file": "public/images/results/Results1.webp",
+          "hash": "11075193976154474919"
+        },
+        {
+          "file": "public/images/results/Results2.png",
+          "hash": "1957078605845888447"
+        },
+        {
+          "file": "public/images/results/Results2.webp",
+          "hash": "12518116054366984265"
+        },
+        {
+          "file": "public/images/results/Results3.png",
+          "hash": "17350678116626870314"
+        },
+        {
+          "file": "public/images/results/Results3.webp",
+          "hash": "12136489577454532045"
+        },
+        {
+          "file": "public/images/results/ResultsScreenshotHomePage.png",
+          "hash": "6108691827587104040"
+        },
+        {
+          "file": "public/images/results/ResultsScreenshotHomePage.webp",
+          "hash": "5463330480659566123"
+        },
+        {
+          "file": "public/images/services/Audit&GrowthAnalysis.png",
+          "hash": "9852707528528284928"
+        },
+        {
+          "file": "public/images/services/Audit&GrowthAnalysis.webp",
+          "hash": "14280511602467256911"
+        },
+        {
+          "file": "public/images/services/CreativeProduction.png",
+          "hash": "6319535804289958520"
+        },
+        {
+          "file": "public/images/services/CreativeProduction.webp",
+          "hash": "4110979301700924092"
+        },
+        {
+          "file": "public/images/services/PaidMediaThatConverts.png",
+          "hash": "11957951297786955046"
+        },
+        {
+          "file": "public/images/services/PaidMediaThatConverts.webp",
+          "hash": "10992608498603479570"
+        },
+        {
+          "file": "public/images/services/Seo&OrganicGrowth.png",
+          "hash": "15261058770511367873"
+        },
+        {
+          "file": "public/images/services/Seo&OrganicGrowth.webp",
+          "hash": "11834458142151905569"
+        },
+        {
+          "file": "public/images/services/Trackig&PerformanceSystems.png",
+          "hash": "12106569846503612747"
+        },
+        {
+          "file": "public/images/services/Trackig&PerformanceSystems.webp",
+          "hash": "12975875086947817041"
+        },
+        {
+          "file": "public/images/services/WebsiteBuiltToConvert.png",
+          "hash": "9038875260732044386"
+        },
+        {
+          "file": "public/images/services/WebsiteBuiltToConvert.webp",
+          "hash": "4621011290876170343"
+        },
+        {
+          "file": "public/robots.txt",
+          "hash": "3872417088667858567"
+        },
+        {
+          "file": "public/sitemap.xml",
+          "hash": "3062083565718394295"
+        },
+        {
+          "file": "public/sitemap_index.xml",
+          "hash": "17450022976046495039"
+        },
+        {
+          "file": "public/sitemap_pages.xml",
+          "hash": "9464105726758089763"
+        },
+        {
+          "file": "public/sitemap_policies.xml",
+          "hash": "8016372205399899483"
+        },
+        {
+          "file": "scripts/convert-to-webp.js",
+          "hash": "16070538013517091298",
+          "deps": [
+            "npm:sharp"
+          ]
+        },
+        {
+          "file": "skills-lock.json",
+          "hash": "2025174360947275779"
+        },
+        {
+          "file": "src/app/app.config.ts",
+          "hash": "15791677679856331370",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/app/app.html",
+          "hash": "11760241757554606714"
+        },
+        {
+          "file": "src/app/app.routes.ts",
+          "hash": "8904325844467494666",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/app.scss",
+          "hash": "16985591977730211785"
+        },
+        {
+          "file": "src/app/app.spec.ts",
+          "hash": "3016316891224751841",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/app.ts",
+          "hash": "15252610063245026689",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/core/data/site-content-en.ts",
+          "hash": "15685816462042202051"
+        },
+        {
+          "file": "src/app/core/data/site-content-hu.ts",
+          "hash": "1751014470286415420"
+        },
+        {
+          "file": "src/app/core/data/site-content-ro.ts",
+          "hash": "13547434571824208612"
+        },
+        {
+          "file": "src/app/core/models/site-content.ts",
+          "hash": "16471785487629254199"
+        },
+        {
+          "file": "src/app/core/services/language.service.ts",
+          "hash": "14114618742473966560",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/core/services/scroll.service.ts",
+          "hash": "16591433203000004065",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "src/app/core/services/seo.service.ts",
+          "hash": "92898686466036809",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/app/pages/about/about.component.html",
+          "hash": "3199095724073303915"
+        },
+        {
+          "file": "src/app/pages/about/about.component.scss",
+          "hash": "1285878929325036697"
+        },
+        {
+          "file": "src/app/pages/about/about.component.ts",
+          "hash": "2339830298297324272",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/contact/contact.component.html",
+          "hash": "17801366264120757609"
+        },
+        {
+          "file": "src/app/pages/contact/contact.component.scss",
+          "hash": "420061070962309463"
+        },
+        {
+          "file": "src/app/pages/contact/contact.component.ts",
+          "hash": "4120143644293352906",
+          "deps": [
+            "npm:@emailjs/browser",
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "src/app/pages/cookie-policy/cookie-policy.component.html",
+          "hash": "1110931220661214582"
+        },
+        {
+          "file": "src/app/pages/cookie-policy/cookie-policy.component.scss",
+          "hash": "9216713487892151074"
+        },
+        {
+          "file": "src/app/pages/cookie-policy/cookie-policy.component.ts",
+          "hash": "1561398959086021034",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/growthResults/growthResults.component.html",
+          "hash": "12280736566384942533"
+        },
+        {
+          "file": "src/app/pages/growthResults/growthResults.component.scss",
+          "hash": "18068241128009340602"
+        },
+        {
+          "file": "src/app/pages/growthResults/growthResults.component.ts",
+          "hash": "16296218842784915521",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/home/home.component.html",
+          "hash": "3169871274963598004"
+        },
+        {
+          "file": "src/app/pages/home/home.component.scss",
+          "hash": "16437850816475910140"
+        },
+        {
+          "file": "src/app/pages/home/home.component.ts",
+          "hash": "12619926659684607694",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/pricing/pricing.component.html",
+          "hash": "1694350426792154199"
+        },
+        {
+          "file": "src/app/pages/pricing/pricing.component.scss",
+          "hash": "11579180637395726784"
+        },
+        {
+          "file": "src/app/pages/pricing/pricing.component.ts",
+          "hash": "12601534912137664055",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/privacy-policy/privacy-policy.component.html",
+          "hash": "7882567487678062464"
+        },
+        {
+          "file": "src/app/pages/privacy-policy/privacy-policy.component.scss",
+          "hash": "9216713487892151074"
+        },
+        {
+          "file": "src/app/pages/privacy-policy/privacy-policy.component.ts",
+          "hash": "6387433225871325760",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/services/services.component.html",
+          "hash": "4000177343850779181"
+        },
+        {
+          "file": "src/app/pages/services/services.component.scss",
+          "hash": "12371419561546318085"
+        },
+        {
+          "file": "src/app/pages/services/services.component.ts",
+          "hash": "10549351943952901786",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/pages/terms-conditions/terms-conditions.component.html",
+          "hash": "7062586547299475300"
+        },
+        {
+          "file": "src/app/pages/terms-conditions/terms-conditions.component.scss",
+          "hash": "9216713487892151074"
+        },
+        {
+          "file": "src/app/pages/terms-conditions/terms-conditions.component.ts",
+          "hash": "11982408943547888796",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/pages/thank-you/thank-you.component.html",
+          "hash": "14548188452928076840"
+        },
+        {
+          "file": "src/app/pages/thank-you/thank-you.component.scss",
+          "hash": "10719028353746831466"
+        },
+        {
+          "file": "src/app/pages/thank-you/thank-you.component.ts",
+          "hash": "11578617878251522111",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/shared/animations/animations.ts",
+          "hash": "2108980107759283689",
+          "deps": [
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "src/app/shared/animations/counter-animation.ts",
+          "hash": "9793001050276446144"
+        },
+        {
+          "file": "src/app/shared/animations/route-animations.ts",
+          "hash": "9793001050276446144"
+        },
+        {
+          "file": "src/app/shared/components/cookie-consent/cookie-consent.component.html",
+          "hash": "12555622949766968503"
+        },
+        {
+          "file": "src/app/shared/components/cookie-consent/cookie-consent.component.ts",
+          "hash": "12515072403839666046",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/shared/directives/scroll-reveal.directive.ts",
+          "hash": "9382695088236421221",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "src/app/shared/layout/footer/footer.component.html",
+          "hash": "3361970650474450385"
+        },
+        {
+          "file": "src/app/shared/layout/footer/footer.component.scss",
+          "hash": "11288193518325832167"
+        },
+        {
+          "file": "src/app/shared/layout/footer/footer.component.ts",
+          "hash": "7927903217890027599",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/app/shared/layout/header/header.component.html",
+          "hash": "1320477521463805529"
+        },
+        {
+          "file": "src/app/shared/layout/header/header.component.scss",
+          "hash": "5174884089950560043"
+        },
+        {
+          "file": "src/app/shared/layout/header/header.component.ts",
+          "hash": "17339548176591775108",
+          "deps": [
+            "npm:@angular/common",
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "src/environments/environment.ts",
+          "hash": "12147067182479527067"
+        },
+        {
+          "file": "src/index.html",
+          "hash": "6255352380743534662"
+        },
+        {
+          "file": "src/main.ts",
+          "hash": "13631447502211621498",
+          "deps": [
+            "npm:@emailjs/browser",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "src/styles.scss",
+          "hash": "6059773528181209341"
+        },
+        {
+          "file": "translations-EN.txt",
+          "hash": "13738833616600874870"
+        },
+        {
+          "file": "translations-HU.txt",
+          "hash": "16223957155331766864"
+        },
+        {
+          "file": "tsconfig.app.json",
+          "hash": "6605522276254580554"
+        },
+        {
+          "file": "tsconfig.json",
+          "hash": "12986063587128948135"
+        },
+        {
+          "file": "tsconfig.spec.json",
+          "hash": "171811765236245656"
+        }
+      ]
+    }
+  },
+  "externalNodesHash": "12272378626524530888"
+}
