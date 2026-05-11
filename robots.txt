@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /thank-you
-
-Sitemap: https://insidegrowth.ro/sitemap_index.xml
