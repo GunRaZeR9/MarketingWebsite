@@ -1,6 +1,7 @@
 import { ApplicationConfig, provideBrowserGlobalErrorListeners, APP_INITIALIZER } from '@angular/core';
 import { provideRouter, withPreloading, Route, PreloadingStrategy } from '@angular/router';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { Observable, of } from 'rxjs';
 
 import { routes } from './app.routes';
@@ -26,6 +27,7 @@ export const appConfig: ApplicationConfig = {
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes, withPreloading(QuicklinkStrategy)),
     provideAnimationsAsync(),
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
     { provide: APP_INITIALIZER, useFactory: initScroll, deps: [ScrollService], multi: true }
   ],
 };

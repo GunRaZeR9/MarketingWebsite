@@ -1,8 +1,8 @@
 [
   {"slug": "home", "path": "/"},
-  {"slug": "about", "path": "/about"},
-  {"slug": "growth-results", "path": "/growth-results"},
-  {"slug": "services", "path": "/services"},
-  {"slug": "pricing", "path": "/pricing"},
-  {"slug": "contact", "path": "/contact"}
+  {"slug": "about", "path": "/#/about"},
+  {"slug": "growth-results", "path": "/#/growth-results"},
+  {"slug": "services", "path": "/#/services"},
+  {"slug": "pricing", "path": "/#/pricing"},
+  {"slug": "contact", "path": "/#/contact"}
 ]
