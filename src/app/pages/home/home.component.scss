@@ -74,6 +74,16 @@
   animation: float 6s ease-in-out infinite;
 }
 
+@media (max-width: 820px) {
+  .hero-image {
+    animation: none;
+  }
+
+  .hero-badge {
+    animation: none;
+  }
+}
+
 .badge-left {
   bottom: -18px;
   left: -16px;
