@@ -52,7 +52,9 @@
         const p = params.get('p');
         if (p) {
           const decoded = decodeURIComponent(p).replace(/~and~/g, '&');
-          window.history.replaceState(null, null, window.location.pathname + decoded + (params.get('q') ? '?' + decodeURIComponent(params.get('q')).replace(/~and~/g, '&') : ''));
+          const baseHref = '/MarketingWebsite/';
+          const newPath = baseHref + decoded.replace(/^\//, '');
+          window.history.replaceState(null, null, newPath + (params.get('q') ? '?' + decodeURIComponent(params.get('q')).replace(/~and~/g, '&') : ''));
         }
       })();
     </script>
