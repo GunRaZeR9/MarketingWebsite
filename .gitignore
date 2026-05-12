@@ -48,10 +48,6 @@ Thumbs.db
 .nx/cache
 .nx/workspace-data
 
-# Temporary browser data (not needed if using system Chrome)
-# /chromium
-# /chromium-*
-
 # Audit folder is tracked — contains audit-pages.json and diagnostic.md
 # But lighthouse reports are temporary and should be ignored
 audits/lighthouse-reports/
