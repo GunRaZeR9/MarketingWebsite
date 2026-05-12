@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.nx/
+.angular/
+lighthouse-reports/
+lighthouse-reports-live/
+lighthouse-reports-v2/
+audits/
+test-lh/
+scripts/
+src/
+*.log
+*.jsonl
+*.sh
