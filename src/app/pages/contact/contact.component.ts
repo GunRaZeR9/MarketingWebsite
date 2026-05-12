@@ -4,7 +4,6 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
-import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
 import { environment } from '../../../environments/environment';
@@ -23,7 +22,7 @@ interface StoredLead {
 
 @Component({
   selector: 'app-contact-page',
-  imports: [CommonModule, ReactiveFormsModule, ScrollRevealDirective],
+  imports: [CommonModule, ReactiveFormsModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })

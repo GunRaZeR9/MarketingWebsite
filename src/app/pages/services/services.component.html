@@ -15,6 +15,7 @@
       class="service-detail"
       [ngClass]="'service-detail--' + service.imagePosition"
       scrollReveal
+      [noReveal]="i === 0"
       [delay]="i * 80"
     >
       <div class="service-image">
@@ -23,7 +24,8 @@
             class="service-image__img"
             [src]="service.image"
             [alt]="service.title + ' image'"
-            loading="lazy"
+            [attr.loading]="i === 0 ? null : 'lazy'"
+            [attr.fetchpriority]="i === 0 ? 'high' : null"
           />
         </div>
       </div>

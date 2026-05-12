@@ -7,6 +7,7 @@ import { Directive, ElementRef, Input, OnDestroy, OnInit } from '@angular/core';
 })
 export class ScrollRevealDirective implements OnInit, OnDestroy {
   @Input() delay = 0;
+  @Input() noReveal = false;
 
   private observer!: IntersectionObserver;
   private prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -14,6 +15,11 @@ export class ScrollRevealDirective implements OnInit, OnDestroy {
   constructor(private readonly el: ElementRef<HTMLElement>) {}
 
   ngOnInit(): void {
+    if (this.noReveal) {
+      this.el.nativeElement.classList.add('visible');
+      return;
+    }
+
     if (this.delay) {
       this.el.nativeElement.style.setProperty('--sr-delay', `${this.delay}ms`);
     }
