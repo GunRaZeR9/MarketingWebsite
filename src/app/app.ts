@@ -14,7 +14,16 @@ import { routeSlideAnimation } from './shared/animations/animations';
   animations: [routeSlideAnimation],
 })
 export class App {
-  getAnimationState(outlet: RouterOutlet): number {
+  private _firstRender = true;
+
+  getAnimationState(outlet: RouterOutlet): number | string {
+    // On the initial page load there is no previous route to transition from.
+    // Returning 'idle' prevents :increment/:decrement from matching, which
+    // avoids the position:absolute → cleanup layout shift that causes CLS.
+    if (this._firstRender) {
+      this._firstRender = false;
+      return 'idle';
+    }
     return outlet.activatedRouteData['animIndex'] ?? 0;
   }
 }

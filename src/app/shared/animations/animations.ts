@@ -56,6 +56,7 @@ const ROUTE_DURATION = '380ms cubic-bezier(0.4, 0, 0.2, 1)';
 const CLEANUP = { position: '', top: '', left: '', width: '', transform: '' };
 
 export const routeSlideAnimation = trigger('routeSlideAnimation', [
+  transition('void => idle, idle => *', []),  // no animation on initial page load
   transition(':increment', [
     query(':enter, :leave', [
       style({ position: 'absolute', top: '0', left: '0', width: '100%' })

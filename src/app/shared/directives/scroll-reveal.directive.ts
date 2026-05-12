@@ -18,9 +18,24 @@ export class ScrollRevealDirective implements OnInit, OnDestroy {
       this.el.nativeElement.style.setProperty('--sr-delay', `${this.delay}ms`);
     }
 
-    // If user prefers reduced motion, show immediately without animation
     if (this.prefersReducedMotion) {
       this.el.nativeElement.classList.add('visible');
+      return;
+    }
+
+    // Elements already in the viewport (above-fold) must be visible immediately.
+    // Waiting for the IntersectionObserver delays LCP because the callback can
+    // be blocked for several seconds by third-party JS long tasks.
+    const rect = this.el.nativeElement.getBoundingClientRect();
+    if (rect.top < window.innerHeight) {
+      this.el.nativeElement.style.transition = 'none';
+      this.el.nativeElement.classList.add('visible');
+      // Restore transition after the paint so below-fold siblings still animate
+      requestAnimationFrame(() => {
+        requestAnimationFrame(() => {
+          this.el.nativeElement.style.transition = '';
+        });
+      });
       return;
     }
 
