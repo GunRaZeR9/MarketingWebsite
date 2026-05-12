@@ -1,5 +1,10 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
+import { GrowthResultsComponent } from './pages/growthResults/growthResults.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { PricingComponent } from './pages/pricing/pricing.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
 	{
@@ -11,27 +16,27 @@ export const routes: Routes = [
 	{
 		path: 'about',
 		data: { animIndex: 1 },
-		loadComponent: () => import('./pages/about/about.component').then((m) => m.AboutComponent)
+		component: AboutComponent
 	},
 	{
 		path: 'growth-results',
 		data: { animIndex: 2 },
-		loadComponent: () => import('./pages/growthResults/growthResults.component').then((m) => m.GrowthResultsComponent)
+		component: GrowthResultsComponent
 	},
 	{
 		path: 'services',
 		data: { animIndex: 3 },
-		loadComponent: () => import('./pages/services/services.component').then((m) => m.ServicesComponent)
+		component: ServicesComponent
 	},
 	{
 		path: 'pricing',
 		data: { animIndex: 4 },
-		loadComponent: () => import('./pages/pricing/pricing.component').then((m) => m.PricingComponent)
+		component: PricingComponent
 	},
 	{
 		path: 'contact',
 		data: { animIndex: 5 },
-		loadComponent: () => import('./pages/contact/contact.component').then((m) => m.ContactComponent)
+		component: ContactComponent
 	},
 	{
 		path: 'privacy-policy',
