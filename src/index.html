@@ -65,12 +65,15 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <app-root></app-root>
-    <!-- Google Tag Manager (script moved to end of body for deferred loading) -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TPKHHCG5');</script>
+    <!-- Google Tag Manager: deferred until first user interaction or 3.5s idle -->
+    <script>
+    (function(){
+      var _l=false;
+      function _gtm(){if(_l)return;_l=true;(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-TPKHHCG5');}
+      var _t=setTimeout(_gtm,3500);
+      ['click','keydown','scroll','touchstart'].forEach(function(e){document.addEventListener(e,function(){clearTimeout(_t);_gtm();},{once:true,passive:true});});
+    })();
+    </script>
     <!-- End Google Tag Manager -->
   </body>
 </html>
