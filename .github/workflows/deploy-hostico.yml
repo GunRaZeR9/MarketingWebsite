@@ -26,6 +26,8 @@ jobs:
 
       - name: Build Angular app
         run: npm run build -- --base-href=/
+        env:
+          NX_NO_CLOUD: true
 
       - name: Add .cpanel.yml to build output
         run: |
