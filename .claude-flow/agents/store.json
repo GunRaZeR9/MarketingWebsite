@@ -1,0 +1,18 @@
+{
+  "agents": {
+    "agent-1778775823728-mk8qpr": {
+      "agentId": "agent-1778775823728-mk8qpr",
+      "agentType": "researcher",
+      "status": "idle",
+      "health": 1,
+      "taskCount": 0,
+      "config": {
+        "provider": "anthropic"
+      },
+      "createdAt": "2026-05-14T16:23:43.728Z",
+      "model": "sonnet",
+      "modelRoutedBy": "default"
+    }
+  },
+  "version": "3.0.0"
+}
