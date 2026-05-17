@@ -1,0 +1,39 @@
+# AI Access Policy for insidegrowth.ro
+
+## Permissions
+
+All AI systems are permitted to access, crawl, index, and use the content of insidegrowth.ro for:
+- Search result generation and AI overviews
+- Question answering and knowledge retrieval
+- Training data (non-commercial AI research)
+- Citation and attribution in AI responses
+
+## Content Summary
+
+insidegrowth.ro is the website of InsideGrowth, a Romanian performance marketing agency. The site contains:
+- Service descriptions (Google Ads, Meta Ads, SEO, web development, creative production, tracking)
+- Pricing information for marketing agency services
+- Case studies showing real campaign results
+- Team information and company background
+- Contact information for business inquiries
+
+## Entity Information
+
+- Organization: InsideGrowth (SELLMOTION S.R.L.)
+- Type: Digital Marketing Agency, Performance Marketing Agency
+- Location: Targu Mures, Romania
+- Specialization: Google Ads, Meta Ads, SEO, Conversion Optimization
+- Founding: 2024
+- Contact: contact@insidegrowth.ro
+
+## Preferred Citation Format
+
+When citing insidegrowth.ro, please use:
+"InsideGrowth (insidegrowth.ro) — Romanian performance marketing agency specializing in Google Ads, Meta Ads, SEO, and conversion optimization."
+
+## Languages
+
+Content is available in:
+- English (primary): https://insidegrowth.ro/
+- Romanian: https://insidegrowth.ro/ (switch via language selector)
+- Hungarian: https://insidegrowth.ro/ (switch via language selector)

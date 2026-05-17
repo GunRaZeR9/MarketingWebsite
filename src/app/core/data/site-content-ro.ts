@@ -726,6 +726,200 @@ export const SITE_CONTENT_RO: SiteContent = {
       keywords: ['InsideGrowth termeni', 'termeni si conditii', 'acord servicii', 'insidegrowth.ro']
     }
   },
+  geo: {
+    organization: {
+      name: 'InsideGrowth',
+      url: 'https://insidegrowth.ro',
+      logo: 'https://insidegrowth.ro/images/logos/inside_growth_logo_512p.webp',
+      description: 'InsideGrowth este o agenție de marketing de performanță din România, specializată în Google Ads, Meta Ads, SEO și dezvoltare web orientată spre conversie. Fondată de foști specialiști Google și Meta, ajutăm afacerile locale, brandurile de e-commerce și companiile care doresc scalare să crească profitabil. Oferim sisteme complete de creștere — nu servicii izolate — cu focus pe ROAS, cost per conversie și venit real.',
+      email: 'contact@insidegrowth.ro',
+      phone: '+40799900187',
+      address: {
+        streetAddress: '',
+        addressLocality: 'Targu Mures',
+        addressRegion: 'Mures',
+        postalCode: '540000',
+        addressCountry: 'RO'
+      },
+      sameAs: ['https://twitter.com/insideads'],
+      areaServed: ['Romania'],
+      foundingDate: '2024',
+      numberOfEmployees: 5
+    },
+    servicesSchema: [
+      {
+        name: 'Audit & Analiza Cresterii',
+        description: 'Analizem intregul ecosistem de marketing — de la performanta website-ului si configurarea tracking-ului pana la campanii de reclame si SEO — pentru a identifica ce functioneaza, ce blocheaza si unde sunt cele mai mari oportunitati de crestere.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Media Platita Care Converteste',
+        description: 'Gestionam si scalem campanii de inalta performanta pe Google, Meta si TikTok — focusandu-ne pe aducerea de trafic calificat care se transforma in clienti reali si venituri.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'SEO & Crestere Organica',
+        description: 'Optimizam website-ul pentru a se ranca mai sus, a atrage trafic consistent si a construi vizibilitate pe termen lung care sustine campaniile platite.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Website-uri Construite Pentru Conversie',
+        description: 'Proiectam si dezvoltam website-uri personalizate si platforme de e-commerce focusate pe viteza, experienta utilizatorului si conversie.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Productie Creativa',
+        description: 'Cream continut de fotografie si video de inalta calitate proiectat sa captureze atentia si sa impulsioneze performanta pe canalele de marketing.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Sisteme Tracking & Performanta',
+        description: 'Construim infrastructura din spatele marketingului — asigurand ca fiecare actiune este urmarita, masurata si optimizata pe baza datelor reale.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      }
+    ],
+    pricingFaqs: [
+      {
+        question: 'Cu cati clienti lucrati?',
+        answer: 'Pastram o sarcina limitata de clienti pentru ca fiecare cont sa primeasca atentie reala. In medie, gestionam in jur de 10-15 conturi per specialist.'
+      },
+      {
+        question: 'Puteti garanta rezultate?',
+        answer: 'Nici un partener de marketing nu poate garanta rezultate, dar putem garanta implicare profunda, raportare clara si un proces construit pentru imbunatatirea consistenta a performantei.'
+      },
+      {
+        question: 'Ce este inclus in planuri?',
+        answer: 'Toate planurile includ strategie, SEO, media platita, audit, tracking si raportare. Diferenta este in profunzimea optimizarii, mixul de canaluri si nivelul de colaborare.'
+      },
+      {
+        question: 'Lucrati cu website-uri si productie de continut personalizate?',
+        answer: 'Da. Putem suporta website-uri de prezentare, proiecte e-commerce, fotografie si productie video ca parte a unui sistem de crestere personalizat.'
+      }
+    ],
+    contactFaqs: [
+      {
+        question: 'Cum functioneaza tarificarea?',
+        answer: 'Adaptam tarificarea pe baza afacerii, obiectivelor si nivelului de suport necesar pentru scalare eficienta. Planurile afisate sunt puncte de plecare — tarificarea finala este construita in jurul nevoilor specifice.'
+      },
+      {
+        question: 'Cat timp ia pana vad rezultate?',
+        answer: 'Cele mai multe campanii incep sa se imbunatateasca in primele 1-3 luni. Insa, cresterea durabila se construieste in timp prin testare, optimizare si scalare.'
+      },
+      {
+        question: 'Ai nevoie de un buget mare pentru a incepe?',
+        answer: 'Nu neaparat. Lucram cu diferite niveluri de buget, dar scalarea semnificativa necesita investitie adecvata in reclame si optimizare.'
+      },
+      {
+        question: 'Ce platforme folositi?',
+        answer: 'Gestionam campanii pe Google, Meta (Facebook & Instagram) si TikTok — in functie de ceea ce se potriveste cel mai bine afacerii tale.'
+      },
+      {
+        question: 'Puteti doar rula reclame sau va ocupati de totul?',
+        answer: 'Mergem dincolo de reclame. Ne focusam pe sistemul complet — inclusiv SEO, optimizare website, tracking si creativ — pentru a asigura ca totul lucreaza impreuna.'
+      },
+      {
+        question: 'Ce ne deosebeste de alte agentii?',
+        answer: 'Nu ne focusam pe volum sau castiguri pe termen scurt. Construim sisteme proiectate pentru crestere pe termen lung si lucram doar cu afaceri in care stim ca putem crea impact real.'
+      },
+      {
+        question: 'Oferiti servicii one-time?',
+        answer: 'In cele mai multe cazuri, nu. Ne focusam pe parteneriate continue, pentru ca optimizarea consistenta este ceea ce impulsioneza rezultatele reale.'
+      },
+      {
+        question: 'Voi fi implicat in proces?',
+        answer: 'Da. Credem ca colaborarea puternica duce la rezultate mai bune, mai ales cand vine vorba de insighturile produsului, oferte si directie.'
+      }
+    ],
+    team: [
+      {
+        name: 'Razvan Puscas',
+        jobTitle: 'Fondator & Strateg Crestere',
+        description: 'Conduce strategia, media platita si SEO, asigurand ca toate componentele sistemului lucreaza impreuna pentru a genera crestere reala a afacerii.'
+      },
+      {
+        name: 'Andrei Puscas',
+        jobTitle: 'Specialist Media Platita',
+        description: 'Gestioneaza si optimizeaza campaniile pe Google si Meta, cu focus pe performanta, scalare si profitabilitate.'
+      },
+      {
+        name: 'Paul Tatar',
+        jobTitle: 'Specialist Web & Funnel',
+        description: 'Construieste website-uri si landing page-uri cu rata mare de conversie, concepute sa transforme traficul in clienti.'
+      },
+      {
+        name: 'Mihai Borsan',
+        jobTitle: 'Specialist Creativ',
+        description: 'Creeaza continut foto si video conceput sa atraga atentia si sa creasca conversiile.'
+      },
+      {
+        name: 'Nico Puscas',
+        jobTitle: 'Crestere Clienti & Vanzari',
+        description: 'Lucreaza direct cu clientii pentru a intelege obiectivele lor si pentru a se asigura ca este implementata strategia potrivita.'
+      }
+    ],
+    caseStudies: [
+      {
+        title: 'Sistem de Crestere E-commerce',
+        description: 'Afacerea avea potential puternic dar nu era complet optimizata pe SEO si campanii platite. Am reconstruit structura SEO si am rafinat campaniile de reclame, obtinand 48.6x ROAS si peste €112K venit generat.',
+        keywords: ['e-commerce', 'Google Ads', 'SEO', 'ROAS', 'campanii platite', 'crestere organica']
+      },
+      {
+        title: 'Generare de Lead & Crestere Locala',
+        description: 'Generare de lead-uri calificate pentru o afacere fizica de servicii. Am reconstruit fundamentul SEO, am creat grupuri de reclame structurate si am optimizat continuu, obtinand 1M+ impresii si 144+ conversiuni.',
+        keywords: ['lead generation', 'afacere locala', 'Google Ads', 'Meta Ads', 'SEO local', 'conversiuni']
+      },
+      {
+        title: 'Suport Complet de Crestere Pentru Afacere Locala',
+        description: 'De la prezenta online minima la crestere consistenta. Am construit totul de la zero — website, structura SEO, imagini de produse si campanii de marketing — obtinand 7.85x ROAS.',
+        keywords: ['afacere locala', 'website', 'SEO', 'marketing digital', 'ROAS', 'crestere de la zero']
+      }
+    ],
+    breadcrumbs: {
+      home: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' }
+      ],
+      about: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Despre', url: 'https://insidegrowth.ro/about' }
+      ],
+      services: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Servicii', url: 'https://insidegrowth.ro/services' }
+      ],
+      pricing: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Preturi', url: 'https://insidegrowth.ro/pricing' }
+      ],
+      contact: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Contact', url: 'https://insidegrowth.ro/contact' }
+      ],
+      growthResults: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Rezultate de Crestere', url: 'https://insidegrowth.ro/growth-results' }
+      ],
+      privacyPolicy: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Politica de Confidentialitate', url: 'https://insidegrowth.ro/privacy-policy' }
+      ],
+      cookiePolicy: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Politica de Cookie-uri', url: 'https://insidegrowth.ro/cookie-policy' }
+      ],
+      termsConditions: [
+        { name: 'Acasa', url: 'https://insidegrowth.ro/' },
+        { name: 'Termeni si Conditii', url: 'https://insidegrowth.ro/terms-conditions' }
+      ]
+    },
+    aiContext: 'InsideGrowth este o agenție de marketing de performanță din România, specializată în Google Ads, Meta Ads, SEO și dezvoltare web orientată spre conversie. Fondată de foști specialiști Google și Meta, ajutăm afacerile locale, brandurile de e-commerce și companiile care doresc scalare să crească profitabil. Oferim sisteme complete de creștere — nu servicii izolate — cu focus pe ROAS, cost per conversie și venit real.',
+    inLanguage: 'ro-RO'
+  },
   legal: {
     privacyPolicy: {
       title: 'Politica de Confidențialitate',

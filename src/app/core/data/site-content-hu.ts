@@ -734,6 +734,200 @@ export const SITE_CONTENT_HU: SiteContent = {
       keywords: ['InsideGrowth feltételek', 'általános feltételek', 'szolgáltatás szerződés', 'insidegrowth.ro']
     }
   },
+  geo: {
+    organization: {
+      name: 'InsideGrowth',
+      url: 'https://insidegrowth.ro',
+      logo: 'https://insidegrowth.ro/images/logos/inside_growth_logo_512p.webp',
+      description: 'Az InsideGrowth egy romániai teljesítménymarketing-ügynökség, amely Google Ads, Meta Ads, SEO és konverzióközpontú webfejlesztés területén specializálódott. A csapat volt Google és Meta szakemberekből áll, és helyi vállalkozások, e-kereskedelmi márkák és növekedési potenciállal rendelkező cégek számára épít teljes növekedési rendszereket.',
+      email: 'contact@insidegrowth.ro',
+      phone: '+40799900187',
+      address: {
+        streetAddress: '',
+        addressLocality: 'Targu Mures',
+        addressRegion: 'Mures',
+        postalCode: '540000',
+        addressCountry: 'RO'
+      },
+      sameAs: ['https://twitter.com/insideads'],
+      areaServed: ['Romania'],
+      foundingDate: '2024',
+      numberOfEmployees: 5
+    },
+    servicesSchema: [
+      {
+        name: 'Audit & Növekedés Elemzés',
+        description: 'Elemezzük az egész marketing ökoszisztémát — a webhely teljesítménytől és a nyomkövetési beállítástól a hirdetési kampányokig és a keresőoptimalizálásig — hogy azonosítsuk, mi működik, mi korlátoz és ahol a legnagyobb növekedési lehetőségek vannak.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Fizetett Média, Amely Konvertál',
+        description: 'Magas teljesítményű kampányokat kezelünk és skálázunk a Google, Meta és TikTok között — a minőségi forgalom felkeltésére összpontosítva, amely valódi ügyfelekké és bevételekké alakul.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'SEO és Szerves Növekedés',
+        description: 'Optimalizáljuk a webhelyet, hogy magasabbra rangsoroljuk, konzisztens forgalmat vonzz és hosszú távú láthatóságot építsük, amely támogatja a fizetett kampányokat.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Konverzióra Tervezett Webhelyek',
+        description: 'Egyedi weboldalakat és e-kereskedelmi platformokat tervezünk és fejlesztünk, amelyek a sebességre, felhasználói élményre és konverzióra összpontosítanak.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Kreatív Produkció',
+        description: 'Magas minőségű fotó- és videótartalmakat készítünk, amelyeket úgy terveztünk, hogy felhívjuk a figyelmet és javítsuk a teljesítményt a marketing csatornákon.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Nyomkövetés és Teljesítményi Rendszerek',
+        description: 'Felépítjük a marketinged mögött lévő infrastruktúrát — biztosítva, hogy minden cselekvés nyomon követett, mért és valós adatok alapján optimalizált.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      }
+    ],
+    pricingFaqs: [
+      {
+        question: 'Hány ügyféllel dolgozik?',
+        answer: 'Korlátozott ügyfélterhelést tartunk fenn, így minden számla valódi figyelmet kap. Átlagosan körülbelül 10-15 fiókot kezelünk specialistánként.'
+      },
+      {
+        question: 'Garantálható az eredmények?',
+        answer: 'Egyetlen marketingpartner sem garantálhat eredményeket, de mi garantálhatjuk a mély bevonást, az egyértelmű jelentéskészítést és a konzisztens teljesítményfejlesztésre épített eljárást.'
+      },
+      {
+        question: 'Mi a csomagokban?',
+        answer: 'Az összes csomag tartalmaz stratégiát, SEO-t, fizetett médiát, auditot, nyomkövetést és jelentéskészítést. A különbség az optimalizálás mélysége, a csatornakeverék és az együttműködés szintje.'
+      },
+      {
+        question: 'Dolgozik egyedi webhelyekkel és tartalomgyártással?',
+        answer: 'Igen. Támogathatunk bemutató weboldalakat, e-kereskedelmi projekteket, fotózást és videóprodukciót mint egyedi növekedési rendszer részét.'
+      }
+    ],
+    contactFaqs: [
+      {
+        question: 'Hogyan működik a díjszabás?',
+        answer: 'A díjszabást az üzleted, céljaid és a hatékony skálázáshoz szükséges támogatás szintje alapján szabjuk testre. A megjelenített csomagok kiindulópontok — a végső díjszabás az konkrét igények körül épül.'
+      },
+      {
+        question: 'Meddig tart az eredmények meglátásához?',
+        answer: 'A legtöbb kampány az első 1-3 hónapban kezd javulni. Az egészséges növekedés azonban idővel, tesztelésen, optimalizáláson és skálázáson keresztül épül fel.'
+      },
+      {
+        question: 'Nagy költségvetésre van szükségem az induláshoz?',
+        answer: 'Nem feltétlenül. Különböző költségvetési szintekkel dolgozunk, de az értelmes skálázáshoz mind a hirdetésekbe, mind az optimalizálásba megfelelő befektetésre van szükség.'
+      },
+      {
+        question: 'Milyen platformokon dolgozik?',
+        answer: 'A Google, Meta (Facebook és Instagram) és TikTok között menedzseljük a kampányokat — az üzleted legjobban illő szerint.'
+      },
+      {
+        question: 'Csak hirdetéseket futtat, vagy mindent kezel?',
+        answer: 'Túlmegyünk a hirdetéseken. A teljes rendszerre összpontosítunk — beleértve a SEO-t, a webhely optimalizálást, a nyomkövetést és a kreatíveket — hogy biztosítsuk, hogy minden együttesen működik.'
+      },
+      {
+        question: 'Mi tesz minket másabbá a többi ügynökségtől?',
+        answer: 'Nem a volumenre vagy a rövid távú sikerekre fókuszálunk. Olyan rendszereket építünk, amelyek hosszú távú növekedésre vannak tervezve, és csak azokkal az üzletekkel dolgozunk, ahol valódi hatást tudunk létrehozni.'
+      },
+      {
+        question: 'Kínál egyszeri szolgáltatásokat?',
+        answer: 'A legtöbb esetben nem. Az folyamatos partnerségekre összpontosítunk, mivel az egységes optimalizálás az ami valódi eredményeket vezet.'
+      },
+      {
+        question: 'Vagyok bevonva a folyamatba?',
+        answer: 'Igen. Hiszünk abban, hogy az erős kollaboráció jobb eredményekhez vezet, különösen amikor a termék insightok, ajánlatok és irány jönnek szóba.'
+      }
+    ],
+    team: [
+      {
+        name: 'Razvan Puscas',
+        jobTitle: 'Alapító & Növekedési Stratéga',
+        description: 'Irányítja a stratégiát, a fizetett médiát és az SEO-t, biztosítva, hogy a rendszer minden része együtt dolgozzon a valódi üzleti növekedésért.'
+      },
+      {
+        name: 'Andrei Puscas',
+        jobTitle: 'Fizetett Média Szakértő',
+        description: 'Google és Meta kampányokat kezel és optimalizál, a teljesítményre, skálázásra és jövedelmezőségre fókuszálva.'
+      },
+      {
+        name: 'Paul Tatar',
+        jobTitle: 'Web és Funnel Szakértő',
+        description: 'Magas konverziójú weboldalakat és landing page-eket épít, amelyek a forgalmat ügyfelekké alakítják.'
+      },
+      {
+        name: 'Mihai Borsan',
+        jobTitle: 'Kreatív Szakértő',
+        description: 'Fotó- és videótartalmakat készít, amelyek célja a figyelem megragadása és a konverziók növelése.'
+      },
+      {
+        name: 'Nico Puscas',
+        jobTitle: 'Ügyfél Növekedés & Értékesítés',
+        description: 'Közvetlenül dolgozik az ügyfelekkel, hogy megértse a céljaikat, és biztosítsa a megfelelő stratégia megvalósítását.'
+      }
+    ],
+    caseStudies: [
+      {
+        title: 'E-kereskedelmi Növekedés Rendszer',
+        description: 'Az üzlet nagy potenciállal rendelkezett, de nem volt teljes optimalizálás az SEO és fizetett kampányok között. Az SEO szerkezetet újraépítettük és skálázattuk a hirdetési kampányokat, elérve 48.6x ROAS-t és €112K+ bevételt.',
+        keywords: ['e-kereskedelem', 'Google Ads', 'SEO', 'ROAS', 'fizetett kampányok', 'szerves növekedés']
+      },
+      {
+        title: 'Lead Generálás és Helyi Növekedés',
+        description: 'Minőségi lead generálás egy fizikai üzlethez, amely szolgáltatásokat nyújt. Az SEO alapozást újraépítettük és strukturált hirdetési csoportokat hoztunk létre, elérve 1M+ impressziót és 144+ konverziót.',
+        keywords: ['lead generálás', 'helyi üzlet', 'Google Ads', 'Meta Ads', 'helyi SEO', 'konverziók']
+      },
+      {
+        title: 'Teljes Növekedési Támogatás a Helyi Üzlethez',
+        description: 'Minimális online jelenléttől a konzisztens növekedésig. Mindent az alapoktól építettünk fel — webhely, SEO, termékvizualizációk és kampányok — elérve 7.85x ROAS-t.',
+        keywords: ['helyi üzlet', 'webhely fejlesztés', 'SEO', 'digitális marketing', 'ROAS', 'nulláról indulás']
+      }
+    ],
+    breadcrumbs: {
+      home: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' }
+      ],
+      about: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Rólunk', url: 'https://insidegrowth.ro/about' }
+      ],
+      services: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Szolgáltatások', url: 'https://insidegrowth.ro/services' }
+      ],
+      pricing: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Árak', url: 'https://insidegrowth.ro/pricing' }
+      ],
+      contact: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Kapcsolat', url: 'https://insidegrowth.ro/contact' }
+      ],
+      growthResults: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Növekedési Eredmények', url: 'https://insidegrowth.ro/growth-results' }
+      ],
+      privacyPolicy: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Adatvédelmi Irányelvek', url: 'https://insidegrowth.ro/privacy-policy' }
+      ],
+      cookiePolicy: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Cookie Irányelvek', url: 'https://insidegrowth.ro/cookie-policy' }
+      ],
+      termsConditions: [
+        { name: 'Kezdőlap', url: 'https://insidegrowth.ro/' },
+        { name: 'Általános Feltételek', url: 'https://insidegrowth.ro/terms-conditions' }
+      ]
+    },
+    aiContext: 'Az InsideGrowth egy romániai teljesítménymarketing-ügynökség, amely Google Ads, Meta Ads, SEO és konverzióközpontú webfejlesztés területén specializálódott. A csapat volt Google és Meta szakemberekből áll, és helyi vállalkozások, e-kereskedelmi márkák és növekedési potenciállal rendelkező cégek számára épít teljes növekedési rendszereket.',
+    inLanguage: 'hu-HU'
+  },
   legal: {
     privacyPolicy: {
       title: 'Adatvédelmi Irányelvek',

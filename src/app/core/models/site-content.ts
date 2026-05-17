@@ -185,6 +185,87 @@ export interface SiteUiText {
   homeModalCta: string;
 }
 
+// ─── GEO / AI-SEO Schema Interfaces ─────────────────────────────────────────
+// These are background-only: never displayed in the UI.
+// Injected as invisible <script type="application/ld+json"> tags per page.
+
+export interface GeoAddress {
+  streetAddress: string;
+  addressLocality: string;
+  addressRegion: string;
+  postalCode: string;
+  addressCountry: string;
+}
+
+export interface GeoOrganizationSchema {
+  name: string;
+  url: string;
+  logo: string;
+  description: string;
+  email: string;
+  phone: string;
+  address: GeoAddress;
+  sameAs: string[];
+  areaServed: string[];
+  foundingDate: string;
+  numberOfEmployees: number;
+}
+
+export interface GeoServiceSchema {
+  name: string;
+  description: string;
+  serviceType: string;
+  areaServed: string;
+}
+
+export interface GeoFaqSchema {
+  question: string;
+  answer: string;
+}
+
+export interface GeoBreadcrumbItem {
+  name: string;
+  url: string;
+}
+
+export interface GeoPersonSchema {
+  name: string;
+  jobTitle: string;
+  description: string;
+}
+
+export interface GeoCaseStudySchema {
+  title: string;
+  description: string;
+  keywords: string[];
+}
+
+export interface GeoBreadcrumbs {
+  home: GeoBreadcrumbItem[];
+  about: GeoBreadcrumbItem[];
+  services: GeoBreadcrumbItem[];
+  pricing: GeoBreadcrumbItem[];
+  contact: GeoBreadcrumbItem[];
+  growthResults: GeoBreadcrumbItem[];
+  privacyPolicy: GeoBreadcrumbItem[];
+  cookiePolicy: GeoBreadcrumbItem[];
+  termsConditions: GeoBreadcrumbItem[];
+}
+
+export interface GeoSchemaData {
+  organization: GeoOrganizationSchema;
+  servicesSchema: GeoServiceSchema[];
+  pricingFaqs: GeoFaqSchema[];
+  contactFaqs: GeoFaqSchema[];
+  team: GeoPersonSchema[];
+  caseStudies: GeoCaseStudySchema[];
+  breadcrumbs: GeoBreadcrumbs;
+  aiContext: string;
+  inLanguage: string;
+}
+
+// ─── Standard SEO interfaces ──────────────────────────────────────────────────
+
 export interface PageSeo {
   title: string;
   description: string;
@@ -269,6 +350,7 @@ export interface SiteContent {
   contact: ContactInfo;
   ui: SiteUiText;
   seo: SiteSeo;
+  geo: GeoSchemaData;
   legal: SiteLegalContent;
   portfolio: CaseStudy[];
 }

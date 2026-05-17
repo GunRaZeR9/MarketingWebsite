@@ -4,6 +4,7 @@ import { Component, computed, effect, inject } from '@angular/core';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
+import { SchemaService } from '../../core/services/schema.service';
 
 @Component({
   selector: 'app-about-page',
@@ -16,14 +17,19 @@ export class AboutComponent {
   readonly content = this.languageService.content;
   readonly teamMembers = computed(() => this.content().aboutTeamMembers ?? []);
 
-  constructor(private readonly seo: SeoService) {
+  constructor(
+    private readonly seo: SeoService,
+    private readonly schema: SchemaService
+  ) {
     effect(() => {
-      const seoConfig = this.content().seo.about;
+      const content = this.content();
+      const seoConfig = content.seo.about;
       this.seo.update({
         title: seoConfig.title,
         description: seoConfig.description,
         keywords: seoConfig.keywords
       });
+      this.schema.injectPageSchemas(content.geo, 'about');
     });
   }
 }

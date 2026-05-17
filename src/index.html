@@ -22,29 +22,70 @@
     <link rel="preload" as="image" href="images/background/bg1.webp" fetchpriority="high" />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     <link rel="canonical" href="https://insidegrowth.ro/" />
+    <link rel="alternate" hreflang="x-default" href="https://insidegrowth.ro/">
+    <link rel="alternate" hreflang="en" href="https://insidegrowth.ro/">
+    <link rel="alternate" hreflang="ro" href="https://insidegrowth.ro/">
+    <link rel="alternate" hreflang="hu" href="https://insidegrowth.ro/">
+    <link rel="me" href="mailto:contact@insidegrowth.ro">
     <link rel="icon" type="image/webp" href="images/logos/inside_growth_logo_512p.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "InsideGrowth",
-        "url": "https://insidegrowth.ro",
-        "logo": "https://insidegrowth.ro/images/logos/inside_growth_logo_512p.webp",
-        "description": "Performance marketing agency built by former Google and Meta specialists for data-driven growth",
-        "sameAs": [
-          "https://twitter.com/insideads"
-        ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Support",
-          "url": "https://insidegrowth.ro/contact"
-        }
-      }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
+      "@id": "https://insidegrowth.ro/#organization",
+      "name": "InsideGrowth",
+      "legalName": "SELLMOTION S.R.L.",
+      "url": "https://insidegrowth.ro",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://insidegrowth.ro/images/logos/inside_growth_logo_512p.webp",
+        "width": 512,
+        "height": 512
+      },
+      "image": "https://insidegrowth.ro/images/logos/inside_growth_logo_512p.webp",
+      "description": "Romanian performance marketing agency specializing in Google Ads, Meta Ads, SEO, and conversion-focused website development. Former Google and Meta specialists helping businesses grow with data-driven strategies.",
+      "email": "contact@insidegrowth.ro",
+      "telephone": "+40799900187",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Targu Mures",
+        "addressRegion": "Mures",
+        "postalCode": "540000",
+        "addressCountry": "RO"
+      },
+      "areaServed": [
+        {"@type": "Country", "name": "Romania"}
+      ],
+      "foundingDate": "2024",
+      "numberOfEmployees": {"@type": "QuantitativeValue", "value": 5},
+      "sameAs": [
+        "https://twitter.com/insideads"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+40799900187",
+        "contactType": "customer service",
+        "email": "contact@insidegrowth.ro",
+        "availableLanguage": ["English", "Romanian", "Hungarian"],
+        "contactOption": "TollFree"
+      },
+      "knowsAbout": [
+        "Google Ads", "Meta Ads", "SEO", "Performance Marketing",
+        "Conversion Rate Optimization", "E-commerce Growth",
+        "Lead Generation", "Digital Marketing Strategy"
+      ],
+      "priceRange": "€€"
+    }
+  ]
+}
     </script>
     <script type="text/javascript">
       (function() {

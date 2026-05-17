@@ -6,6 +6,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
+import { SchemaService } from '../../core/services/schema.service';
 import { environment } from '../../../environments/environment';
 
 interface StoredLead {
@@ -49,14 +50,19 @@ export class ContactComponent {
     message: ['', [Validators.required, Validators.minLength(50)]]
   });
 
-  constructor(private readonly seo: SeoService) {
+  constructor(
+    private readonly seo: SeoService,
+    private readonly schema: SchemaService
+  ) {
     effect(() => {
-      const seoConfig = this.content().seo.contact;
+      const content = this.content();
+      const seoConfig = content.seo.contact;
       this.seo.update({
         title: seoConfig.title,
         description: seoConfig.description,
         keywords: seoConfig.keywords
       });
+      this.schema.injectPageSchemas(content.geo, 'contact');
     });
 
     this.leadForm.controls.plan.valueChanges.pipe(takeUntilDestroyed(this.destroyRef)).subscribe((planName) => {

@@ -3,6 +3,7 @@ import { Component, effect, inject } from '@angular/core';
 
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
+import { SchemaService } from '../../core/services/schema.service';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 
 @Component({
@@ -15,14 +16,19 @@ export class CookiePolicyComponent {
   private readonly languageService = inject(LanguageService);
   readonly content = this.languageService.content;
 
-  constructor(private readonly seo: SeoService) {
+  constructor(
+    private readonly seo: SeoService,
+    private readonly schema: SchemaService
+  ) {
     effect(() => {
-      const seoConfig = this.content().seo.cookiePolicy;
+      const content = this.content();
+      const seoConfig = content.seo.cookiePolicy;
       this.seo.update({
         title: seoConfig.title,
         description: seoConfig.description,
         keywords: seoConfig.keywords
       });
+      this.schema.injectPageSchemas(content.geo, 'cookiePolicy');
     });
   }
 }

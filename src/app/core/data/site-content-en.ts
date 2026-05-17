@@ -984,5 +984,201 @@ export const SITE_CONTENT_EN: SiteContent = {
         }
       ]
     }
+  },
+  geo: {
+    organization: {
+      name: 'InsideGrowth',
+      url: 'https://insidegrowth.ro',
+      logo: 'https://insidegrowth.ro/images/logos/inside_growth_logo_512p.webp',
+      description: 'InsideGrowth is a performance digital marketing agency operated by SELLMOTION S.R.L., based in Targu Mures, Romania. We help businesses grow through Google Ads, Meta Ads, SEO, website development, creative production, and tracking & analytics.',
+      email: 'contact@insidegrowth.ro',
+      phone: '+40799900187',
+      address: {
+        streetAddress: '',
+        addressLocality: 'Targu Mures',
+        addressRegion: 'Mures',
+        postalCode: '',
+        addressCountry: 'RO'
+      },
+      sameAs: [
+        'https://twitter.com/insideads'
+      ],
+      areaServed: ['Romania'],
+      foundingDate: '2024',
+      numberOfEmployees: 5
+    },
+    servicesSchema: [
+      {
+        name: 'Google Ads Management',
+        description: 'We manage and scale high-performance Google Ads campaigns — Search, Shopping, and Performance Max — focused on qualified traffic and measurable conversions.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Meta Ads Management',
+        description: 'We run and optimize paid campaigns across Facebook and Instagram, building full-funnel strategies that convert audiences into paying customers.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'SEO & Organic Growth',
+        description: 'We optimize websites for search engines through technical SEO, on-page improvements, keyword strategy, and content optimization to build long-term visibility.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Website Development',
+        description: 'We design and develop custom websites and e-commerce platforms focused on speed, user experience, and conversion — turning visitors into paying customers.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Creative Production',
+        description: 'We create high-quality photo and video content — product photography, brand shoots, video production, and ad creatives — designed to capture attention and drive performance.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      },
+      {
+        name: 'Tracking & Analytics',
+        description: 'We build the data infrastructure behind your marketing — Google Tag Manager, GA4, conversion tracking, and reporting — ensuring every decision is based on accurate data.',
+        serviceType: 'DigitalMarketingService',
+        areaServed: 'Romania'
+      }
+    ],
+    pricingFaqs: [
+      {
+        question: 'How many clients do you work with?',
+        answer: 'We keep a limited client load so every account gets real attention. On average, we manage around 10 to 15 accounts per specialist.'
+      },
+      {
+        question: 'Can you guarantee results?',
+        answer: 'No marketing partner can guarantee results, but we can guarantee deep involvement, clear reporting, and a process built to improve performance consistently.'
+      },
+      {
+        question: 'What is included in the plans?',
+        answer: 'All plans include strategy, SEO, paid media, audit, tracking, and reporting. The difference is the depth of optimization, channel mix, and level of collaboration.'
+      },
+      {
+        question: 'Do you work with custom websites and content production?',
+        answer: 'Yes. We can support presentation websites, e-commerce projects, photography, and video production as part of a custom growth system.'
+      }
+    ],
+    contactFaqs: [
+      {
+        question: 'How does pricing work?',
+        answer: 'We tailor pricing based on your business, goals, and the level of support required to scale effectively. The plans shown are starting points — final pricing is built around your specific needs.'
+      },
+      {
+        question: 'How long does it take to see results?',
+        answer: 'Most campaigns start improving within the first 1–3 months. However, sustainable growth is built over time through testing, optimization, and scaling.'
+      },
+      {
+        question: 'Do I need a large budget to start?',
+        answer: 'Not necessarily. We work with different budget levels, but meaningful scaling requires proper investment in both ads and optimization.'
+      },
+      {
+        question: 'What platforms do you work with?',
+        answer: 'We manage campaigns across Google, Meta (Facebook & Instagram), and TikTok — depending on what fits your business best.'
+      },
+      {
+        question: 'Do you only run ads, or do you handle everything?',
+        answer: 'We go beyond ads. We focus on the full system — including SEO, website optimization, tracking, and creative — to ensure everything works together.'
+      },
+      {
+        question: 'What makes you different from other agencies?',
+        answer: 'We don\'t focus on volume or short-term wins. We build systems designed for long-term growth and only work with businesses where we can create real impact.'
+      },
+      {
+        question: 'Do you offer one-time services?',
+        answer: 'In most cases, no. We focus on ongoing partnerships, because consistent optimization is what drives real results.'
+      },
+      {
+        question: 'Will I be involved in the process?',
+        answer: 'Yes. We believe strong collaboration leads to better results, especially when it comes to product insights, offers, and direction.'
+      }
+    ],
+    team: [
+      {
+        name: 'Razvan Puscas',
+        jobTitle: 'Founder & Growth Strategist',
+        description: 'Leads strategy, paid media, and SEO — ensuring all parts of the system work together to drive real business growth.'
+      },
+      {
+        name: 'Andrei Puscas',
+        jobTitle: 'Paid Media Specialist',
+        description: 'Manages and optimizes campaigns across Google and Meta, focusing on performance, scaling, and profitability.'
+      },
+      {
+        name: 'Paul Tatar',
+        jobTitle: 'Web & Funnel Specialist',
+        description: 'Builds high-converting websites and landing pages designed to turn traffic into customers.'
+      },
+      {
+        name: 'Mihai Borsan',
+        jobTitle: 'Creative Specialist',
+        description: 'Creates photo and video content designed to capture attention and increase conversions.'
+      },
+      {
+        name: 'Nico Puscas',
+        jobTitle: 'Client Growth & Sales',
+        description: 'Works directly with clients to understand their goals and ensure the right strategy is implemented.'
+      }
+    ],
+    caseStudies: [
+      {
+        title: 'E-commerce Growth System',
+        description: 'The business had strong potential but wasn\'t fully optimized across SEO and paid campaigns. We rebuilt the SEO structure across all pages and products, continuously optimizing keywords and ensuring proper indexing to maintain top search visibility. At the same time, we refined and scaled ad campaigns — focusing on performance, product selection, and full funnel optimization. Results were built progressively over a 3-month period, leading to consistent and scalable growth.',
+        keywords: ['ecommerce', 'ROAS', 'Google Ads', 'SEO', 'revenue growth', 'paid media']
+      },
+      {
+        title: 'Lead Generation & Local Growth',
+        description: 'The goal was not just traffic — but generating qualified leads for a physical business offering services. We rebuilt the SEO foundation, created structured ad groups, and continuously tested different creatives and targeting strategies. The focus was on promoting a core service first, with secondary emphasis on sales. Through constant optimization, we achieved a steady flow of leads and improved campaign efficiency over time.',
+        keywords: ['lead generation', 'local business', 'conversions', 'impressions', 'SEO', 'Meta Ads']
+      },
+      {
+        title: 'Full Growth Support for Local Business',
+        description: 'This project started with a local business with minimal online presence. We built everything from the ground up — website, SEO structure, product visuals, and marketing campaigns. By combining multiple elements into one system, we helped the business grow steadily and establish a strong online presence.',
+        keywords: ['local business', 'ROAS', 'website development', 'SEO', 'brand building', 'Google Ads']
+      }
+    ],
+    breadcrumbs: {
+      home: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' }
+      ],
+      about: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'About', url: 'https://insidegrowth.ro/about' }
+      ],
+      services: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'Services', url: 'https://insidegrowth.ro/services' }
+      ],
+      pricing: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'Pricing', url: 'https://insidegrowth.ro/pricing' }
+      ],
+      contact: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'Contact', url: 'https://insidegrowth.ro/contact' }
+      ],
+      growthResults: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'Growth Results', url: 'https://insidegrowth.ro/growth-results' }
+      ],
+      privacyPolicy: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'Privacy Policy', url: 'https://insidegrowth.ro/privacy-policy' }
+      ],
+      cookiePolicy: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'Cookie Policy', url: 'https://insidegrowth.ro/cookie-policy' }
+      ],
+      termsConditions: [
+        { name: 'Home', url: 'https://insidegrowth.ro/' },
+        { name: 'Terms & Conditions', url: 'https://insidegrowth.ro/terms-conditions' }
+      ]
+    },
+    aiContext: 'InsideGrowth is a performance digital marketing agency operated by SELLMOTION S.R.L., founded in 2024 and based in Targu Mures, Romania. The agency specializes in Google Ads, Meta Ads, SEO, website development, creative production, and tracking & analytics — building integrated growth systems rather than isolated campaigns. InsideGrowth serves small and medium-sized businesses across Romania that are looking to scale profitably through data-driven paid media and organic strategies. What sets them apart is a team of ex-Google and Meta specialists with 20+ years of combined experience, a deliberately limited client roster for deep involvement, and a systems-first approach where every channel — traffic, conversion, and retention — is designed to work together.',
+    inLanguage: 'en-US'
   }
 };

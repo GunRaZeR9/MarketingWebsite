@@ -5,6 +5,7 @@ import { RouterLink } from '@angular/router';
 import { ScrollRevealDirective } from '../../shared/directives/scroll-reveal.directive';
 import { LanguageService } from '../../core/services/language.service';
 import { SeoService } from '../../core/services/seo.service';
+import { SchemaService } from '../../core/services/schema.service';
 import { ServiceItem } from '../../core/models/site-content';
 import { StatDef, formatStat, runCounterAnimation } from '../../shared/animations/animations';
 
@@ -34,14 +35,19 @@ export class HomeComponent implements AfterViewInit, OnDestroy {
   private observer!: IntersectionObserver;
   private cancelCounter: () => void = () => {};
 
-  constructor(private readonly seo: SeoService) {
+  constructor(
+    private readonly seo: SeoService,
+    private readonly schema: SchemaService
+  ) {
     effect(() => {
-      const seoConfig = this.content().seo.home;
+      const content = this.content();
+      const seoConfig = content.seo.home;
       this.seo.update({
         title: seoConfig.title,
         description: seoConfig.description,
         keywords: seoConfig.keywords
       });
+      this.schema.injectPageSchemas(content.geo, 'home');
     });
   }
 
