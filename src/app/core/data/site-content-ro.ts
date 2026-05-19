@@ -741,47 +741,140 @@ export const SITE_CONTENT_RO: SiteContent = {
         postalCode: '540000',
         addressCountry: 'RO'
       },
-      sameAs: ['https://twitter.com/insideads'],
+      sameAs: [
+        'https://www.instagram.com/insidegrowth.ro',
+        'https://www.facebook.com/Insidegrowthro'
+      ],
       areaServed: ['Romania'],
       foundingDate: '2024',
       numberOfEmployees: 5
     },
     servicesSchema: [
       {
-        name: 'Audit & Analiza Cresterii',
-        description: 'Analizem intregul ecosistem de marketing — de la performanta website-ului si configurarea tracking-ului pana la campanii de reclame si SEO — pentru a identifica ce functioneaza, ce blocheaza si unde sunt cele mai mari oportunitati de crestere.',
+        name: 'Google Ads Management',
+        description: 'Gestionam si scalem campanii de inalta performanta pe Google — Search, Shopping si Performance Max — focusandu-ne pe trafic calificat si conversii masurabile.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#google-ads',
+        faqs: [
+          {
+            question: 'Cat de repede pot vedea rezultate din Google Ads?',
+            answer: 'Cele mai multe campanii incep sa genereze trafic calificat in prima saptamana. Date semnificative de performanta apar in primele 30-60 de zile. Imbunatatiri notabile ale ROI sunt vizibile in general dupa 60-90 de zile de optimizare continua.'
+          },
+          {
+            question: 'Ce tipuri de campanii Google Ads gestionati?',
+            answer: 'Gestionam intregul ecosistem Google Ads: campanii Search pentru trafic bazat pe intentie, Shopping si Performance Max pentru e-commerce, si Display pentru notorietatea brandului. Fiecare tip de campanie este selectat in functie de obiectivele specifice ale afacerii.'
+          },
+          {
+            question: 'Aveti un buget minim de reclame pentru a incepe?',
+            answer: 'Lucram cu afaceri la diferite niveluri de buget. Totusi, recomandam un buget lunar minim de 500€ pentru reclame pentru a genera suficiente date pentru optimizare. Pentru e-commerce si piete competitive, bugete mai mari accelereaza faza de invatare.'
+          }
+        ]
       },
       {
-        name: 'Media Platita Care Converteste',
-        description: 'Gestionam si scalem campanii de inalta performanta pe Google, Meta si TikTok — focusandu-ne pe aducerea de trafic calificat care se transforma in clienti reali si venituri.',
+        name: 'Meta Ads Management',
+        description: 'Gestionam si optimizam campanii platite pe Facebook si Instagram, construind strategii full-funnel care transforma audientele in clienti platitori.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#meta-ads',
+        faqs: [
+          {
+            question: 'Rulati reclame atat pe Facebook cat si pe Instagram?',
+            answer: 'Da. Meta Ads Manager ne permite sa rulam si optimizam campanii simultan pe Facebook si Instagram. Alocam buget si active creative in functie de locul unde audienta tinta este cea mai activa si unde datele de performanta arata cel mai bun randament.'
+          },
+          {
+            question: 'Va ocupati de creativele pentru campaniile Meta?',
+            answer: 'Putem lucra cu active creative existente sau colabora cu echipa noastra de Productie Creativa pentru a produce vizuale si continut video de inalta performanta, special concepute pentru plasamentele Meta.'
+          },
+          {
+            question: 'Cum abordati retargetingul pe Meta?',
+            answer: 'Construim audiente de retargeting structurate din vizitatorii website-ului, vizionatorii de video si datele de engagement folosind Meta Pixel si evenimente personalizate. Campaniile de retargeting sunt integrate in strategia full-funnel pentru a re-angaja audientele calde.'
+          }
+        ]
       },
       {
         name: 'SEO & Crestere Organica',
-        description: 'Optimizam website-ul pentru a se ranca mai sus, a atrage trafic consistent si a construi vizibilitate pe termen lung care sustine campaniile platite.',
+        description: 'Optimizam website-ul pentru motoarele de cautare prin SEO tehnic, imbunatatiri on-page, strategie de cuvinte cheie si optimizare de continut pentru a construi vizibilitate pe termen lung.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#seo',
+        faqs: [
+          {
+            question: 'Cat timp dureaza sa vad rezultate din SEO?',
+            answer: 'Rezultatele SEO depind de starea actuala a website-ului, competitie si targeturile de cuvinte cheie. Corectiile tehnice pot produce rezultate vizibile in 4-8 saptamani. Imbunatatirile de ranking pentru cuvinte cheie competitive dureaza in general 3-6 luni de optimizare consecventa.'
+          },
+          {
+            question: 'Ce include serviciul vostru de SEO?',
+            answer: 'Acoperim patru domenii principale: SEO tehnic (crawlabilitate, viteza, structura), optimizare on-page (meta tags, headings, continut), strategie de cuvinte cheie si intentie, si optimizare de continut. Prioritizam modificarile in functie de impact si aliniem SEO cu strategia de media platita.'
+          },
+          {
+            question: 'Oferiti SEO local pentru afaceri romanesti?',
+            answer: 'Da. Suntem specializati in SEO local si national pentru afaceri din Romania. Aceasta include optimizarea Google Business Profile, targetarea cuvintelor cheie locale, date structurate pentru entitatile locale si construirea vizibilitatii regionale — important mai ales pentru afaceri din Targu Mures, Cluj-Napoca, Bucuresti si Timisoara.'
+          }
+        ]
       },
       {
-        name: 'Website-uri Construite Pentru Conversie',
-        description: 'Proiectam si dezvoltam website-uri personalizate si platforme de e-commerce focusate pe viteza, experienta utilizatorului si conversie.',
+        name: 'Dezvoltare Website',
+        description: 'Proiectam si dezvoltam website-uri personalizate si platforme e-commerce focusate pe viteza, experienta utilizatorului si conversie — transformand vizitatorii in clienti platitori.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#website-development',
+        faqs: [
+          {
+            question: 'Cat timp dureaza sa construiti un website?',
+            answer: 'Un website de prezentare personalizat dureaza in general 3-5 saptamani de la briefing pana la lansare. Proiectele e-commerce cu structura mai complexa de produse, integrare plati si cerinte de performanta dureaza 6-10 saptamani.'
+          },
+          {
+            question: 'Website-urile pe care le construiti sunt optimizate pentru SEO si viteza?',
+            answer: 'Da. Fiecare website pe care il construim este dezvoltat cu Core Web Vitals, performanta mobile si structura SEO in minte de la inceput. Implementam ierarhie corecta de headings, markup schema, canonical tags, optimizare imagini si arhitectura de incarcare rapida.'
+          },
+          {
+            question: 'Oferiti suport dupa ce website-ul este live?',
+            answer: 'Da. Oferim suport continuu de mentenanta si optimizare ca parte a parteneriatelor noastre de crestere. Aceasta include monitorizarea performantei, actualizari de continut, reparatii tehnice si imbunatatiri iterative bazate pe comportamentul utilizatorilor si datele de conversie.'
+          }
+        ]
       },
       {
         name: 'Productie Creativa',
-        description: 'Cream continut de fotografie si video de inalta calitate proiectat sa captureze atentia si sa impulsioneze performanta pe canalele de marketing.',
+        description: 'Cream continut foto si video de inalta calitate — fotografie de produs, sesiuni de brand, productie video si creative pentru reclame — concepute sa capteze atentia si sa impulsioneze performanta.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#creative-production',
+        faqs: [
+          {
+            question: 'Ce tipuri de continut creativ produceti?',
+            answer: 'Producem fotografie de produs, sesiuni de brand si lifestyle, productie si editare video, si creative de performanta pentru Meta, Google si TikTok. Tot continutul este creat avand in vedere plasamentul final — asigurand ca performeaza in feed, in cautare si in medii de campanie.'
+          },
+          {
+            question: 'Cat dureaza un proiect de productie creativa?',
+            answer: 'O sesiune foto sau video standard cu editare dureaza 1-2 saptamani de la concept pana la livrare. Productii mai complexe cu mai multe scene, locatii sau volum mare de active pot dura 3-4 saptamani. Aliniem termenele de productie cu programele de lansare ale campaniilor.'
+          },
+          {
+            question: 'Clientii detin continutul produs?',
+            answer: 'Da. Toate activele creative produse in cadrul acordurilor noastre sunt detinute integral de client la livrare. Le puteti folosi pe orice canal — reclame platite, social organic, website sau print — fara restrictii de licenta.'
+          }
+        ]
       },
       {
-        name: 'Sisteme Tracking & Performanta',
-        description: 'Construim infrastructura din spatele marketingului — asigurand ca fiecare actiune este urmarita, masurata si optimizata pe baza datelor reale.',
+        name: 'Tracking & Analytics',
+        description: 'Construim infrastructura de date din spatele marketingului — Google Tag Manager, GA4, tracking conversii si raportare — asigurand ca fiecare decizie se bazeaza pe date precise.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#tracking-analytics',
+        faqs: [
+          {
+            question: 'Ce configurare de tracking implementati?',
+            answer: 'Implementam un stack complet de tracking: Google Tag Manager pentru managementul centralizat al tagurilor, GA4 pentru analytics bazat pe evenimente, Meta Pixel si Conversions API pentru atributia Facebook si Instagram, si tracking conversii Google Ads. Configuram si tracking e-commerce avansat si definitii de evenimente personalizate.'
+          },
+          {
+            question: 'Puteti repara tracking-ul stricat sau incorect?',
+            answer: 'Da. Auditurile si reparatiile de tracking sunt o parte esentiala a muncii noastre. Identificam evenimente lipsa, conversii duplicate, atributie incorecta si lacune in date — apoi implementam tracking curat si fiabil care ofera o imagine precisa a ceea ce genereaza rezultate reale.'
+          },
+          {
+            question: 'Oferiti raportare si dashboard-uri?',
+            answer: 'Da. Construim configuratii de raportare personalizate folosind GA4, Looker Studio si rapoarte native de platforma adaptate la metricile care conteaza pentru afacerea ta. Rapoartele sunt structurate sa arate performanta pe intreg funnel-ul — de la trafic si engagement pana la lead-uri, vanzari si ROAS.'
+          }
+        ]
       }
     ],
     pricingFaqs: [
@@ -918,7 +1011,13 @@ export const SITE_CONTENT_RO: SiteContent = {
       ]
     },
     aiContext: 'InsideGrowth este o agenție de marketing de performanță din România, specializată în Google Ads, Meta Ads, SEO și dezvoltare web orientată spre conversie. Fondată de foști specialiști Google și Meta, ajutăm afacerile locale, brandurile de e-commerce și companiile care doresc scalare să crească profitabil. Oferim sisteme complete de creștere — nu servicii izolate — cu focus pe ROAS, cost per conversie și venit real.',
-    inLanguage: 'ro-RO'
+    inLanguage: ['ro-RO', 'en-US'],
+    aggregateRating: {
+      ratingValue: 5,
+      reviewCount: 3,
+      bestRating: 5,
+      worstRating: 1
+    }
   },
   legal: {
     privacyPolicy: {

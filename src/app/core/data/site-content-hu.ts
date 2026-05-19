@@ -749,47 +749,140 @@ export const SITE_CONTENT_HU: SiteContent = {
         postalCode: '540000',
         addressCountry: 'RO'
       },
-      sameAs: ['https://twitter.com/insideads'],
+      sameAs: [
+        'https://www.instagram.com/insidegrowth.ro',
+        'https://www.facebook.com/Insidegrowthro'
+      ],
       areaServed: ['Romania'],
       foundingDate: '2024',
       numberOfEmployees: 5
     },
     servicesSchema: [
       {
-        name: 'Audit & Növekedés Elemzés',
-        description: 'Elemezzük az egész marketing ökoszisztémát — a webhely teljesítménytől és a nyomkövetési beállítástól a hirdetési kampányokig és a keresőoptimalizálásig — hogy azonosítsuk, mi működik, mi korlátoz és ahol a legnagyobb növekedési lehetőségek vannak.',
+        name: 'Google Ads Kezelés',
+        description: 'Magas teljesítményű Google Ads kampányokat kezelünk és skálázunk — Search, Shopping és Performance Max — a minőségi forgalomra és mérhető konverziókra összpontosítva.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#google-ads',
+        faqs: [
+          {
+            question: 'Milyen gyorsan láthatom az eredményeket a Google Ads-ből?',
+            answer: 'A legtöbb kampány az első héten belül elkezd minőségi forgalmat generálni. Jelentős teljesítményadatok az első 30-60 napon belül jelennek meg. A ROI érdemi javulása általában 60-90 napos folyamatos optimalizálás után válik láthatóvá.'
+          },
+          {
+            question: 'Milyen Google Ads kampánytípusokat kezel?',
+            answer: 'Kezeljük a teljes Google Ads ökoszisztémát: Search kampányok szándék alapú forgalomhoz, Shopping és Performance Max e-kereskedelemhez, Display a márkamegjelenítéshez. Minden kampánytípust az üzleti célok és a költségkeret alapján választunk ki.'
+          },
+          {
+            question: 'Van minimális hirdetési keret a kezdéshez?',
+            answer: 'Különböző költségvetési szintű vállalkozásokkal dolgozunk. Azonban legalább havi 500€ hirdetési keretet ajánlunk, hogy elegendő adatot generáljunk az érdemi optimalizáláshoz. E-kereskedelem és versenyző piacok esetén magasabb keretek gyorsítják a tanulási fázist.'
+          }
+        ]
       },
       {
-        name: 'Fizetett Média, Amely Konvertál',
-        description: 'Magas teljesítményű kampányokat kezelünk és skálázunk a Google, Meta és TikTok között — a minőségi forgalom felkeltésére összpontosítva, amely valódi ügyfelekké és bevételekké alakul.',
+        name: 'Meta Ads Kezelés',
+        description: 'Facebook és Instagram fizetett kampányokat futtatunk és optimalizálunk, teljes tölcsér stratégiákat építve, amelyek a közönséget fizető ügyfelekké alakítják.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#meta-ads',
+        faqs: [
+          {
+            question: 'Futtat hirdetéseket mind a Facebookon, mind az Instagramon?',
+            answer: 'Igen. A Meta Ads Manager lehetővé teszi, hogy egyszerre futtassunk és optimalizáljunk kampányokat Facebookon és Instagramon. A költségvetést és a kreatív anyagokat aszerint osztjuk el, hogy a célközönség hol a legaktívabb és ahol a teljesítményadatok a legjobb megtérülést mutatják.'
+          },
+          {
+            question: 'Kezelik a hirdetési kreatívokat a Meta kampányokhoz?',
+            answer: 'Dolgozhatunk meglévő kreatív anyagokkal, vagy együttműködhetünk Kreatív Produkció csapatunkkal, hogy magas teljesítményű vizuális tartalmakat és videókat készítsünk, amelyek kifejezetten Meta elhelyezésekhez készülnek.'
+          },
+          {
+            question: 'Hogyan közelítik meg az újracélzást a Metán?',
+            answer: 'Strukturált újracélzási közönségeket építünk webhelylátogatókból, videónézőkből és engagement adatokból a Meta Pixel és egyedi események segítségével. Az újracélzási kampányok a teljes tölcsér stratégiába kerülnek, hogy újra bevonják a meleg közönségeket és csökkentsék a konverziónkénti költséget.'
+          }
+        ]
       },
       {
         name: 'SEO és Szerves Növekedés',
-        description: 'Optimalizáljuk a webhelyet, hogy magasabbra rangsoroljuk, konzisztens forgalmat vonzz és hosszú távú láthatóságot építsük, amely támogatja a fizetett kampányokat.',
+        description: 'Webhelyet optimalizálunk keresőmotorokhoz technikai SEO, on-page fejlesztések, kulcsszó stratégia és tartalomoptimalizálás révén, hogy hosszú távú láthatóságot építsünk.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#seo',
+        faqs: [
+          {
+            question: 'Mennyi ideig tart az eredmények látásához a SEO-ból?',
+            answer: 'A SEO eredmények a webhely jelenlegi állapotától, a versenytől és a kulcsszó céloktól függenek. Technikai javítások és indexelési fejlesztések 4-8 héten belül látható eredményeket hozhatnak. A versenyző kulcsszavaknál a rangsorolási fejlesztések jellemzően 3-6 hónapos következetes optimalizálást igényelnek.'
+          },
+          {
+            question: 'Mit tartalmaz a SEO szolgáltatásuk?',
+            answer: 'SEO munkánk négy fő területet fed le: technikai SEO (feltérképezhetőség, sebesség, struktúra), on-page optimalizálás (meta tagek, fejlécek, tartalom), kulcsszó és szándék stratégia, és tartalomoptimalizálás. Módosításokat hatás alapján prioritizálunk és a SEO-t összehangoljuk a fizetett média stratégiával.'
+          },
+          {
+            question: 'Kínálnak helyi SEO-t romániai vállalkozásoknak?',
+            answer: 'Igen. Specializálódtunk helyi és nemzeti SEO-ra romániai vállalkozások számára. Ez magában foglalja a Google Business Profile optimalizálást, helyi kulcsszó célzást, strukturált adatokat helyi entitásokhoz és regionális láthatóság kiépítését — különösen fontos Targu Mures, Kolozsvár, Bukarest és Temesvár városokban.'
+          }
+        ]
       },
       {
-        name: 'Konverzióra Tervezett Webhelyek',
-        description: 'Egyedi weboldalakat és e-kereskedelmi platformokat tervezünk és fejlesztünk, amelyek a sebességre, felhasználói élményre és konverzióra összpontosítanak.',
+        name: 'Webhelyfejlesztés',
+        description: 'Egyedi weboldalakat és e-kereskedelmi platformokat tervezünk és fejlesztünk, a sebességre, felhasználói élményre és konverzióra összpontosítva — a látogatókat fizető ügyfelekké alakítva.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#website-development',
+        faqs: [
+          {
+            question: 'Mennyi ideig tart egy webhely megépítése?',
+            answer: 'Egy egyedi bemutató webhely általában 3-5 hetet vesz igénybe a tájékoztatástól az indításig. Az összetettebb termékstruktúrával, fizetési integrációval és teljesítménykövetelményekkel rendelkező e-kereskedelmi projektek 6-10 hetet igényelnek. Az időkeret a hatókörtől, tartalomkészültségtől és visszajelzési ciklusoktól függ.'
+          },
+          {
+            question: 'Az Ön által épített webhelyek SEO és sebesség szempontjából optimalizáltak?',
+            answer: 'Igen. Minden általunk épített webhelyet a Core Web Vitals, mobil teljesítmény és SEO struktúra szem előtt tartásával fejlesztünk az első naptól. Megfelelő fejléc hierarchiát, séma jelölést, kanonikus tageket, képoptimalizálást és gyors betöltési architektúrát implementálunk.'
+          },
+          {
+            question: 'Nyújtanak-e támogatást a webhely elindítása után?',
+            answer: 'Igen. Folyamatos karbantartási és optimalizálási támogatást kínálunk növekedési partneri kapcsolataink részeként. Ez magában foglalja a teljesítmény monitorozást, tartalomfrissítéseket, technikai javításokat és iteratív fejlesztéseket felhasználói viselkedés és konverziós adatok alapján.'
+          }
+        ]
       },
       {
         name: 'Kreatív Produkció',
-        description: 'Magas minőségű fotó- és videótartalmakat készítünk, amelyeket úgy terveztünk, hogy felhívjuk a figyelmet és javítsuk a teljesítményt a marketing csatornákon.',
+        description: 'Magas minőségű fotó- és videótartalmakat készítünk — termékkép, márka és helyszíni fotózás, videóprodukció és szerkesztés, hirdetési kreatívok — figyelemfelkeltésre és teljesítmény javítására tervezve.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#creative-production',
+        faqs: [
+          {
+            question: 'Milyen típusú kreatív tartalmakat állítanak elő?',
+            answer: 'Termékkép készítést, márka és életstílus fotózást, videóprodukciót és szerkesztést, valamint teljesítményorientált hirdetési kreatívokat készítünk Meta, Google és TikTok számára. Minden tartalom az elhelyezés szem előtt tartásával készül — biztosítva, hogy feedben, keresésben és kampánykörnyezetben egyaránt teljesítsen.'
+          },
+          {
+            question: 'Mennyi ideig tart egy kreatív produkciós projekt?',
+            answer: 'Egy standard fotó vagy videó forgatás szerkesztéssel 1-2 hetet vesz igénybe a koncepciótól a szállításig. Összetettebb produkciók több jelenettel, helyszínnel vagy nagyobb anyagmennyiséggel 3-4 hetet igényelhetnek. A termelési határidőket a kampányindítási ütemtervekhez igazítjuk.'
+          },
+          {
+            question: 'Az ügyfelek tulajdonolják-e az elkészített tartalmat?',
+            answer: 'Igen. Megállapodásaink keretében előállított összes kreatív anyag teljes egészében az ügyfél tulajdona szállításkor. Bármely csatornán használhatják — fizetett hirdetések, organikus közösségi média, webhely vagy nyomtatás — licenckorlátozások nélkül.'
+          }
+        ]
       },
       {
-        name: 'Nyomkövetés és Teljesítményi Rendszerek',
-        description: 'Felépítjük a marketinged mögött lévő infrastruktúrát — biztosítva, hogy minden cselekvés nyomon követett, mért és valós adatok alapján optimalizált.',
+        name: 'Nyomkövetés és Analitika',
+        description: 'Megépítjük a marketinged mögötti adatinfrastruktúrát — Google Tag Manager, GA4, konverzió nyomkövetés és riportálás — biztosítva, hogy minden döntés pontos adatokon alapuljon.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#tracking-analytics',
+        faqs: [
+          {
+            question: 'Milyen nyomkövetési beállítást implementálnak?',
+            answer: 'Teljes nyomkövetési stacket implementálunk: Google Tag Manager a centralizált tag kezeléshez, GA4 esemény alapú analitikához, Meta Pixel és Conversions API Facebook és Instagram attribution-höz, és Google Ads konverzió nyomkövetés. Fejlett e-kereskedelmi nyomkövetést és egyedi eseménydefiníciókat is konfigurálunk.'
+          },
+          {
+            question: 'Meg tudják javítani a hibás vagy pontatlan nyomkövetést?',
+            answer: 'Igen. A nyomkövetési auditok és javítások munkánk alapvető részét képezik. Azonosítjuk a hiányzó eseményeket, dupla konverziókat, helytelen attribution-t és adathézagokat — majd tiszta, megbízható nyomkövetést implementálunk, amely pontos képet ad arról, mi valóban generál eredményeket.'
+          },
+          {
+            question: 'Nyújtanak riportálást és irányítópultokat?',
+            answer: 'Igen. Egyedi riportálási beállításokat építünk GA4, Looker Studio és platform-natív riportok segítségével, amelyek az üzlet számára fontos metrikákra szabottak. A riportok a teljes tölcsér teljesítményét mutatják — a forgalomtól és engagement-től a leadekig, eladásokig és hirdetési megtérülésig.'
+          }
+        ]
       }
     ],
     pricingFaqs: [
@@ -926,7 +1019,13 @@ export const SITE_CONTENT_HU: SiteContent = {
       ]
     },
     aiContext: 'Az InsideGrowth egy romániai teljesítménymarketing-ügynökség, amely Google Ads, Meta Ads, SEO és konverzióközpontú webfejlesztés területén specializálódott. A csapat volt Google és Meta szakemberekből áll, és helyi vállalkozások, e-kereskedelmi márkák és növekedési potenciállal rendelkező cégek számára épít teljes növekedési rendszereket.',
-    inLanguage: 'hu-HU'
+    inLanguage: ['ro-RO', 'en-US', 'hu-HU'],
+    aggregateRating: {
+      ratingValue: 5,
+      reviewCount: 3,
+      bestRating: 5,
+      worstRating: 1
+    }
   },
   legal: {
     privacyPolicy: {

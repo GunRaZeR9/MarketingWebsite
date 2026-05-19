@@ -216,6 +216,15 @@ export interface GeoServiceSchema {
   description: string;
   serviceType: string;
   areaServed: string;
+  url?: string;
+  faqs?: GeoFaqSchema[];
+}
+
+export interface GeoAggregateRatingSchema {
+  ratingValue: number;
+  reviewCount: number;
+  bestRating: number;
+  worstRating: number;
 }
 
 export interface GeoFaqSchema {
@@ -261,7 +270,8 @@ export interface GeoSchemaData {
   caseStudies: GeoCaseStudySchema[];
   breadcrumbs: GeoBreadcrumbs;
   aiContext: string;
-  inLanguage: string;
+  inLanguage: string[];
+  aggregateRating?: GeoAggregateRatingSchema;
 }
 
 // ─── Standard SEO interfaces ──────────────────────────────────────────────────

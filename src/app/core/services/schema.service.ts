@@ -47,6 +47,9 @@ export class SchemaService {
         this.inject('schema-organization', buildOrganization(geo.organization, geo.inLanguage));
         this.inject('schema-localbusiness', buildLocalBusiness(geo.organization, geo.inLanguage));
         this.inject('schema-website', buildWebSite(geo.aiContext));
+        if (geo.aggregateRating) {
+          this.inject('schema-aggregate-rating', buildAggregateRating(geo));
+        }
         break;
       case 'about':
         this.inject('schema-organization-about', buildOrganization(geo.organization, geo.inLanguage));
@@ -54,6 +57,7 @@ export class SchemaService {
         break;
       case 'services':
         this.inject('schema-services', buildServices(geo.servicesSchema, geo.organization, geo.inLanguage));
+        this.inject('schema-faq-services', buildServiceFaqs(geo.servicesSchema, geo.inLanguage));
         break;
       case 'pricing':
         this.inject('schema-faq-pricing', buildFaq(geo.pricingFaqs, geo.inLanguage));
@@ -64,6 +68,9 @@ export class SchemaService {
         break;
       case 'growthResults':
         this.inject('schema-articles', buildArticles(geo.caseStudies, geo.organization, geo.inLanguage));
+        if (geo.aggregateRating) {
+          this.inject('schema-aggregate-rating', buildAggregateRating(geo));
+        }
         break;
     }
   }
@@ -78,14 +85,32 @@ export class SchemaService {
   }
 }
 
+// ─── Helpers ──────────────────────────────────────────────────────────────────
+
+function slugify(name: string): string {
+  return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+}
+
+// ─── Service relationship graph (for isRelatedTo cross-linking) ───────────────
+
+const SERVICE_RELATIONS: Record<string, string[]> = {
+  'google-ads-management':    ['meta-ads-management', 'seo-organic-growth', 'tracking-analytics'],
+  'meta-ads-management':      ['google-ads-management', 'creative-production', 'tracking-analytics'],
+  'seo-organic-growth':       ['google-ads-management', 'website-development', 'tracking-analytics'],
+  'website-development':      ['seo-organic-growth', 'tracking-analytics'],
+  'creative-production':      ['meta-ads-management', 'google-ads-management'],
+  'tracking-analytics':       ['google-ads-management', 'meta-ads-management', 'seo-organic-growth'],
+};
+
 // ─── Schema builders ──────────────────────────────────────────────────────────
 
-function buildOrganization(org: GeoOrganizationSchema, lang: string): object {
+function buildOrganization(org: GeoOrganizationSchema, lang: string[]): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': `${BASE_URL}/#organization`,
     name: org.name,
+    legalName: 'SELLMOTION S.R.L.',
     url: org.url,
     logo: {
       '@type': 'ImageObject',
@@ -104,21 +129,35 @@ function buildOrganization(org: GeoOrganizationSchema, lang: string): object {
       postalCode: org.address.postalCode,
       addressCountry: org.address.addressCountry,
     },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: org.phone,
+      contactType: 'customer service',
+      email: org.email,
+      availableLanguage: ['Romanian', 'English', 'Hungarian'],
+    },
     sameAs: org.sameAs,
     areaServed: org.areaServed,
     foundingDate: org.foundingDate,
     numberOfEmployees: { '@type': 'QuantitativeValue', value: org.numberOfEmployees },
+    knowsAbout: [
+      'Google Ads', 'Meta Ads', 'SEO', 'Performance Marketing',
+      'E-commerce Growth', 'Lead Generation', 'Website Development',
+      'Tracking & Analytics', 'Conversion Rate Optimization', 'Digital Marketing Strategy',
+    ],
     inLanguage: lang,
   };
 }
 
-function buildLocalBusiness(org: GeoOrganizationSchema, lang: string): object {
+function buildLocalBusiness(org: GeoOrganizationSchema, lang: string[]): object {
   return {
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'ProfessionalService'],
     '@id': `${BASE_URL}/#localbusiness`,
     name: org.name,
+    legalName: 'SELLMOTION S.R.L.',
     url: org.url,
+    image: org.logo,
     telephone: org.phone,
     email: org.email,
     description: org.description,
@@ -130,8 +169,11 @@ function buildLocalBusiness(org: GeoOrganizationSchema, lang: string): object {
       postalCode: org.address.postalCode,
       addressCountry: org.address.addressCountry,
     },
+    hasMap: 'https://www.google.com/maps/place/Targu+Mures,+Romania',
     areaServed: org.areaServed.map(area => ({ '@type': 'Country', name: area })),
     priceRange: '€€',
+    currenciesAccepted: 'EUR',
+    paymentAccepted: 'Invoice',
     openingHoursSpecification: [
       {
         '@type': 'OpeningHoursSpecification',
@@ -140,6 +182,7 @@ function buildLocalBusiness(org: GeoOrganizationSchema, lang: string): object {
         closes: '18:00',
       },
     ],
+    sameAs: org.sameAs,
     inLanguage: lang,
     parentOrganization: { '@id': `${BASE_URL}/#organization` },
   };
@@ -152,7 +195,9 @@ function buildWebSite(description: string): object {
     '@id': `${BASE_URL}/#website`,
     url: BASE_URL,
     name: 'InsideGrowth',
+    alternateName: 'InsideGrowth.ro',
     description,
+    inLanguage: ['ro-RO', 'en-US'],
     publisher: { '@id': `${BASE_URL}/#organization` },
     potentialAction: {
       '@type': 'SearchAction',
@@ -191,27 +236,79 @@ function buildPersons(team: GeoPersonSchema[], orgUrl: string): object {
 function buildServices(
   services: GeoServiceSchema[],
   org: GeoOrganizationSchema,
-  lang: string,
+  lang: string[],
 ): object {
   return {
     '@context': 'https://schema.org',
-    '@graph': services.map(svc => ({
-      '@type': 'Service',
-      name: svc.name,
-      description: svc.description,
-      serviceType: svc.serviceType,
-      provider: {
-        '@type': 'Organization',
-        name: org.name,
-        url: org.url,
+    '@graph': services.map(svc => {
+      const slug = slugify(svc.name);
+      const serviceId = `${BASE_URL}/#${slug}-service`;
+      const related = (SERVICE_RELATIONS[slug] ?? []).map(rel => ({
+        '@id': `${BASE_URL}/#${rel}-service`,
+      }));
+
+      const node: Record<string, unknown> = {
+        '@type': 'Service',
+        '@id': serviceId,
+        name: svc.name,
+        description: svc.description,
+        serviceType: svc.serviceType,
+        url: svc.url ?? `${BASE_URL}/services`,
+        provider: {
+          '@type': 'Organization',
+          '@id': `${BASE_URL}/#organization`,
+          name: org.name,
+          url: org.url,
+        },
+        areaServed: { '@type': 'Country', name: svc.areaServed },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'EUR',
+          availability: 'https://schema.org/InStock',
+          url: svc.url ?? `${BASE_URL}/services`,
+          seller: { '@id': `${BASE_URL}/#organization` },
+        },
+        inLanguage: lang,
+      };
+
+      if (related.length > 0) {
+        node['isRelatedTo'] = related;
+      }
+
+      if (svc.faqs && svc.faqs.length > 0) {
+        node['hasPart'] = {
+          '@type': 'FAQPage',
+          mainEntity: svc.faqs.map(faq => ({
+            '@type': 'Question',
+            name: faq.question,
+            acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+          })),
+        };
+      }
+
+      return node;
+    }),
+  };
+}
+
+function buildServiceFaqs(services: GeoServiceSchema[], lang: string[]): object {
+  const allFaqs: GeoFaqSchema[] = services.flatMap(svc => svc.faqs ?? []);
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    inLanguage: lang,
+    mainEntity: allFaqs.map(faq => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: faq.answer,
       },
-      areaServed: svc.areaServed,
-      inLanguage: lang,
     })),
   };
 }
 
-function buildFaq(faqs: GeoFaqSchema[], lang: string): object {
+function buildFaq(faqs: GeoFaqSchema[], lang: string[]): object {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -230,7 +327,7 @@ function buildFaq(faqs: GeoFaqSchema[], lang: string): object {
 function buildArticles(
   studies: GeoCaseStudySchema[],
   org: GeoOrganizationSchema,
-  lang: string,
+  lang: string[],
 ): object {
   return {
     '@context': 'https://schema.org',
@@ -249,5 +346,22 @@ function buildArticles(
       inLanguage: lang,
       datePublished: org.foundingDate,
     })),
+  };
+}
+
+function buildAggregateRating(geo: GeoSchemaData): object {
+  const rating = geo.aggregateRating!;
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': `${BASE_URL}/#localbusiness`,
+    name: geo.organization.name,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: rating.ratingValue,
+      reviewCount: rating.reviewCount,
+      bestRating: rating.bestRating,
+      worstRating: rating.worstRating,
+    },
   };
 }

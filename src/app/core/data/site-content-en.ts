@@ -1001,7 +1001,8 @@ export const SITE_CONTENT_EN: SiteContent = {
         addressCountry: 'RO'
       },
       sameAs: [
-        'https://twitter.com/insideads'
+        'https://www.instagram.com/insidegrowth.ro',
+        'https://www.facebook.com/Insidegrowthro'
       ],
       areaServed: ['Romania'],
       foundingDate: '2024',
@@ -1012,37 +1013,127 @@ export const SITE_CONTENT_EN: SiteContent = {
         name: 'Google Ads Management',
         description: 'We manage and scale high-performance Google Ads campaigns — Search, Shopping, and Performance Max — focused on qualified traffic and measurable conversions.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#google-ads',
+        faqs: [
+          {
+            question: 'How quickly can I see results from Google Ads?',
+            answer: 'Most campaigns begin generating qualified traffic within the first week. Meaningful performance data — and the ability to optimize toward consistent results — typically emerges within the first 30 to 60 days. Significant ROI improvements are usually visible within 60 to 90 days of continuous optimization.'
+          },
+          {
+            question: 'What Google Ads campaign types do you manage?',
+            answer: 'We manage the full Google Ads ecosystem: Search campaigns for intent-based traffic, Shopping and Performance Max for e-commerce, and Display for brand awareness. Each campaign type is selected and structured based on your specific business goals and budget.'
+          },
+          {
+            question: 'Do you require a minimum ad spend to get started?',
+            answer: 'We work with businesses at various budget levels. However, we recommend a minimum monthly ad spend of €500 to generate enough data for meaningful optimization. For e-commerce and competitive markets, higher budgets accelerate the learning phase and produce results faster.'
+          }
+        ]
       },
       {
         name: 'Meta Ads Management',
         description: 'We run and optimize paid campaigns across Facebook and Instagram, building full-funnel strategies that convert audiences into paying customers.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#meta-ads',
+        faqs: [
+          {
+            question: 'Do you run ads on both Facebook and Instagram?',
+            answer: 'Yes. Meta Ads Manager allows us to run and optimize campaigns across both Facebook and Instagram simultaneously. We allocate budget and creative assets based on where your target audience is most active and where performance data shows the best return.'
+          },
+          {
+            question: 'Do you handle ad creative for Meta campaigns?',
+            answer: 'We can work with existing creative assets or collaborate with our Creative Production team to produce high-performance visuals and video content specifically designed for Meta placements. Ad creative is one of the most important performance variables in Meta campaigns.'
+          },
+          {
+            question: 'How do you approach retargeting on Meta?',
+            answer: 'We build structured retargeting audiences from website visitors, video viewers, and engagement data using the Meta Pixel and custom events. Retargeting campaigns are layered into the full funnel strategy to re-engage warm audiences and reduce cost per conversion.'
+          }
+        ]
       },
       {
         name: 'SEO & Organic Growth',
         description: 'We optimize websites for search engines through technical SEO, on-page improvements, keyword strategy, and content optimization to build long-term visibility.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#seo',
+        faqs: [
+          {
+            question: 'How long does it take to see results from SEO?',
+            answer: 'SEO results depend on the current state of the website, competition, and the keyword targets. Technical fixes and indexing improvements can produce visible results within 4 to 8 weeks. Ranking improvements for competitive keywords typically take 3 to 6 months of consistent optimization.'
+          },
+          {
+            question: 'What does your SEO service include?',
+            answer: 'Our SEO work covers four core areas: technical SEO (crawlability, speed, structure), on-page optimization (meta tags, headings, content), keyword and intent strategy, and content optimization. We prioritize changes based on impact and align SEO with your paid media strategy for compounding results.'
+          },
+          {
+            question: 'Do you offer local SEO for Romanian businesses?',
+            answer: 'Yes. We specialize in local and national SEO for Romanian businesses. This includes Google Business Profile optimization, local keyword targeting, structured data for local entities, and building regional visibility — especially important for businesses in cities like Targu Mures, Cluj-Napoca, Bucharest, and Timisoara.'
+          }
+        ]
       },
       {
         name: 'Website Development',
         description: 'We design and develop custom websites and e-commerce platforms focused on speed, user experience, and conversion — turning visitors into paying customers.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#website-development',
+        faqs: [
+          {
+            question: 'How long does it take to build a website?',
+            answer: 'A custom presentation website typically takes 3 to 5 weeks from briefing to launch. E-commerce projects with more complex product structure, payment integration, and performance requirements take 6 to 10 weeks. Timeline depends on scope, content readiness, and feedback cycles.'
+          },
+          {
+            question: 'Are the websites you build optimized for SEO and speed?',
+            answer: 'Yes. Every website we build is developed with Core Web Vitals, mobile performance, and SEO structure in mind from day one. We implement proper heading hierarchy, schema markup, canonical tags, image optimization, and fast-loading architecture — so the site is ready to rank and convert from launch.'
+          },
+          {
+            question: 'Do you provide support after the website goes live?',
+            answer: 'Yes. We offer ongoing maintenance and optimization support as part of our growth partnerships. This includes performance monitoring, content updates, technical fixes, and iterative improvements based on user behavior and conversion data.'
+          }
+        ]
       },
       {
         name: 'Creative Production',
         description: 'We create high-quality photo and video content — product photography, brand shoots, video production, and ad creatives — designed to capture attention and drive performance.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#creative-production',
+        faqs: [
+          {
+            question: 'What types of creative content do you produce?',
+            answer: 'We produce product photography, brand and lifestyle shoots, video production and editing, and performance-focused ad creatives for Meta, Google, and TikTok. All content is created with the end placement in mind — ensuring it performs in feed, in search, and in campaign environments.'
+          },
+          {
+            question: 'How long does a creative production project take?',
+            answer: 'A standard photo or video shoot with editing takes 1 to 2 weeks from concept to delivery. More complex productions with multiple scenes, locations, or volume of assets may take 3 to 4 weeks. We align production timelines with campaign launch schedules.'
+          },
+          {
+            question: 'Do clients own the content produced?',
+            answer: 'Yes. All creative assets produced under our agreements are fully owned by the client upon delivery. You can use them across any channel — paid ads, organic social, website, or print — without licensing restrictions.'
+          }
+        ]
       },
       {
         name: 'Tracking & Analytics',
         description: 'We build the data infrastructure behind your marketing — Google Tag Manager, GA4, conversion tracking, and reporting — ensuring every decision is based on accurate data.',
         serviceType: 'DigitalMarketingService',
-        areaServed: 'Romania'
+        areaServed: 'Romania',
+        url: 'https://insidegrowth.ro/services#tracking-analytics',
+        faqs: [
+          {
+            question: 'What tracking setup do you implement?',
+            answer: 'We implement a full tracking stack: Google Tag Manager for centralized tag management, GA4 for event-based analytics, Meta Pixel and Conversions API for Facebook and Instagram attribution, and Google Ads conversion tracking. We also configure enhanced e-commerce tracking and custom event definitions aligned with your business goals.'
+          },
+          {
+            question: 'Can you fix broken or inaccurate tracking?',
+            answer: 'Yes. Tracking audits and repairs are a core part of our work. We identify missing events, duplicate conversions, incorrect attribution, and data gaps — then implement clean, reliable tracking that gives you an accurate picture of what is actually driving results.'
+          },
+          {
+            question: 'Do you provide reporting and dashboards?',
+            answer: 'Yes. We build custom reporting setups using GA4, Looker Studio, and platform-native reports tailored to the metrics that matter for your business. Reports are structured to show performance across the full funnel — from traffic and engagement to leads, sales, and return on ad spend.'
+          }
+        ]
       }
     ],
     pricingFaqs: [
@@ -1179,6 +1270,12 @@ export const SITE_CONTENT_EN: SiteContent = {
       ]
     },
     aiContext: 'InsideGrowth is a performance digital marketing agency operated by SELLMOTION S.R.L., founded in 2024 and based in Targu Mures, Romania. The agency specializes in Google Ads, Meta Ads, SEO, website development, creative production, and tracking & analytics — building integrated growth systems rather than isolated campaigns. InsideGrowth serves small and medium-sized businesses across Romania that are looking to scale profitably through data-driven paid media and organic strategies. What sets them apart is a team of ex-Google and Meta specialists with 20+ years of combined experience, a deliberately limited client roster for deep involvement, and a systems-first approach where every channel — traffic, conversion, and retention — is designed to work together.',
-    inLanguage: 'en-US'
+    inLanguage: ['ro-RO', 'en-US'],
+    aggregateRating: {
+      ratingValue: 5,
+      reviewCount: 3,
+      bestRating: 5,
+      worstRating: 1
+    }
   }
 };
