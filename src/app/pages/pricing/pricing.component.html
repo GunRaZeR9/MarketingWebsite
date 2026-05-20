@@ -45,6 +45,30 @@
         {{ plan.ctaLabel }} <span class="arrow">→</span>
       </a>
     </article>
+
+    <!-- ── CUSTOM WEBSITE (Bespoke) card ── -->
+    <article class="card plan-card plan-card--bespoke sr" scrollReveal [delay]="360">
+      <span class="bespoke-eyebrow">
+        <span class="bespoke-eyebrow__line"></span>
+        {{ content().ui.pricingBespokeEyebrow }}
+      </span>
+      <h3>{{ content().ui.pricingBespokeTitle }}</h3>
+      <div class="plan-price">
+        <span class="price-amount gradient-text">{{ content().ui.pricingBespokePrice }}</span>
+      </div>
+      <p class="plan-desc">{{ content().ui.pricingBespokeDescription }}</p>
+      <ul class="plan-features">
+        <li *ngFor="let feature of content().ui.pricingBespokeFeatures">{{ feature }}</li>
+      </ul>
+      <div class="plan-divider"></div>
+      <a
+        class="button button--accent"
+        routerLink="/contact"
+        [queryParams]="{ plan: 'Bespoke website(Custom)', budget: '10000-plus' }"
+      >
+        {{ content().ui.pricingBespokeCta }} <span class="arrow">→</span>
+      </a>
+    </article>
   </section>
 
   <section class="panel comparison-panel" scrollReveal [delay]="120">

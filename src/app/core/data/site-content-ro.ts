@@ -480,6 +480,7 @@ export const SITE_CONTENT_RO: SiteContent = {
       growthResults: 'Rezultate de Crestere',
       services: 'Servicii',
       pricing: 'Preturi',
+      portfolio: 'Portofoliu',
       contact: 'Contact'
     },
     languageLabel: 'Limba',
@@ -637,7 +638,28 @@ export const SITE_CONTENT_RO: SiteContent = {
       'Analizez datele tale, audit performanta si optimizez continuu campaniile pentru a scala ce functioneaza si a elimina ce nu.',
     homeCredentialsBadge: 'Echipa Certificata Google & Meta · 20+ Ani Experienta Combinata',
     homeMiniCta: 'Gata sa iti scalezi afacerea?',
-    homeModalCta: 'Incepe Acum'
+    homeModalCta: 'Incepe Acum',
+    homePortfolioEyebrow: 'Proiectele Noastre',
+    homePortfolioTitle: 'Proiecte Recente',
+    homePortfolioSubtitle: 'Site-uri și experiențe digitale create pentru clienții noștri.',
+    homePortfolioViewAll: 'Vezi Toate Proiectele',
+    homePortfolioViewProject: 'Vezi Proiectul',
+    portfolioEyebrow: 'Proiectele Noastre',
+    portfolioHeroLead: 'O selecție de site-uri și experiențe digitale pe care le-am proiectat și construit — fiecare creat pentru performanță și conversie.',
+    portfolioViewGallery: 'Vezi Galeria',
+    pricingBespokeEyebrow: 'Personalizat',
+    pricingBespokeTitle: 'Website Personalizat',
+    pricingBespokePrice: 'La Cerere',
+    pricingBespokeDescription: 'Un website complet personalizat, adaptat brandului, obiectivelor și publicului tău. De la site-uri de prezentare la platforme e-commerce — construit pentru performanță.',
+    pricingBespokeCta: 'Discutăm Proiectul',
+    pricingBespokeFeatures: [
+      'Design personalizat de la zero',
+      'Construcție responsive mobile-first',
+      'Arhitectură optimizată SEO',
+      'Integrare CMS (opțional)',
+      'Audit performanță & accesibilitate',
+      'Predare completă + documentație',
+    ],
   },
   portfolio: [
     {
@@ -677,6 +699,34 @@ export const SITE_CONTENT_RO: SiteContent = {
       description:
         'Credem ca performanta provine din parteneriate puternice. De aceea lucram cu un numar limitat de clienti — afaceri unde stim ca putem crea impact real si sa creastem impreuna. Fiecare proiect este construit pe incredere, comunicare si colaborare pe termen lung. Rezultatele variaza in functie de industrie, buget si conditii de piata. Focus-ul nostru este intotdeauna acelasi: construirea sistemelor care scaleaza ce functioneaza. Vom analiza configuratia actuala si va arata exact unde exista oportunitati de crestere. Fara angajament. Doar insighturi actionabile.',
       imagePosition: 'right'
+    },
+  ],
+  websitePortfolio: [
+    {
+      id: 'insidegrowth',
+      title: 'InsideGrowth — Marketing Agency Website',
+      subtitle: 'Angular 21 SPA with i18n, SEO, and EmailJS lead capture',
+      description:
+        'A fully static Angular SPA for InsideGrowth, a performance-driven digital marketing agency. Signal-based i18n with EN/RO/HU support, structured data (JSON-LD), EmailJS contact form with dual notifications, and CI/CD deployment to Hostico shared hosting via GitHub Actions.',
+      technologies: ['Angular 21', 'TypeScript', 'SCSS', 'Nx', 'EmailJS', 'GitHub Actions'],
+      image: 'images/portfolio/inside-growth.webp',
+      galleryImages: ['images/portfolio/inside-growth.webp'],
+      liveUrl: 'https://insidegrowth.ro',
+      imagePosition: 'right',
+      metrics: ['Angular 21 SPA', 'EN / RO / HU i18n', 'EmailJS Forms'],
+    },
+    {
+      id: 'viilamunte',
+      title: 'ViiLa Munte — Mountain Cabin Website',
+      subtitle: 'Booking & marketing site for an exclusive Romanian mountain retreat',
+      description:
+        'Marketing and booking website for ViiLa Munte, an exclusive mountain cabin near Toplița (Munții Călimani). Features an availability calendar synced via PHP iCal proxy, bilingual support (RO/EN) with ngx-translate, Google Reviews integration, a lazy-loaded booking form with click-to-load Google Maps facade, and a WebP image optimization pipeline.',
+      technologies: ['Angular 21', 'TypeScript', 'SCSS', 'ngx-translate', 'angular-calendar', 'Sharp'],
+      image: 'images/portfolio/viilamunte.webp',
+      galleryImages: ['images/portfolio/viilamunte.webp'],
+      liveUrl: 'https://viilamunte.ro',
+      imagePosition: 'left',
+      metrics: ['Bilingual RO / EN', 'iCal Availability', 'WebP Pipeline'],
     },
   ],
   seo: {
@@ -724,7 +774,12 @@ export const SITE_CONTENT_RO: SiteContent = {
       title: 'Termeni si Conditii',
       description: 'Citeste termenii si conditiile InsideGrowth care guverneaza utilizarea serviciilor si site-ului nostru.',
       keywords: ['InsideGrowth termeni', 'termeni si conditii', 'acord servicii', 'insidegrowth.ro']
-    }
+    },
+    portfolio: {
+      title: 'Portofoliu | Site-uri construite de InsideGrowth',
+      description: 'Descoperă site-urile și experiențele digitale proiectate și construite de InsideGrowth.',
+      keywords: ['portofoliu', 'design website', 'website Angular', 'website personalizat', 'InsideGrowth'],
+    },
   },
   geo: {
     organization: {

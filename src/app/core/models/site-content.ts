@@ -107,6 +107,7 @@ export interface SiteUiText {
     growthResults: string;
     services: string;
     pricing: string;
+    portfolio: string;
     contact: string;
   };
   languageLabel: string;
@@ -183,6 +184,20 @@ export interface SiteUiText {
   homeCredentialsBadge: string;
   homeMiniCta: string;
   homeModalCta: string;
+  homePortfolioEyebrow: string;
+  homePortfolioTitle: string;
+  homePortfolioSubtitle: string;
+  homePortfolioViewAll: string;
+  homePortfolioViewProject: string;
+  portfolioEyebrow: string;
+  portfolioHeroLead: string;
+  portfolioViewGallery: string;
+  pricingBespokeEyebrow: string;
+  pricingBespokeTitle: string;
+  pricingBespokePrice: string;
+  pricingBespokeDescription: string;
+  pricingBespokeCta: string;
+  pricingBespokeFeatures: string[];
 }
 
 // ─── GEO / AI-SEO Schema Interfaces ─────────────────────────────────────────
@@ -292,6 +307,7 @@ export interface SiteSeo {
   privacyPolicy: PageSeo;
   cookiePolicy: PageSeo;
   termsConditions: PageSeo;
+  portfolio: PageSeo;
 }
 
 export interface LegalSection {
@@ -363,6 +379,7 @@ export interface SiteContent {
   geo: GeoSchemaData;
   legal: SiteLegalContent;
   portfolio: CaseStudy[];
+  websitePortfolio: WebsiteProject[];
 }
 
 export interface CaseStudy {
@@ -375,4 +392,17 @@ export interface CaseStudy {
   image?: string;
   imagePosition?: 'left' | 'right';
   features?: string[];
+}
+
+export interface WebsiteProject {
+  id: string;
+  title: string;
+  subtitle?: string;
+  description: string;
+  technologies: string[];
+  image: string;
+  galleryImages?: string[];
+  liveUrl?: string;
+  imagePosition?: 'left' | 'right';
+  metrics?: string[];
 }

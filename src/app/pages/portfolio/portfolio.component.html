@@ -1,0 +1,104 @@
+<main class="portfolio-page">
+
+  <!-- ── PAGE HERO ── -->
+  <section class="page-hero content-shell">
+    <span class="eyebrow sr" scrollReveal>{{ content().ui.portfolioEyebrow }}</span>
+    <h1 class="gradient-text sr" scrollReveal [delay]="80">Portfolio</h1>
+    <div class="section-divider sr" scrollReveal [delay]="160"></div>
+    <p class="hero-lead sr" scrollReveal [delay]="220">{{ content().ui.portfolioHeroLead }}</p>
+  </section>
+
+  <!-- ── PROJECT ENTRIES ── -->
+  @for (project of content().websitePortfolio; track project.id) {
+    <article
+      class="project-entry content-shell sr"
+      [class.image-right]="project.imagePosition === 'right'"
+      scrollReveal
+      [delay]="100"
+      [id]="project.id"
+    >
+      <!-- Visual — click to fullscreen -->
+      <div class="project-entry__visual">
+        <div
+          class="image-shell image-shell--clickable"
+          (click)="openFullscreen(project.image)"
+          role="button"
+          tabindex="0"
+          (keydown.enter)="openFullscreen(project.image)"
+          aria-label="View full size image"
+        >
+          <img
+            [src]="project.image"
+            [alt]="project.title"
+            width="800"
+            height="500"
+            loading="lazy"
+          />
+          <span class="zoom-hint" aria-hidden="true">🔍</span>
+        </div>
+      </div>
+
+      <!-- Body -->
+      <div class="project-entry__body">
+        <span class="eyebrow">{{ project.metrics?.[0] ?? '' }}</span>
+        <h2>{{ project.title }}</h2>
+        <p class="project-subtitle">{{ project.subtitle }}</p>
+        <div class="section-divider"></div>
+        <p>{{ project.description }}</p>
+
+        @if (project.technologies.length) {
+          <div class="project-tags">
+            @for (tech of project.technologies; track tech) {
+              <span class="portfolio-tag">{{ tech }}</span>
+            }
+          </div>
+        }
+
+        @if (project.metrics?.length) {
+          <div class="project-metrics">
+            @for (metric of project.metrics!; track metric) {
+              <span class="metric-pill">{{ metric }}</span>
+            }
+          </div>
+        }
+
+        @if (project.liveUrl) {
+          <div class="project-actions">
+            <a
+              class="button button--accent"
+              [href]="project.liveUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live Site <span class="arrow">↗</span>
+            </a>
+          </div>
+        }
+      </div>
+    </article>
+  }
+
+  <!-- ── FULLSCREEN OVERLAY ── -->
+  @if (fullscreenOpen()) {
+    <div
+      class="fs-overlay"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Full size image"
+      (click)="closeFullscreen()"
+    >
+      <button class="fs-close" type="button" aria-label="Close" (click)="closeFullscreen()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <img
+        class="fs-img"
+        [src]="fullscreenSrc()"
+        alt="Full size project image"
+        (click)="$event.stopPropagation()"
+      />
+    </div>
+  }
+
+</main>

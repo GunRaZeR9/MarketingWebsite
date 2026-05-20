@@ -335,3 +335,97 @@ tr:last-child td { border-bottom: none; }
     font-size: 0.82rem;
   }
 }
+
+/* ── Custom Website (Bespoke) Card ── */
+.plan-card--bespoke {
+  /* Remove default card border — we use a pseudo-element gradient border */
+  border-color: transparent;
+  background: color-mix(in srgb, var(--surface-elevated) 65%, rgba(232, 193, 76, 0.06));
+  overflow: visible;
+  position: relative;
+
+  /* Gradient border trick: inset pseudo-element behind the card */
+  &::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: calc(var(--radius-lg) + 1px); /* 25px — 1px larger than card */
+    background: linear-gradient(
+      135deg,
+      var(--accent) 0%,
+      var(--accent-warm) 30%,
+      rgba(255, 255, 255, 0.5) 50%,
+      var(--accent-warm) 70%,
+      var(--accent) 100%
+    );
+    z-index: -1;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Suppress default card::after glow since ::before is occupied */
+  &::after {
+    display: none;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: transparent;
+    box-shadow:
+      0 24px 56px rgba(0, 0, 0, 0.48),
+      0 0 40px rgba(232, 193, 76, 0.15);
+
+    &::before {
+      opacity: 0.85;
+    }
+  }
+
+  &:hover::before {
+    opacity: 0.85;
+  }
+}
+
+/* Bespoke eyebrow: gradient text (richer than standard .eyebrow solid gold) */
+.bespoke-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
+  /* Gold gradient text */
+  background: linear-gradient(125deg, var(--accent) 0%, var(--accent-warm) 45%, #fff8e6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bespoke-eyebrow__line {
+  display: block;
+  width: 24px;
+  height: 1.5px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-warm));
+  border-radius: 99px;
+  flex-shrink: 0;
+  /* line cannot inherit -webkit-text-fill-color so it's a separate element */
+}
+
+/* Override .gradient-text on .price-amount to ensure it works within the card */
+.plan-card--bespoke .price-amount {
+  color: var(--accent); /* fallback if gradient-text not supported */
+}
+
+/* Custom Website card title uses gold token */
+.plan-card--bespoke h3 {
+  color: var(--accent);
+}
+
+/* Force 4-column layout on very wide viewports so all 4 plan cards sit in one row */
+@media (min-width: 1200px) {
+  .plan-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

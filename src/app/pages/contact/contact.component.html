@@ -26,6 +26,7 @@
             <option *ngFor="let plan of content().pricingPlans" [value]="plan.name">
               {{ plan.name }} · {{ plan.price }}
             </option>
+            <option value="Bespoke website(Custom)">Bespoke website (Custom)</option>
           </select>
           <small *ngIf="leadForm.controls.plan.touched && leadForm.controls.plan.invalid">
             {{ content().ui.contactForm.planValidation }}

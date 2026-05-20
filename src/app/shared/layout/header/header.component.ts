@@ -22,6 +22,7 @@ export class HeaderComponent {
     { key: 'home', route: '/' },
     { key: 'about', route: '/about' },
     { key: 'growthResults', route: '/growth-results' },
+    { key: 'portfolio', route: '/portfolio' },
     { key: 'services', route: '/services' },
     { key: 'pricing', route: '/pricing' },
     { key: 'contact', route: '/contact' }

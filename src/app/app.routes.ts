@@ -24,18 +24,24 @@ export const routes: Routes = [
 		component: GrowthResultsComponent
 	},
 	{
-		path: 'services',
+		path: 'portfolio',
 		data: { animIndex: 3 },
+		loadComponent: () =>
+			import('./pages/portfolio/portfolio.component').then((m) => m.PortfolioComponent)
+	},
+	{
+		path: 'services',
+		data: { animIndex: 4 },
 		component: ServicesComponent
 	},
 	{
 		path: 'pricing',
-		data: { animIndex: 4 },
+		data: { animIndex: 5 },
 		component: PricingComponent
 	},
 	{
 		path: 'contact',
-		data: { animIndex: 5 },
+		data: { animIndex: 6 },
 		component: ContactComponent
 	},
 	{

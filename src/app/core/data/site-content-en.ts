@@ -487,6 +487,7 @@ export const SITE_CONTENT_EN: SiteContent = {
       growthResults: 'Growth Results',
       services: 'Services',
       pricing: 'Pricing',
+      portfolio: 'Portfolio',
       contact: 'Contact'
     },
     languageLabel: 'Language',
@@ -644,7 +645,28 @@ export const SITE_CONTENT_EN: SiteContent = {
       'We analyze your data, audit your performance, and continuously optimize campaigns to scale what works and eliminate what doesn\'t.',
     homeCredentialsBadge: 'Google & Meta Certified Team · 20+ Years Combined Experience',
     homeMiniCta: 'Ready to scale your business?',
-    homeModalCta: 'Get Started'
+    homeModalCta: 'Get Started',
+    homePortfolioEyebrow: 'Our Work',
+    homePortfolioTitle: 'Featured Projects',
+    homePortfolioSubtitle: "Websites and digital experiences we've built for our clients.",
+    homePortfolioViewAll: 'View All Projects',
+    homePortfolioViewProject: 'View Project',
+    portfolioEyebrow: 'Our Work',
+    portfolioHeroLead: "A selection of websites and digital experiences we've designed and built — each one crafted for performance, clarity, and conversion.",
+    portfolioViewGallery: 'View Gallery',
+    pricingBespokeEyebrow: 'Bespoke',
+    pricingBespokeTitle: 'Custom Website',
+    pricingBespokePrice: 'On Request',
+    pricingBespokeDescription: "A fully custom website tailored to your brand, goals, and audience. From presentation sites to e-commerce platforms — built to perform.",
+    pricingBespokeCta: 'Discuss Your Project',
+    pricingBespokeFeatures: [
+      'Custom design from scratch',
+      'Mobile-first responsive build',
+      'SEO-optimized architecture',
+      'CMS integration (optional)',
+      'Performance & accessibility audit',
+      'Full handoff + documentation',
+    ],
   },
   portfolio: [
     {
@@ -684,6 +706,34 @@ export const SITE_CONTENT_EN: SiteContent = {
       description:
         'We believe performance comes from strong partnerships. That\'s why we work with a limited number of clients — businesses where we know we can create real impact and grow together. Every project is built on trust, communication, and long-term collaboration. Results vary depending on industry, budget, and market conditions. Our focus is always the same: build systems that scale what works. We\'ll analyze your current setup and show you exactly where growth opportunities exist. No commitment. Just actionable insights.',
       imagePosition: 'right'
+    },
+  ],
+  websitePortfolio: [
+    {
+      id: 'insidegrowth',
+      title: 'InsideGrowth — Marketing Agency Website',
+      subtitle: 'Angular 21 SPA with i18n, SEO, and EmailJS lead capture',
+      description:
+        'A fully static Angular SPA for InsideGrowth, a performance-driven digital marketing agency. Signal-based i18n with EN/RO/HU support, structured data (JSON-LD), EmailJS contact form with dual notifications, and CI/CD deployment to Hostico shared hosting via GitHub Actions.',
+      technologies: ['Angular 21', 'TypeScript', 'SCSS', 'Nx', 'EmailJS', 'GitHub Actions'],
+      image: 'images/portfolio/inside-growth.webp',
+      galleryImages: ['images/portfolio/inside-growth.webp'],
+      liveUrl: 'https://insidegrowth.ro',
+      imagePosition: 'right',
+      metrics: ['Angular 21 SPA', 'EN / RO / HU i18n', 'EmailJS Forms'],
+    },
+    {
+      id: 'viilamunte',
+      title: 'ViiLa Munte — Mountain Cabin Website',
+      subtitle: 'Booking & marketing site for an exclusive Romanian mountain retreat',
+      description:
+        'Marketing and booking website for ViiLa Munte, an exclusive mountain cabin near Toplița (Munții Călimani). Features an availability calendar synced via PHP iCal proxy, bilingual support (RO/EN) with ngx-translate, Google Reviews integration, a lazy-loaded booking form with click-to-load Google Maps facade, and a WebP image optimization pipeline.',
+      technologies: ['Angular 21', 'TypeScript', 'SCSS', 'ngx-translate', 'angular-calendar', 'Sharp'],
+      image: 'images/portfolio/viilamunte.webp',
+      galleryImages: ['images/portfolio/viilamunte.webp'],
+      liveUrl: 'https://viilamunte.ro',
+      imagePosition: 'left',
+      metrics: ['Bilingual RO / EN', 'iCal Availability', 'WebP Pipeline'],
     },
   ],
   seo: {
@@ -731,7 +781,12 @@ export const SITE_CONTENT_EN: SiteContent = {
       title: 'Terms & Conditions',
       description: 'Read the InsideGrowth terms and conditions governing the use of our services and website.',
       keywords: ['InsideGrowth terms', 'terms and conditions', 'service agreement', 'insidegrowth.ro']
-    }
+    },
+    portfolio: {
+      title: 'Portfolio | Websites Built by InsideGrowth',
+      description: "See the websites and digital experiences designed and built by InsideGrowth — from marketing agency sites to mountain cabin booking platforms.",
+      keywords: ['portfolio', 'website design', 'Angular website', 'custom website', 'InsideGrowth'],
+    },
   },
   legal: {
     privacyPolicy: {

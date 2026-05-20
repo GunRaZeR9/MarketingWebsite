@@ -488,6 +488,7 @@ export const SITE_CONTENT_HU: SiteContent = {
       growthResults: 'Növekedési Eredmények',
       services: 'Szolgáltatások',
       pricing: 'Árak',
+      portfolio: 'Portfólió',
       contact: 'Kapcsolat'
     },
     languageLabel: 'Nyelv',
@@ -645,7 +646,28 @@ export const SITE_CONTENT_HU: SiteContent = {
       'Elemezzük az adataidat, auditáljuk a teljesítményed, és folyamatosan optimalizáljuk a kampányokat az működőket skálázva és az nem működőket kiküszöbölve.',
     homeCredentialsBadge: 'Google & Meta Tanúsított Csapat · 20+ Év Kombinált Tapasztalat',
     homeMiniCta: 'Kész az üzleted skálázására?',
-    homeModalCta: 'Kezdje El'
+    homeModalCta: 'Kezdje El',
+    homePortfolioEyebrow: 'Munkáink',
+    homePortfolioTitle: 'Kiemelt Projektek',
+    homePortfolioSubtitle: 'Ügyfeleinknek készített weboldalak és digitális élmények.',
+    homePortfolioViewAll: 'Összes Projekt',
+    homePortfolioViewProject: 'Projekt Megtekintése',
+    portfolioEyebrow: 'Munkáink',
+    portfolioHeroLead: 'Általunk tervezett és épített weboldalak és digitális élmények — teljesítményre és konverzióra optimalizálva.',
+    portfolioViewGallery: 'Galéria Megtekintése',
+    pricingBespokeEyebrow: 'Egyedi',
+    pricingBespokeTitle: 'Egyedi Weboldal',
+    pricingBespokePrice: 'Igény szerint',
+    pricingBespokeDescription: 'Teljesen személyre szabott weboldal, amely illeszkedik a márkádhoz, céljaidhoz és közönségedhez. Bemutatkozó oldaloktól az e-commerce platformokig.',
+    pricingBespokeCta: 'Projekt Megbeszélése',
+    pricingBespokeFeatures: [
+      'Egyedi design nulláról',
+      'Mobile-first reszponzív fejlesztés',
+      'SEO-optimalizált architektúra',
+      'CMS integráció (opcionális)',
+      'Teljesítmény & akadálymentesítési audit',
+      'Teljes átadás + dokumentáció',
+    ],
   },
   portfolio: [
     {
@@ -685,6 +707,34 @@ export const SITE_CONTENT_HU: SiteContent = {
       description:
         'Azt hiszünk, hogy a teljesítmény erős partnerségekből fakad. Ezért korlátozott számú ügyféllel dolgozunk — üzletek, ahol tudjuk, hogy valódi hatást tehetünk és együtt növekedhetünk. Minden projekt bizalomra, kommunikációra és hosszú távú együttműködésre épül. Az eredmények az iparág, költségvetés és piaci feltételek szerint változnak. A fokuszunk mindig ugyanaz: olyan rendszereket építeni, amelyek az működőket skálázza. Az jelenlegi beállítást elemezzük és pontosan megmutatjuk, hol van a növekedési lehetőség. Nincs kötelezettség. Csak működésbe helyezhető felmérés.',
       imagePosition: 'right'
+    },
+  ],
+  websitePortfolio: [
+    {
+      id: 'insidegrowth',
+      title: 'InsideGrowth — Marketing Agency Website',
+      subtitle: 'Angular 21 SPA with i18n, SEO, and EmailJS lead capture',
+      description:
+        'A fully static Angular SPA for InsideGrowth, a performance-driven digital marketing agency. Signal-based i18n with EN/RO/HU support, structured data (JSON-LD), EmailJS contact form with dual notifications, and CI/CD deployment to Hostico shared hosting via GitHub Actions.',
+      technologies: ['Angular 21', 'TypeScript', 'SCSS', 'Nx', 'EmailJS', 'GitHub Actions'],
+      image: 'images/portfolio/inside-growth.webp',
+      galleryImages: ['images/portfolio/inside-growth.webp'],
+      liveUrl: 'https://insidegrowth.ro',
+      imagePosition: 'right',
+      metrics: ['Angular 21 SPA', 'EN / RO / HU i18n', 'EmailJS Forms'],
+    },
+    {
+      id: 'viilamunte',
+      title: 'ViiLa Munte — Mountain Cabin Website',
+      subtitle: 'Booking & marketing site for an exclusive Romanian mountain retreat',
+      description:
+        'Marketing and booking website for ViiLa Munte, an exclusive mountain cabin near Toplița (Munții Călimani). Features an availability calendar synced via PHP iCal proxy, bilingual support (RO/EN) with ngx-translate, Google Reviews integration, a lazy-loaded booking form with click-to-load Google Maps facade, and a WebP image optimization pipeline.',
+      technologies: ['Angular 21', 'TypeScript', 'SCSS', 'ngx-translate', 'angular-calendar', 'Sharp'],
+      image: 'images/portfolio/viilamunte.webp',
+      galleryImages: ['images/portfolio/viilamunte.webp'],
+      liveUrl: 'https://viilamunte.ro',
+      imagePosition: 'left',
+      metrics: ['Bilingual RO / EN', 'iCal Availability', 'WebP Pipeline'],
     },
   ],
   seo: {
@@ -732,7 +782,12 @@ export const SITE_CONTENT_HU: SiteContent = {
       title: 'Általános Feltételek',
       description: 'Olvasd el az InsideGrowth általános feltételeit, amelyek a szolgáltatások és webhely használatát szabályozzák.',
       keywords: ['InsideGrowth feltételek', 'általános feltételek', 'szolgáltatás szerződés', 'insidegrowth.ro']
-    }
+    },
+    portfolio: {
+      title: 'Portfólió | InsideGrowth által épített weboldalak',
+      description: 'Fedezd fel az InsideGrowth által tervezett és épített weboldalakat és digitális élményeket.',
+      keywords: ['portfólió', 'weboldal design', 'Angular weboldal', 'egyedi weboldal', 'InsideGrowth'],
+    },
   },
   geo: {
     organization: {
