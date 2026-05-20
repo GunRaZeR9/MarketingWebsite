@@ -29,15 +29,17 @@ jobs:
         env:
           NX_NO_CLOUD: true
 
-      - name: Add .cpanel.yml to build output
+      - name: Create Hostico upload bundle
         run: |
-          cat > dist/marketing-website/browser/.cpanel.yml << 'EOF'
-          ---
-          deployment:
-            tasks:
-              - export DEPLOYPATH=/home/dblwwjnj/public_html/
-              - /usr/bin/rsync -a --delete --exclude='.git' --exclude='.cpanel.yml' . $DEPLOYPATH/
-          EOF
+          cd dist/marketing-website/browser
+          find . -type f ! -name 'SHA256SUMS.txt' ! -name 'hostico-upload.zip' -exec sha256sum {} + | sort > SHA256SUMS.txt
+          zip -r ../hostico-upload.zip .
+
+      - name: Upload Hostico bundle artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hostico-upload
+          path: dist/marketing-website/hostico-upload.zip
 
       - name: Push to hostico-prod branch
         run: |
