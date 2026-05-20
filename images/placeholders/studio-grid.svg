@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1480" y2="820" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#12263E" />
+      <stop offset="0.52" stop-color="#152C48" />
+      <stop offset="1" stop-color="#0D1C30" />
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1600" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5FA0FF" stop-opacity="0.55" />
+      <stop offset="1" stop-color="#FFD34F" stop-opacity="0.45" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1180 220) rotate(130) scale(680 480)">
+      <stop stop-color="#FFD34F" stop-opacity="0.35" />
+      <stop offset="1" stop-color="#FFD34F" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" rx="42" fill="url(#bg)" />
+  <rect x="40" y="40" width="1520" height="820" rx="28" stroke="#2A4360" stroke-width="2" />
+  <path d="M140 710L350 470L570 540L800 290L1040 470L1290 210L1460 360" stroke="url(#line)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+  <path d="M140 760L350 560L570 620L800 390L1040 560L1290 300L1460 430" stroke="#8DBBFF" stroke-opacity="0.45" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+  <circle cx="1180" cy="220" r="340" fill="url(#glow)" />
+  <g stroke="#274868" stroke-width="1" opacity="0.6">
+    <path d="M120 130H1480" />
+    <path d="M120 210H1480" />
+    <path d="M120 290H1480" />
+    <path d="M120 370H1480" />
+    <path d="M120 450H1480" />
+    <path d="M120 530H1480" />
+    <path d="M120 610H1480" />
+    <path d="M120 690H1480" />
+    <path d="M120 770H1480" />
+    <path d="M220 90V810" />
+    <path d="M360 90V810" />
+    <path d="M500 90V810" />
+    <path d="M640 90V810" />
+    <path d="M780 90V810" />
+    <path d="M920 90V810" />
+    <path d="M1060 90V810" />
+    <path d="M1200 90V810" />
+    <path d="M1340 90V810" />
+  </g>
+</svg>
