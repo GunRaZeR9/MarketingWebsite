@@ -40,15 +40,3 @@ jobs:
         with:
           name: hostico-upload
           path: dist/marketing-website/hostico-upload.zip
-
-      - name: Push to hostico-prod branch
-        run: |
-          cd dist/marketing-website/browser
-          git init
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "deploy: $(date -u '+%Y-%m-%d %H:%M UTC') [${GITHUB_SHA::7}]"
-          git push --force \
-            https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git \
-            HEAD:hostico-prod
