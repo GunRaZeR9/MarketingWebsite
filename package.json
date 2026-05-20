@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "nx serve",
-    "build": "nx build && node scripts/stamp-build.mjs",
+    "build": "nx build && node scripts/stamp-build.mjs && node scripts/package-hostico.mjs",
     "build:ghpages": "nx build --base-href=\"/MarketingWebsite/\"",
     "deploy:ghpages": "npx angular-cli-ghpages --dir=dist/marketing-website/browser",
     "watch": "nx build --watch --configuration development",
@@ -34,6 +34,7 @@
     "@nx/workspace": "22.6.5",
     "@schematics/angular": "^21.2.7",
     "angular-cli-ghpages": "^2.0.3",
+    "archiver": "^8.0.0",
     "jsdom": "^28.0.0",
     "nx": "22.6.5",
     "prettier": "^3.8.1",
