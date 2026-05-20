@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "nx serve",
-    "build": "nx build",
+    "build": "nx build && node scripts/stamp-build.mjs",
     "build:ghpages": "nx build --base-href=\"/MarketingWebsite/\"",
     "deploy:ghpages": "npx angular-cli-ghpages --dir=dist/marketing-website/browser",
     "watch": "nx build --watch --configuration development",
