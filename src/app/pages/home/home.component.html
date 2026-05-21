@@ -183,32 +183,39 @@
       <div class="section-divider sr" scrollReveal [delay]="120"></div>
     </div>
     <div class="grid-2-fixed">
-      <article
-        *ngFor="let project of content().websitePortfolio.slice(0, 2); let i = index"
-        class="card portfolio-card sr"
-        scrollReveal
-        [delay]="i * 130"
-      >
-        <div class="portfolio-card__image image-shell">
-          <img
-            [src]="project.image"
-            [alt]="project.title"
-            width="600"
-            height="375"
-            loading="lazy"
-          />
-        </div>
-        <div class="portfolio-card__body">
-          <h3>{{ project.title }}</h3>
-          <p>{{ project.subtitle }}</p>
-          <div class="portfolio-card__tags">
-            <span class="portfolio-tag" *ngFor="let tech of project.technologies.slice(0, 4)">{{ tech }}</span>
+      @for (project of content().websitePortfolio.slice(0, 2); track project.id; let i = $index) {
+        <article
+          class="card portfolio-card sr"
+          scrollReveal
+          [delay]="i * 130"
+        >
+          <div class="portfolio-card__image image-shell">
+            @switch (project.id) {
+              @case ('insidegrowth') {
+                <img src="images/portfolio/inside-growth.webp" [alt]="project.title" width="600" height="375" loading="lazy" />
+              }
+              @case ('viilamunte') {
+                <img src="images/portfolio/viilamunte.webp" [alt]="project.title" width="600" height="375" loading="lazy" />
+              }
+              @case ('telefoane-mures') {
+                <img src="images/portfolio/telefoane-mures.webp" [alt]="project.title" width="600" height="375" loading="lazy" />
+              }
+            }
           </div>
-          <a class="button button--sm" [routerLink]="['/portfolio']" [fragment]="project.id">
-            {{ content().ui.homePortfolioViewProject }} <span class="arrow">→</span>
-          </a>
-        </div>
-      </article>
+          <div class="portfolio-card__body">
+            <h3>{{ project.title }}</h3>
+            <p>{{ project.subtitle }}</p>
+            <div class="portfolio-card__tags">
+              @for (tech of project.technologies.slice(0, 4); track tech) {
+                <span class="portfolio-tag">{{ tech }}</span>
+              }
+            </div>
+            <a class="button button--sm" [routerLink]="['/portfolio']" [fragment]="project.id">
+              {{ content().ui.homePortfolioViewProject }} <span class="arrow">→</span>
+            </a>
+          </div>
+        </article>
+      }
     </div>
     <div class="portfolio-cta sr" scrollReveal [delay]="300">
       <a class="button button--accent" routerLink="/portfolio">
@@ -223,7 +230,9 @@
       <p class="eyebrow">{{ content().problemTitle }}</p>
       <h2>{{ content().ui.homeReadyTitle }}</h2>
       <ul class="problem-list">
-        <li *ngFor="let point of content().problemPoints">{{ point }}</li>
+        @for (point of content().problemPoints; track point) {
+          <li>{{ point }}</li>
+        }
       </ul>
     </div>
     <div class="cta-band-action">

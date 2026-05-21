@@ -52,6 +52,16 @@
     <xhtml:link rel="alternate" hreflang="hu" href="https://insidegrowth.ro/pricing"/>
   </url>
   <url>
+    <loc>https://insidegrowth.ro/portfolio</loc>
+    <lastmod>2026-05-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://insidegrowth.ro/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://insidegrowth.ro/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://insidegrowth.ro/portfolio"/>
+    <xhtml:link rel="alternate" hreflang="hu" href="https://insidegrowth.ro/portfolio"/>
+  </url>
+  <url>
     <loc>https://insidegrowth.ro/contact</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>

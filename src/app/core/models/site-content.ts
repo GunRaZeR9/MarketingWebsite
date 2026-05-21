@@ -192,6 +192,7 @@ export interface SiteUiText {
   portfolioEyebrow: string;
   portfolioHeroLead: string;
   portfolioViewGallery: string;
+  portfolioLiveSite: string;
   pricingBespokeEyebrow: string;
   pricingBespokeTitle: string;
   pricingBespokePrice: string;
@@ -400,9 +401,9 @@ export interface WebsiteProject {
   subtitle?: string;
   description: string;
   technologies: string[];
-  image: string;
-  galleryImages?: string[];
   liveUrl?: string;
   imagePosition?: 'left' | 'right';
   metrics?: string[];
+  /** Optional badge label, e.g. 'Featured / External' for third-party showcases */
+  badge?: string;
 }

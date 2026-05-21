@@ -7,7 +7,15 @@
 
 /* ── Page Hero ── */
 .page-hero {
-  max-width: 72ch;
+  /* No max-width: let content-shell (92vw, margin: 0 auto) align this with
+     the project entries. Text inside is left-aligned by default. */
+  display: block;
+}
+
+.page-hero.hero-left {
+  text-align: left;
+  /* margin intentionally omitted — content-shell's margin: 0 auto is used
+     so the hero shares the same left edge as the project entry blocks. */
 }
 
 .hero-lead {
@@ -97,6 +105,22 @@
   color: var(--text-dim);
   line-height: 1.6;
   margin: 0;
+}
+
+/* ── Featured / External Badge ── */
+.project-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.18rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(91, 156, 246, 0.1);
+  border: 1px solid rgba(91, 156, 246, 0.3);
+  color: #5b9cf6;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 /* ── Technology / Metric Tags ── */
@@ -221,3 +245,4 @@
     color: var(--accent);
   }
 }
+

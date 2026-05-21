@@ -655,6 +655,7 @@ export const SITE_CONTENT_HU: SiteContent = {
     portfolioEyebrow: 'Munkáink',
     portfolioHeroLead: 'Általunk tervezett és épített weboldalak és digitális élmények — teljesítményre és konverzióra optimalizálva.',
     portfolioViewGallery: 'Galéria Megtekintése',
+    portfolioLiveSite: 'Élő Oldal',
     pricingBespokeEyebrow: 'Egyedi',
     pricingBespokeTitle: 'Egyedi Weboldal',
     pricingBespokePrice: 'Igény szerint',
@@ -717,8 +718,6 @@ export const SITE_CONTENT_HU: SiteContent = {
       description:
         'A fully static Angular SPA for InsideGrowth, a performance-driven digital marketing agency. Signal-based i18n with EN/RO/HU support, structured data (JSON-LD), EmailJS contact form with dual notifications, and CI/CD deployment to Hostico shared hosting via GitHub Actions.',
       technologies: ['Angular 21', 'TypeScript', 'SCSS', 'Nx', 'EmailJS', 'GitHub Actions'],
-      image: 'images/portfolio/inside-growth.webp',
-      galleryImages: ['images/portfolio/inside-growth.webp'],
       liveUrl: 'https://insidegrowth.ro',
       imagePosition: 'right',
       metrics: ['Angular 21 SPA', 'EN / RO / HU i18n', 'EmailJS Forms'],
@@ -730,11 +729,21 @@ export const SITE_CONTENT_HU: SiteContent = {
       description:
         'Marketing and booking website for ViiLa Munte, an exclusive mountain cabin near Toplița (Munții Călimani). Features an availability calendar synced via PHP iCal proxy, bilingual support (RO/EN) with ngx-translate, Google Reviews integration, a lazy-loaded booking form with click-to-load Google Maps facade, and a WebP image optimization pipeline.',
       technologies: ['Angular 21', 'TypeScript', 'SCSS', 'ngx-translate', 'angular-calendar', 'Sharp'],
-      image: 'images/portfolio/viilamunte.webp',
-      galleryImages: ['images/portfolio/viilamunte.webp'],
       liveUrl: 'https://viilamunte.ro',
       imagePosition: 'left',
       metrics: ['Bilingual RO / EN', 'iCal Availability', 'WebP Pipeline'],
+    },
+    {
+      id: 'telefoane-mures',
+      title: 'Telefoane Mureș',
+      subtitle: 'E-commerce — WordPress + WooCommerce · Târgu Mureș, România',
+      description:
+        'Online store for new and certified refurbished phones, ranked top 5 nationally in Romania. WooCommerce platform with real-time stock updates, real product photography, and up to 3-year extended warranty.',
+      technologies: ['WordPress', 'WooCommerce', 'Trustindex', 'Real-time Stock'],
+      liveUrl: 'https://telefoanemures.ro/',
+      imagePosition: 'right',
+      metrics: ['WooCommerce E-commerce', 'Real-time Stock', '3-Year Warranty'],
+      badge: 'Featured / External',
     },
   ],
   seo: {
